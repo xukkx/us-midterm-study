@@ -1,0 +1,41 @@
+{
+  "verified_at": "2026-09-08T08:30:48.972212+00:00",
+  "file_checks": {
+    "Recontact_Survey_Guide_2020_2022_2024.pdf": {
+      "bytes_match": true,
+      "sha256_match": true,
+      "official_md5_match": true
+    },
+    "merged_recontact_2024_vv.csv": {
+      "bytes_match": true,
+      "sha256_match": true,
+      "official_md5_match": true
+    },
+    "merged_recontact_2024_vv.dta": {
+      "bytes_match": true,
+      "sha256_match": true,
+      "official_md5_match": true
+    }
+  },
+  "csv_rows": 6175,
+  "csv_columns": 2229,
+  "ids": {
+    "caseid_20": {
+      "unique_nonmissing": 6175,
+      "missing_n": 0,
+      "duplicate_rows": 0
+    },
+    "caseid_22": {
+      "unique_nonmissing": 6175,
+      "missing_n": 0,
+      "duplicate_rows": 0
+    },
+    "caseid_24": {
+      "unique_nonmissing": 6175,
+      "missing_n": 0,
+      "duplicate_rows": 0
+    }
+  },
+  "identity_scope": "合并表每行的三个波次ID均唯一；跨波对应关系来自官方合并，不要求三列ID数值相等。",
+  "status": "通过"
+}

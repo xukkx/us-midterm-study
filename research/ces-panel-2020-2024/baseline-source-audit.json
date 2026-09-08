@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-08T09:23:11.626549+00:00",
+  "annual_file": "CES20_Common_OUTPUT_vv.csv",
+  "annual_sha256": "946afde863a1c1319bb2931bbd24650961aedae27f36e6447ecdc7db68f83c4c",
+  "mother_rows": 61000,
+  "panel_rows": 6175,
+  "matched_ids": 6175,
+  "unmatched_ids": 0,
+  "mismatches": {
+    "pid7": 0,
+    "race": 0,
+    "hispanic": 0,
+    "employ": 0,
+    "ownhome": 0,
+    "CC20_410": 0,
+    "CC20_327a": 0
+  },
+  "boundary": "只核对官方面板2020字段与本地2020年度源一致性；不是重访邀请框或分群流失率。"
+}

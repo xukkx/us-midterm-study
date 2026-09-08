@@ -1,0 +1,56 @@
+{
+  "acquisition": "用户提供官方发布文件的ZIP包；未重新发起下载",
+  "archive": {
+    "bytes": 24389511,
+    "name": "2020-2024_panel.zip",
+    "sha256": "bc304cbc787b6f212eb3ee4340dbfced3e9432aa66a57f02a5c40fa424ba93ca"
+  },
+  "csv": {
+    "columns": 2229,
+    "header_sha256": "48179ba8a217f2db65f50361a707887785a7669a79813b78dcef65fd73ac1ce1",
+    "rows": 6175
+  },
+  "dataset": "2020 - 2024 Cooperative Election Study Panel Survey",
+  "doi": "10.7910/DVN/CETPVT",
+  "files": {
+    "Recontact_Survey_Guide_2020_2022_2024.pdf": {
+      "bytes": 1081537,
+      "crc32": "73870af3",
+      "file_id": 13398261,
+      "local_relative_path": "midterm-model/data/raw/ces/panel-2020-2024/Recontact_Survey_Guide_2020_2022_2024.pdf",
+      "md5": "62156b2855a1691cf85ceb8ffb3259ef",
+      "sha256": "81f3e73e4dc26b752b18c09ee0b1fc9d7fcf7462f657643193323c17f88941d4",
+      "official_md5": "62156b2855a1691cf85ceb8ffb3259ef",
+      "official_file_page": "https://dataverse.harvard.edu/file.xhtml?fileId=13398261&version=2.0"
+    },
+    "merged_recontact_2024_vv.csv": {
+      "bytes": 56057134,
+      "crc32": "88b9ff2a",
+      "file_id": 13398263,
+      "local_relative_path": "midterm-model/data/raw/ces/panel-2020-2024/merged_recontact_2024_vv.csv",
+      "md5": "9b6a90d88192a274fe85786529d16ea9",
+      "sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac",
+      "official_md5": "9b6a90d88192a274fe85786529d16ea9",
+      "official_file_page": "https://dataverse.harvard.edu/file.xhtml?fileId=13398263&version=2.0"
+    },
+    "merged_recontact_2024_vv.dta": {
+      "bytes": 208635217,
+      "crc32": "aaab02b9",
+      "file_id": 13398260,
+      "local_relative_path": "midterm-model/data/raw/ces/panel-2020-2024/merged_recontact_2024_vv.dta",
+      "md5": "fccd355c83696e3b0c4a8f8dbeb720a6",
+      "sha256": "bcc333fd545265a9a1de7893919a97dea6a77f7b4ca41f95d24f8e7433d8d1c8",
+      "official_md5": "fccd355c83696e3b0c4a8f8dbeb720a6",
+      "official_file_page": "https://dataverse.harvard.edu/file.xhtml?fileId=13398260&version=2.0"
+    }
+  },
+  "license": "CC0 1.0",
+  "official_checksum_comparison": {
+    "status": "三个文件完整MD5均一致",
+    "method": "浏览器逐个打开官方文件页Metadata标签读取MD5；本地另算SHA-256固定输入。",
+    "observed_at": "2026-09-08T08:30:47.559889+00:00"
+  },
+  "official_metadata_observed_on": "2026-09-08",
+  "official_version": "2.0",
+  "registered_at": "2026-09-08T08:16:16.508138+00:00"
+}

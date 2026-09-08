@@ -1,0 +1,18 @@
+{
+  "id": "lh260-ces-panel-2020-2024",
+  "dataset": "2020 - 2024 Cooperative Election Study Panel Survey",
+  "doi": "10.7910/DVN/CETPVT",
+  "version": "2.0",
+  "license": "CC0 1.0",
+  "acquisition": "用户提供本地ZIP；三个成员的官方完整MD5逐一匹配",
+  "source_manifest": "research/ces-panel-2020-2024/source_manifest.json",
+  "verification": "research/ces-panel-2020-2024/source-verification.json",
+  "local_raw_dir": "midterm-model/data/raw/ces/panel-2020-2024",
+  "csv_rows": 6175,
+  "csv_columns": 2229,
+  "input_status": "已核验并可读取",
+  "analysis_status": "已完成三波同人变化、议题及留存边界审计；分群流失率仍未知",
+  "raw_microdata_publish": false,
+  "changes_existing_seals": false,
+  "analysis_report": "research/ces-panel-2020-2024/report.md"
+}

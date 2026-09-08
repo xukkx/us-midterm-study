@@ -1,9 +1,9 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究有效性更正与后续方向 · 2026-09-08</title><style>
-*{box-sizing:border-box}body{margin:0;background:#f6f4ef;color:#202b32;font:17px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:940px;margin:40px auto;padding:42px 55px;background:#fff;border-top:7px solid #246457}h1{font-size:2rem;line-height:1.4;margin:0 0 24px}h2{font-size:1.45rem;margin-top:48px;border-top:1px solid #dce3df;padding-top:24px}h3{font-size:1.2rem;margin-top:34px;color:#22594e}p,li{overflow-wrap:anywhere}a{color:#176c89;text-underline-offset:3px}code{font:0.88em ui-monospace,Consolas,monospace;background:#f0f3f2;padding:2px 4px}li{margin:10px 0}ul{padding-left:24px}footer{font-size:14px;color:#66756f;border-top:1px solid #ddd;margin-top:36px;padding-top:16px}@media(max-width:640px){main{margin:0;padding:26px 21px}h1{font-size:1.65rem}}@media print{body{background:white}main{margin:0;padding:0;border:0}h2,h3{break-after:avoid}li{break-inside:avoid}}
+body{margin:0;background:#f6f4ef;color:#25323c;font:18px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:980px;margin:48px auto;padding:36px 44px;background:white;border-top:5px solid #26716b}h1{font-size:2rem;line-height:1.45}h2{margin-top:2em;font-size:1.35rem}a{color:#17685f}strong{color:#163d40}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.6}th,td{padding:12px 9px;border-bottom:1px solid #d8e0df;text-align:left}th{background:#eef4f1}code{font-size:.88em;overflow-wrap:anywhere}@media(max-width:700px){main{margin:0;padding:24px 18px}body{font-size:17px}}@media print{body{background:white}main{margin:0;padding:0;max-width:none}a{color:inherit}tr{break-inside:avoid}}
 </style></head><body><main><h1>这次批评改变了什么，以及研究接下来往哪里走</h1>
 <p>2026年9月8日。本文取代旧报告中对个人转换、永久性、投票退出和候选人供给机制的强解释。历史计算保留，解释和展示已经更正。</p>
 <p>问题不只是样本量不够。有些比较即使增加十倍样本，也无法回答“是不是同一个人改了主意”：每届访问不同的人，组内平均值的变化可能来自原有人的转换，也可能来自谁来投票、谁进入这一组，以及调查和档案匹配方式的变化。接下来的研究应该先把这些过程分开，再考虑增加预测模型。</p>
-<p>本次已经完成生态界代码更正、公开复现路径修复、年度投票记录审计，并撤下仪表盘中的众院席位点估计。三波面板已找到官方发布版本，但下载受阻，因此尚未计算同人转移。新的前瞻协议冻结了研究规则；它还不是一份已经填完输入并发布的预测。</p>
+<p>本次已经完成生态界代码更正、公开复现路径修复、年度投票记录审计，并撤下仪表盘中的众院席位点估计。三波面板随后由用户提供，来源核验和同人转移分析已经完成。<a href="../../research/ces-panel-2020-2024/report.md">新报告及研究方向</a>显示，拉美裔在业者282人，总统有效配对154人，权重有效n约60；同人资料推进了描述，却仍受精度与留存选择限制。新的前瞻协议冻结了研究规则；它还不是一份已经填完输入并发布的预测。</p>
 <h2>一个会改变原结论的发现</h2>
 <p>过去我们把共和党租房者的投票记录比例，从2012年的60.90%降到2024年的36.63%，写成了这个群体退出选民体的证据。这个解释需要撤回。</p>
 <p>重新检查年度原始CSV后，2016年的共和党租房者有4,751人，2024年有5,706人。按人口权重计算，档案匹配率从69.63%降到40.72%；但在已匹配者中，有投票记录的比例从74.35%升到89.96%。原来的记录比例满足“匹配率 × 已匹配者的记录票率”这一恒等式，因此它的下降不能单独解释为真实参与下降。<a href="../public/outputs/tables.md">逐年复算表及分母</a></p>
@@ -11,71 +11,55 @@
 <h2>逐项主张卡</h2>
 <p>所有复算命令均从仓库根目录执行。这里的“复现”指从随仓库发布的县级输入和聚合充分统计重算表格；不等于已把所有历年原始微数据下载与清洗打包。完整范围见<a href="../public/README.md">复现说明</a>。</p>
 <h3>1. 高密度地区的生态界不保证更窄</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：在不同密度阈值筛出的县内，特定亚群的共和党两党票份额可能落在哪里。不同阈值代表不同地理目标，不能当作同一个全国估计的精度升级。</li>
-<li><strong>测量与来源</strong>：MEDSL县级总统结果V20.0、对应ACS五年人口构成；2012、2016、2020、2024共12,452个成功连接的县年记录。以人口构成近似实际选民构成是额外假设，绝非全国无假设界。</li>
-<li><strong>命令</strong>：<code>python -B -m unittest discover -s midterm-model/tests -p test_ecological_bounds.py</code>；<code>python -B midterm-model/public/reproduce.py --check</code>。</li>
-<li><strong>结果与局限</strong>：两县反例的整体宽度为11/140，筛到90%密度后为1/9，反而变宽。新函数报告县数、票权重和亚群权重覆盖。2024成功连接票权重覆盖约98.59%，还不是全国全覆盖。区间是条件识别界，不是抽样置信区间；ACS误差尚未传播。</li>
-<li><strong>替代解释</strong>：高密度县的票份额、地理组成和亚群权重同时变化。高密度县整体右移也不等于县内每个亚群右移。拉美裔人口占比不是劳动者身份。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：在不同密度阈值筛出的县内，特定亚群的共和党两党票份额可能落在哪里。不同阈值代表不同地理目标，不能当作同一个全国估计的精度升级。</p>
+<p>- <strong>测量与来源</strong>：MEDSL县级总统结果V20.0、对应ACS五年人口构成；2012、2016、2020、2024共12,452个成功连接的县年记录。以人口构成近似实际选民构成是额外假设，绝非全国无假设界。</p>
+<p>- <strong>命令</strong>：<code>python -B -m unittest discover -s midterm-model/tests -p test_ecological_bounds.py</code>；<code>python -B midterm-model/public/reproduce.py --check</code>。</p>
+<p>- <strong>结果与局限</strong>：两县反例的整体宽度为11/140，筛到90%密度后为1/9，反而变宽。新函数报告县数、票权重和亚群权重覆盖。2024成功连接票权重覆盖约98.59%，还不是全国全覆盖。区间是条件识别界，不是抽样置信区间；ACS误差尚未传播。</p>
+<p>- <strong>替代解释</strong>：高密度县的票份额、地理组成和亚群权重同时变化。高密度县整体右移也不等于县内每个亚群右移。拉美裔人口占比不是劳动者身份。</p>
 <h3>2. 组内项不能改名为同人说服</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：CES各届横截面中，各年龄组的构成和平均两党众院投票边际如何共同变化。</li>
-<li><strong>测量与来源</strong>：累计CES封存输入的9个相邻届对；旧分解聚合值及哈希见公开输入清单。年龄18—21岁只代理新达到资格的年龄段，不涵盖所有首次投票者，也不测量实际首投经历。</li>
-<li><strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取“对称shift-share分解”。</li>
-<li><strong>结果与局限</strong>：交互项的一半分别分配给构成项和组内项，算术闭合；改变分配方式不产生因果识别。不能用这张表判定首投者是否决定某场选举。</li>
-<li><strong>替代解释</strong>：固定人的偏好转换、选择性参与、组内人员更替、调查测量变化，都能改变组内平均值。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：CES各届横截面中，各年龄组的构成和平均两党众院投票边际如何共同变化。</p>
+<p>- <strong>测量与来源</strong>：累计CES封存输入的9个相邻届对；旧分解聚合值及哈希见公开输入清单。年龄18—21岁只代理新达到资格的年龄段，不涵盖所有首次投票者，也不测量实际首投经历。</p>
+<p>- <strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取“对称shift-share分解”。</p>
+<p>- <strong>结果与局限</strong>：交互项的一半分别分配给构成项和组内项，算术闭合；改变分配方式不产生因果识别。不能用这张表判定首投者是否决定某场选举。</p>
+<p>- <strong>替代解释</strong>：固定人的偏好转换、选择性参与、组内人员更替、调查测量变化，都能改变组内平均值。</p>
 <h3>3. 党派重新认同是待检验解释</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：同一人的党派认同、具体议题态度和投票是否以不同顺序变化。</li>
-<li><strong>测量与来源</strong>：旧稿比较累计CES中的党派认同与五档意识形态分组；它们是不同分类，不是稳定信念与变化标签的直接观测。后续来源是<a href="https://doi.org/10.7910/DVN/CETPVT">CES三波面板V2.0</a>。</li>
-<li><strong>命令／状态</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>仅复现已有横截面表；面板经验转移表尚未生成，详见<a href="../../research/validity-release-2026-09-08/panel-feasibility.md">面板可行性记录</a>。</li>
-<li><strong>局限</strong>：稳定的五档意识形态不证明具体议题态度不变；目前没有识别同一个人重新贴标签或变化的先后顺序。</li>
-<li><strong>替代解释</strong>：参与选择、组内替换、粗分组掩盖议题变化，以及同时受其他事件影响。即使取得面板，时间先后也不自动等于因果。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：同一人的党派认同、具体议题态度和投票是否以不同顺序变化。</p>
+<p>- <strong>测量与来源</strong>：旧稿比较累计CES中的党派认同与五档意识形态分组；它们是不同分类，不是稳定信念与变化标签的直接观测。后续来源是<a href="https://doi.org/10.7910/DVN/CETPVT">CES三波面板V2.0</a>。</p>
+<p>- <strong>命令／状态</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>仅复现已有横截面表；新增面板表用<code>python -B research/ces-panel-2020-2024/reproduce.py --check</code>，详见<a href="../../research/ces-panel-2020-2024/report.md">面板报告</a>。</p>
+<p>- <strong>局限</strong>：稳定的五档意识形态不证明具体议题态度不变；面板已直接记录同人认同和可比议题的双向变化，但不能把它们的时间关系解释为认同标签变化的原因。</p>
+<p>- <strong>替代解释</strong>：参与选择、组内替换、粗分组掩盖议题变化，以及同时受其他事件影响。即使取得面板，时间先后也不自动等于因果。</p>
 <h3>4. 持续性要有明确的后续时间窗</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：某种地理或人口组的变化，在下一个可比观察期是否持续。县级结果和个人民意必须分别回答。</li>
-<li><strong>测量与来源</strong>：旧2018—2024出生组切面及密度县结果；新增协议另行冻结，不改既有forward-2026。</li>
-<li><strong>命令</strong>：<code>python -B research/validity-release-2026-09-08/verify_protocol.py</code>。</li>
-<li><strong>局限</strong>：年龄=时期−出生队列，三者不能在无约束条件下分别识别。某出生组已经表现偏共和，不构成未来不可逆的选票底线。一届后续结果也不能证明永久性。</li>
-<li><strong>替代解释</strong>：全国共同摆动、年龄相关变化、迁移、参与率、不同竞选与选区地图。协议将全国摆动扣除列为选后描述，绝不让其进入选前预测。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：某种地理或人口组的变化，在下一个可比观察期是否持续。县级结果和个人民意必须分别回答。</p>
+<p>- <strong>测量与来源</strong>：旧2018—2024出生组切面及密度县结果；新增协议另行冻结，不改既有forward-2026。</p>
+<p>- <strong>命令</strong>：<code>python -B research/validity-release-2026-09-08/verify_protocol.py</code>。</p>
+<p>- <strong>局限</strong>：年龄=时期−出生队列，三者不能在无约束条件下分别识别。某出生组已经表现偏共和，不构成未来不可逆的选票底线。一届后续结果也不能证明永久性。</p>
+<p>- <strong>替代解释</strong>：全国共同摆动、年龄相关变化、迁移、参与率、不同竞选与选区地图。协议将全国摆动扣除列为选后描述，绝不让其进入选前预测。</p>
 <h3>5. 投票记录下降不等于固定人群退出</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：各年CES中pid7为5—7且自报租房或自住房、有正人口权重的受访者；每年人群不同。</li>
-<li><strong>测量与来源</strong>：2010—2024累计版8年旧充分统计；另直接读取2016、2018、2020、2022、2024年度CSV及各年投票核验代码本。版本、SHA-256和字段写在<code>annual-turnout-sufficient.json</code>。</li>
-<li><strong>命令</strong>：公开表用<code>python -B midterm-model/public/reproduce.py --check</code>；持有原始CSV时用<code>python -B midterm-model/public/audit_annual.py --raw-dir 本地年度目录 --output 本地审计.json</code>。</li>
-<li><strong>结果与局限</strong>：旧分母、全体分母、匹配分母、人口和登记权重分别列示。遗漏状态敏感性不能替代未匹配敏感性。2010、2012、2014匹配信息保持未知；仅匹配者比率不能补成总体真值。</li>
-<li><strong>替代解释</strong>：档案覆盖、供应商、权重、注册与迁移、组内构成、真实参与变化。原文“退出而非转向”已撤回。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：各年CES中pid7为5—7且自报租房或自住房、有正人口权重的受访者；每年人群不同。</p>
+<p>- <strong>测量与来源</strong>：2010—2024累计版8年旧充分统计；另直接读取2016、2018、2020、2022、2024年度CSV及各年投票核验代码本。版本、SHA-256和字段写在<code>annual-turnout-sufficient.json</code>。</p>
+<p>- <strong>命令</strong>：公开表用<code>python -B midterm-model/public/reproduce.py --check</code>；持有原始CSV时用<code>python -B midterm-model/public/audit_annual.py --raw-dir 本地年度目录 --output 本地审计.json</code>。</p>
+<p>- <strong>结果与局限</strong>：旧分母、全体分母、匹配分母、人口和登记权重分别列示。遗漏状态敏感性不能替代未匹配敏感性。2010、2012、2014匹配信息保持未知；仅匹配者比率不能补成总体真值。</p>
+<p>- <strong>替代解释</strong>：档案覆盖、供应商、权重、注册与迁移、组内构成、真实参与变化。原文“退出而非转向”已撤回。</p>
 <h3>6. 未验证的众院映射不能变成席位头条</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：给定同一个全国意向数值，不同系数会使逐区情景相差多少；这不是谁将控制众院的估计。</li>
-<li><strong>测量与来源</strong>：旧公式<code>PVI + 1.3308 × (E − 0.977)</code>的公共展示快照；比较系数0.5。PVI baseline约为两倍Cook PVI。现有谱系不足以证明旧系数可用于众院；参院拟合不能移作众院验证。</li>
-<li><strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取参数敏感性。</li>
-<li><strong>结果与局限</strong>：E固定6.2时相差4.3392684个百分点。比较模型失败，不构成现有模型有效的证据。仪表盘不再显示D222—223、净翻转和“Flip possibility”；历史审计在折叠区保留。</li>
-<li><strong>替代解释</strong>：不同院别、历史时期、中心、目标和训练样本会改变系数。旧筛选集合也不是完整竞争席位清单。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：给定同一个全国意向数值，不同系数会使逐区情景相差多少；这不是谁将控制众院的估计。</p>
+<p>- <strong>测量与来源</strong>：旧公式<code>PVI + 1.3308 × (E − 0.977)</code>的公共展示快照；比较系数0.5。PVI baseline约为两倍Cook PVI。现有谱系不足以证明旧系数可用于众院；参院拟合不能移作众院验证。</p>
+<p>- <strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取参数敏感性。</p>
+<p>- <strong>结果与局限</strong>：E固定6.2时相差4.3392684个百分点。比较模型失败，不构成现有模型有效的证据。仪表盘不再显示D222—223、净翻转和“Flip possibility”；历史审计在折叠区保留。</p>
+<p>- <strong>替代解释</strong>：不同院别、历史时期、中心、目标和训练样本会改变系数。旧筛选集合也不是完整竞争席位清单。</p>
 <h3>7. 全国意向有预测信息，不是支持变化的原因</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：同一时点的全国意向能否提高同院别选举结果预测；另一个问题才是选民为何改变意向。</li>
-<li><strong>测量与来源</strong>：旧全国generic ballot及残差分析；未来输入必须有同一截止日期和历史可用时间。</li>
-<li><strong>命令／状态</strong>：本次只验证独立协议，尚无新增历史回测分数。</li>
-<li><strong>局限</strong>：generic ballot本身测量偏好，不是经济、候选人或议题影响偏好的识别设计。残差也不等于纯候选人效应。</li>
-<li><strong>替代解释</strong>：共同事件、测量误差、遗漏的地方变化和参选选择。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：同一时点的全国意向能否提高同院别选举结果预测；另一个问题才是选民为何改变意向。</p>
+<p>- <strong>测量与来源</strong>：旧全国generic ballot及残差分析；未来输入必须有同一截止日期和历史可用时间。</p>
+<p>- <strong>命令／状态</strong>：本次只验证独立协议，尚无新增历史回测分数。</p>
+<p>- <strong>局限</strong>：generic ballot本身测量偏好，不是经济、候选人或议题影响偏好的识别设计。残差也不等于纯候选人效应。</p>
+<p>- <strong>替代解释</strong>：共同事件、测量误差、遗漏的地方变化和参选选择。</p>
 <h3>8. 参选者筹到钱，不能排除资金阻止其他人参选</h3>
-<ul>
-<li><strong>更正后的问题与人群</strong>：已参选并匹配成功的候选人中，背书、公共记录、筹款与表现如何相关。潜在但未参选者不在分母里。</li>
-<li><strong>测量与来源</strong>：旧候选人汇总和公共报告，归档结果不回写。当前公开包没有完整潜在参选者清单，也不声称从头复现该模型。</li>
-<li><strong>命令／状态</strong>：本次为解释更正；没有新增资金因果估计或“供给第一瓶颈”的检验。</li>
-<li><strong>局限</strong>：条件于入场，可能把资金门槛挡在样本之外的人排除掉。筹款还可能响应预期胜算，不能把相关系数当作增加资金的效果。</li>
-<li><strong>替代解释</strong>：招募、预期胜算、进入成本、背书选择和资金共同影响。下一步应建立潜在参选—宣布—退出的事件记录，而不是继续给已有提名人叠加标签。</li>
-</ul>
+<p>- <strong>更正后的问题与人群</strong>：已参选并匹配成功的候选人中，背书、公共记录、筹款与表现如何相关。潜在但未参选者不在分母里。</p>
+<p>- <strong>测量与来源</strong>：旧候选人汇总和公共报告，归档结果不回写。当前公开包没有完整潜在参选者清单，也不声称从头复现该模型。</p>
+<p>- <strong>命令／状态</strong>：本次为解释更正；没有新增资金因果估计或“供给第一瓶颈”的检验。</p>
+<p>- <strong>局限</strong>：条件于入场，可能把资金门槛挡在样本之外的人排除掉。筹款还可能响应预期胜算，不能把相关系数当作增加资金的效果。</p>
+<p>- <strong>替代解释</strong>：招募、预期胜算、进入成本、背书选择和资金共同影响。下一步应建立潜在参选—宣布—退出的事件记录，而不是继续给已有提名人叠加标签。</p>
 <h2>接下来的研究顺序</h2>
-<p><strong>先做同人面板。</strong> 将参与、报告的投票选择、党派认同分别建转移表，再比较题干一致的具体议题。拉美裔劳动者必须按实际种族／族裔及劳动变量定义，不能以高拉美裔县或无大学学历代替。先报告这组究竟有多少留存受访者、权重有效人数和流失，再决定能回答多细的问题。</p>
+<p><strong>先补面板的留存信息与精度。</strong> 已完成固定2020年群体的参与、报告投票、党派认同与三个可比议题分析；劳动身份来自实际全职／兼职就业。下一步需要2022年邀请框及未回访者基线资料，评估谁留在了面板；同时补充少数事先确定的比较及新进入成年人口的样本，避免不断切小格。</p>
 <p><strong>随后解释投票记录的测量变化。</strong> 已有审计说明匹配率变化足以改变故事，但尚不知道变化来自谁、为什么发生。下一步需要补齐早年年度文件，检查州别、年龄、迁移相关字段、供应商与权重；不能在看到结果后挑一个最支持原叙事的分母。</p>
 <p><strong>预测只保留狭窄比较。</strong> 先比较透明的同地理历史基线、同院别全国环境，以及至多一个同截止时点的候选人变量。完整周期才是全国层面的独立观察。数据不能满足时间和地图要求时，该比较停止，不能拿事后数据补齐。<a href="../../research/validity-release-2026-09-08/prospective-protocol.md">独立前瞻协议</a></p>
-<p>这套证据目前仍不能判断拉美裔劳动者是否会决定2026年的国会控制权。要回答这一点，需要把实际人群的参与与选择变化，连接到具体州和选区的胜负边际，并处理共同的全国冲击。总统年县级结果或全国亚群趋势，单独都完成不了这一步。</p><footer>公开更正版本；原始个人数据与旧封存材料不在本页发布。</footer></main></body></html>
+<p>这套证据目前仍不能判断拉美裔劳动者是否会决定2026年的国会控制权。要回答这一点，需要把实际人群的参与与选择变化，连接到具体州和选区的胜负边际，并处理共同的全国冲击。总统年县级结果或全国亚群趋势，单独都完成不了这一步。</p></main></body></html>

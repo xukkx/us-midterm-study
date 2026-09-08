@@ -16,3 +16,7 @@ jobs:
         run: python -B midterm-model/public/reproduce.py --check
       - name: 独立协议核验
         run: python -B research/validity-release-2026-09-08/verify_protocol.py
+      - name: 同人面板独立合成测试
+        run: python -B -m unittest discover -s research/ces-panel-2020-2024 -p test_panel.py
+      - name: 同人面板匿名统计复算
+        run: python -B research/ces-panel-2020-2024/reproduce.py --check

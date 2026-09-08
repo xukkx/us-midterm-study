@@ -1,0 +1,77 @@
+{
+  "table_rows": [
+    {
+      "label": "总统票：共和党份额",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "president",
+        "role": "primary",
+        "weight": "post",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    },
+    {
+      "label": "众院票：共和党份额",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "house",
+        "role": "primary",
+        "weight": "post",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    },
+    {
+      "label": "党派认同：共和党份额",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "pid",
+        "role": "primary",
+        "weight": "population",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    },
+    {
+      "label": "全民医保支持",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "medicare",
+        "role": "primary",
+        "weight": "population",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    },
+    {
+      "label": "药价谈判支持",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "drug_price",
+        "role": "primary",
+        "weight": "population",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    },
+    {
+      "label": "移民有条件合法化支持",
+      "selector": {
+        "group": "Latino_employed_2020",
+        "measure": "immigration",
+        "role": "primary",
+        "weight": "population",
+        "from_year": 2020,
+        "to_year": 2024
+      },
+      "result_path": "comparisons[].paired"
+    }
+  ],
+  "counts": "results.json: coverage, turnout_coverage, persistence, attrition；双向实际人数见comparisons[].matrix；来源ID核对见baseline-source-audit.json"
+}

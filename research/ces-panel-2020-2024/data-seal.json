@@ -1,0 +1,10 @@
+{
+  "sealed_at": "2026-09-08T09:34:32.018591+00:00",
+  "scope": "公开充分统计与来源文件；逐人记录不包含在此公开包",
+  "files": {
+    "cells.json": "e2e6ce1db5f6eba1920a941339fb64abab6e39027e278a56d853c4727233ab5d",
+    "source_manifest.json": "ad2f7a704c068fd7cbf6ff39acabb2ee716ecb457a869bec6d5e0ed2a6934e2d",
+    "source-verification.json": "ad25eb86776bec32d2dfb9a98015e9c436a01dde2fb668da84c11e88290a5fbd",
+    "baseline-source-audit.json": "c3b862c59c4527cc40ef7a9e85413084172acc9849a6d22b763b146e49f3f250"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "prereg": "转移结果出现前固定",
+  "groups_fixed_2020": [
+    "all",
+    "R_renter_2020",
+    "Latino_employed_2020"
+  ],
+  "pairs": [
+    "2020-2022",
+    "2022-2024",
+    "2020-2024"
+  ],
+  "offices": {
+    "president_2020_2024": {
+      "from": "CC20_410",
+      "to": "CC24_410",
+      "note": "仅同期票单列，不用回忆票"
+    },
+    "house_separate": {
+      "pairs": [
+        "CC20_412-CC22_412",
+        "CC22_412-CC24_412",
+        "CC20_412-CC24_412"
+      ],
+      "note": "同院别另轨，逐行解析党派后仅D/R有效配对做双向分析"
+    }
+  },
+  "outcomes": [
+    "投票档案状态：voted/matched_no_record/unmatched，非法或矛盾拒绝",
+    "党认同D/I/R/unknown",
+    "自报总统票与众院票，缺席问卷/缺题/明确不投票分列"
+  ],
+  "matrix": {
+    "type": "双向流动矩阵",
+    "missing": "缺失单列不删除不并入",
+    "denominator": "同时报告未加权n与加权w及权重有效n，并做未加权敏感性"
+  },
+  "weights_rule": "总体用commonweight_24，涉选后题用commonpostweight_24，vvweight_22仅登记选民敏感性",
+  "suppression": {
+    "n_lt_80": "仅输出层抑制比率",
+    "n_80_99": "标low_n",
+    "counts": "底层计数不抑制"
+  },
+  "attrition_plan": "报告11015邀请/7058完成/883剔除/6175保留；不算6175/61000单一流失率；记录2022差3人不擅改；分群流失未知；可用caseid_20连2020母样本做入选对比",
+  "bans": {
+    "no_advice": "不输出竞选建议、因果或胜负推断",
+    "banned_words": [
+      "翻转",
+      "伪相关",
+      "证实混杂",
+      "决定",
+      "关键驱动",
+      "显著"
+    ],
+    "note": "未经检验不写显著"
+  },
+  "registered_at": "2026-09-08T09:03:48.370619+00:00",
+  "results_seen_before_registration": false,
+  "issues_fixed": [
+    "medicare",
+    "drug_price",
+    "immigration"
+  ],
+  "primary_comparisons": {
+    "direction": "在两端均为D/R的同人配对中，分别以起点D及起点R为分母，报告D到R及R到D。",
+    "net": "同一有效配对中终点R份额减起点R份额；议题为终点支持减起点支持；档案为有记录份额变化，仅在两端已匹配中作条件比较。",
+    "matrix": "三波匿名状态账本先完整保留，导出全部相邻与跨届矩阵；未知单列。",
+    "persistence": "三波均有效者中，2020→2022转向R者在2024保持R的条件比例；小分母照常抑制，不能解释永久性。",
+    "unweighted": "与主权重同一批正权重有效配对，使用positive_n计数重算。另保留全部原始n。",
+    "registered_sensitivity": "登记权重针对2022登记选民，目标不同，只作另一个目标的描述，不当作成人结果稳健性证明。"
+  },
+  "precision": {
+    "effective_n": "sum(w)^2/sum(w^2)",
+    "interval": "固定权重的配对线性化近似：SE=sqrt(n/(n-1)*sum(w_i^2*(d_i-mean)^2))/sum(w)，区间mean±1.96SE；d为终点二元指标减起点。",
+    "boundary": "仅为留存有效配对的精度诊断，不覆盖样本选择、校准、档案匹配误差或调查总体设计；不据此写未经检验的显著或作因果推断。",
+    "rate_suppression": "凡比率/差值/区间的正权重有效分母n<80均置null；80—99标low_n；原始与加权计数保留。"
+  }
+}
