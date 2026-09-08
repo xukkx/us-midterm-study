@@ -1,0 +1,137 @@
+[
+  {
+    "composition": -0.010724221604797305,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.04281608865257626,
+    "first_time_share_of_deltaM": -0.2312090647301149,
+    "first_time_total_contribution": -0.009899467812763843,
+    "first_time_voter_share": {
+      "2006": 0.030556366770011164,
+      "2008": 0.06570453396552972
+    },
+    "interaction": 0.008049481393156022,
+    "pair": "2006->2008",
+    "persuasion": 0.04549082886421755,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": 0.031006168971214765,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.16170950199742917,
+    "first_time_share_of_deltaM": 0.09068173924826423,
+    "first_time_total_contribution": 0.014664098894097536,
+    "first_time_voter_share": {
+      "2008": 0.06570453396552972,
+      "2010": 0.017261338271196944
+    },
+    "interaction": 0.010037534947318084,
+    "pair": "2008->2010",
+    "persuasion": 0.12066579807889632,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": -0.02598973249317732,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": -0.1167896072261245,
+    "first_time_share_of_deltaM": -0.017592998308858934,
+    "first_time_total_contribution": 0.0020546793624215075,
+    "first_time_voter_share": {
+      "2010": 0.017261338271196944,
+      "2012": 0.04486398508744654
+    },
+    "interaction": 0.015083992929495388,
+    "pair": "2010->2012",
+    "persuasion": -0.10588386766244255,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": 0.006392568299817757,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.09088382623041125,
+    "first_time_share_of_deltaM": 0.00742463788358199,
+    "first_time_total_contribution": 0.0006747794992351939,
+    "first_time_voter_share": {
+      "2012": 0.04486398508744654,
+      "2014": 0.02874605928345919
+    },
+    "interaction": 0.0008613706884999397,
+    "pair": "2012->2014",
+    "persuasion": 0.08362988724209354,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": -0.0004613936766847873,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": -0.07242006420856577,
+    "first_time_share_of_deltaM": 0.07554980676763765,
+    "first_time_total_contribution": -0.005471321857057055,
+    "first_time_voter_share": {
+      "2014": 0.02874605928345919,
+      "2016": 0.03155785895765705
+    },
+    "interaction": -0.00017280010550470984,
+    "pair": "2014->2016",
+    "persuasion": -0.07178587042637627,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": 0.015318683572294645,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": -0.08270452977384089,
+    "first_time_share_of_deltaM": -0.0067310145280393575,
+    "first_time_total_contribution": 0.0005566853914423867,
+    "first_time_voter_share": {
+      "2016": 0.03155785895765705,
+      "2018": 0.018817334237220464
+    },
+    "interaction": 0.0060220544760335015,
+    "pair": "2016->2018",
+    "persuasion": -0.10404526782216904,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": 0.003613897201126837,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.04798728052701082,
+    "first_time_share_of_deltaM": 0.03566305536268724,
+    "first_time_total_contribution": 0.0017113730421395902,
+    "first_time_voter_share": {
+      "2018": 0.018817334237220464,
+      "2020": 0.015311523636699345
+    },
+    "interaction": -0.0004865362993261686,
+    "pair": "2018->2020",
+    "persuasion": 0.04485991962521015,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": -0.01281629037116435,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.06072143671441273,
+    "first_time_share_of_deltaM": -0.058325680557081025,
+    "first_time_total_contribution": -0.0035416191207718484,
+    "first_time_voter_share": {
+      "2020": 0.015311523636699345,
+      "2022": 0.026542283424418976
+    },
+    "interaction": -0.002357274910330821,
+    "pair": "2020->2022",
+    "persuasion": 0.0758950019959079,
+    "schema_version": "lh109.decomposition.v1"
+  },
+  {
+    "composition": 0.004063218257504764,
+    "concept": "CES 自报投票者两党众院边际；份额为投票者内加权份额",
+    "delta_margin_R_minus_D": 0.007807135208311569,
+    "first_time_share_of_deltaM": 0.6061872665303006,
+    "first_time_total_contribution": 0.004732585951358859,
+    "first_time_voter_share": {
+      "2022": 0.026542283424418976,
+      "2024": 0.017552996604338775
+    },
+    "interaction": -0.003353727143612229,
+    "pair": "2022->2024",
+    "persuasion": 0.00709764409441903,
+    "schema_version": "lh109.decomposition.v1"
+  }
+]

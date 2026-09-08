@@ -1,0 +1,4 @@
+# 哈希锁定的输入、输出和协议跨平台保留原始字节。
+midterm-model/public/inputs/* -text
+midterm-model/public/outputs/* -text
+research/validity-release-2026-09-08/* -text

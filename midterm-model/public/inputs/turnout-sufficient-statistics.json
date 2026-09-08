@@ -1,0 +1,130 @@
+[
+  {
+    "sample_n": 3581,
+    "tenure": "rent",
+    "turnout_known_wn": 2222.857568818134,
+    "turnout_voted_wn": 990.1094602029299,
+    "weighted_n": 2271.3015231213208,
+    "year": 2010
+  },
+  {
+    "sample_n": 19050,
+    "tenure": "own",
+    "turnout_known_wn": 7826.648197505319,
+    "turnout_voted_wn": 5501.66858944402,
+    "weighted_n": 7944.445640731331,
+    "year": 2010
+  },
+  {
+    "sample_n": 3708,
+    "tenure": "rent",
+    "turnout_known_wn": 2323.017142722281,
+    "turnout_voted_wn": 1414.6186411759725,
+    "weighted_n": 2323.017142722281,
+    "year": 2012
+  },
+  {
+    "sample_n": 15896,
+    "tenure": "own",
+    "turnout_known_wn": 7398.925254011263,
+    "turnout_voted_wn": 5482.919360552426,
+    "weighted_n": 7398.925254011263,
+    "year": 2012
+  },
+  {
+    "sample_n": 4087,
+    "tenure": "rent",
+    "turnout_known_wn": 2676.3531964874924,
+    "turnout_voted_wn": 1150.3307981970743,
+    "weighted_n": 2676.3531964874924,
+    "year": 2014
+  },
+  {
+    "sample_n": 14273,
+    "tenure": "own",
+    "turnout_known_wn": 8105.961629469516,
+    "turnout_voted_wn": 5252.767380181455,
+    "weighted_n": 8105.961629469516,
+    "year": 2014
+  },
+  {
+    "sample_n": 4751,
+    "tenure": "rent",
+    "turnout_known_wn": 2568.4306449862,
+    "turnout_voted_wn": 1329.6333426616416,
+    "weighted_n": 2568.4306449862,
+    "year": 2016
+  },
+  {
+    "sample_n": 15339,
+    "tenure": "own",
+    "turnout_known_wn": 7539.155833243527,
+    "turnout_voted_wn": 4883.884849646638,
+    "weighted_n": 7539.155833243527,
+    "year": 2016
+  },
+  {
+    "sample_n": 5105,
+    "tenure": "rent",
+    "turnout_known_wn": 2874.3605958285048,
+    "turnout_voted_wn": 1164.5131648989836,
+    "weighted_n": 2874.3605958285048,
+    "year": 2018
+  },
+  {
+    "sample_n": 15708,
+    "tenure": "own",
+    "turnout_known_wn": 7825.959584020831,
+    "turnout_voted_wn": 5129.046396262841,
+    "weighted_n": 7825.959584020831,
+    "year": 2018
+  },
+  {
+    "sample_n": 5002,
+    "tenure": "rent",
+    "turnout_known_wn": 2882.3546269243293,
+    "turnout_voted_wn": 1363.180048433086,
+    "weighted_n": 2882.3546269243293,
+    "year": 2020
+  },
+  {
+    "sample_n": 14573,
+    "tenure": "own",
+    "turnout_known_wn": 7748.632923833676,
+    "turnout_voted_wn": 5562.105625886757,
+    "weighted_n": 7748.632923833676,
+    "year": 2020
+  },
+  {
+    "sample_n": 5194,
+    "tenure": "rent",
+    "turnout_known_wn": 2864.066198385152,
+    "turnout_voted_wn": 1156.9360460161465,
+    "weighted_n": 2864.066198385152,
+    "year": 2022
+  },
+  {
+    "sample_n": 14296,
+    "tenure": "own",
+    "turnout_known_wn": 7403.81445656598,
+    "turnout_voted_wn": 5088.625115846106,
+    "weighted_n": 7403.81445656598,
+    "year": 2022
+  },
+  {
+    "sample_n": 5706,
+    "tenure": "rent",
+    "turnout_known_wn": 2521.315414866516,
+    "turnout_voted_wn": 923.6708612060686,
+    "weighted_n": 2521.315414866516,
+    "year": 2024
+  },
+  {
+    "sample_n": 14653,
+    "tenure": "own",
+    "turnout_known_wn": 8864.566409112409,
+    "turnout_voted_wn": 6021.408716918039,
+    "weighted_n": 8864.566409112409,
+    "year": 2024
+  }
+]

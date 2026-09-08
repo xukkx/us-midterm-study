@@ -1,0 +1,11 @@
+{
+  "status": "blocked_on_input_freeze",
+  "target_inventory_sha256": null,
+  "point_in_time_predictor_manifest_sha256": null,
+  "prediction_sha256": null,
+  "eligible_historical_cycles": null,
+  "common_target_count": null,
+  "panel_data_sha256": null,
+  "panel_analysis_status": "blocked_browser_download",
+  "reason": "规则已冻结；目标清单、同截止历史民调与地图谱系未完成，面板下载受阻。不宣称已生成可评分预测或面板转移。"
+}

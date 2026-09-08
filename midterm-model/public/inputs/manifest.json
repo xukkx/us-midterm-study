@@ -1,0 +1,64 @@
+{
+  "county_counts": {
+    "2012": 3116,
+    "2016": 3115,
+    "2020": 3115,
+    "2024": 3106
+  },
+  "county_rows": 12452,
+  "files": {
+    "annual-turnout-sufficient.json": {
+      "bytes": 6860,
+      "sha256": "c87beaa33c5421f1a7aca11e0975e671b34ef7b469f405d85bfc11d899d5920f"
+    },
+    "county-input.csv": {
+      "bytes": 602574,
+      "sha256": "9e97adbf9dc03c0a4a121df13d5c83428b6187a5af6d87f11eb30d65097b7fc4"
+    },
+    "decomposition.json": {
+      "bytes": 5156,
+      "sha256": "4c4ba2937471e6cb2dcbae4ef975cd7b058eafdb4b895ef1931206f80914f35f"
+    },
+    "turnout-sufficient-statistics.json": {
+      "bytes": 3096,
+      "sha256": "0eab1711dddacdb697b9d13844957684af0f62abc568fc47bead2c22ad2500e6"
+    }
+  },
+  "join_audit": {
+    "2012": {
+      "matched": 3116,
+      "matched_weight": 126013678.0,
+      "total_weight": 126280977.0,
+      "unmatched_result_counties": 38,
+      "weight_coverage": 0.9978832995566703
+    },
+    "2016": {
+      "matched": 3115,
+      "matched_weight": 128435234.0,
+      "total_weight": 128696528.0,
+      "unmatched_result_counties": 39,
+      "weight_coverage": 0.9979696888170907
+    },
+    "2020": {
+      "matched": 3115,
+      "matched_weight": 155026876.0,
+      "total_weight": 155348233.0,
+      "unmatched_result_counties": 38,
+      "weight_coverage": 0.9979313765351937
+    },
+    "2024": {
+      "matched": 3106,
+      "matched_weight": 150160177.0,
+      "total_weight": 152314981.0,
+      "unmatched_result_counties": 48,
+      "weight_coverage": 0.9858529739763419
+    }
+  },
+  "schema_version": 1,
+  "source_ledger_hashes": {
+    "ces-crosspressure-cells.jsonl": "d625b3dd1cc905fd5731f1c4d3c76bd11ab7ecfceb9a59b1b667940e4f823018",
+    "county-composition-ledger.jsonl": "ed7543b5bc6efcd1d8d5c7ff0be94dbaab575618b8a3c5784a8f483c19d59ed8",
+    "county-president-ledger.jsonl": "4278fa40b5a1dccfa5e4f89976dd1d40ba9aad23fedaaed5c94456dadc267eb2",
+    "decomposition-house-ledger.jsonl": "a575546d2b8ac15aae4477480b2c931e939c8645acab9ec7d4a801549a5eadf2"
+  }
+}

@@ -63,8 +63,8 @@ class 聚合界测试(unittest.TestCase):
             eb.aggregate_bounds([{"x": 0.0, "y": 0.5, "w": 10.0}])
 
 
-class 密度收紧测试(unittest.TestCase):
-    def test_密度升界宽不增(self):
+class 密度剖面测试(unittest.TestCase):
+    def test_指定示例恰好收窄但不代表一般性质(self):
         rows = [
             {"x": 0.95, "y": 0.45, "w": 10.0},
             {"x": 0.75, "y": 0.5, "w": 20.0},
@@ -81,6 +81,30 @@ class 密度收紧测试(unittest.TestCase):
         seq = eb.density_tightening([{"x": 0.3, "y": 0.5, "w": 1.0}], thresholds=(0.9,))
         self.assertEqual(seq[0]["counties"], 0)
         self.assertIsNone(seq[0]["width"])
+
+    def test_density_filter_can_widen_bounds(self):
+        rows = [{"x": .50, "y": .01, "w": 100.0}, {"x": .90, "y": .50, "w": 100.0}]
+        full, dense = eb.density_stratified_profile(rows, (0.0, 0.9))
+        self.assertAlmostEqual(full['width'], 11 / 140)
+        self.assertAlmostEqual(dense['width'], 1 / 9)
+        self.assertGreater(dense['width'], full['width'])
+        self.assertEqual(dense['county_coverage'], .5)
+        self.assertAlmostEqual(dense['subgroup_weight_coverage'], 90/140)
+        self.assertNotEqual(full['target'], dense['target'])
+
+    def test_非法阈值与非有限权重拒绝(self):
+        for threshold in (-.1, 1.1, float('nan')):
+            with self.assertRaises(eb.EcologicalBoundsError):
+                eb.density_stratified_profile([], (threshold,))
+        with self.assertRaises(eb.EcologicalBoundsError):
+            eb.aggregate_bounds([{'x': .5, 'y': .5, 'w': float('inf')}])
+
+    def test_零亚群县与空县集不伪造覆盖(self):
+        row = eb.density_stratified_profile([{'x':0, 'y':.4, 'w':1}], (0,))[0]
+        self.assertEqual(row['counties'], 1)
+        self.assertIsNone(row['subgroup_weight_coverage'])
+        self.assertIsNone(row['lower'])
+        self.assertIsNone(eb.density_stratified_profile([], (0,))[0]['county_coverage'])
 
 
 if __name__ == "__main__":

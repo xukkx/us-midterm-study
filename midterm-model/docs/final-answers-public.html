@@ -1,672 +1,81 @@
-<title>美国选民右移三问 · Three Questions on the American Rightward Shift</title>
-<style>
-  :root{
-    --ground:#f6f7f4; --panel:#ffffff; --ink:#18201d; --muted:#5f6a66; --faint:#8a938f;
-    --line:#d5dad4; --accent:#14665a; --accent-soft:#e2efeb; --accent-ink:#0e4a41;
-    --dem:#2f5fa6; --rep:#b23a31; --band:#c6d5d0; --note-bg:#f8f4e6; --note-line:#dccb8f;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --ground:#141917; --panel:#1b2220; --ink:#e7eae6; --muted:#a3ada8; --faint:#78827d;
-      --line:#31403b; --accent:#5fb8a6; --accent-soft:#1c342f; --accent-ink:#8fd6c7;
-      --dem:#84abdf; --rep:#e0837a; --band:#354944; --note-bg:#2a2616; --note-line:#6c5f2e;
-    }
-  }
-  :root[data-theme="dark"]{
-    --ground:#141917; --panel:#1b2220; --ink:#e7eae6; --muted:#a3ada8; --faint:#78827d;
-    --line:#31403b; --accent:#5fb8a6; --accent-soft:#1c342f; --accent-ink:#8fd6c7;
-    --dem:#84abdf; --rep:#e0837a; --band:#354944; --note-bg:#2a2616; --note-line:#6c5f2e;
-  }
-  *{box-sizing:border-box}
-  body{margin:0; background:var(--ground); color:var(--ink);
-    font-family:'Noto Sans SC','Noto Sans',-apple-system,'Segoe UI','Microsoft YaHei',sans-serif; font-size:16.5px; line-height:1.8}
-  .wrap{max-width:54rem; margin:0 auto; padding:2.2rem 1.4rem 5rem}
-
-  /* 语言切换 */
-  .langbar{display:flex; justify-content:flex-end; gap:.4rem; margin-bottom:1.6rem}
-  .langbar button{font:inherit; font-size:.82rem; letter-spacing:.06em; padding:.3rem .8rem; border:1px solid var(--line);
-    background:var(--panel); color:var(--muted); border-radius:999px; cursor:pointer}
-  .langbar button[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
-  .langbar button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
-  body[data-lang="zh"] [lang="en"]{display:none}
-  body[data-lang="en"] [lang="zh"]{display:none}
-  body[data-lang="both"] p[lang="en"], body[data-lang="both"] li[lang="en"], body[data-lang="both"] h1[lang="en"], body[data-lang="both"] h2[lang="en"], body[data-lang="both"] h3[lang="en"]{color:var(--muted)}
-  body[data-lang="both"] p[lang="en"]{margin-top:-.2rem}
-  body[data-lang="both"] h1[lang="en"]{font-size:1.35rem; font-weight:700; margin-top:-.4rem}
-  body[data-lang="both"] h2[lang="en"]{font-size:1.05rem; margin-top:-.2rem}
-  body[data-lang="both"] h3[lang="en"]{font-size:.95rem; margin-top:-.1rem}
-
-  header.masthead{border-bottom:3px double var(--line); padding-bottom:1.8rem; margin-bottom:2rem}
-  .eyebrow{font-size:.76rem; letter-spacing:.2em; color:var(--accent); text-transform:uppercase; margin:0 0 .8rem}
-  h1{font-family:'Noto Serif SC','Noto Serif',Georgia,serif; font-weight:900; font-size:2.1rem; line-height:1.3; margin:0 0 .6rem; text-wrap:balance}
-  .lede{color:var(--muted); max-width:64ch; margin:.4rem 0}
-  .lede b{color:var(--ink)}
-  h2{font-family:'Noto Serif SC','Noto Serif',Georgia,serif; font-weight:700; font-size:1.45rem; margin:3rem 0 .3rem; text-wrap:balance}
-  h2 .qtag{display:inline-block; background:var(--accent); color:#fff; font-family:'IBM Plex Mono',monospace;
-    font-size:.78rem; padding:.1rem .55rem; border-radius:2px; vertical-align:.25em; margin-right:.6rem; letter-spacing:.05em}
-  h3{font-size:1.05rem; font-weight:700; margin:1.9rem 0 .3rem}
-  p{margin:.65rem 0; max-width:68ch}
-  ul{padding-left:1.25rem; max-width:66ch} li{margin:.4rem 0}
-  a{color:var(--accent)}
-
-  .summary{background:var(--panel); border:1px solid var(--line); padding:1.2rem 1.4rem; margin:1.4rem 0 0}
-  .summary .slabel{font-size:.74rem; letter-spacing:.2em; color:var(--accent); margin:0 0 .6rem}
-  .summary ol{margin:0; padding-left:1.3rem} .summary li{margin:.5rem 0}
-  .summary li b{color:var(--ink)}
-
-  .answer{background:var(--accent-soft); border-left:4px solid var(--accent); padding:1rem 1.3rem; margin:1rem 0 1.4rem}
-  .answer .alabel{font-size:.74rem; letter-spacing:.2em; color:var(--accent-ink); margin:0 0 .35rem}
-  .answer p{margin:.3rem 0; font-size:1.04rem; max-width:70ch}
-
-  .note{background:var(--note-bg); border:1px solid var(--note-line); padding:.85rem 1.1rem; font-size:.93rem; margin:1.1rem 0}
-  .note p{margin:.25rem 0}
-
-  .tablewrap{overflow-x:auto; margin:1rem 0; background:var(--panel); border:1px solid var(--line); padding:.4rem .9rem}
-  table{border-collapse:collapse; font-size:.9rem; font-variant-numeric:tabular-nums; min-width:34rem}
-  th{font-weight:700; font-size:.8rem; color:var(--muted); text-align:left; padding:.55rem .9rem .45rem 0; border-bottom:1px solid var(--line); white-space:nowrap; line-height:1.35}
-  th small, td small{display:block; font-weight:400; color:var(--faint); font-size:.74rem}
-  td{padding:.5rem .9rem .5rem 0; border-bottom:1px solid var(--line); white-space:nowrap}
-  tr:last-child td{border-bottom:none}
-  td.num, th.num{text-align:right; font-family:'IBM Plex Mono',monospace}
-  .dem{color:var(--dem); font-weight:600} .rep{color:var(--rep); font-weight:600}
-
-  .bands{display:flex; flex-direction:column; gap:.6rem; margin:1rem 0 .6rem}
-  .bandrow{display:grid; grid-template-columns:3.6rem 1fr 7.5rem; align-items:center; gap:.9rem}
-  .bandrow .yr{font-family:'IBM Plex Mono',monospace; font-size:.85rem; color:var(--muted)}
-  .track{position:relative; height:14px; background:var(--panel); border:1px solid var(--line)}
-  .range{position:absolute; top:0; bottom:0; background:var(--band)}
-  .refdot{position:absolute; top:50%; width:11px; height:11px; border-radius:50%; background:var(--rep); border:2px solid var(--panel); transform:translate(-50%,-50%)}
-  .bandrow .val{font-family:'IBM Plex Mono',monospace; font-size:.82rem; color:var(--ink); text-align:right}
-  .legend{display:flex; flex-wrap:wrap; gap:1.2rem; font-size:.8rem; color:var(--muted); margin:.2rem 0 .6rem}
-  .legend .sw{display:inline-block; width:1.05rem; height:.7rem; background:var(--band); border:1px solid var(--line); vertical-align:-.05em; margin-right:.35rem}
-  .legend .dot{display:inline-block; width:.7rem; height:.7rem; border-radius:50%; background:var(--rep); vertical-align:-.05em; margin-right:.35rem}
-
-  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.1rem 0}
-  @media (max-width:640px){ .grid2{grid-template-columns:1fr} .bandrow{grid-template-columns:3rem 1fr 6.5rem} }
-  .card{background:var(--panel); border:1px solid var(--line); padding:.9rem 1.1rem}
-  .card .cname{font-weight:700; margin:0 0 .25rem}
-  .card p{font-size:.92rem; margin:.2rem 0}
-  .card p b{color:var(--ink)}
-
-  details{margin:1rem 0; border:1px solid var(--line); background:var(--panel); padding:.6rem 1rem}
-  summary{cursor:pointer; font-weight:700; color:var(--accent-ink)}
-  summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
-  .mono{font-family:'IBM Plex Mono',monospace; font-size:.82rem; color:var(--muted)}
-  /* 参议院 100 席条 */
-  .seatbars{display:flex; flex-direction:column; gap:1rem; margin:1rem 0 .6rem}
-  .seatrow .slab{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:.3rem 1rem; font-size:.92rem; margin-bottom:.3rem}
-  .seatrow .slab b{font-family:'IBM Plex Mono',monospace}
-  .seatrow .verdict{font-size:.85rem; color:var(--muted); white-space:nowrap}
-  .bar{position:relative; display:flex; height:26px; border:1px solid var(--line); background:var(--panel); margin-bottom:1.1rem}
-  .bar .seg{height:100%}
-  .bar .d0{background:var(--dem); opacity:.55} .bar .d1{background:var(--dem)}
-  .bar .r0{background:var(--rep); opacity:.55} .bar .r1{background:var(--rep)}
-  .bar .maj{position:absolute; top:-4px; bottom:-4px; left:51%; width:2px; background:var(--ink)}
-  .bar .majlbl{position:absolute; left:51%; top:100%; transform:translateX(-50%); font-size:.7rem; color:var(--muted); margin-top:.2rem; white-space:nowrap}
-  .seatrow{padding-bottom:1rem}
-  .seatlegend{display:flex; flex-wrap:wrap; gap:1rem; font-size:.8rem; color:var(--muted); margin:.6rem 0 0}
-  .seatlegend i{display:inline-block; width:.95rem; height:.7rem; vertical-align:-.05em; margin-right:.3rem}
-  footer{margin-top:3.5rem; border-top:3px double var(--line); padding-top:1.3rem; font-size:.86rem; color:var(--muted)}
-  footer p{margin:.35rem 0}
-</style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
-
-<div class="wrap">
-<div class="langbar" role="group" aria-label="Language / 语言">
-  <button type="button" data-set="zh">中文</button>
-  <button type="button" data-set="en">English</button>
-  <button type="button" data-set="both">双语 / Both</button>
-</div>
-
-<header class="masthead">
-  <p class="eyebrow">LongHorizon · 公开版 Public edition · 2026-08-30 v25</p>
-  <h1 lang="zh">美国选民右移三问：首投族、学历、族裔</h1>
-  <h1 lang="en">Three Questions on America's Rightward Shift: First-time Voters, Education, Ethnicity</h1>
-  <p class="lede" lang="zh">这是一份只说<b>数据能证明的话</b>的报告。每个数字都来自公开选举结果和公开调查，可以复核；说不准的地方，我们明说"说不准"，并告诉你要等什么证据。</p>
-  <p class="lede" lang="en">This report says only <b>what the data can prove</b>. Every number comes from public election returns and public surveys and can be re-checked. Where the answer is unknowable, we say so — and tell you what evidence to wait for.</p>
-
-  <div class="summary">
-    <p class="slabel">一页看懂 · THE SHORT VERSION</p>
-    <ol>
-      <li lang="zh"><b>首投族不决定选举。</b>每次选举的摆动主要来自"老选民改主意"，新选民的贡献通常不到 0.5 个百分点。真正最强的信号是全国整体民意（"你更想让哪个党控制国会？"）。</li>
-      <li lang="en"><b>First-time voters do not decide elections.</b> Swings come mostly from existing voters changing their minds; new voters typically add less than half a point. The single strongest signal is the national mood ("which party do you want to control Congress?").</li>
-      <li lang="zh"><b>右移是真的，而且很大。</b>西语裔聚居县的共和党得票率从 2012 年的 31% 升到 2024 年的 50%；低学历密集县从 63% 升到 80%。亚裔也右移了，幅度约为西语裔的一半。机制是"换了党派标签"，不是"变得更保守"。</li>
-      <li lang="en"><b>The shift is real and large.</b> In heavily Hispanic counties the Republican share rose from 31% (2012) to 50% (2024); in low-education counties from 63% to 80%. Asian Americans moved too, about half as far. The mechanism is a change of party label, not a change in ideology.</li>
-      <li lang="zh"><b>永久吗？没人能现在回答。</b>但我们能夹出范围：大部分是"这几年的风向"，可以退潮；可新一代选民一进场就比上一代红得多，这条底线回不去了。2026 年 11 月的中期选举是一次真实检验，我们已经提前写下了判定标准。</li>
-      <li lang="zh"><b>焦虑是真的，出口是空的。</b>租客和无保险者的经济焦虑独立于党派而存在，年轻人想要政府做更多（对政府医保的支持 2012→2024 从 42% 升到 63%）；但这些没有变成选票——最大的未被吸收的池子在共和党内部的租客身上，而没有候选人去接。资源不是瓶颈，参选才是。而这个池子本身正在退出选民体：租房的共和党人核验投票率从 2012 年的 61% 降到 2024 年的 37%。</li>
-      <li lang="en"><b>The anxiety is real; the outlet is empty.</b> Renters' and the uninsured's economic anxiety exists independently of party, and young people want more from government (support for government health insurance rose from 42% to 63%, 2012→2024); none of it has become votes — the largest unabsorbed pool is Republican renters, and no candidate is reaching for them. Money is not the bottleneck; entering the race is. And the pool itself is leaving the electorate: validated turnout among Republican renters fell from 61% in 2012 to 37% in 2024.</li>
-      <li lang="en"><b>Permanent? Nobody can say yet.</b> But we can bound it: most of it is a period wave that can recede, yet each new cohort now enters far more Republican than the last — that floor won't move back. The November 2026 midterm is a real test, and we have written down the pass/fail rules in advance.</li>
-    </ol>
-  </div>
-</header>
-
-<!-- ===================== 问一 ===================== -->
-<h2 lang="zh"><span class="qtag">问一</span>什么在决定选举结果？首投族吗？</h2>
-<h2 lang="en"><span class="qtag">Q1</span>What actually decides elections? Is it first-time voters?</h2>
-<div class="answer">
-  <p class="alabel">答案 · ANSWER</p>
-  <p lang="zh">不是。把 2006 到 2024 年的九次选举逐一拆开看，每一次的变化都主要来自<b>已有选民改变投票</b>；首次投票的人贡献通常不到 0.5 个百分点，最多一次也只有 1.5 个百分点。但首投族本身确实变了：2024 年的首次投票者比八年前红了 10 到 14 个百分点。至于什么最能解释结果——是<b>全国民意</b>：全国"想让哪个党控制国会"的差距每变化 1 个点，各州参议院选举的差距平均变化约 1.3 个点，这一关系从 1998 年到 2022 年稳定成立。</p>
-  <p lang="en">No. Taking the nine elections from 2006 to 2024 one by one, each change came mainly from <b>existing voters switching</b>; first-time voters typically contributed under half a point, at most 1.5 points once. But first-time voters themselves did change: the 2024 cohort was 10–14 points more Republican than eight years earlier. What explains outcomes best is the <b>national mood</b>: for every 1-point move in the national "which party should control Congress" gap, state Senate races move about 1.3 points — a relationship stable from 1998 to 2022.</p>
-</div>
-<div class="grid2">
-  <div class="card"><p class="cname" lang="zh">全国民意是最强信号</p><p class="cname" lang="en">National mood is the strongest signal</p>
-    <p lang="zh">系数约 1.33，在不同年份子集里都在 1.24–1.34 之间、方向一致；把它加进模型后，对没见过的新选举年的预测误差明显下降。</p>
-    <p lang="en">Coefficient ≈1.33, between 1.24 and 1.34 across year subsets, always the same sign; adding it clearly reduces error on election years the model had never seen.</p></div>
-  <div class="card"><p class="cname" lang="zh">"执政党中期挨罚"——通常成立，2022 例外</p><p class="cname" lang="en">"The president's party loses midterms" — usually, but not in 2022</p>
-    <p lang="zh">这条老规律在数据里很稳，却在 2022 年反了向。全国民意读数当年恰好"感知"到了这个反常，纯规律做不到。</p>
-    <p lang="en">The old rule is stable in the data but reversed in 2022. The national-mood reading picked up that anomaly; the rule alone could not.</p></div>
-  <div class="card"><p class="cname" lang="zh">谁去投票，差别很大</p><p class="cname" lang="en">Who turns out matters a lot</p>
-    <p lang="zh">2022 年大学以上学历者投票率 78.7%，高中及以下只有 50.5%，差 28 个百分点；18–24 岁投票率 2014→2018→2022 为 22%→43%→35%。</p>
-    <p lang="en">In 2022, turnout was 78.7% for college graduates vs 50.5% for high-school-or-less — a 28-point gap; ages 18–24 went 22%→43%→35% across 2014→2018→2022.</p></div>
-  <div class="card"><p class="cname" lang="zh">首投族假说：强版本否定，弱版本成立</p><p class="cname" lang="en">First-voter hypothesis: strong form rejected, weak form holds</p>
-    <p lang="zh">"首投族决定结果"——否定。"首投族在变红"——成立，且和"新一代入场就更红"的发现互相印证（见问三）。</p>
-    <p lang="en">"First-time voters decide elections" — rejected. "First-time voters are turning red" — confirmed, consistent with new cohorts entering more Republican (see Q3).</p></div>
-</div>
-
-<!-- ===================== 问二 ===================== -->
-<h2 lang="zh"><span class="qtag">问二</span>低学历、西语裔、亚裔选民右移了多少？</h2>
-<h2 lang="en"><span class="qtag">Q2</span>How far have low-education, Hispanic and Asian voters moved right?</h2>
-<div class="answer">
-  <p class="alabel">答案 · ANSWER</p>
-  <p lang="zh">很多。在西语裔占七成以上的约 30 个县里，共和党在两党票中的份额：<b>2012 年 30.8% → 2016 年 29.7% → 2020 年 39.3% → 2024 年 49.6%</b>，八年上升近 20 个百分点，2020 年起加速。在高中及以下学历人口密集的县：<b>62.8% → 80.3%</b>，一路上升。这两组是直接从县级选举结果里读出来的，几乎不需要假设。亚裔没有这样的聚居县，改用一项覆盖 71.9 万受访者的全国调查：<b>亚裔在众议院投票中的共和党份额 2018 年 27.4% → 2024 年 36.3%</b>——右移真实，幅度约为西语裔的一半，2022 到 2024 年趋平。</p>
-  <p lang="en">A lot. In the ~30 counties that are at least 70% Hispanic, the Republican share of the two-party vote went <b>30.8% (2012) → 29.7% (2016) → 39.3% (2020) → 49.6% (2024)</b> — nearly 20 points in eight years, accelerating after 2020. In counties dense with high-school-or-less adults: <b>62.8% → 80.3%</b>, rising every cycle. Both are read directly from county election returns and need almost no assumptions. Asian Americans have no such counties, so we use a national survey of 719,000 respondents: <b>their Republican share in House voting rose from 27.4% (2018) to 36.3% (2024)</b> — real, about half the Hispanic move, and flattening from 2022 to 2024.</p>
-</div>
-
-<h3 lang="zh">西语裔：全国范围能有多宽，聚居县实际在哪</h3>
-<h3 lang="en">Hispanic voters: the nationwide range vs. where dense counties actually are</h3>
-<p lang="zh">灰色条是"不做任何假设时，全国西语裔共和党份额可能落在的范围"——它宽，因为诚实；红点是聚居县的实际值，是我们最可信的读数。</p>
-<p lang="en">The grey bar is the range the nationwide Hispanic Republican share could fall in <em>without assuming anything</em> — wide because it is honest. The red dot is the measured value in dense counties, our most reliable reading.</p>
-<div class="bands">
-  <div class="bandrow"><span class="yr">2012</span><div class="track"><div class="range" style="left:2.0%;width:88.0%"></div><div class="refdot" style="left:30.8%"></div></div><span class="val">30.8%</span></div>
-  <div class="bandrow"><span class="yr">2016</span><div class="track"><div class="range" style="left:2.0%;width:85.2%"></div><div class="refdot" style="left:29.7%"></div></div><span class="val">29.7%</span></div>
-  <div class="bandrow"><span class="yr">2020</span><div class="track"><div class="range" style="left:2.9%;width:86.5%"></div><div class="refdot" style="left:39.3%"></div></div><span class="val">39.3%</span></div>
-  <div class="bandrow"><span class="yr">2024</span><div class="track"><div class="range" style="left:4.6%;width:89.1%"></div><div class="refdot" style="left:49.6%"></div></div><span class="val">49.6%</span></div>
-</div>
-<p class="legend"><span><span class="sw"></span><span lang="zh">全国无假设范围</span><span lang="en">Nationwide assumption-free range</span></span><span><span class="dot"></span><span lang="zh">≥70% 西语裔县的实际共和党份额</span><span lang="en">Measured Republican share in ≥70% Hispanic counties</span></span></p>
-
-<h3 lang="zh">高中及以下学历（25 岁以上人口）</h3>
-<h3 lang="en">High-school-or-less education (adults 25+)</h3>
-<div class="bands">
-  <div class="bandrow"><span class="yr">2012</span><div class="track"><div class="range" style="left:10.8%;width:80.4%"></div><div class="refdot" style="left:62.8%"></div></div><span class="val">62.8%</span></div>
-  <div class="bandrow"><span class="yr">2016</span><div class="track"><div class="range" style="left:13.7%;width:78.3%"></div><div class="refdot" style="left:66.1%"></div></div><span class="val">66.1%</span></div>
-  <div class="bandrow"><span class="yr">2020</span><div class="track"><div class="range" style="left:11.3%;width:82.8%"></div><div class="refdot" style="left:77.0%"></div></div><span class="val">77.0%</span></div>
-  <div class="bandrow"><span class="yr">2024</span><div class="track"><div class="range" style="left:12.5%;width:84.3%"></div><div class="refdot" style="left:80.3%"></div></div><span class="val">80.3%</span></div>
-</div>
-
-<div class="tablewrap"><table>
-  <tr><th>群体<small>Group</small></th><th class="num">2012</th><th class="num">2016</th><th class="num">2020</th><th class="num">2024</th><th class="num">2016→2024</th></tr>
-  <tr><td>西语裔聚居县<small>≥70% Hispanic counties (~30)</small></td><td class="num">30.8%</td><td class="num">29.7%</td><td class="num rep">39.3%</td><td class="num rep">49.6%</td><td class="num rep">+19.9</td></tr>
-  <tr><td>低学历密集县<small>High-school-or-less dense counties</small></td><td class="num">62.8%</td><td class="num">66.1%</td><td class="num rep">77.0%</td><td class="num rep">80.3%</td><td class="num rep">+14.2</td></tr>
-  <tr><td>非西语裔白人密集县<small>Non-Hispanic white dense counties (2000+)</small></td><td class="num">55.3%</td><td class="num">59.6%</td><td class="num">58.4%</td><td class="num rep">61.1%</td><td class="num rep">+1.5</td></tr>
-  <tr><td>亚裔（全国调查，众院投票）<small>Asian Americans (national survey, House vote)</small></td><td class="num">31.6%</td><td class="num">30.1%</td><td class="num">32.0%</td><td class="num rep">36.3%</td><td class="num rep">+6.2</td></tr>
-</table></div>
-<p class="mono" lang="zh">共和党在两党票中的份额。县级数字来自官方县级总统选举结果 × 美国社区调查（ACS）人口构成；亚裔来自 CES 累积调查。</p>
-<p class="mono" lang="en">Republican share of the two-party vote. County rows: official county presidential returns × American Community Survey composition; Asian row: CES cumulative survey.</p>
-
-<div class="note">
-  <p lang="zh"><b>一个必须说明的近似：</b>"西语裔占比"按全部人口算（含未成年人），"学历"按 25 岁以上人口算——我们用"住在这里的人"近似"在这里投票的人"。聚居县的近似误差最小，所以最可信。</p>
-  <p lang="en"><b>One approximation you should know about:</b> "Hispanic share" uses total population (including minors) and "education" uses adults 25+ — we use "who lives here" as a stand-in for "who votes here". The error is smallest in dense counties, which is why they are the most trustworthy.</p>
-</div>
-
-<h3 lang="zh">是怎么右移的：换了党派标签，没有变得更保守</h3>
-<h3 lang="en">How the shift happened: a change of party label, not of ideology</h3>
-<p lang="zh">我们把 2016→2024 的变化拆成两部分：一是"人群构成变了"（比如更多人自称共和党人），二是"同样的人投票不同了"。按<b>党派认同</b>拆，构成变化占了西语裔变化的一半以上（+7.8 到 8.3 个百分点），亚裔和低学历群体也一样；按<b>意识形态</b>拆，构成几乎没变。最直接的证据：西语裔选民里自称保守派的比例八年纹丝不动（29.7% → 29.7%），自称自由派的反而上升（25.6% → 32.6%），但自称共和党人的比例从 23.5% 升到 33.7%，自称民主党人的从 66.7% 降到 55.3%。<b>同样的人，换了党标签，然后照着标签投票。</b>历史上这种"重新认同"比"一时叛离"更持久——这是问三的重要线索。</p>
-<p lang="en">We split the 2016→2024 change into two parts: "the makeup of the group changed" (e.g. more people now call themselves Republicans) versus "the same people vote differently". Split by <b>party identification</b>, composition explains over half the Hispanic change (+7.8 to 8.3 points), and likewise for Asian and low-education voters; split by <b>ideology</b>, composition barely moved. The most direct evidence: the share of Hispanic voters calling themselves conservative did not budge in eight years (29.7% → 29.7%), self-described liberals actually rose (25.6% → 32.6%), yet self-identified Republicans rose from 23.5% to 33.7% and Democrats fell from 66.7% to 55.3%. <b>Same people, new party label, voting along the label.</b> Historically such re-identification is stickier than a one-off defection — an important clue for Q3.</p>
-
-<!-- ===================== 问三 ===================== -->
-<h2 lang="zh"><span class="qtag">问三</span>这次右移是永久的吗？</h2>
-<h2 lang="en"><span class="qtag">Q3</span>Is the shift permanent?</h2>
-<div class="answer">
-  <p class="alabel">答案 · ANSWER</p>
-  <p lang="zh"><b>从过去的数据原则上回答不了"永久"</b>——凡是声称能回答的模型都越界了。能做的是把范围夹紧。看不同出生年代的西语裔选民：2018→2024 年，<b>每一个年龄段都同步右移了 10 到 25 个百分点</b>（1980 年后出生的最猛，23% → 51%）。这说明右移主要是"这几年的风向"，不是"老一代被新一代替换"——风向可以退。<b>但有一条底线回不去了</b>：2000 年后出生的选民第一次投票就有 34–40% 投共和党，过去这个年龄段只有 17–24%。再加上问二的发现（换标签比叛离更持久），我们的判断是"<b>部分粘性</b>"：能退一部分，退不回 2016。</p>
-  <p lang="en"><b>"Permanent" cannot be answered from past data in principle</b> — any model claiming otherwise is overreaching. What we can do is tighten the bounds. Looking at Hispanic voters by decade of birth: from 2018 to 2024, <b>every age group moved right in step, by 10–25 points</b> (those born after 1980 most sharply, 23% → 51%). That says the shift is mostly a period wave, not generational replacement — and waves can recede. <b>But one floor has moved for good</b>: voters born after 2000 cast 34–40% of their first votes Republican, where that age group used to be 17–24%. Add the Q2 finding (re-labelling is stickier than defection) and our judgement is <b>partly sticky</b>: some can recede, but not back to 2016.</p>
-</div>
-<h3 lang="zh">西语裔众议院投票中的共和党份额 × 出生年代</h3>
-<h3 lang="en">Hispanic Republican share of the House vote × decade of birth</h3>
-<div class="tablewrap"><table>
-  <tr><th>选举年<small>Election</small></th><th class="num">1950s</th><th class="num">1960s</th><th class="num">1970s</th><th class="num">1980s</th><th class="num">1990s</th><th class="num">2000s</th></tr>
-  <tr><td>2016</td><td class="num">37%</td><td class="num">36%</td><td class="num">28%</td><td class="num">27%</td><td class="num">24%</td><td class="num">—</td></tr>
-  <tr><td>2018</td><td class="num">38%</td><td class="num">26%</td><td class="num">27%</td><td class="num">23%</td><td class="num">17%</td><td class="num">—</td></tr>
-  <tr><td>2020</td><td class="num">37%</td><td class="num">38%</td><td class="num">36%</td><td class="num">29%</td><td class="num">24%</td><td class="num">—</td></tr>
-  <tr><td>2022</td><td class="num rep">49%</td><td class="num rep">46%</td><td class="num rep">40%</td><td class="num rep">45%</td><td class="num rep">28%</td><td class="num rep">34%</td></tr>
-  <tr><td>2024</td><td class="num rep">42%</td><td class="num rep">45%</td><td class="num rep">42%</td><td class="num rep">51%</td><td class="num rep">37%</td><td class="num rep">40%</td></tr>
-</table></div>
-<p class="mono" lang="zh">CES 累积调查 2006–2025，只显示样本量 ≥80 的格子。</p>
-<p class="mono" lang="en">CES cumulative survey 2006–2025; cells with fewer than 80 respondents are hidden.</p>
-
-<h3 lang="zh">2026 年 11 月：提前写好的检验</h3>
-<h3 lang="en">November 2026: a test written down in advance</h3>
-<p lang="zh">为了不让自己事后"看图说话"，我们在选举前就冻结了检验规则：县名单固定、统计口径固定、及格线固定，任何人都可以在 2026 年 11 月之后用同一份公开数据重算。规则：把 2026 年众议院选举里这些县的共和党份额，和同一批县 2022 年的份额比——<b>只跌 2 个百分点以内算"粘住了"，跌 7 个百分点以上算"退潮了"</b>，中间按比例算部分粘性。2022 年的基准线已经算出来并封存：</p>
-<p lang="en">To keep ourselves from reading the chart after the fact, we froze the test before the election: fixed county list, fixed statistic, fixed pass lines — anyone can recompute it after November 2026 from the same public data. The rule compares these counties' Republican share in the 2026 House election with the same counties in 2022: <b>a drop of 2 points or less counts as "stuck", a drop of 7 points or more as "receded"</b>, with partial stickiness in between. The 2022 baseline is computed and sealed:</p>
-<div class="tablewrap"><table>
-  <tr><th>县组（众议院两党票中的共和党份额）<small>County group (Republican share of two-party House vote)</small></th><th class="num">2018</th><th class="num">2022 基准<small>baseline</small></th><th class="num rep">2026 "粘住"线<small>"stuck" if ≥</small></th><th class="num dem">2026 "退潮"线<small>"receded" if ≤</small></th></tr>
-  <tr><td>西语裔聚居 30 县<small>30 Hispanic-dense counties</small></td><td class="num">27.3%</td><td class="num rep">40.9%</td><td class="num rep">38.9%</td><td class="num dem">33.9%</td></tr>
-  <tr><td>低学历密集 12 县<small>12 low-education counties*</small></td><td class="num">67.3%</td><td class="num rep">78.6%</td><td class="num rep">76.6%</td><td class="num dem">71.6%</td></tr>
-</table></div>
-<p lang="zh">顺带一个独立佐证：众议院选举的县级序列，和总统选举的县级序列，右移方向与幅度一致（2018→2022 西语裔聚居县 +13.7、低学历县 +11.3 个百分点）。*名单原有 13 县，阿拉斯加 Kusilvak 无县级选举数据，如实按 12 县计。众议院有些选区无对手，会拉高或压低县级读数；因为是同一批县前后比，这种影响大部分抵消。2028 年总统选举另有一套绝对线（西语裔聚居县 ≥45% 粘住 / ≤40% 退潮；低学历县 ≥78% / ≤72%）作最终裁决。</p>
-<p lang="en">A side note that helps: the county-level House series moves the same way and by about the same amount as the presidential series (2018→2022: +13.7 points in Hispanic-dense counties, +11.3 in low-education counties). *The list had 13 counties; Kusilvak, Alaska has no county-level returns, so 12 are used and reported as such. Some House seats are uncontested, which pushes county readings up or down; because the test compares the same counties over time, most of that cancels. The 2028 presidential election has its own absolute lines (Hispanic-dense ≥45% stuck / ≤40% receded; low-education ≥78% / ≤72%) as the final verdict.</p>
-
-<!-- ===================== 2026 观察 ===================== -->
-<h2 lang="zh"><span class="qtag">观察</span>2026 年中期选举：现在的风向</h2>
-<h2 lang="en"><span class="qtag">WATCH</span>The 2026 midterm: where the wind is now</h2>
-<div class="note">
-  <p lang="zh"><b>这不是预测。</b>下面是截至 2026 年 8 月下旬的民意读数，以及"如果读数不变会怎样"的机械换算。它没有、也不可能在选举前被验证。</p>
-  <p lang="en"><b>This is not a forecast.</b> Below are polling readings as of late August 2026 and a mechanical "if nothing changes" conversion. It has not been, and cannot be, validated before the election.</p>
-</div>
-<div class="answer">
-  <p class="alabel">读数 · READINGS</p>
-  <p lang="zh"><b>民调聚合口径：民主党 +6.2</b>（8 月 27 日更新，8 月 29 日复查）。六家独立民调聚合机构（Decision Desk HQ、FiftyPlusOne、RealClearPolitics、Silver Bulletin、VoteHub、Race to the WH）对"你想让哪个党控制国会"的平均读数，六家之间只相差 6.0 到 6.6；比 8 月 20 日的 +6.3 微降 0.1。</p>
-  <p lang="en"><b>Poll-aggregator reading: Democrats +6.2</b> (updated 27 August, re-checked 29 August). The average of six independent polling aggregators (Decision Desk HQ, FiftyPlusOne, RealClearPolitics, Silver Bulletin, VoteHub, Race to the WH) on "which party should control Congress"; the six sit between 6.0 and 6.6 — down 0.1 from +6.3 on 20 August.</p>
-  <p lang="zh"><b>逐份民调口径：民主党 +4.8（±1.3）。</b>用 VoteHub 公开的 542 份 2026 年民调原始数据（525 份含样本量），按每份民调的样本量加权、扣除各民调机构的惯常偏向后独立算出的最新读数（8 月 24 日）。两个口径相差约 1.5 个百分点，在我们事先设定的 ±2 容差内；差距的一部分可以解释：面向"所有成年人"的民调比面向"可能选民"的平均偏民主党约 1.2 个百分点，而聚合机构多按后者加权。</p>
-  <p lang="en"><b>Poll-by-poll reading: Democrats +4.8 (±1.3).</b> Independently computed from VoteHub's open archive of 542 polls for 2026 (525 with sample sizes), weighting each poll by its sample size and removing each pollster's habitual lean (latest: 24 August). The two readings differ by about 1.5 points, inside our pre-set ±2 tolerance; part of the gap is explainable: polls of "all adults" run about 1.2 points more Democratic than "likely voter" polls, and aggregators lean on the latter.</p>
-</div>
-<h3 lang="zh">如果风向不变，参议院最后会是几比几？</h3>
-<h3 lang="en">If the wind held, what would the final Senate look like?</h3>
-<p lang="zh">参议院共 100 席，2026 年改选 33 席（另有 2 席补选，见下注）。不改选的 67 席里民主党 34、共和党 33，这部分选前就定了；悬念只在改选的 33 席。<b>多数需要 51 席</b>（副总统是共和党人，50:50 时共和党占优）。下面每条横杠是一种情景下的最终结果：</p>
-<p lang="en">The Senate has 100 seats; 33 are up in 2026 (plus 2 special elections, see note). Of the 67 not up, Democrats hold 34 and Republicans 33 — settled before the election; the only suspense is the 33 on the ballot. <b>A majority needs 51</b> (the Vice President is Republican, so 50–50 favours Republicans). Each bar below is the final outcome under one scenario:</p>
-<div class="seatbars">
-  <div class="seatrow">
-    <div class="slab"><span><span lang="zh">按现读数 D+6.3（民主党预期赢 14.9 席）</span><span lang="en">As measured, D+6.3 (Dems expected to win 14.9 of 33)</span></span><span><b class="dem">D 49</b> · <b class="rep">R 51</b> <span class="verdict"><span lang="zh">共和党保住多数</span><span lang="en">Republicans keep the majority</span></span></span></div>
-    <div class="bar"><div class="seg d0" style="width:34%"></div><div class="seg d1" style="width:14.9%"></div><div class="seg r1" style="width:18.1%"></div><div class="seg r0" style="width:33%"></div><div class="maj"></div><div class="majlbl">51</div></div>
-  </div>
-  <div class="seatrow">
-    <div class="slab"><span><span lang="zh">民调打对折 D+3.8（13.5 席）</span><span lang="en">Polls discounted to D+3.8 (13.5 seats)</span></span><span><b class="dem">D 48</b> · <b class="rep">R 52</b> <span class="verdict"><span lang="zh">共和党保住多数</span><span lang="en">Republicans keep the majority</span></span></span></div>
-    <div class="bar"><div class="seg d0" style="width:34%"></div><div class="seg d1" style="width:13.5%"></div><div class="seg r1" style="width:19.5%"></div><div class="seg r0" style="width:33%"></div><div class="maj"></div><div class="majlbl">51</div></div>
-  </div>
-  <div class="seatrow">
-    <div class="slab"><span><span lang="zh">最悲观 D+1.3（12.2 席）</span><span lang="en">Most pessimistic, D+1.3 (12.2 seats)</span></span><span><b class="dem">D 46</b> · <b class="rep">R 54</b> <span class="verdict"><span lang="zh">共和党保住多数</span><span lang="en">Republicans keep the majority</span></span></span></div>
-    <div class="bar"><div class="seg d0" style="width:34%"></div><div class="seg d1" style="width:12.2%"></div><div class="seg r1" style="width:20.8%"></div><div class="seg r0" style="width:33%"></div><div class="maj"></div><div class="majlbl">51</div></div>
-  </div>
-  <div class="seatrow">
-    <div class="slab"><span><span lang="zh">不看民调，只看州的底色（12 席）</span><span lang="en">Structural baseline only (12 seats)</span></span><span><b class="dem">D 46</b> · <b class="rep">R 54</b> <span class="verdict"><span lang="zh">共和党保住多数</span><span lang="en">Republicans keep the majority</span></span></span></div>
-    <div class="bar"><div class="seg d0" style="width:34%"></div><div class="seg d1" style="width:12.0%"></div><div class="seg r1" style="width:21.0%"></div><div class="seg r0" style="width:33%"></div><div class="maj"></div><div class="majlbl">51</div></div>
-  </div>
-</div>
-<p class="seatlegend"><span><i style="background:var(--dem);opacity:.55"></i><span lang="zh">民主党 · 不改选 34</span><span lang="en">Dem · not up (34)</span></span><span><i style="background:var(--dem)"></i><span lang="zh">民主党 · 预期赢得</span><span lang="en">Dem · expected wins</span></span><span><i style="background:var(--rep)"></i><span lang="zh">共和党 · 预期赢得</span><span lang="en">Rep · expected wins</span></span><span><i style="background:var(--rep);opacity:.55"></i><span lang="zh">共和党 · 不改选 33</span><span lang="en">Rep · not up (33)</span></span></p>
-<div class="answer">
-  <p class="alabel">一句话 · BOTTOM LINE</p>
-  <p lang="zh"><b>即使按现在对民主党最有利的民调，民主党也只到约 49 席，够不着 51。</b>要翻转参议院，民主党得在改选的 33 席里拿下 17 席——守住自己的 13 席再抢 4 席——而按现读数机械换算只有约 15 席。所以民调偏民主党的"风"，更可能体现为众议院翻转和参议院席位差缩小，而不是参议院易手。</p>
-  <p lang="en"><b>Even on today's most Democrat-friendly reading, Democrats reach only about 49 seats — short of 51.</b> To flip the Senate they would need 17 of the 33 seats on the ballot — hold all 13 of their own and take 4 more — while the mechanical conversion of the current reading gives about 15. So the pro-Democratic "wind" is more likely to show up as a House flip and a narrower Senate margin than as a Senate takeover.</p>
-</div>
-<p lang="zh">怎么读：过去几届民调平均高估民主党 0 到 5 个百分点，所以同时给出"打折"情景；最敏感的三个州是密歇根、佐治亚、北卡罗来纳。注：另有佛罗里达、俄亥俄两席补选（均为共和党现任），不在 33 席模型内，上图按共和党保住计入 33 席不改选一侧；现有 100 席构成（共和党 53、民主党 47 含 2 名独立议员）取自公开资料。还有一条逆风值得记住：共和党 2024 年新增的选民（低学历、西语裔）恰恰是中期选举投票率最低的群体。</p>
-<p lang="en">How to read: polls have overstated Democrats by 0–5 points in recent cycles, hence the discounted scenarios; the three most sensitive states are Michigan, Georgia and North Carolina. Note: two special elections (Florida, Ohio; both Republican-held) sit outside the 33-seat model and are counted as Republican holds on the "not up" side; the current 100-seat split (53 R, 47 D incl. 2 independents) is from public records. One more headwind: the voters Republicans gained in 2024 (low-education, Hispanic) are exactly the groups with the lowest midterm turnout.</p>
-s</small></th></tr>
-  <tr><td>按现读数 D+6.3<small>As measured</small></td><td class="num dem">+7.1</td><td class="num dem">14.9</td><td class="num">15</td></tr>
-  <tr><td>打对折 D+3.8<small>Polls overstate Dems by ~2.5</small></td><td class="num dem">+3.8</td><td class="num dem">13.5</td><td class="num">15</td></tr>
-  <tr><td>最悲观 D+1.3<small>Polls overstate Dems by 5</small></td><td class="num">+0.4</td><td class="num">12.2</td><td class="num">12</td></tr>
-  <tr><td>不看民调，只看州的底色<small>Structural baseline only</small></td><td class="num">0</td><td class="num">12.0</td><td class="num">12</td></tr>
-</table></div>
-<p lang="zh">怎么读这张表：过去几届的民调平均高估民主党 0 到 5 个百分点，所以我们同时给出"打折"后的情景——即使按最悲观的折扣，方向仍偏向民主党。三个最敏感的州是密歇根、佐治亚、北卡罗来纳。另一条值得记住的逆风：共和党 2024 年新增的选民（低学历、西语裔）恰恰是中期选举投票率最低的群体。</p>
-<p lang="en">How to read this: in recent cycles polls overstated Democrats by 0–5 points, so we also show discounted scenarios — even the most pessimistic still leans Democratic. The three most sensitive states are Michigan, Georgia and North Carolina. One headwind worth remembering: the voters Republicans gained in 2024 (low-education, Hispanic) are exactly the groups with the lowest midterm turnout.</p>
-<h3 lang="zh">"共和党新联盟在中期缺席"——历史上有多严重？</h3>
-<h3 lang="en">"The new Republican coalition skips midterms" — how bad has it been historically?</h3>
-<div class="tablewrap"><table>
-  <tr><th>核验投票率的中期掉队（总统年 − 次届中期，百分点）<small>Validated-turnout midterm drop-off (pres. year − next midterm, pts)</small></th><th class="num">2012→14</th><th class="num">2016→18</th><th class="num">2020→22</th><th class="num">三对平均<small>avg</small></th><th class="num">2020→24 变化<small>2020→24 change</small></th></tr>
-  <tr><td>低学历共和党人<small>Republicans, HS or less</small></td><td class="num">13.0</td><td class="num">8.7</td><td class="num">7.4</td><td class="num rep">9.7</td><td class="num rep">-11.5</td></tr>
-  <tr><td>西语裔<small>Hispanic</small></td><td class="num">16.9</td><td class="num">3.0</td><td class="num">10.7</td><td class="num rep">10.2</td><td class="num">-6.6</td></tr>
-  <tr><td>18–29 岁<small>Ages 18–29</small></td><td class="num">24.8</td><td class="num">12.8</td><td class="num">6.0</td><td class="num rep">14.5</td><td class="num">-7.7</td></tr>
-  <tr><td>大学以上民主党人<small>Democrats, BA+</small></td><td class="num">11.7</td><td class="num dem">-5.8</td><td class="num">4.1</td><td class="num">3.3</td><td class="num">1.5</td></tr>
-  <tr><td>大学以上白人<small>White, BA+</small></td><td class="num">10.2</td><td class="num dem">-5.5</td><td class="num">3.6</td><td class="num">2.8</td><td class="num">1.6</td></tr>
-  <tr><td>65 岁以上<small>Ages 65+</small></td><td class="num">4.5</td><td class="num">-1.3</td><td class="num">4.1</td><td class="num">2.4</td><td class="num">-3.8</td></tr>
-</table></div>
-<p lang="zh">三次中期选举的历史基线：共和党 2024 年新增的票源（低学历、西语裔、年轻人）正是中期掉队最重的群体，掉队率约为大学以上选民的 2–4 倍。两条附注：(1) 掉队率随风向变化——2018 年民主党大浪年，大学以上选民的中期投票率反而<b>高于</b> 2016 总统年（负值），所以如果 2026 是民主党风向年，这种不对称会放大；(2) 低学历共和党人的核验投票率在 2024 总统年也比 2020 低了 11.5 个百分点，与前面"租客共和党人退场"是同一件事。这是历史，不是 2026 预测。</p>
-<p lang="en">The baseline from three midterms: the voters Republicans gained in 2024 (low-education, Hispanic, young) are exactly the groups with the heaviest midterm drop-off, roughly 2–4 times that of college-educated voters. Two notes: (1) drop-off moves with the wind — in the 2018 Democratic wave, college-educated turnout was <b>higher</b> than in the 2016 presidential year (negative values), so if 2026 is a Democratic-wind year this asymmetry widens; (2) validated turnout among low-education Republicans was 11.5 points lower in the 2024 presidential year than in 2020 — the same story as the Republican renters leaving the room. This is history, not a 2026 forecast.</p>
-<p class="mono" lang="zh">核验投票率来自选民档案匹配，未匹配者计为未投票，低倾向群体的绝对水平偏低；趋势与相对差可用。</p>
-<p class="mono" lang="en">Validated turnout uses voter-file matching; unmatched respondents count as non-voters, so absolute levels for low-propensity groups are understated; trends and relative gaps are usable.</p>
-<p class="mono" lang="zh">参议院评级：8 月 29 日复查 35 席，无席位增删；本周 7 条变动，集中在新罕布什尔（三家下调至"掷硬币/微倾民主"）、得克萨斯（一家改为"倾民主·翻转"）、内布拉斯加与堪萨斯（各一家向共和党方向放松）。维基评级表本周移除了 VoteHub 一列。</p>
-<p class="mono" lang="en">Senate ratings: 35 seats re-checked 29 August, no seats added or removed; 7 changes this week, concentrated in New Hampshire (three raters down to toss-up / tilt D), Texas (one rater to Lean D flip), Nebraska and Kansas (one rater each loosening toward Republicans). The Wikipedia table dropped the VoteHub column this week.</p>
-
-<h3 lang="zh">逐州看：14 个有悬念的席位</h3>
-<h3 lang="en">State by state: the 14 seats in play</h3>
-<p lang="zh">其余 21 席两党都没有争议，这里只列有悬念的。三列信息来源不同，请分开读：<b>州底色</b>是 2024 年总统选举在该州的两党差距，代表"什么都不发生时"的起点；<b>评级共识</b>是 12 家独立评级机构 8 月 26 日的判断，它们会考虑候选人、募款、初选等本报告没有测量的因素；<b>本模型胜率</b>只用州底色加全国风向机械换算，不看候选人，因此在候选人特别强或特别弱的州会明显失真（阿拉斯加是最好的例子）。</p>
-<p lang="en">The other 21 seats are uncontested in practice; only seats in play are listed. The three columns come from different sources — read them separately. <b>State lean</b> is the 2024 presidential margin in that state, the starting point if nothing else happens; <b>rater consensus</b> is the 26 August view of 12 independent rating outfits, which weigh candidates, fundraising and primaries that this report does not measure; <b>our model's odds</b> convert state lean plus national wind mechanically, blind to candidates, so they misfire where a candidate is unusually strong or weak (Alaska is the clearest case).</p>
-<div class="tablewrap"><table>
-  <tr><th>州<small>State</small></th><th>席位<small>Seat</small></th><th class="num">州底色<small>2024 pres. margin</small></th><th>评级共识（12 家）<small>Rater consensus (12)</small></th><th class="num">本模型 民主党胜率<small>Our odds · no wind</small></th><th class="num">同上 · D+6.3<small>Our odds · at D+6.3</small></th></tr>
-  <tr><td><b>佐治亚</b><small>Georgia</small></td><td class="dem">民主党·现任<small>Dem · incumbent</small></td><td class="num">R+2.2</td><td>7 家"较稳民主"·4 家"倾民主"·1 家"微倾民主"<small>7 Likely D · 4 Lean D · 1 Tilt D</small></td><td class="num">46%</td><td class="num">58%</td></tr>
-  <tr><td><b>密歇根</b><small>Michigan</small></td><td class="dem">民主党·开放<small>Dem · open</small></td><td class="num">R+1.4</td><td>7 家"掷硬币"·3 家"倾民主"·2 家"微倾民主"<small>7 Toss-up · 3 Lean D · 2 Tilt D</small></td><td class="num">48%</td><td class="num">60%</td></tr>
-  <tr><td><b>新罕布什尔</b><small>New Hampshire</small></td><td class="dem">民主党·开放<small>Dem · open</small></td><td class="num">D+2.8</td><td>5 家"较稳民主"·5 家"倾民主"·1 家"稳民主"·1 家"微倾民主"<small>5 Likely D · 5 Lean D · 1 Safe D · 1 Tilt D</small></td><td class="num">55%</td><td class="num">66%</td></tr>
-  <tr><td><b>明尼苏达</b><small>Minnesota</small></td><td class="dem">民主党·开放<small>Dem · open</small></td><td class="num">D+4.3</td><td>8 家"较稳民主"·3 家"稳民主"·1 家"倾民主"<small>8 Likely D · 3 Safe D · 1 Lean D</small></td><td class="num">57%</td><td class="num">69%</td></tr>
-  <tr><td><b>北卡罗来纳</b><small>North Carolina</small></td><td class="rep">共和党·开放<small>Rep · open</small></td><td class="num">R+3.3</td><td>7 家"较稳民主·翻转"·4 家"倾民主·翻转"·1 家"微倾民主·翻转"<small>7 Likely D flip · 4 Lean D flip · 1 Tilt D flip</small></td><td class="num">44%</td><td class="num">56%</td></tr>
-  <tr><td><b>缅因</b><small>Maine</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">D+7.1</td><td>6 家"掷硬币"·4 家"倾民主·翻转"·1 家"微倾民主·翻转"·1 家"微倾共和"<small>6 Toss-up · 4 Lean D flip · 1 Tilt D flip · 1 Tilt R</small></td><td class="num">62%</td><td class="num">73%</td></tr>
-  <tr><td><b>俄亥俄（补选）</b><small>Ohio (special)</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">—</td><td>8 家"掷硬币"·2 家"倾民主·翻转"·1 家"微倾民主·翻转"·1 家"微倾共和"<small>8 Toss-up · 2 Lean D flip · 1 Tilt D flip · 1 Tilt R</small></td><td class="num">—</td><td class="num">—</td></tr>
-  <tr><td><b>阿拉斯加</b><small>Alaska</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">R+13.7</td><td>11 家"掷硬币"·1 家"倾共和"<small>11 Toss-up · 1 Lean R</small></td><td class="num">28%</td><td class="num">39%</td></tr>
-  <tr><td><b>艾奥瓦</b><small>Iowa</small></td><td class="rep">共和党·开放<small>Rep · open</small></td><td class="num">R+13.4</td><td>7 家"掷硬币"·4 家"倾共和"·1 家"微倾共和"<small>7 Toss-up · 4 Lean R · 1 Tilt R</small></td><td class="num">28%</td><td class="num">39%</td></tr>
-  <tr><td><b>得克萨斯</b><small>Texas</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">R+13.9</td><td>8 家"掷硬币"·2 家"倾共和"·2 家"翻转民主（倾/微倾）"<small>8 Toss-up · 2 Lean R · 2 D flip (Lean/Tilt)</small></td><td class="num">28%</td><td class="num">39%</td></tr>
-  <tr><td><b>佛罗里达（补选）</b><small>Florida (special)</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">—</td><td>6 家"较稳共和"·4 家"稳共和"·2 家"倾共和"<small>6 Likely R · 4 Safe R · 2 Lean R</small></td><td class="num">—</td><td class="num">—</td></tr>
-  <tr><td><b>内布拉斯加</b><small>Nebraska</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">R+20.8</td><td>9 家"较稳共和"·3 家"倾共和"<small>9 Likely R · 3 Lean R</small></td><td class="num">19%</td><td class="num">28%</td></tr>
-  <tr><td><b>堪萨斯</b><small>Kansas</small></td><td class="rep">共和党·现任<small>Rep · incumbent</small></td><td class="num">R+16.4</td><td>9 家"较稳共和"·2 家"稳共和"·1 家"倾共和"<small>9 Likely R · 2 Safe R · 1 Lean R</small></td><td class="num">24%</td><td class="num">34%</td></tr>
-  <tr><td><b>蒙大拿</b><small>Montana</small></td><td class="rep">共和党·开放<small>Rep · open</small></td><td class="num">R+20.6</td><td>7 家"稳共和"·4 家"较稳共和"·1 家"倾共和"<small>7 Safe R · 4 Likely R · 1 Lean R</small></td><td class="num">19%</td><td class="num">28%</td></tr>
-</table></div>
-<p class="mono" lang="zh">"翻转"= 评级方认为席位将换党。补选席位不在本模型的 33 席内，无胜率。本模型每州的不确定度约 ±23 个百分点，胜率只宜看相对高低。</p>
-<p class="mono" lang="en">"flip" = raters expect the seat to change party. Special elections sit outside the 33-seat model, hence no odds. Per-state uncertainty in our model is about ±23 points; read the odds as relative, not precise.</p>
-<h3 lang="zh">初选已定，势头在哪？（8 月 30 日，民调表已刷新）</h3>
-<h3 lang="en">Primaries settled — where is the momentum? (30 Aug, polls refreshed)</h3>
-<p lang="zh">14 个悬念席位里 12 个已完成初选（维基百科结果页，机械解析）。"势头"按事先写好的规则判：该州 7–8 月民调中位数减去 4–6 月中位数，两段各至少 2 次民调才判读，差 3 个百分点以上才算有势头。全国层面没有势头：通用选票 D+4.8，4 周前 +3.6、8 周前 +4.4，都在一个标准差以内。有势头的只有三个州，且都与初选结果同向：得克萨斯（现任 Cornyn 在复选中出局，民调向民主党 +3）、俄亥俄（Brown 以 89% 清晰提名，+4）、艾奥瓦（两党都清晰提名，向共和党 −4）。阿拉斯加 8 月 18 日初选后，维基百科汇总表里还没有任何一次正式对阵民调（8 月 30 日核对）。</p>
-<p lang="en">Twelve of the 14 seats in play have held primaries (Wikipedia results pages, parsed mechanically). "Momentum" follows a rule written in advance: the state's July–August poll median minus its April–June median, at least two polls in each window, and a gap of 3 points or more to count. Nationally there is none: the generic ballot sits at D+4.8, versus +3.6 four weeks ago and +4.4 eight weeks ago — all within one standard deviation. Only three states show movement, and each matches its primary: Texas (incumbent Cornyn lost his runoff; polls +3 toward Democrats), Ohio (Brown nominated with 89%; +4), Iowa (both parties nominated cleanly; −4 toward Republicans). As of 30 August, Wikipedia's aggregate table holds no head-to-head poll taken after Alaska's 18 August primary.</p>
-<div class="tablewrap"><table>
-  <tr><th>州<small>State</small></th><th>民主党提名<small>Dem nominee</small></th><th>共和党提名<small>Rep nominee</small></th><th class="num">4–6 月民调中位 D−R (n)<small>Apr–Jun median</small></th><th class="num">7–8 月民调中位 (n)<small>Jul–Aug median</small></th><th>势头<small>Momentum</small></th></tr>
-  <tr><td><b>佐治亚</b><small>Georgia</small></td><td>Jon Ossoff 100%（无对手）<small>Jon Ossoff 100% (unopposed)</small></td><td>Mike Collins 56%，复选<small>Mike Collins 56%, runoff</small></td><td class="num">7.0 (3)</td><td class="num">8.0 (2)</td><td>平稳 +1<small>flat +1</small></td></tr>
-  <tr><td><b>密歇根</b><small>Michigan</small></td><td>Abdul El-Sayed 48%<small>Abdul El-Sayed 48%</small></td><td>Mike Rogers 100%（无对手）<small>Mike Rogers 100% (unopposed)</small></td><td class="num">1.0 (8)</td><td class="num">0.0 (9)</td><td>平稳 -1<small>flat -1</small></td></tr>
-  <tr><td><b>新罕布什尔</b><small>New Hampshire</small></td><td>未初选<small>not yet</small></td><td>未初选<small>not yet</small></td><td class="num">— (0)</td><td class="num">— (0)</td><td>样本不足<small>too few polls</small></td></tr>
-  <tr><td><b>明尼苏达</b><small>Minnesota</small></td><td>Peggy Flanagan 59%<small>Peggy Flanagan 59%</small></td><td>Michele Tafoya 52%<small>Michele Tafoya 52%</small></td><td class="num">7.0 (1)</td><td class="num">5.0 (2)</td><td>样本不足-2<small>too few polls-2</small></td></tr>
-  <tr><td><b>北卡罗来纳</b><small>North Carolina</small></td><td>Roy Cooper 92%<small>Roy Cooper 92%</small></td><td>Michael Whatley 65%<small>Michael Whatley 65%</small></td><td class="num">8.0 (7)</td><td class="num">9.0 (7)</td><td>平稳 +1<small>flat +1</small></td></tr>
-  <tr><td><b>缅因</b><small>Maine</small></td><td>Graham Platner 72%<small>Graham Platner 72%</small></td><td>Susan Collins 100%（无对手）<small>Susan Collins 100% (unopposed)</small></td><td class="num">— (0)</td><td class="num">3.5 (6)</td><td>样本不足<small>too few polls</small></td></tr>
-  <tr><td><b>俄亥俄（补选）</b><small>Ohio (special)</small></td><td>Sherrod Brown 89%<small>Sherrod Brown 89%</small></td><td>Jon Husted 100%（无对手）<small>Jon Husted 100% (unopposed)</small></td><td class="num">0.0 (6)</td><td class="num">4.0 (3)</td><td>向民主党 +4<small>toward D +4</small></td></tr>
-  <tr><td><b>阿拉斯加</b><small>Alaska</small></td><td>顶四：Mary Peltola 50%<small>top-four: Mary Peltola 50%</small></td><td>Dan S. Sullivan（现任）41%<small>Dan S. Sullivan (inc.) 41%</small></td><td class="num">4.5 (4)</td><td class="num">4.0 (2)</td><td>平稳 -0<small>flat -0</small></td></tr>
-  <tr><td><b>艾奥瓦</b><small>Iowa</small></td><td>Josh Turek 63%<small>Josh Turek 63%</small></td><td>Ashley Hinson 74%<small>Ashley Hinson 74%</small></td><td class="num">0.5 (6)</td><td class="num">-3.5 (2)</td><td>向共和党 -4<small>toward R -4</small></td></tr>
-  <tr><td><b>得克萨斯</b><small>Texas</small></td><td>James Talarico 52%<small>James Talarico 52%</small></td><td>Ken Paxton 64%，复选，现任 36%<small>Ken Paxton 64%, runoff, incumbent 36%</small></td><td class="num">0.0 (11)</td><td class="num">3.0 (9)</td><td>向民主党 +3<small>toward D +3</small></td></tr>
-  <tr><td><b>佛罗里达（补选）</b><small>Florida (special)</small></td><td>Angie Nixon 56%<small>Angie Nixon 56%</small></td><td>Ashley Moody 80%<small>Ashley Moody 80%</small></td><td class="num">-13.0 (1)</td><td class="num">-8.0 (1)</td><td>样本不足+5<small>too few polls+5</small></td></tr>
-  <tr><td><b>内布拉斯加</b><small>Nebraska</small></td><td>Cindy Burbank 90%<small>Cindy Burbank 90%</small></td><td>Pete Ricketts 82%<small>Pete Ricketts 82%</small></td><td class="num">— (0)</td><td class="num">— (0)</td><td>样本不足<small>too few polls</small></td></tr>
-  <tr><td><b>堪萨斯</b><small>Kansas</small></td><td>Adam Hamilton 35%<small>Adam Hamilton 35%</small></td><td>Roger Marshall 80%<small>Roger Marshall 80%</small></td><td class="num">— (0)</td><td class="num">-2.5 (2)</td><td>样本不足<small>too few polls</small></td></tr>
-  <tr><td><b>蒙大拿</b><small>Montana</small></td><td>Alani Bankhead 44%<small>Alani Bankhead 44%</small></td><td>Kurt Alme 76%<small>Kurt Alme 76%</small></td><td class="num">-17.5 (6)</td><td class="num">-18.5 (6)</td><td>平稳 -1<small>flat -1</small></td></tr>
-</table></div>
-<p class="mono" lang="zh">初选百分比来自各州维基百科页面的结果表；"复选"= 该党经复选产生提名人；民调为维基百科汇总表 8 月上旬前的公开民调。描述，不是预测。</p>
-<p class="mono" lang="en">Primary percentages from each state's Wikipedia results table; "runoff" = nominee chosen in a runoff; polls from Wikipedia's aggregate tables through early August. Description, not prediction.</p>
-<h3 lang="zh">民主党必须守住的四席</h3><h3 lang="en">Four seats Democrats must hold</h3>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究有效性更正与后续方向 · 2026-09-08</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f6f4ef;color:#202b32;font:17px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:940px;margin:40px auto;padding:42px 55px;background:#fff;border-top:7px solid #246457}h1{font-size:2rem;line-height:1.4;margin:0 0 24px}h2{font-size:1.45rem;margin-top:48px;border-top:1px solid #dce3df;padding-top:24px}h3{font-size:1.2rem;margin-top:34px;color:#22594e}p,li{overflow-wrap:anywhere}a{color:#176c89;text-underline-offset:3px}code{font:0.88em ui-monospace,Consolas,monospace;background:#f0f3f2;padding:2px 4px}li{margin:10px 0}ul{padding-left:24px}footer{font-size:14px;color:#66756f;border-top:1px solid #ddd;margin-top:36px;padding-top:16px}@media(max-width:640px){main{margin:0;padding:26px 21px}h1{font-size:1.65rem}}@media print{body{background:white}main{margin:0;padding:0;border:0}h2,h3{break-after:avoid}li{break-inside:avoid}}
+</style></head><body><main><h1>这次批评改变了什么，以及研究接下来往哪里走</h1>
+<p>2026年9月8日。本文取代旧报告中对个人转换、永久性、投票退出和候选人供给机制的强解释。历史计算保留，解释和展示已经更正。</p>
+<p>问题不只是样本量不够。有些比较即使增加十倍样本，也无法回答“是不是同一个人改了主意”：每届访问不同的人，组内平均值的变化可能来自原有人的转换，也可能来自谁来投票、谁进入这一组，以及调查和档案匹配方式的变化。接下来的研究应该先把这些过程分开，再考虑增加预测模型。</p>
+<p>本次已经完成生态界代码更正、公开复现路径修复、年度投票记录审计，并撤下仪表盘中的众院席位点估计。三波面板已找到官方发布版本，但下载受阻，因此尚未计算同人转移。新的前瞻协议冻结了研究规则；它还不是一份已经填完输入并发布的预测。</p>
+<h2>一个会改变原结论的发现</h2>
+<p>过去我们把共和党租房者的投票记录比例，从2012年的60.90%降到2024年的36.63%，写成了这个群体退出选民体的证据。这个解释需要撤回。</p>
+<p>重新检查年度原始CSV后，2016年的共和党租房者有4,751人，2024年有5,706人。按人口权重计算，档案匹配率从69.63%降到40.72%；但在已匹配者中，有投票记录的比例从74.35%升到89.96%。原来的记录比例满足“匹配率 × 已匹配者的记录票率”这一恒等式，因此它的下降不能单独解释为真实参与下降。<a href="../public/outputs/tables.md">逐年复算表及分母</a></p>
+<p>这也不能反过来证明真实投票率上升。已匹配者是一个受到选择的群体；匹配失败可能包含未登记者，也可能来自地址、身份信息或档案覆盖问题。2016—2020年的Catalist和2022—2024年的TargetSmart还涉及供应商及编码变化。2024年人口权重有效样本量约1,318，并非原始人数5,706。2012年年度原始文件当前缺失，所以它的匹配率仍未知。官方的<a href="https://tischcollege.tufts.edu/research-faculty/research-centers/cooperative-election-study/cooperative-election-study-faqs">CES权重与匹配说明</a>也明确区分人口、登记选民与投票者目标。</p>
+<h2>逐项主张卡</h2>
+<p>所有复算命令均从仓库根目录执行。这里的“复现”指从随仓库发布的县级输入和聚合充分统计重算表格；不等于已把所有历年原始微数据下载与清洗打包。完整范围见<a href="../public/README.md">复现说明</a>。</p>
+<h3>1. 高密度地区的生态界不保证更窄</h3>
 <ul>
-  <li lang="zh"><b>佐治亚</b>：民主党最靠前的防线。州底色是共和党微弱领先（2024 总统 R+2.2），但现任民主党参议员在位，12 家评级机构无一认为共和党领先。</li>
-  <li lang="en"><b>Georgia</b>: Democrats' front-line defence. The state leans slightly Republican (2024 president R+2.2) but the Democratic incumbent is running and none of the 12 raters has Republicans ahead.</li>
-  <li lang="zh"><b>密歇根</b>：开放席位（现任退休）。2024 总统 R+1.4，是民主党守方里最悬的一席：评级方多数不敢定方向。</li>
-  <li lang="en"><b>Michigan</b>: Open seat (incumbent retiring). 2024 president R+1.4 — the shakiest Democratic hold; most raters call it a coin flip.</li>
-  <li lang="zh"><b>新罕布什尔</b>：开放席位。底色只有 D+2.8，靠民主党在该州的组织优势撑着；共和党若推出强候选人会变紧。</li>
-  <li lang="en"><b>New Hampshire</b>: Open seat. Only D+2.8 underneath, propped up by Democratic organisation in the state; a strong Republican recruit would tighten it.</li>
-  <li lang="zh"><b>明尼苏达</b>：开放席位但基本稳：D+4.3 底色，评级方本月还上调了一级。</li>
-  <li lang="en"><b>Minnesota</b>: Open seat but fairly safe: D+4.3 underneath, and one rater upgraded it this month.</li>
+<li><strong>更正后的问题与人群</strong>：在不同密度阈值筛出的县内，特定亚群的共和党两党票份额可能落在哪里。不同阈值代表不同地理目标，不能当作同一个全国估计的精度升级。</li>
+<li><strong>测量与来源</strong>：MEDSL县级总统结果V20.0、对应ACS五年人口构成；2012、2016、2020、2024共12,452个成功连接的县年记录。以人口构成近似实际选民构成是额外假设，绝非全国无假设界。</li>
+<li><strong>命令</strong>：<code>python -B -m unittest discover -s midterm-model/tests -p test_ecological_bounds.py</code>；<code>python -B midterm-model/public/reproduce.py --check</code>。</li>
+<li><strong>结果与局限</strong>：两县反例的整体宽度为11/140，筛到90%密度后为1/9，反而变宽。新函数报告县数、票权重和亚群权重覆盖。2024成功连接票权重覆盖约98.59%，还不是全国全覆盖。区间是条件识别界，不是抽样置信区间；ACS误差尚未传播。</li>
+<li><strong>替代解释</strong>：高密度县的票份额、地理组成和亚群权重同时变化。高密度县整体右移也不等于县内每个亚群右移。拉美裔人口占比不是劳动者身份。</li>
 </ul>
-<h3 lang="zh">评级共识偏向翻转的两席</h3><h3 lang="en">Two seats the raters expect to flip</h3>
+<h3>2. 组内项不能改名为同人说服</h3>
 <ul>
-  <li lang="zh"><b>北卡罗来纳</b>：民主党最有把握的进攻目标：共和党现任退休，全部 12 家评级机构都认为民主党领先。但底色仍是 R+3.3——如果全国风向逆转，这里最先回摆。</li>
-  <li lang="en"><b>North Carolina</b>: Democrats' likeliest pickup: the Republican incumbent is retiring and all 12 raters have Democrats ahead. Underneath it is still R+3.3 — if the national wind turns, this swings back first.</li>
-  <li lang="zh"><b>缅因</b>：唯一一个"州偏民主、现任是共和党"的席位（2024 总统 D+7.1）。现任长期靠个人声望超越州底色，评级方一半认为这次守不住。</li>
-  <li lang="en"><b>Maine</b>: The one seat where the state leans Democratic (2024 president D+7.1) but the incumbent is Republican. The incumbent has long outrun the state's lean on personal standing; half the raters think not this time.</li>
+<li><strong>更正后的问题与人群</strong>：CES各届横截面中，各年龄组的构成和平均两党众院投票边际如何共同变化。</li>
+<li><strong>测量与来源</strong>：累计CES封存输入的9个相邻届对；旧分解聚合值及哈希见公开输入清单。年龄18—21岁只代理新达到资格的年龄段，不涵盖所有首次投票者，也不测量实际首投经历。</li>
+<li><strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取“对称shift-share分解”。</li>
+<li><strong>结果与局限</strong>：交互项的一半分别分配给构成项和组内项，算术闭合；改变分配方式不产生因果识别。不能用这张表判定首投者是否决定某场选举。</li>
+<li><strong>替代解释</strong>：固定人的偏好转换、选择性参与、组内人员更替、调查测量变化，都能改变组内平均值。</li>
 </ul>
-<h3 lang="zh">真正的掷硬币：决定 51 席归属</h3><h3 lang="en">The real coin flips that decide 51</h3>
+<h3>3. 党派重新认同是待检验解释</h3>
 <ul>
-  <li lang="zh"><b>俄亥俄（补选）</b>：补选席位（现任为任命上任）。州底色 R+5 却被评为掷硬币——说明评级方认为民主党候选人个人号召力很强。本模型不含此席。</li>
-  <li lang="en"><b>Ohio (special)</b>: Special election (incumbent was appointed). R+5 underneath yet rated a toss-up — raters evidently see a strong Democratic candidate. Not in our 33-seat model.</li>
-  <li lang="zh"><b>阿拉斯加</b>：本报告里模型与专家分歧最大的一席：底色 R+13.7，本模型即使在 D+6.3 下也只给民主党约四成；但 11 家评级机构都说掷硬币。差别只能来自候选人本身——这正是本报告没测量的因素。</li>
-  <li lang="en"><b>Alaska</b>: The biggest model-versus-experts gap in this report: R+13.7 underneath, and our model gives Democrats only about 40% even at D+6.3; yet 11 raters call it a toss-up. The difference can only be the candidates themselves — exactly what this report does not measure.</li>
-  <li lang="zh"><b>艾奥瓦</b>：开放席位。底色 R+13.4，评级方分成两半；民主党要赢需要全国风向保持在 D+6 以上并有强候选人。</li>
-  <li lang="en"><b>Iowa</b>: Open seat. R+13.4 underneath; raters split down the middle. Democrats need the national wind to hold above D+6 and a strong candidate.</li>
-  <li lang="zh"><b>得克萨斯</b>：底色 R+13.9。评级方之所以敢叫掷硬币，主要因为共和党初选可能推出争议候选人。问二里的西语裔右移在这里最直接地影响结果。</li>
-  <li lang="en"><b>Texas</b>: R+13.9 underneath. Raters call it a toss-up mainly because the Republican primary may produce a divisive nominee. The Hispanic shift from Q2 matters most directly here.</li>
+<li><strong>更正后的问题与人群</strong>：同一人的党派认同、具体议题态度和投票是否以不同顺序变化。</li>
+<li><strong>测量与来源</strong>：旧稿比较累计CES中的党派认同与五档意识形态分组；它们是不同分类，不是稳定信念与变化标签的直接观测。后续来源是<a href="https://doi.org/10.7910/DVN/CETPVT">CES三波面板V2.0</a>。</li>
+<li><strong>命令／状态</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>仅复现已有横截面表；面板经验转移表尚未生成，详见<a href="../../research/validity-release-2026-09-08/panel-feasibility.md">面板可行性记录</a>。</li>
+<li><strong>局限</strong>：稳定的五档意识形态不证明具体议题态度不变；目前没有识别同一个人重新贴标签或变化的先后顺序。</li>
+<li><strong>替代解释</strong>：参与选择、组内替换、粗分组掩盖议题变化，以及同时受其他事件影响。即使取得面板，时间先后也不自动等于因果。</li>
 </ul>
-<h3 lang="zh">远射</h3><h3 lang="en">Long shots</h3>
+<h3>4. 持续性要有明确的后续时间窗</h3>
 <ul>
-  <li lang="zh"><b>佛罗里达（补选）</b>：补选席位，评级方一致偏共和。本模型不含此席。</li>
-  <li lang="en"><b>Florida (special)</b>: Special election, raters lean Republican across the board. Not in our 33-seat model.</li>
-  <li lang="zh"><b>内布拉斯加</b>：底色 R+20.8，但 2024 年一位独立候选人差点赢下另一席，评级方因此留了余地。</li>
-  <li lang="en"><b>Nebraska</b>: R+20.8 underneath, but an independent nearly won the other seat in 2024, so raters leave room.</li>
-  <li lang="zh"><b>堪萨斯</b>：远射。只有在民主党大浪之年才会进入视野。</li>
-  <li lang="en"><b>Kansas</b>: A long shot; only in a Democratic wave year.</li>
-  <li lang="zh"><b>蒙大拿</b>：开放席位，底色 R+20.6；评级方本月刚从"稳"下调到"较稳"，仍是共和党席。</li>
-  <li lang="en"><b>Montana</b>: Open seat, R+20.6 underneath; one rater just moved it from Safe to Likely — still a Republican seat.</li>
+<li><strong>更正后的问题与人群</strong>：某种地理或人口组的变化，在下一个可比观察期是否持续。县级结果和个人民意必须分别回答。</li>
+<li><strong>测量与来源</strong>：旧2018—2024出生组切面及密度县结果；新增协议另行冻结，不改既有forward-2026。</li>
+<li><strong>命令</strong>：<code>python -B research/validity-release-2026-09-08/verify_protocol.py</code>。</li>
+<li><strong>局限</strong>：年龄=时期−出生队列，三者不能在无约束条件下分别识别。某出生组已经表现偏共和，不构成未来不可逆的选票底线。一届后续结果也不能证明永久性。</li>
+<li><strong>替代解释</strong>：全国共同摆动、年龄相关变化、迁移、参与率、不同竞选与选区地图。协议将全国摆动扣除列为选后描述，绝不让其进入选前预测。</li>
 </ul>
-
-<div class="answer">
-  <p class="alabel">通往 51 席的路 · THE PATH TO 51</p>
-  <p lang="zh">民主党的算术：不改选的 34 席 + 守住自己改选的 13 席 = 47；再拿下评级共识偏向他们的北卡罗来纳和缅因 = 49；<b>最后两席必须来自四个掷硬币席位（俄亥俄补选、阿拉斯加、艾奥瓦、得克萨斯）</b>——而这四个州的底色都是共和党领先 5 到 14 个百分点。这就是为什么全国民意 D+6 的风，落到参议院只能"缩小差距"：风要吹过 51，需要在四个红色州里赢两个，而且守方一席不能丢。反过来，共和党的风险集中在两点：北卡罗来纳的开放席位，和缅因现任能否再一次超越州底色。</p>
-  <p lang="en">The Democratic arithmetic: 34 seats not up + holding all 13 of their own on the ballot = 47; add North Carolina and Maine, where rater consensus favours them = 49; <b>the last two must come from the four coin flips (Ohio special, Alaska, Iowa, Texas)</b> — all states Republicans carried by 5 to 14 points in 2024. That is why a D+6 national wind only narrows the Senate: to reach 51 it must win two of four red states without dropping a single defensive seat. Republican risk, conversely, concentrates in two places: the open seat in North Carolina, and whether Maine's incumbent can outrun the state's lean one more time.</p>
-</div>
-
-<!-- ===================== 三个流行叙事 ===================== -->
-<h2 lang="zh"><span class="qtag">检验</span>三个流行叙事，放到数据里会怎样</h2>
-<h2 lang="en"><span class="qtag">TESTS</span>Three popular narratives, checked against the data</h2>
-<p lang="zh">关于美国选民，最近有三种说法流传很广：年轻人男女正在分道扬镳；经济焦虑在把人推向极端；民粹情绪左右轮流得势。我们用同一套公开调查（71.9 万受访者，2006–2024）逐条检验，事先写下"如果说法成立应该看到什么"，再看数据。三条里，只有一条部分成立。</p>
-<p lang="en">Three claims about American voters circulate widely: young men and women are drifting apart; economic anxiety is pushing people to extremes; populist moods surge left and right in turn. We tested each against the same public survey (719,000 respondents, 2006–2024), writing down beforehand what we should see if the claim were true. Of the three, only one partly holds.</p>
-
-<h3 lang="zh">1 · 年轻人的性别分化：女性在左移，男性没怎么动</h3>
-<h3 lang="en">1 · The youth gender divide: women moving left, men mostly not moving</h3>
-<div class="answer">
-  <p class="alabel">结果 · FINDING</p>
-  <p lang="zh"><b>投票上的分化比传说小得多。</b>18–29 岁女性与男性在众议院投票中的民主党份额差，2006 年以来一直在 0 到 6 个百分点之间：2018 年 6.4、2022 年 5.7，<b>2024 年回落到 2.4</b>。真正变了的是自我认同：自称"非常自由派"的年轻女性从 2016 年的 12.6% 升到 2024 年的 22.0%，而年轻男性自称保守派的比例几乎没动（28.2% → 28.5%）。所以在美国数据里，这是<b>女性左移，不是男性右移</b>——而且还没有充分转化为投票差。它是年龄现象还是世代现象，两次同年龄段对比一正一负，目前判断不了。</p>
-  <p lang="en"><b>The divide at the ballot box is far smaller than the story.</b> Among 18–29-year-olds, the gap between women's and men's Democratic share of the House vote has stayed between 0 and 6 points since 2006: 6.4 in 2018, 5.7 in 2022, <b>back to 2.4 in 2024</b>. What did change is self-description: young women calling themselves "very liberal" rose from 12.6% (2016) to 22.0% (2024), while young men calling themselves conservative barely moved (28.2% → 28.5%). In U.S. data this is <b>women moving left, not men moving right</b> — and it has not yet turned into much of a voting gap. Whether it is an age or a generational effect cannot be settled: the two same-age comparisons point in opposite directions.</p>
-</div>
-<div class="tablewrap"><table>
-  <tr><th>18–29 岁<small>Ages 18–29</small></th><th class="num">2006</th><th class="num">2010</th><th class="num">2014</th><th class="num">2016</th><th class="num">2018</th><th class="num">2020</th><th class="num">2022</th><th class="num">2024</th></tr>
-  <tr><td>女性−男性 民主党份额差<small>Women − men, Dem share (pts)</small></td><td class="num">3.6</td><td class="num">5.3</td><td class="num">0.9</td><td class="num">2.2</td><td class="num dem">6.4</td><td class="num">4.9</td><td class="num dem">5.7</td><td class="num">2.4</td></tr>
-</table></div>
-<p lang="zh"><b>是哪个维度在分化？</b>把 2024 年的 29 道政策题按"文化"（堕胎、移民、枪支与警务、性别认同、环境）和"经济"（住房、医保、税收、支出）分开看：18–29 岁女性比男性更自由派的题几乎全在文化维度（中位差 +5.8 个百分点，18 题中 16 题女性更左）；经济维度上两性中位差 -0.2 个百分点，11 题里各有 4 题偏向一方——而且"放宽分区建公寓"这道题，年轻男性支持率比女性高 20 个百分点。年轻女性的左移是文化与身份维度的现象，不是经济再分配维度的；这也解释了它为什么没有变成投票差：经济议题上两性并不分裂。</p>
-<p lang="en"><b>Which dimension is diverging?</b> Splitting the 29 policy items of 2024 into "cultural" (abortion, immigration, guns and policing, gender identity, environment) and "economic" (housing, health care, taxes, spending): young women are more liberal than young men almost only on the cultural side (median gap +5.8 points; 16 of 18 items), while on the economic side the median gender gap is -0.2 points and the 11 items split 4–4 — young men are 20 points <em>more</em> supportive of relaxing zoning to build apartments. Young women's move left is a cultural and identity phenomenon, not a redistributive one — which is also why it has not become a voting gap: on economics the sexes do not divide.</p>
-<p class="mono" lang="zh">年轻男性单届样本 616–1,532 人；"社会主义"调查未问，只能以"非常自由派"代替。</p>
-<p class="mono" lang="en">Young-male samples 616–1,532 per cycle; the survey never asks about "socialism", so "very liberal" stands in.</p>
-
-<h3 lang="zh">2 · 经济焦虑：更像党派立场的回声，不是独立的推力</h3>
-<h3 lang="en">2 · Economic anxiety: an echo of party loyalty more than an independent push</h3>
-<div class="answer">
-  <p class="alabel">结果 · FINDING</p>
-  <p lang="zh">问受访者"过去一年国家经济变好还是变坏"，答案越来越取决于你是不是总统所在党的人：<b>总统党内与党外的悲观率差距，2008 年 10 个百分点，2020 年 45 个，2024 年 58 个</b>。悲观者的投票也不是一贯偏向某一方——民主党执政时悲观者更投共和党，共和党执政时反过来——这是"回声"的签名，不是独立因子的签名。另一方面，把收入和就业状况控制住之后，2016 到 2024 年"说经济变差"的比例仍然多了 23 个百分点：<b>主观焦虑正在脱离客观处境</b>。含义：经济焦虑会放大摆动，但在美国选票数据里它本身不是触发器。至于"人们对资本主义失去耐心"，这套调查没有问，我们不假装测到了。</p>
-  <p lang="en">Asked whether the national economy got better or worse over the past year, people increasingly answer by whether the president is from their party: <b>the pessimism gap between the president's party and the other party was 10 points in 2008, 45 in 2020, 58 in 2024</b>. Nor do pessimists consistently vote one way — under a Democratic president they lean Republican, under a Republican president the reverse — the signature of an echo, not of an independent factor. Yet after controlling for income and employment, the share saying the economy got worse still rose 23 points from 2016 to 2024: <b>felt anxiety is detaching from actual circumstances</b>. Meaning: economic anxiety amplifies swings, but in U.S. vote data it is not itself a trigger. As for "losing patience with capitalism", the survey never asks — and we do not pretend to have measured it.</p>
-</div>
-
-<h3 lang="zh">3 · 民粹轮替：摆动在收敛，本党不满没有上升</h3>
-<h3 lang="en">3 · Populist turnover: swings are shrinking, and in-party discontent is not rising</h3>
-<div class="answer">
-  <p class="alabel">结果 · FINDING</p>
-  <p lang="zh">如果选民真的在左右民粹之间来回摆，应该看到两件事：每届选举里"老选民改主意"的幅度越来越大，以及对自己党的总统越来越不满。数据两条都不支持：<b>近四届的摆动幅度平均 5.8 个百分点，低于之前五届的 8.5</b>；2018 和 2022 年对本党总统的不满率也低于 2010 和 2014 年。把这和前面的发现放在一起看，美国这轮右移更像"换党派标签、跟着党派看经济"的重组，而不是对整个建制的双向反叛。至于"左右轮替是一种周期"——十次选举从原则上就识别不了周期，我们不替数据下这种结论。</p>
-  <p lang="en">If voters really swung between left and right populism, two things should show: bigger and bigger mind-changing swings each election, and rising discontent with one's own party's president. The data support neither: <b>the average swing over the last four elections was 5.8 points, down from 8.5 over the previous five</b>; in-party disapproval in 2018 and 2022 was also lower than in 2010 and 2014. Read together with the findings above, this rightward shift looks like re-sorting — new party labels, economy judged through the party lens — rather than a two-sided revolt against the establishment. As for "left-right turnover as a cycle": ten elections cannot identify a cycle in principle, and we will not draw that conclusion for the data.</p>
-</div>
-<p class="mono" lang="zh">补充：我们也抓取了维基百科上"民粹""社会主义""通胀""关税"等条目 2015–2026 的日浏览量作为公众注意力代理（CC0）。它能看出事件尖峰（关税 2025、社会主义 2020 大选日），但与投票意向的关系在这段时间里被共同趋势污染，不作结论。</p>
-<p class="mono" lang="en">Aside: we also collected daily Wikipedia page views (CC0) for "Populism", "Socialism", "Inflation", "Tariff" and similar entries, 2015–2026, as a public-attention proxy. It shows event spikes (tariffs in 2025, socialism on election day 2020), but its relation to voting intention over this window is contaminated by common trends and is not used for conclusions.</p>
-
-<!-- ===================== 候选人 ===================== -->
-<h2 lang="zh"><span class="qtag">候选人</span>候选人本身有多重要？进步派在偏红区吃亏吗？</h2>
-<h2 lang="en"><span class="qtag">CANDIDATES</span>How much does the candidate matter? Do progressives lose ground in red districts?</h2>
-<p lang="zh">前面说全国民意是最强的因子。那候选人呢？我们的度量是"超额表现"：把一个选区或州的结果，减去它的党派底色和当年的全国风向，剩下的就是候选人（及其对手、筹款、知名度）带来的部分。用 2018–2024 四届众议院 1,500 个选区和 2026 年 11 个参议院竞争州来算。</p>
-<p lang="en">The national mood is the strongest factor. What about candidates? Our yardstick is "over-performance": take a district's or state's result, subtract its partisan lean and that year's national wind, and what remains is the candidate's share (plus opponent, money, name recognition). Computed on ~1,500 House districts across 2018–2024 and 11 competitive 2026 Senate states.</p>
-<div class="answer">
-  <p class="alabel">结果 · FINDING</p>
-  <p lang="zh"><b>候选人是偏红区的门票，全国风向是场馆开不开门。</b>众议院：现任比挑战者多约 3 个百分点；一个候选人一般能在底色之外挪动 ±3–4 个点。参议院比众议院"个人化"得多——州级参议院民调只吸收总统底色的约四分之一（众议院几乎是 1:1），所以个别候选人能做出 +7（北卡罗来纳开放席位）这样的差距。但即便如此，候选人效应的量级仍在全国风向之下：风向每变 1 个点，各州跟着变 1.3 个点，而且所有州一样，摇摆州并没有被"放大"。</p>
-  <p lang="en"><b>The candidate is the ticket into a red district; the national wind decides whether the venue is open.</b> House: incumbents run about 3 points ahead of challengers, and a candidate typically moves a result ±3–4 points beyond the district's lean. The Senate is far more personal — state Senate polls absorb only about a quarter of the presidential lean (the House is nearly 1:1), so an individual can open gaps like +7 (North Carolina's open seat). Even so, candidate effects sit below the national wind: each 1-point shift in national mood moves every state by about 1.3 points, uniformly — swing states are not "amplified".</p>
-</div>
-<h3 lang="zh">进步派在偏红区：没被证实吃亏，但几乎不参选</h3>
-<h3 lang="en">Progressives in red districts: no proven penalty — they mostly don't run</h3>
-<p lang="zh">我们用公开背书（Justice Democrats、Our Revolution、Working Families Party、Sanders、Warren、Ocasio-Cortez 任一背书）作为透明的"进步派"标签，不做主观判断。四届众议院里，偏红选区（R+5 以上）的民主党候选人中带这个标签的只有 <b>46 人</b>（对照组 600 多人）；2026 年 11 个参议院竞争州里只有 1 人。数据能说的三件事：</p>
-<p lang="en">We use public endorsements (any of Justice Democrats, Our Revolution, Working Families Party, Sanders, Warren, Ocasio-Cortez) as a transparent "progressive" label — no subjective coding. Across four House cycles, only <b>46</b> Democratic candidates in red districts (R+5 or more) carried the label (against 600-plus without); in the 11 competitive 2026 Senate states, one. Three things the data can say:</p>
+<h3>5. 投票记录下降不等于固定人群退出</h3>
 <ul>
-  <li lang="zh"><b>供给稀缺是硬事实。</b>偏红区有竞争的民主党初选里，出现进步派参选者的比例 2018 年约 9–29%（R+15 以上只有 9%），2020 年 9–18%，2022 年竞争性初选本身塌缩（R+5–10 仅 9 场）。进步派在民主党大浪年才进偏红区，退潮就撤。</li>
-  <li lang="en"><b>Scarce supply is the hard fact.</b> Among contested Democratic primaries in red districts, the share with a progressive entrant was roughly 9–29% in 2018 (only 9% at R+15 and beyond), 9–18% in 2020, and in 2022 contested primaries themselves collapsed (just 9 at R+5–10). Progressives enter red districts in Democratic wave years and withdraw when the tide goes out.</li>
-  <li lang="zh"><b>参选的那些表现并不差。</b>四届合计，偏红区进步派的超额表现中位比非进步派高约 3.8 个百分点，2018 年最明显。但这是<b>选择效应</b>的签名——他们挑有利年份、挑自认能赢的区参选——不能读成"进步派立场更能赢"。</li>
-  <li lang="en"><b>Those who do run don't do badly.</b> Pooled over four cycles, progressives in red districts over-performed non-progressives by a median of about 3.8 points, most visibly in 2018. But that is the signature of <b>selection</b> — they pick favourable years and winnable districts — not evidence that a progressive platform wins more.</li>
-  <li lang="zh"><b>"初选选出更激进的人，大选就要付出代价"</b>——政治学的经典结果（Hall 2015：9–13 个百分点）。我们在 2018–2022 的势均力敌初选里只找到 17 场可比对决，进步派胜出组的大选表现比对照低约 3.7 个点：方向一致，幅度远小于经典估计，但样本太小，<b>只报不判</b>。</li>
-  <li lang="en"><b>"Nominate the more radical candidate and pay in November"</b> — the classic political-science result (Hall 2015: 9–13 points). In 2018–2022 we found only 17 comparable near-tie primaries; where the progressive won, general-election performance was about 3.7 points lower: same direction, far smaller than the classic estimate, but too few cases to judge — <b>reported, not ruled</b>.</li>
+<li><strong>更正后的问题与人群</strong>：各年CES中pid7为5—7且自报租房或自住房、有正人口权重的受访者；每年人群不同。</li>
+<li><strong>测量与来源</strong>：2010—2024累计版8年旧充分统计；另直接读取2016、2018、2020、2022、2024年度CSV及各年投票核验代码本。版本、SHA-256和字段写在<code>annual-turnout-sufficient.json</code>。</li>
+<li><strong>命令</strong>：公开表用<code>python -B midterm-model/public/reproduce.py --check</code>；持有原始CSV时用<code>python -B midterm-model/public/audit_annual.py --raw-dir 本地年度目录 --output 本地审计.json</code>。</li>
+<li><strong>结果与局限</strong>：旧分母、全体分母、匹配分母、人口和登记权重分别列示。遗漏状态敏感性不能替代未匹配敏感性。2010、2012、2014匹配信息保持未知；仅匹配者比率不能补成总体真值。</li>
+<li><strong>替代解释</strong>：档案覆盖、供应商、权重、注册与迁移、组内构成、真实参与变化。原文“退出而非转向”已撤回。</li>
 </ul>
-<p lang="zh">一句话：进步派要在偏红区获得权力，第一个约束不是"候选人不够硬"，而是"根本没人去参选"；第二个约束是全国风向。至于进步派标签本身在偏红区是资产还是负债，现有数据既没证实也没证伪。</p>
-<p lang="en">In one line: for progressives to win power in red districts, the first constraint is not candidate strength but the absence of candidates; the second is the national wind. Whether the progressive label itself is an asset or a liability there, the data neither confirm nor refute.</p>
-<p class="mono" lang="zh">口径说明：本节数字均为"底色回归后残差"。早先按 1:1 底色算出的"偏红州民主党人超额 +10"是参议院传导不足造成的假象，已撤回。</p>
-<p class="mono" lang="en">Method note: all figures here are residuals after regressing on partisan lean. An earlier 1:1-lean calculation showing red-state Democrats "over-performing by +10" was an artefact of the Senate's weak transmission and has been withdrawn.</p>
-
-<!-- ===================== 焦虑与出口 ===================== -->
-<h2 lang="zh"><span class="qtag">焦虑</span>真实的焦虑，缺席的出口：住房、医保、再分配</h2>
-<h2 lang="en"><span class="qtag">ANXIETY</span>Real anxieties, missing outlets: housing, health care, redistribution</h2>
-<p lang="zh">年轻人的经济焦虑是真的吗？他们想要什么？政治为什么不回应？我们把这个问题拆成三层，分别用不同的公开数据回答：<b>处境</b>（租房还是有房、有没有医保、有没有资产，71.9 万人，2010–2024）、<b>态度</b>（政府该不该管医保、保障收入、增加服务，美国全国选举研究 1972–2024；以及 2024 年对住房、Medicaid、税收具体政策的支持，6 万人）、<b>投票</b>（同一批人怎么投）。三层对不上，就是答案。</p>
-<p lang="en">Is young people's economic anxiety real? What do they want? Why doesn't politics respond? We split this into three layers, each answered from different public data: <b>circumstances</b> (renting vs owning, insured or not, assets, 719,000 people, 2010–2024), <b>attitudes</b> (should government run health insurance, guarantee incomes, provide more services — American National Election Studies 1972–2024; plus 2024 support for specific housing, Medicaid and tax policies, 60,000 people), and <b>votes</b> (how the same people vote). Where the layers fail to line up is the answer.</p>
-<div class="answer">
-  <p class="alabel">结果 · FINDING</p>
-  <p lang="zh"><b>焦虑是真的，而且独立于党派；态度上想要更多政府；但这两者都没有变成投票。</b>扣掉党派"回声"后，租客说经济变差的比例仍高出 5 个百分点，无保险者高出 8 个点。18–29 岁支持政府医保的比例从 2012 年的 42% 升到 2024 年的 63%，支持政府保障就业与收入的从 40% 升到 55%；年轻人与 65 岁以上的差距从 1972 年的 −8 个点变成 2024 年的 +23 个点——<b>代际分歧是新的，主要出现在 2016 年之后</b>。可是在投票上，同一党内的租客和房主投得几乎一样（差不到 2 个点），无保险者的民主党份额反而从 50% 降到 41%。</p>
-  <p lang="en"><b>The anxiety is real and independent of party; attitudes lean toward more government; neither has become a vote.</b> Net of the partisan "echo", renters are 5 points more likely to say the economy got worse, the uninsured 8 points. Among 18–29-year-olds, support for government health insurance rose from 42% (2012) to 63% (2024), and for government-guaranteed jobs and income from 40% to 55%; the gap between the young and those 65+ went from −8 points in 1972 to +23 in 2024 — <b>the generational divide is new, and mostly post-2016</b>. Yet at the ballot box, renters and owners within the same party vote almost identically (under 2 points apart), and the uninsured's Democratic share actually fell from 50% to 41%.</p>
-</div>
-<h3 lang="zh">关键发现：物质议题在共和党内部制造分裂，在民主党内部没有</h3>
-<h3 lang="en">The key finding: material issues split Republicans internally — not Democrats</h3>
-<div class="tablewrap"><table>
-  <tr><th>2024 年政策支持率<small>2024 policy support</small></th><th class="num">民主党·有房<small>Dem owner</small></th><th class="num">民主党·租房<small>Dem renter</small></th><th class="num">共和党·有房<small>Rep owner</small></th><th class="num">共和党·租房<small>Rep renter</small></th><th class="num">共和党内 租−有<small>Rep renter − owner</small></th></tr>
-  <tr><td>税收激励开发商建可负担住房<small>Tax incentives for affordable housing</small></td><td class="num">88%</td><td class="num">90%</td><td class="num">49%</td><td class="num">72%</td><td class="num rep">+23</td></tr>
-  <tr><td>扩大 Medicaid 覆盖低收入者<small>Expand Medicaid to low incomes</small></td><td class="num">93%</td><td class="num">95%</td><td class="num">58%</td><td class="num">78%</td><td class="num rep">+20</td></tr>
-  <tr><td>放宽分区允许建公寓<small>Relax zoning for apartments</small></td><td class="num">57%</td><td class="num">63%</td><td class="num">35%</td><td class="num">54%</td><td class="num rep">+19</td></tr>
-  <tr><td>增加州福利支出<small>Increase state welfare spending</small></td><td class="num">48%</td><td class="num">59%</td><td class="num">11%</td><td class="num">25%</td><td class="num rep">+15</td></tr>
-  <tr><td>废除《平价医疗法》<small>Repeal the ACA</small></td><td class="num">10%</td><td class="num">19%</td><td class="num">69%</td><td class="num">57%</td><td class="num dem">−13</td></tr>
-</table></div>
-<p lang="zh">读法：民主党人无论有房没房，态度几乎一样——他们已经按议题"对齐"了。共和党人不同：租房的共和党人在住房、Medicaid、福利上比有房的共和党人亲政府 15–23 个百分点。<b>这是数据里唯一一个尚未被党派标签吸收的大池子</b>：自认共和党的选民里约五分之一租房，45 岁以下租客约八分之一。他们在态度上已经站到了"要政府做更多"这一边，但按 LH-137 的投票数据，他们和有房的共和党人投得一样。这就是"方案缺位"的形状：需求存在于对方党内，没有任何候选人去接。</p>
-<p lang="en">How to read it: Democrats hold nearly identical views whether they rent or own — they are already "sorted" by issue. Republicans are different: Republican renters are 15–23 points more pro-government than Republican owners on housing, Medicaid and welfare. <b>This is the one large pool in the data not yet absorbed by party labels</b>: about a fifth of self-identified Republicans rent, roughly one in eight are renters under 45. In attitudes they already stand on the "government should do more" side; in votes (LH-137) they vote like Republican owners. That is the shape of the missing outlet: the demand sits inside the other party, and no candidate is reaching for it.</p>
-<h3 lang="zh">为什么政治不回应——不是没钱，是没人去</h3>
-<h3 lang="en">Why politics doesn't respond — not for lack of money, for lack of entrants</h3>
+<h3>6. 未验证的众院映射不能变成席位头条</h3>
 <ul>
-  <li lang="zh"><b>资源不是瓶颈。</b>用联邦选举委员会的候选人财务数据（2018–2026）核对：在偏红选区参选的进步派民主党候选人，个人捐款中位数约 144 万美元，是非进步派的 6.7 倍；PAC 捐款也更多。党委员会的直接转入对两类都可以忽略。（匹配率 52%，超级 PAC 的外部支出不在数据内。）</li>
-  <li lang="en"><b>Money is not the bottleneck.</b> Federal Election Commission candidate finances (2018–2026): progressive Democrats who run in red districts raise a median of about $1.44M in individual contributions — 6.7 times non-progressives — and more PAC money too. Direct party-committee transfers are negligible for both. (Match rate 52%; super-PAC outside spending is not in the data.)</li>
-  <li lang="zh"><b>小额捐款也不是。</b>补上联邦选举委员会逐候选人的小额（<200 美元）拆分（2018–2024 偏红区 354 名民主党众院候选人）：进步派的小额<b>占比</b>中位 28% 与非进步派的 30% 相当；但小额<b>绝对量</b>中位 53 万美元 vs 10 万（5 倍），总筹款 381 万 vs 37 万（10 倍）。"草根势头"是体量，不是依赖度——进步派在每个来源上都筹得更多。资金体量与超额表现同向（相关约 0.5），但方向互为因果：强候选人筹得多。</li>
-  <li lang="en"><b>Nor is small-dollar money.</b> Adding the FEC's per-candidate split of contributions under $200 (354 Democratic House candidates in red districts, 2018–2024): progressives' small-dollar <b>share</b> (median 28%) matches non-progressives' (30%), but their small-dollar <b>volume</b> is 5× (median $533K vs $104K) and total receipts 10× ($3.8M vs $368K). "Grassroots momentum" is scale, not dependence — progressives raise more from every source. Money scale tracks over-performance (r ≈ 0.5), but the arrow runs both ways: strong candidates raise more.</li>
-  <li lang="zh"><b>那"合格的候选人"到底是什么？</b>把 2018–2024 全部 1,499 名民主党众院提名人的可测特征放进同一个模型（按届扣掉选区底色后的超额表现）：唯一在四届、每种切法下都稳定为正的特征，是<b>选举前已有维基百科条目</b>——挑战者 +3.8 个百分点，偏红区 +4.8。"曾任州议员/市长"之类的履历头衔，一旦控制了知名度，贡献为零甚至为负；"进步派"标签控制了知名度和筹款后也转为负（-2.1）——前面看到的进步派 +3.8 是<b>谁被选出来</b>的效应，不是标签本身。筹款每高一个数量级加 1.9 个百分点，并吸收知名度的一部分：知名度和钱互为因果，分不开。"合格"在数据里的形状很朴素：<b>选前就已经是公共人物，且筹得到数量级更多的钱</b>；不是履历，不是意识形态。但这些特征合起来只解释候选人效应 6–17% 的方差——"合格"的大部分仍是看不见的。</li>
-  <li lang="en"><b>So what is a "qualified candidate"?</b> Putting every measurable trait of all 1,499 Democratic House nominees (2018–2024) into one model of over-performance net of district lean: the only trait that stays positive in every cycle and every cut is <b>having a Wikipedia article before the election</b> — +3.8 points for challengers, +4.8 in red districts. Résumé titles ("state senator", "mayor") add nothing once name recognition is held fixed — zero or negative; the "progressive" label turns negative too (-2.1) once recognition and money are controlled — the +3.8 seen earlier is about <b>who gets selected</b>, not the label. Each tenfold step in fundraising adds 1.9 points and absorbs part of the recognition effect: fame and money cause each other and can't be separated. In the data, "qualified" has a plain shape: <b>already a public figure before the race, and able to raise an order of magnitude more money</b>; not a résumé, not an ideology. Yet all these traits together explain only 6–17% of the variance in candidate effects — most of what "qualified" means is still invisible.</li>
-  <li lang="zh"><b>"有维基条目"是不是事后才写上去的？</b>我们查了这 245 位有条目的挑战者的条目创建时间：174 位在选举年之前就有条目，54 位是竞选期间被写进去的，只有 17 位是选后才有。<b>选前就有条目</b>的候选人仍然多赢 3.5 个百分点（偏红区 4.2）——这一档不可能是事后偏差；选后才建条的那一档多赢 2.8，这就是偏差的上限。竞选期间被写进维基的候选人反而最强（4.9，偏红区 8.1；其中进步派占 28%）：竞选中"成为话题"本身是信号。控制筹款后，选前知名度的贡献降到 1.9——知名度主要通过钱起作用。</li>
-  <li lang="en"><b>Is "has a Wikipedia article" just written after the fact?</b> We dated the articles of all 245 challengers who have one: 174 existed before the election year, 54 were created during the campaign, only 17 after the election. Candidates whose article <b>predates the election year</b> still over-perform by 3.5 points (4.2 in red districts) — that tier cannot carry hindsight bias; the after-the-fact tier over-performs by 2.8, which bounds the bias. Candidates written up mid-campaign are the strongest of all (4.9; 8.1 in red districts; 28% progressive): becoming a story during the race is itself the signal. Once fundraising is controlled, pre-existing recognition falls to 1.9 — recognition works mainly through money.</li>
-  <li lang="zh"><b>那是话题先动，还是钱先动？</b>把这 39 位竞选期间被写进维基的候选人的联邦选举委员会逐期报告拿来看：条目建立后的第一个申报期，日均筹款是建立前最后一期的 2.68 倍；27/39 人的筹款峰值出现在建条之后。按预设规则分类，"话题先动"21 人、"钱先动"12 人、看不出 6 人。但要分季节：9 月前建条的 31 人里钱先动只有 5 人；10 月才建条的 8 人里 7 人是钱先动——冲刺期被写进维基，是对已经飙升的筹款的事后记录。所以"竞选中成为话题"在初选季和夏天是领先信号，到了 10 月就只是滞后信号。回到模型里也一样：9 月前成为话题的候选人，控制筹款后仍多赢 4.0 个百分点；10 月才成为话题的，控制筹款后只剩 1.3，不显著。</li>
-  <li lang="en"><b>Does the story come first, or the money?</b> Pulling the FEC period-by-period reports for these 39 candidates written up mid-campaign: in the first filing period after the article appeared, daily fundraising ran 2.68× the last period before it, and 27 of 39 hit their fundraising peak after the article. By pre-set rules, "story first" 21, "money first" 12, indeterminate 6. Season matters: among the 31 written up before September only 5 were money-first; among the 8 written up in October, 7 were — a late article is hindsight on money already surging. So "becoming a story" leads in primary season and summer, and merely lags by October. The model agrees: candidates who became a story before September still over-perform by 4.0 points with fundraising controlled; those written up in October keep only 1.3, not distinguishable from zero.</li>
-  <li lang="zh"><b>那"成为话题"是谁触发的？</b>把这 39 位候选人的维基百科日浏览量（选举年 1 月至选举日）拿来看：9 人的条目是在初选前后一周内建立的（其中 7 人恰在初选次日）；初选前就有条目的人里，又有 6 人的第一次注意力尖峰落在初选窗口。合起来 15/39 的"成为话题"是<b>赢初选</b>这个制度事件触发的；初选前就被外界自发关注的只有 3 人。所以"早成为话题"不是媒体先发现了谁，而是初选把谁推到了台前——它独立于钱的那部分效应，本质上是初选胜利带来的知名度。</li>
-  <li lang="en"><b>What triggers "becoming a story"?</b> Daily Wikipedia pageviews for these 39 candidates (January of the election year to election day): 9 had their article created within a week of the primary (7 of them the very next day); among those with an earlier article, 6 more saw their first attention spike inside the primary window. Together, 15 of 39 became a story because of one institutional event — <b>winning the primary</b>; only 3 drew outside attention before it. "Becoming a story early" is not the press discovering someone; it is the primary putting them on stage — the part of the effect that is independent of money is, at bottom, the recognition a primary win confers.</li>
-  <li lang="zh"><b>供给才是。</b>偏红区有竞争的民主党初选里，进步派参选率 2018 年 9–29%，2022 年塌缩；共和党内的租客池没有任何一方去争取——民主党候选人在偏红区把选票押在"我不是那种民主党人"上，而不是住房与医保。</li>
-  <li lang="en"><b>Supply is.</b> In contested Democratic primaries in red districts, progressive entry was 9–29% in 2018 and collapsed by 2022; nobody contests the Republican renter pool — Democratic candidates in red districts bet on "I'm not that kind of Democrat", not on housing and health care.</li>
-  <li lang="zh"><b>激励结构解释了这一切。</b>分类完成的选民体里，谈身份的边际收益高于谈方案；方案会得罪自己联盟的某一块，身份不会。方案缺位是均衡，不是失误。</li>
-  <li lang="en"><b>The incentive structure explains it.</b> In a fully sorted electorate, identity pays more at the margin than policy; a policy offends part of your own coalition, identity does not. The missing outlet is an equilibrium, not a mistake.</li>
+<li><strong>更正后的问题与人群</strong>：给定同一个全国意向数值，不同系数会使逐区情景相差多少；这不是谁将控制众院的估计。</li>
+<li><strong>测量与来源</strong>：旧公式<code>PVI + 1.3308 × (E − 0.977)</code>的公共展示快照；比较系数0.5。PVI baseline约为两倍Cook PVI。现有谱系不足以证明旧系数可用于众院；参院拟合不能移作众院验证。</li>
+<li><strong>命令</strong>：<code>python -B midterm-model/public/reproduce.py --check</code>，读取参数敏感性。</li>
+<li><strong>结果与局限</strong>：E固定6.2时相差4.3392684个百分点。比较模型失败，不构成现有模型有效的证据。仪表盘不再显示D222—223、净翻转和“Flip possibility”；历史审计在折叠区保留。</li>
+<li><strong>替代解释</strong>：不同院别、历史时期、中心、目标和训练样本会改变系数。旧筛选集合也不是完整竞争席位清单。</li>
 </ul>
-<div class="note">
-  <p lang="zh"><b>一个诚实的修正：</b>青年对政府医保的支持上升不只发生在民主党年轻人身上（59% → 81%），年轻共和党人也从 22% 升到 37%；但在"政府保障就业与收入"上，年轻共和党人几乎没动（27% → 29%）。医保议题在跨越党派，再分配议题没有。"对资本主义失去耐心"这类问题调查里没有，我们没有测量。</p>
-  <p lang="en"><b>An honest qualification:</b> the rise in youth support for government health insurance is not only among young Democrats (59% → 81%); young Republicans also moved, from 22% to 37%. On government-guaranteed jobs and income, however, young Republicans barely moved (27% → 29%). Health care is crossing party lines; redistribution is not. "Losing patience with capitalism" is not a survey item and was not measured.</p>
-</div>
-<h3 lang="zh">出口是谁打开的？2018 年打开过一次——但不是议题，是风向</h3>
-<h3 lang="en">Who opens the outlet? It opened once, in 2018 — but the wind did it, not the issue</h3>
-<p lang="zh">2018 年是本报告所有序列的共同拐点，那一年"废除《平价医疗法》"是国会选票上的现实威胁。我们把 2018 和 2024 的同一道题（是否支持废除 ACA）放在共和党认同者内部对照：</p>
-<p lang="en">2018 is the common turning point in every series in this report; that year, repealing the Affordable Care Act was a live threat on the congressional ballot. We compare the same question (support repealing the ACA?) inside Republican identifiers in 2018 and 2024:</p>
-<div class="tablewrap"><table>
-  <tr><th>共和党认同者<small>Republican identifiers</small></th><th class="num">2018</th><th class="num">2024</th></tr>
-  <tr><td>反对废除 ACA 的比例<small>Oppose repealing the ACA</small></td><td class="num">23%</td><td class="num rep">34%</td></tr>
-  <tr><td>反对废除者 众议院投民主党<small>ACA supporters voting Democratic for House</small></td><td class="num dem">20%</td><td class="num">9%</td></tr>
-  <tr><td>支持废除者 众议院投民主党<small>Repeal supporters voting Democratic</small></td><td class="num">4.4%</td><td class="num">2.1%</td></tr>
-  <tr><td>租房且反对废除者 投民主党<small>Renters who oppose repeal, voting Democratic</small></td><td class="num dem">26%</td><td class="num">9%</td></tr>
-  <tr><td>租房且反对废除者 核验投票率<small>Their validated turnout</small></td><td class="num">31%</td><td class="num">28%</td></tr>
-  <tr><td>反对废除者比支持废除者投票率低<small>Turnout penalty for ACA supporters</small></td><td class="num">−15</td><td class="num">−19</td></tr>
-</table></div>
-<p lang="zh"><b>三件事同时成立。</b>(1) 跨压力的池子在变大：反对废除 ACA 的共和党人从 23% 升到 34%。(2) 出口只在 2018 年打开过：那一年反对废除的共和党人有 20% 在众议院投了民主党，是支持废除者的五倍；到 2024 年同样的态度只带来 9%。(3) 跨压力的第一反应始终是不投票：反对废除的共和党人核验投票率比支持者低 15–19 个百分点。</p>
-<p lang="en"><b>Three things hold at once.</b> (1) The cross-pressured pool is growing: Republicans who oppose repealing the ACA rose from 23% to 34%. (2) The outlet opened only in 2018: that year 20% of repeal-opposing Republicans voted Democratic for the House, five times the rate among repeal supporters; by 2024 the same attitude produced only 9%. (3) The first response to cross-pressure is always abstention: ACA-supporting Republicans turn out 15–19 points less than repeal supporters.</p>
-<h3 lang="zh">我们先给了一个错的解释，然后把它证伪了</h3>
-<h3 lang="en">We first gave a wrong explanation, then falsified it</h3>
-<p lang="zh">第一版解释是"议题在选票上才有出口"——2018 年废除 ACA 是现实威胁。要检验它，需要一个上票时序<b>相反</b>的议题：堕胎。2018 年堕胎不在选票上，2022 年 Dobbs 判决之后 2024 年高度显著。如果解释成立，支持堕胎权的共和党人的脱党差应该 2024 大于 2018。我们把预期先写下来，再看数据：</p>
-<p lang="en">Our first explanation was "the outlet opens when the issue is on the ballot" — repealing the ACA was a live threat in 2018. Testing it needs an issue with the <b>opposite</b> timing: abortion, absent from the 2018 ballot and highly salient in 2024 after the 2022 Dobbs ruling. If the explanation held, pro-choice Republicans' defection gap should be larger in 2024 than in 2018. We wrote the expectation down first, then looked:</p>
-<div class="tablewrap"><table>
-  <tr><th>共和党内 态度→脱党差（投民主党，pp）<small>Within Republicans: attitude → defection gap (pts)</small></th><th class="num">2018</th><th class="num">2024</th><th>议题上票时序<small>On the ballot?</small></th></tr>
-  <tr><td>反对废除 ACA − 支持废除<small>Oppose repeal − support repeal</small></td><td class="num dem">15.6</td><td class="num">6.9</td><td>2018 是 → 2024 否<small>2018 yes → 2024 no</small></td></tr>
-  <tr><td>支持堕胎权 − 反对<small>Pro-choice − anti</small></td><td class="num dem">11.3</td><td class="num">6.2</td><td>2018 否 → 2024 是<small>2018 no → 2024 yes</small></td></tr>
-</table></div>
-<p lang="zh"><b>预期被否定。</b>支持堕胎权的共和党人 2018 年 16% 投民主党、2024 年 9%（反对者 4.8% → 2.6%）：脱党差从 11.3 缩到 6.2，与 ACA 的 15.6 → 6.9 同向同幅——两个议题、相反的上票时序，出口却一起关上。更节俭的解释是：<b>2018 是民主党大浪年，全国风向放大了跨压力共和党人的脱党；2024 风向偏共和党，同样的跨压力只表现为退出。出口由全国风向打开，议题只决定谁站在门口。</b>这与本报告第一条规律（全国民意是最强因子）一致，也是本报告一次公开的自我修正。</p>
-<p lang="en"><b>The expectation failed.</b> Pro-choice Republicans voted Democratic 16% in 2018 and 9% in 2024 (anti-choice: 4.8% → 2.6%): the gap shrank from 11.3 to 6.2, matching the ACA gap's 15.6 → 6.9 — two issues with opposite ballot timing, and the outlet closed for both. The more parsimonious reading: <b>2018 was a Democratic wave year, and the national wind amplified cross-pressured Republicans' defection; in 2024 the wind leaned Republican and the same cross-pressure showed up only as exit. The wind opens the outlet; the issue decides who is standing at the door.</b> This matches this report's first law (national mood is the strongest factor) — and is one public self-correction.</p>
-<h3 lang="zh">判决点：2022 年——堕胎在票上，风向却偏共和党</h3>
-<h3 lang="en">The decisive year: 2022 — abortion on the ballot, wind leaning Republican</h3>
-<p lang="zh">两种解释在 2022 年给出相反预测。Dobbs 判决在 2022 年 6 月，当年 11 月中期选举堕胎高度显著；但全国风向偏共和党。"议题说"预测支持堕胎权的共和党人 2022 年脱党差应不低于 2018；"风向说"预测应低于 2018。我们先写下预期，再加入 2022 年的数据：</p>
-<p lang="en">The two explanations predict opposite things for 2022. Dobbs came in June 2022 and abortion dominated that November's midterm — but the national wind leaned Republican. The "issue" account predicts pro-choice Republicans' defection gap in 2022 at least as large as 2018; the "wind" account predicts smaller. We wrote both down, then added the 2022 data:</p>
-<div class="tablewrap"><table>
-  <tr><th>共和党内 态度→脱党差（投民主党，pp）<small>Within Republicans: attitude → defection gap (pts)</small></th><th class="num">2018<small>D 大浪<br>D wave</small></th><th class="num">2022<small>偏 R · 堕胎在票上<br>R lean · abortion on ballot</small></th><th class="num">2024<small>偏 R<br>R lean</small></th></tr>
-  <tr><td>反对废除 ACA − 支持废除<small>Oppose repeal − support repeal</small></td><td class="num dem">15.6</td><td class="num">7.3</td><td class="num">6.9</td></tr>
-  <tr><td>支持堕胎权 − 反对<small>Pro-choice − anti</small></td><td class="num dem">11.3</td><td class="num">7.2</td><td class="num">6.2</td></tr>
-  <tr><td>共和党人整体 众议院投民主党<small>All Republicans voting Democratic for House</small></td><td class="num dem">7.6%</td><td class="num">3.3%</td><td class="num">4.1%</td></tr>
-  <tr><td>支持堕胎权者比反对者投票率低<small>Turnout penalty, pro-choice Republicans</small></td><td class="num">−16</td><td class="num rep">−26</td><td class="num">−17</td></tr>
-</table></div>
-<p lang="zh"><b>风向说三届全部成立，议题说被第二次否定。</b>2022 年堕胎在票上，支持堕胎权的共和党人的脱党差只有 7.2 个百分点——与 2024 年的 6.2 相当，远低于 2018 年的 11.3；ACA 的差走的是同一条线（15.6 → 7.3 → 6.9）。共和党人整体的众议院脱党率 7.6% → 3.3% → 4.1%，与全国风向同步。而且中期年跨压力者的缺席最重：2022 年支持堕胎权的共和党人投票率比反对者低 26 个百分点。</p>
-<p lang="en"><b>The wind account holds in all three years; the issue account fails a second time.</b> With abortion on the 2022 ballot, pro-choice Republicans' defection gap was only 7.2 points — about the same as 2024's 6.2 and far below 2018's 11.3; the ACA gap follows the same line (15.6 → 7.3 → 6.9). Republicans' overall House defection ran 7.6% → 3.3% → 4.1%, in step with the national wind. And cross-pressured Republicans are most absent in midterms: in 2022 pro-choice Republicans turned out 26 points less than anti-choice ones.</p>
-<p lang="zh">结论稳固了：<b>跨压力共和党人的出口由全国风向打开；议题只决定谁站在门口；风向不利时，他们不换边，而是缺席——中期年尤其如此。</b>这把"焦虑与出口"一节接回了本报告的第一条规律。</p>
-<p lang="en">The conclusion now stands: <b>the national wind opens the outlet for cross-pressured Republicans; the issue only decides who is standing at the door; when the wind is against them they don't switch, they stay home — especially in midterms.</b> This ties the "anxiety and outlets" section back to this report's first law.</p>
-<p class="mono" lang="zh">CES 2018 Common Content（注册下载）、CES 2022（指南经 Dataverse API 取得）与 CES 2024；2018/2024 的 Medicaid 题项不同，池规模比较取废除 ACA 题；核验投票 2018 为 Catalist、2024 为 TargetSmart。探索性分析，仅描述。</p>
-<p class="mono" lang="en">CES 2018 Common Content (registered download), CES 2022 (guide via the Dataverse API) and CES 2024; pool sizes compare the repeal-ACA item (the Medicaid items differ); validated turnout via Catalist (2018) and TargetSmart (2024). Exploratory and descriptive only.</p>
-
-<h3 lang="zh">五十年的镜头：再分配态度什么时候、在谁身上变了</h3>
-<h3 lang="en">The fifty-year lens: when, and among whom, redistribution attitudes changed</h3>
-<p lang="zh">为了确认上面这些不是某一份调查的偶然，我们把综合社会调查（GSS，1972–2024，7.6 万受访者）也拉了进来。它问的是"政府是否应该缩小贫富差距"这类最直接的再分配问题，连续问了近五十年。三个结果：</p>
-<p lang="en">To make sure the findings above are not an artefact of one survey, we added the General Social Survey (GSS, 1972–2024, 76,000 respondents), which has asked the most direct redistribution question — should government reduce income differences — for nearly fifty years. Three results:</p>
-<div class="tablewrap"><table>
-  <tr><th>"政府应缩小贫富差距"支持率<small>"Government should reduce income differences"</small></th><th class="num">1978</th><th class="num">1990</th><th class="num">2002</th><th class="num">2012</th><th class="num">2016</th><th class="num">2021</th><th class="num">2024</th></tr>
-  <tr><td>全部<small>All</small></td><td class="num">50%</td><td class="num">52%</td><td class="num">47%</td><td class="num">49%</td><td class="num">50%</td><td class="num">55%</td><td class="num">53%</td></tr>
-  <tr><td>民主党人<small>Democrats</small></td><td class="num">56%</td><td class="num">60%</td><td class="num">59%</td><td class="num">64%</td><td class="num">69%</td><td class="num dem">77%</td><td class="num dem">72%</td></tr>
-  <tr><td>共和党人<small>Republicans</small></td><td class="num">39%</td><td class="num">42%</td><td class="num">29%</td><td class="num">30%</td><td class="num">26%</td><td class="num">23%</td><td class="num">28%</td></tr>
-  <tr><td>党派差<small>Party gap</small></td><td class="num">17</td><td class="num">19</td><td class="num">29</td><td class="num">33</td><td class="num">44</td><td class="num rep">54</td><td class="num">44</td></tr>
-  <tr><td>18–29 岁 − 65 岁以上<small>Ages 18–29 minus 65+</small></td><td class="num">−2</td><td class="num">+8</td><td class="num">+15</td><td class="num">+18</td><td class="num">+19</td><td class="num">+22</td><td class="num">+19</td></tr>
-</table></div>
+<h3>7. 全国意向有预测信息，不是支持变化的原因</h3>
 <ul>
-  <li lang="zh"><b>整体几乎没变，分裂变了。</b>全国支持率五十年里一直在 45–55% 之间；变的是谁支持——民主党人从 56% 升到 72–77%，共和党人从 39% 降到 23–28%，党派差从 17 个百分点扩大到 44–54。扩大几乎全部来自民主党一侧的左移。</li>
-  <li lang="en"><b>The total barely moved; the split did.</b> National support has stayed between 45% and 55% for fifty years; what changed is who supports it — Democrats rose from 56% to 72–77%, Republicans fell from 39% to 23–28%, and the party gap widened from 17 points to 44–54. Almost all of the widening comes from the Democratic side moving left.</li>
-  <li lang="zh"><b>代际差是新的。</b>1978 年，老年人比年轻人更支持再分配（−2）；2012 年后年轻人领先 18–22 个百分点——与上面 ANES 的结果独立同向。</li>
-  <li lang="en"><b>The generational gap is new.</b> In 1978 the old were slightly more pro-redistribution than the young (−2); since 2012 the young lead by 18–22 points — independently matching the ANES result above.</li>
-  <li lang="zh"><b>共和党内的租客分裂在第二份调查里复现了。</b>2022 年，租房的共和党人支持缩小贫富差距的比例比有房的高 31 个点，支持政府帮付医疗费高 32 个点；2024 年分别为 +23、+20，支持政府改善穷人生活 +25。样本小（每年约 100 名共和党租客），精确幅度不可判，但方向和量级与前面 CES 的 +15～+23 一致。</li>
-  <li lang="en"><b>The Republican renter split replicates in a second survey.</b> In 2022, Republican renters were 31 points more likely than Republican owners to back reducing income differences and 32 points more likely to back government help with medical bills; in 2024, +23 and +20, and +25 on government improving the lives of the poor. Cells are small (about 100 Republican renters a year), so exact sizes are uncertain, but direction and magnitude match the CES +15–23 above.</li>
-  <li lang="zh"><b>福利污名化的长周期在反转。</b>认为福利支出"太少"的比例 1996 年 15%、2012 年 18%，2024 年 33%（年轻人 39%）——主要由民主党人驱动（21% → 49%）。</li>
-  <li lang="en"><b>The long cycle of welfare stigma is reversing.</b> The share saying welfare spending is "too little" was 15% in 1996 and 18% in 2012; it is 33% in 2024 (39% among the young) — driven mainly by Democrats (21% → 49%).</li>
+<li><strong>更正后的问题与人群</strong>：同一时点的全国意向能否提高同院别选举结果预测；另一个问题才是选民为何改变意向。</li>
+<li><strong>测量与来源</strong>：旧全国generic ballot及残差分析；未来输入必须有同一截止日期和历史可用时间。</li>
+<li><strong>命令／状态</strong>：本次只验证独立协议，尚无新增历史回测分数。</li>
+<li><strong>局限</strong>：generic ballot本身测量偏好，不是经济、候选人或议题影响偏好的识别设计。残差也不等于纯候选人效应。</li>
+<li><strong>替代解释</strong>：共同事件、测量误差、遗漏的地方变化和参选选择。</li>
 </ul>
-<p class="mono" lang="zh">GSS 累积文件（NORC，研究用途下载，微数据不再分发）；2021–2024 年调查模式变化未校正；格子小于 80 人不报。</p>
-<p class="mono" lang="en">GSS cumulative file (NORC, downloaded for research; microdata not redistributed); 2021–2024 mode changes uncorrected; cells under 80 respondents not reported.</p>
-
-<h3 lang="zh">这个池子能被激活吗？历史说：脱党很少，更大的问题是他们越来越不投票</h3>
-<h3 lang="en">Can that pool be activated? History says: few defect — the bigger problem is they increasingly don't vote</h3>
-<div class="tablewrap"><table>
-  <tr><th>租房的共和党人<small>Republican renters</small></th><th class="num">2012</th><th class="num">2016</th><th class="num">2018</th><th class="num">2020</th><th class="num">2022</th><th class="num">2024</th></tr>
-  <tr><td>众议院投给民主党<small>House vote for Democrats</small></td><td class="num">9%</td><td class="num">12%</td><td class="num dem">12%</td><td class="num">7%</td><td class="num">5%</td><td class="num">6%</td></tr>
-  <tr><td>比有房的共和党人多<small>vs Republican owners</small></td><td class="num">+3</td><td class="num">+4</td><td class="num dem">+6</td><td class="num">+2</td><td class="num">+2</td><td class="num">+3</td></tr>
-  <tr><td>核验投票率<small>Validated turnout</small></td><td class="num">61%</td><td class="num">52%</td><td class="num">41%</td><td class="num">47%</td><td class="num">40%</td><td class="num rep">37%</td></tr>
-  <tr><td>其中 45 岁以下<small>of which under 45</small></td><td class="num">56%</td><td class="num">45%</td><td class="num">27%</td><td class="num">34%</td><td class="num">27%</td><td class="num rep">24%</td></tr>
-  <tr><td>有房的共和党人投票率<small>Republican owners' turnout</small></td><td class="num">74%</td><td class="num">65%</td><td class="num">66%</td><td class="num">72%</td><td class="num">69%</td><td class="num">68%</td></tr>
-</table></div>
-<p lang="zh">两条线索：(1) 租房的共和党人确实比有房的更容易投给民主党，差距在 2018 年（医保议题最热的一届）达到峰值 6 个百分点，之后回落——跨压力能转化为脱党，但幅度小。(2) 真正的变化在投票率：租房的共和党人 2012 年还有 61% 去投票，2024 年只剩 37%；45 岁以下的从 56% 掉到 24%。<b>这个池子不是在转向，是在退场。</b>激活它首先是动员问题，不是说服问题——而趋势正朝反方向走。</p>
-<p lang="en">Two threads: (1) Republican renters do defect to Democrats more than Republican owners; the gap peaked at 6 points in 2018 (the cycle when health care was most salient) and has since narrowed — cross-pressure does convert to defection, but modestly. (2) The real change is turnout: 61% of Republican renters voted in 2012, 37% in 2024; among those under 45, 56% fell to 24%. <b>This pool is not switching sides; it is leaving the room.</b> Activating it is a mobilisation problem before it is a persuasion problem — and the trend runs the wrong way.</p>
-<p lang="zh">更长的镜头（美国全国选举研究，1972–2024）：支持政府医保的共和党人占共和党认同者的份额，从 1970–2000 年代的约三成降到 2012 年的 13%（分类完成的标志），2024 年回升到 25%。2012–2020 年间，这些"跨压力"共和党人在总统选举里投民主党的比例为 25–30%，是已分类共和党人（约 5%）的五到六倍——态度上的跨压力确实会变成选票，只是人数少。2024 年的投票数据尚未随本次数据发布更新。</p>
-<p lang="en">The longer lens (American National Election Studies, 1972–2024): Republicans who favour government health insurance fell from roughly a third of Republican identifiers in the 1970s–2000s to 13% in 2012 (the mark of completed sorting), then rebounded to 25% in 2024. Between 2012 and 2020 these "cross-pressured" Republicans voted Democratic for president 25–30% of the time — five to six times the rate of sorted Republicans (about 5%). Cross-pressure in attitudes does become votes; there are just few of them. 2024 vote data have not yet been released for this file.</p>
-<p class="mono" lang="zh">本小节为探索性分析（预期在看到数据后写下），只作描述。核验投票率来自选民档案匹配，未匹配者计为未投票，数值偏保守。</p>
-<p class="mono" lang="en">This subsection is exploratory (expectations written after seeing the data) and descriptive only. Validated turnout comes from voter-file matching; unmatched respondents count as non-voters, so figures are conservative.</p>
-<p class="mono" lang="zh">来源：ANES 累积文件 1948–2024（注册下载）；CES 2024 Common Content（Dataverse）；CES 累积 2006–2025；FEC 全候选人财务汇总（公有领域）。全部为描述性机制证据，不含预测。</p>
-<p class="mono" lang="en">Sources: ANES Cumulative Data File 1948–2024 (registered download); CES 2024 Common Content (Dataverse); CES Cumulative 2006–2025; FEC all-candidate financial summaries (public domain). Descriptive mechanism evidence only; no forecasts.</p>
-
-<!-- ===================== 方法 ===================== -->
-<h2 lang="zh"><span class="qtag">方法</span>怎么读这份报告</h2>
-<h2 lang="en"><span class="qtag">METHOD</span>How to read this report</h2>
+<h3>8. 参选者筹到钱，不能排除资金阻止其他人参选</h3>
 <ul>
-  <li lang="zh"><b>"解释"和"预测"是两回事，我们分开放。</b>一个机制可以在历史上很稳定却在下一次失灵（2022 年的"执政党挨罚"就是例子）。所以解释性的结论（问一到问三）和 2026 年的观察读数分开呈现，互不背书。</li>
-  <li lang="en"><b>Explaining and forecasting are different jobs, kept apart.</b> A mechanism can be stable in history and fail next time (2022's "punish the president's party" is the example). So the explanatory findings (Q1–Q3) and the 2026 readings are shown separately and do not vouch for each other.</li>
-  <li lang="zh"><b>宽而诚实的范围，和准但脆弱的点估计，我们并排给。</b>灰色条不依赖任何行为假设，所以宽；红点依赖"住在这里≈在这里投票"，所以准。</li>
-  <li lang="en"><b>Wide-but-honest ranges and precise-but-fragile point estimates are shown side by side.</b> The grey bars assume nothing about behaviour, so they are wide; the red dots assume "lives here ≈ votes here", so they are precise.</li>
-  <li lang="zh"><b>检验规则先冻结，再看结果。</b>2026 年的判定标准、县名单、基准线都在选举前公开封存，事后不能改。</li>
-  <li lang="en"><b>Rules are frozen before results arrive.</b> The 2026 pass/fail lines, county list and baseline were sealed publicly before the election and cannot be changed afterwards.</li>
+<li><strong>更正后的问题与人群</strong>：已参选并匹配成功的候选人中，背书、公共记录、筹款与表现如何相关。潜在但未参选者不在分母里。</li>
+<li><strong>测量与来源</strong>：旧候选人汇总和公共报告，归档结果不回写。当前公开包没有完整潜在参选者清单，也不声称从头复现该模型。</li>
+<li><strong>命令／状态</strong>：本次为解释更正；没有新增资金因果估计或“供给第一瓶颈”的检验。</li>
+<li><strong>局限</strong>：条件于入场，可能把资金门槛挡在样本之外的人排除掉。筹款还可能响应预期胜算，不能把相关系数当作增加资金的效果。</li>
+<li><strong>替代解释</strong>：招募、预期胜算、进入成本、背书选择和资金共同影响。下一步应建立潜在参选—宣布—退出的事件记录，而不是继续给已有提名人叠加标签。</li>
 </ul>
-
-<h2 lang="zh"><span class="qtag">未知</span>我们还不知道的</h2>
-<h2 lang="en"><span class="qtag">UNKNOWN</span>What we still don't know</h2>
-<ul>
-  <li lang="zh"><b>亚裔内部差异</b>（东亚、南亚、越南裔等）：现有调查没有细分字段，暂时答不了。</li>
-  <li lang="en"><b>Differences within Asian Americans</b> (East Asian, South Asian, Vietnamese …): the survey lacks the field; unanswerable for now.</li>
-  <li lang="zh"><b>候选人质量的来源</b>：可测特征（知名度、履历、筹款、标签）只解释候选人效应 6–18% 的方差；"有维基条目"的结果偏差已按建条时间界定（上限约 3 个百分点），但选前知名度与筹款仍互为因果、不可分离。</li>
-  <li lang="zh"><b>"对资本主义失去耐心"、"想要新政"</b>：调查无此题项，无法测量；"社会主义"只能以"非常自由派"代替。</li>
-  <li lang="en"><b>"Losing patience with capitalism", "wanting a New Deal"</b>: the survey has no such item; "socialism" can only be proxied by "very liberal".</li>
-  <li lang="en"><b>Where candidate effects come from</b>: measurable traits (recognition, résumé, money, label) explain only 6–18% of the variance; the hindsight bias in "has a Wikipedia article" is now bounded by article dating (about 3 points at most), but pre-existing recognition and money still cause each other and cannot be separated.</li>
-  <li lang="zh"><b>民调机构的偏向不能跨类型套用</b>：同一家机构在全国国会民调里的偏向，和它在各州参议院民调里的偏向几乎不相关（43 家机构，相关系数 0.17）。</li>
-  <li lang="en"><b>Pollster lean does not transfer across race types</b>: a firm's lean in national congressional polls is almost unrelated to its lean in state Senate polls (43 firms, correlation 0.17).</li>
-</ul>
-
-<details>
-  <summary><span lang="zh">数据来源与可复核性</span><span lang="en">Data sources and reproducibility</span></summary>
-  <ul>
-    <li lang="zh">县级总统选举结果 2000–2024：MIT 选举数据与科学实验室（MEDSL），公有领域（CC0）。众议院精选区级结果 2018/2022：MEDSL（经用户登记下载），按县汇总。</li>
-    <li lang="en">County presidential returns 2000–2024: MIT Election Data + Science Lab (MEDSL), CC0. House precinct-level returns 2018/2022: MEDSL (registered download), aggregated to counties.</li>
-    <li lang="zh">人口构成：美国社区调查（ACS）五年估计，四个年份。投票率：当前人口调查（CPS）投票补充问卷。</li>
-    <li lang="en">Population composition: American Community Survey 5-year estimates, four vintages. Turnout: Current Population Survey voting supplement.</li>
-    <li lang="zh">个人层面投票与党派认同：CES 累积调查 2006–2025（71.9 万受访者，CC0）。</li>
-    <li lang="en">Individual vote choice and party ID: CES cumulative survey 2006–2025 (719,000 respondents, CC0).</li>
-    <li lang="zh">再分配态度长序列：综合社会调查（GSS）累积文件 1972–2024，NORC，研究用途下载。</li>
-    <li lang="en">Long-run redistribution attitudes: General Social Survey cumulative file 1972–2024, NORC, downloaded for research use.</li>
-    <li lang="zh">2026 民调聚合读数：维基百科页面（CC BY-SA 4.0，Wikipedia contributors），按版本号锚定；逐份民调：VoteHub Polling API（CC BY 4.0，2026-08-27 抓取；数据经筛选与转换用于研究，VoteHub 不为本报告背书）。</li>
-    <li lang="en">2026 aggregator readings: Wikipedia (CC BY-SA 4.0, Wikipedia contributors), pinned to page revision; poll-by-poll data: VoteHub Polling API (CC BY 4.0, retrieved 2026-08-27; records filtered and transformed for research; VoteHub does not endorse this project).</li>
-    <li lang="zh">全部数字来自哈希锁定的冻结产物，每一步对应一份编号合同（LH-047 至 LH-154），自动测试 1608 项。技术术语对照：本报告的"拆成两部分"= shift-share 分解；"扣除机构惯常偏向的加权读数"= 卡尔曼滤波场 + 机构效应；"全国无假设范围"= Duncan–Davis 聚合界。</li>
-    <li lang="en">All numbers come from hash-locked frozen outputs, each step under a numbered contract (LH-047 to LH-154), with 2,149 automated tests. Term mapping: "split into two parts" = shift-share decomposition; "weighted reading net of pollster lean" = Kalman-filtered field + house effects; "assumption-free nationwide range" = Duncan–Davis aggregation bounds.</li>
-  </ul>
-</details>
-
-<footer>
-  <p lang="zh">LongHorizon 中期选举研究 · 公开版 · 2026-08-27。本报告不含任何 2026 年概率或经验证的预测；系统设计上不可能在 2026-11-03 前完成前瞻验证，观察读数不是经验证的预测。</p>
-  <p lang="en">LongHorizon midterm research · public edition · 27 August 2026. This report contains no 2026 probabilities or validated forecasts; by design nothing here can be validated before 3 November 2026, and the watch readings are not validated predictions.</p>
-</footer>
-</div>
-
-<script>
-(function(){
-  var body=document.body, btns=document.querySelectorAll('.langbar button');
-  function apply(l){ body.setAttribute('data-lang',l); btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-set')===l ? 'true':'false'); });
-    try{ localStorage.setItem('lh-lang',l); }catch(e){} }
-  var saved=null; try{ saved=localStorage.getItem('lh-lang'); }catch(e){}
-  if(!saved){ var nav=(navigator.language||'').toLowerCase(); saved = nav.indexOf('zh')===0 ? 'zh' : 'en'; }
-  apply(saved);
-  btns.forEach(function(b){ b.addEventListener('click', function(){ apply(b.getAttribute('data-set')); }); });
-})();
-</script>
+<h2>接下来的研究顺序</h2>
+<p><strong>先做同人面板。</strong> 将参与、报告的投票选择、党派认同分别建转移表，再比较题干一致的具体议题。拉美裔劳动者必须按实际种族／族裔及劳动变量定义，不能以高拉美裔县或无大学学历代替。先报告这组究竟有多少留存受访者、权重有效人数和流失，再决定能回答多细的问题。</p>
+<p><strong>随后解释投票记录的测量变化。</strong> 已有审计说明匹配率变化足以改变故事，但尚不知道变化来自谁、为什么发生。下一步需要补齐早年年度文件，检查州别、年龄、迁移相关字段、供应商与权重；不能在看到结果后挑一个最支持原叙事的分母。</p>
+<p><strong>预测只保留狭窄比较。</strong> 先比较透明的同地理历史基线、同院别全国环境，以及至多一个同截止时点的候选人变量。完整周期才是全国层面的独立观察。数据不能满足时间和地图要求时，该比较停止，不能拿事后数据补齐。<a href="../../research/validity-release-2026-09-08/prospective-protocol.md">独立前瞻协议</a></p>
+<p>这套证据目前仍不能判断拉美裔劳动者是否会决定2026年的国会控制权。要回答这一点，需要把实际人群的参与与选择变化，连接到具体州和选区的胜负边际，并处理共同的全国冲击。总统年县级结果或全国亚群趋势，单独都完成不了这一步。</p><footer>公开更正版本；原始个人数据与旧封存材料不在本页发布。</footer></main></body></html>

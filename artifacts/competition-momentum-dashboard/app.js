@@ -139,7 +139,6 @@
   if ($("environmentSources")) {
     $("environmentSources").textContent = "等权输入：DDHQ 6.1 · 501 6.1 · RtWH 6.0 · RCP 6.4 · Silver 6.6 · VoteHub 6.0";
   }
-  $("houseTransfer").textContent = `${signed(data.summary.house_transfer_4w_delta_pp)} pp（未达 3pp）`;
   $("houseCount").textContent = data.counts.house;
   $("senateCount").textContent = data.counts.senate;
   $("disclaimer").textContent = data.required_disclaimer;
@@ -171,22 +170,13 @@
         <small>${escapeHtml(layer.evidence)}</small>
       </article>`).join("");
     $("modelReview").innerHTML = `
-      <div class="model-review-head">
+      <details><summary>历史模型审计（原文保留，已撤下当前映射）</summary><div class="model-review-head">
         <div><span>STRUCTURAL MODEL AUDIT · ${escapeHtml(modelReview.as_of)}</span><h2>What the map uses—and what it does not</h2></div>
         <b>${escapeHtml(modelReview.status)}</b>
       </div>
       <p class="model-review-summary">${escapeHtml(modelReview.summary)}</p>
-      <div class="model-review-grid">${layers}</div>`;
+      <div class="model-review-grid">${layers}</div></details>`;
   }
-
-  const houseRows = data.rows.filter((row) => row.chamber === "house");
-  const rToD = houseRows.filter((row) => row.current_holder_party === "R" && row.estimated_current_margin_dem_minus_rep > 0).length;
-  const dToR = houseRows.filter((row) => row.current_holder_party === "D" && row.estimated_current_margin_dem_minus_rep < 0).length;
-  const netD = rToD - dToR;
-  $("houseLevelE").textContent = `D+${data.summary.cross_aggregator_E.toFixed(1)}`;
-  $("houseLevelAdjustment").textContent = `D+${data.summary.house_mapped_level_adjustment_pp.toFixed(2)} pp`;
-  $("houseFlipBalance").textContent = `R→D ${rToD} · D→R ${dToR}`;
-  $("houseNetSeats").textContent = `D ${netD >= 0 ? "+" : "−"}${Math.abs(netD)}`;
 
   function signed(value) {
     if (value == null) return "—";
@@ -281,7 +271,7 @@
   }
 
   function displayedMomentum(row) {
-    return row.crosscheck?.momentum || row.momentum;
+    return row.chamber === "house" ? "insufficient" : (row.crosscheck?.momentum || row.momentum);
   }
 
   function matches(row, f) {
@@ -293,7 +283,7 @@
     const measured = (!estimated && displayedMomentum(row) !== "insufficient") || Boolean(row.latest_evidence);
     if (f.evidence === "measured" && !measured) return false;
     if (f.evidence === "estimated" && !estimated) return false;
-    if (f.evidence === "missing" && (measured || estimated)) return false;
+    if (f.evidence === "missing" && measured) return false;
     return true;
   }
 
@@ -301,8 +291,8 @@
     return rows.sort((a, b) => {
       if (mode === "competitive") return Math.abs(a.pvi_dem ?? 99) - Math.abs(b.pvi_dem ?? 99) || a.race.localeCompare(b.race);
       if (mode === "state") return a.race.localeCompare(b.race);
-      if (mode === "delta") return Math.abs(b.delta_pp ?? -1) - Math.abs(a.delta_pp ?? -1) || a.race.localeCompare(b.race);
-      return signalOrder[displayedMomentum(a)] - signalOrder[displayedMomentum(b)] || Math.abs(b.delta_pp ?? 0) - Math.abs(a.delta_pp ?? 0) || a.race.localeCompare(b.race);
+      if (mode === "delta") return Math.abs(b.chamber === "house" ? 0 : (b.delta_pp ?? 0)) - Math.abs(a.chamber === "house" ? 0 : (a.delta_pp ?? 0)) || a.race.localeCompare(b.race);
+      return signalOrder[displayedMomentum(a)] - signalOrder[displayedMomentum(b)] || Math.abs(b.chamber === "house" ? 0 : (b.delta_pp ?? 0)) - Math.abs(a.chamber === "house" ? 0 : (a.delta_pp ?? 0)) || a.race.localeCompare(b.race);
     });
   }
 
@@ -310,7 +300,7 @@
     const momentum = displayedMomentum(row);
     const senateDirection = Number(row.delta_pp) >= 0 ? "toward D" : "toward R";
     const delta = row.chamber === "house"
-      ? `四周变化 ${signed(row.delta_pp)} pp · ${row.momentum === "flat" ? "未达阈值" : labels[row.momentum]}`
+      ? "逐区动量证据不足"
       : row.crosscheck
         ? row.crosscheck.headline
       : row.delta_pp == null
@@ -325,7 +315,7 @@
     const secondary = row.chamber === "house"
       ? ({ qualified: "合格", unqualified: "未达冻结定义", pending: "待定" }[row.candidate_quality] || "—")
       : row.rating;
-    const level = row.chamber === "house" ? signed(row.estimated_current_margin_dem_minus_rep) + " pp" : `${row.competitive_raters}/${row.rater_count}`;
+    const level = row.chamber === "house" ? (row.latest_evidence ? "有增量民调；见下方口径" : "暂无统一逐区序列") : `${row.competitive_raters}/${row.rater_count}`;
     const currentHolder = `${row.current_holder_label || "Current holder unknown"}${row.chamber === "senate" && row.retiring ? " (retiring)" : ""}`;
     const trend = row.chamber === "senate" ? senateTrend(row) : "";
     const structure = row.chamber === "senate" && row.structural_context?.insight
@@ -350,7 +340,7 @@
           <a class="source-link" href="${escapeHtml(row.latest_evidence.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.latest_evidence.source_label)}</a>
         </section>`
       : "";
-    const explanation = row.crosscheck ? "" : `<p class="explanation">${escapeHtml(row.explanation)}</p>`;
+    const explanation = row.chamber === "house" || row.crosscheck ? "" : `<p class="explanation">${escapeHtml(row.explanation)}</p>`;
     return `
       <article class="race-card ${momentum} holder-${(row.current_holder_party || "unknown").toLowerCase()}" tabindex="0" aria-label="${escapeHtml(row.race)}，${escapeHtml(delta)}">
         <div class="card-top">
@@ -358,14 +348,13 @@
           <span class="badge"><small>PVI baseline</small><b>${escapeHtml(row.pvi || "Unavailable")}</b></span>
         </div>
         <div class="delta">${escapeHtml(delta)}</div>
-        <div class="evidence">${escapeHtml(row.evidence_label)}</div>
+        <div class="evidence">${escapeHtml(row.chamber === "house" ? "旧筛选样本；不提供控制权推断" : row.evidence_label)}</div>
         <div class="meta">
           <div><span>${row.chamber === "house" ? "民主党提名人" : "Formal matchup"}</span><b title="${escapeHtml(subject)}">${escapeHtml(subject)}</b></div>
           <div><span>${escapeHtml(secondaryLabel)}</span><b>${escapeHtml(secondary)}</b></div>
           <div><span>Current holder</span><b class="holder-value" title="${escapeHtml(currentHolder)}">${escapeHtml(currentHolder)}</b></div>
-          <div><span>Flip possibility</span><b class="flip-value position-${(row.modeled_position_party || "tossup").toLowerCase()}" title="${escapeHtml(row.flip_possibility)}">${escapeHtml(row.flip_possibility)}</b></div>
-          <div><span>${row.chamber === "house" ? "当前模型位置" : "最新证据状态"}</span><b>${escapeHtml(row.chamber === "house" ? row.rating : labels[momentum])}</b></div>
-          <div><span>${row.chamber === "house" ? "环境映射 D−R" : "竞争评级方"}</span><b>${escapeHtml(level)}</b></div>
+          <div><span>${row.chamber === "house" ? "当前推断状态" : "最新证据状态"}</span><b>${escapeHtml(row.chamber === "house" ? "映射未验证" : labels[momentum])}</b></div>
+          <div><span>${row.chamber === "house" ? "逐区证据覆盖" : "竞争评级方"}</span><b>${escapeHtml(level)}</b></div>
         </div>
         ${trend}
         ${crosscheck}

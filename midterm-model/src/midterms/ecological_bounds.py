@@ -20,6 +20,7 @@
 
 from __future__ import annotations
 
+import math
 from typing import Iterable, Mapping, Sequence
 
 APPROXIMATION_STATEMENT = (
@@ -63,7 +64,7 @@ def aggregate_bounds(rows: Iterable[Mapping[str, float]]) -> dict[str, float]:
         x = _validate_unit(row["x"], "x")
         y = _validate_unit(row["y"], "y")
         w = float(row["w"])
-        if w < 0 or w != w:
+        if w < 0 or not math.isfinite(w):
             raise EcologicalBoundsError(f"w 必须非负：{row['w']!r}")
         num_lower += w * max(0.0, y - (1.0 - x))
         num_upper += w * min(x, y)
@@ -82,21 +83,51 @@ def aggregate_bounds(rows: Iterable[Mapping[str, float]]) -> dict[str, float]:
     }
 
 
-def density_tightening(
+def density_stratified_profile(
     rows: Sequence[Mapping[str, float]],
     thresholds: Sequence[float] = (0.0, 0.5, 0.7, 0.9),
-) -> list[dict[str, float]]:
-    """按亚群占比阈值的收紧序列；密度升 → 界宽单调不增（性质由测试锚定）。"""
+) -> list[dict]:
+    """密度分层界限剖面：各阈值对应不同县集，界宽不保证单调。
 
+    覆盖比例以传入的完整县集为分母，不能自动解释成全国覆盖。
+    亚群权重仍为 w*x；人口替代选民构成的近似假设逐项携带。
+    """
+
+    rows = list(rows)
+    for r in rows:
+        _validate_unit(r['x'], 'x')
+        _validate_unit(r['y'], 'y')
+        if not math.isfinite(float(r['w'])) or float(r['w']) < 0:
+            raise EcologicalBoundsError('w 必须为有限非负数')
+    total_w = sum(float(r['w']) for r in rows)
+    total_xw = sum(float(r['w']) * float(r['x']) for r in rows)
     out = []
     for threshold in thresholds:
+        threshold = _validate_unit(threshold, 'threshold')
         subset = [r for r in rows if float(r["x"]) >= threshold]
+        selected_w = sum(float(r['w']) for r in subset)
+        selected_xw = sum(float(r['w']) * float(r['x']) for r in subset)
+        context = {
+            'target': f'输入县集中亚群占比 x >= {threshold:g} 的县内亚群',
+            'reference_counties': len(rows),
+            'county_coverage': len(subset) / len(rows) if rows else None,
+            'vote_weight_coverage': selected_w / total_w if total_w > 0 else None,
+            'subgroup_weight_coverage': selected_xw / total_xw if total_xw > 0 else None,
+            'subgroup_weight': selected_xw,
+            'approximation_statement': APPROXIMATION_STATEMENT,
+        }
         if not subset or sum(float(r["w"]) * float(r["x"]) for r in subset) <= 0:
-            out.append({"threshold": threshold, "counties": 0, "lower": None, "upper": None,
-                         "width": None})
+            out.append({"threshold": threshold, "counties": len(subset), "lower": None, "upper": None,
+                         "width": None, **context})
             continue
         bounds = aggregate_bounds(subset)
         out.append({"threshold": threshold, "counties": bounds["counties"],
                      "lower": bounds["lower"], "upper": bounds["upper"],
-                     "width": bounds["width"]})
+                     "width": bounds["width"], **context})
     return out
+
+
+def density_tightening(rows, thresholds=(0.0, 0.5, 0.7, 0.9)):
+    """旧接口的兼容投影；名称不代表界宽单调，也不改变冻结产物字段。"""
+    fields = ('threshold', 'counties', 'lower', 'upper', 'width')
+    return [{key: r[key] for key in fields} for r in density_stratified_profile(rows, thresholds)]

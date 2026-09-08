@@ -1,0 +1,19 @@
+{
+  "id": "validity-prospective-v1",
+  "registered_on": "2026-09-08",
+  "forecast_as_of": "2026-10-06T04:00:00+00:00",
+  "offices": ["house", "senate"],
+  "arms": ["R0", "R1", "R2"],
+  "candidate_features_max": 1,
+  "training_candidate_cycles": [2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024],
+  "minimum_prior_training_cycles": 3,
+  "minimum_independent_pollsters": 3,
+  "future_cycles_available": 1,
+  "maximum_evidence_status": "experimental",
+  "primary_score": "MAE_pp",
+  "guard_score": "RMSE_pp",
+  "cycle_weighting": "equal",
+  "public_ratio_min_n": 80,
+  "requires_new_post_election_approval": true,
+  "legacy_seals_read": false
+}

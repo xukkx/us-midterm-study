@@ -1,0 +1,18 @@
+name: 公开复现核验
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 公开单元测试
+        run: python -B -m unittest discover -s midterm-model/tests -p "test_*.py"
+      - name: 实证表逐字节复算
+        run: python -B midterm-model/public/reproduce.py --check
+      - name: 独立协议核验
+        run: python -B research/validity-release-2026-09-08/verify_protocol.py

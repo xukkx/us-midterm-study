@@ -1,0 +1,8 @@
+{
+  "files": {
+    "prospective-protocol.md": "e4f41c9a0448bb9cfbd86846c17f350bb9b173177d93b87d21c75a6a08100276",
+    "protocol.json": "9150dfec2728d2a8310d3c2cb682ba5979bec3fa373512ef1d9b6be684e3c076",
+    "verify_protocol.py": "27b18d2cf5b72cf0bc5fc3ed4a9a6fd02e9de1a7b8fcdfea2f90dd4f8acaabdc"
+  },
+  "status": "rules_only_not_prediction"
+}
