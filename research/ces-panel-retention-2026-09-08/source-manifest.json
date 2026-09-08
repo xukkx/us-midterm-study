@@ -1,0 +1,58 @@
+{
+  "registered_at": "2026-09-08T11:14:36.123802+00:00",
+  "actual_baseline": {
+    "doi": "10.7910/DVN/E9N6PH",
+    "filename": "CES20_Common_OUTPUT_vv.csv",
+    "sha256": "946afde863a1c1319bb2931bbd24650961aedae27f36e6447ecdc7db68f83c4c",
+    "rows": 61000,
+    "origin": "沿用上一轮已核定本地年度原件；未新下载"
+  },
+  "actual_selected": {
+    "doi": "10.7910/DVN/CETPVT",
+    "version": "2.0",
+    "filename": "merged_recontact_2024_vv.csv",
+    "sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac",
+    "rows": 6175
+  },
+  "two_wave": {
+    "attempted_at": "2026-09-08T11:06:36.856338+00:00",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/10231930?format=original",
+    "doi": "10.7910/DVN/XV7ABM",
+    "version": "1.0",
+    "license": "CC0 1.0",
+    "file_id": 10231930,
+    "official_original_md5": "40b0d031dad46676cef9c7e0a31ab700",
+    "web_observed_rows": 11009,
+    "web_observed_columns": 1332,
+    "metadata_url": "https://dataverse.harvard.edu/file.xhtml?fileId=10231930&version=1.0",
+    "method": "官方文件页建议的下载API，format=original保留原CSV",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "browser_download": "点击官方原CSV下载按钮后未取得可读本地文件；不把点击算下载成功。",
+  "guide": {
+    "doi": "10.7910/DVN/CETPVT",
+    "filename": "Recontact_Survey_Guide_2020_2022_2024.pdf",
+    "sha256": "81f3e73e4dc26b752b18c09ee0b1fc9d7fcf7462f657643193323c17f88941d4",
+    "pages": {
+      "flow": 4,
+      "composition_table": 11
+    },
+    "composition_table_visual_check": "已渲染并目视核对第11页，未把文中一般表述当作本次分群识别结论"
+  },
+  "reported_flow": {
+    "invited_2022": 14787,
+    "completed_2022": 11792,
+    "qc_excluded_2022": 780,
+    "reported_retained_2022": 11015,
+    "invited_2024": 11015,
+    "completed_2024": 7058,
+    "qc_excluded_2024": 883,
+    "retained_2024": 6175
+  },
+  "gaps": {
+    "2022_arithmetic_discrepancy": 3,
+    "guide_vs_two_wave_web_rows": 6,
+    "explanation": null
+  }
+}

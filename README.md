@@ -2,6 +2,9 @@
 
 ## 当前阅读入口
 
+- [最新增补：哪些人进入了三波面板](research/ces-panel-retention-2026-09-08/report.md)
+- [下载入选构成复现包](downloads/ces-panel-retention-2026-09-08.zip?raw=true)
+
 - [同一批人变了什么：新面板报告与研究方向](research/ces-panel-2020-2024/report.md)
 - [下载本轮报告、源码与匿名统计ZIP](downloads/ces-panel-2020-2024.zip?raw=true)
 
