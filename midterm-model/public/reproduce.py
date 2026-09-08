@@ -123,6 +123,8 @@ def markdown(rep):
     return '\n'.join(lines)
 
 def main():
+    if sys.implementation.name != 'cpython' or sys.version_info[:2] != (3,12):
+        raise SystemExit('逐字节复现需CPython 3.12；其他次版本的浮点求和实现可能不同。')
     parser=argparse.ArgumentParser()
     group=parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--write',action='store_true');group.add_argument('--check',action='store_true')
