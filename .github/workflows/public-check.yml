@@ -24,3 +24,7 @@ jobs:
         run: python -B -m unittest discover -s research/ces-panel-retention-2026-09-08 -p test_retention.py
       - name: 入选构成匿名计数复算
         run: python -B research/ces-panel-retention-2026-09-08/reproduce.py --check
+      - name: 两波留存适配器独立测试
+        run: python -B -m unittest discover -s research/ces-panel-retention-2026-09-08/two-wave -p test_two_wave.py
+      - name: 两波留存匿名计数复算
+        run: python -B research/ces-panel-retention-2026-09-08/two-wave/reproduce.py --check

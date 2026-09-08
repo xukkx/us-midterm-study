@@ -1,0 +1,1424 @@
+{
+  "limits": [
+    "官方指南11015人与实际两波11009人相差6人，原因未知；三波6175人全部连接",
+    "未进入三波文件不等于受邀拒访或没有投票，尚缺邀请、完成与质量检查过程标记",
+    "固定2020群体的构成描述，不能识别缺失者选票或选择偏差方向；不改LH260政治转移估计"
+  ],
+  "rows": [
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 468,
+        "suppressed": false,
+        "value": 0.8013698630136986
+      },
+      "baseline_n": 468,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 468,
+        "low_n": false,
+        "numerator": 229,
+        "suppressed": false,
+        "value": 0.4893162393162393
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 239,
+        "suppressed": false,
+        "value": 0.7913907284768212
+      },
+      "not_selected_n": 239,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 229,
+        "suppressed": false,
+        "value": 0.8120567375886525
+      },
+      "selected_n": 229
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "other",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 116,
+        "suppressed": false,
+        "value": 0.19863013698630136
+      },
+      "baseline_n": 116,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 116,
+        "low_n": false,
+        "numerator": 53,
+        "suppressed": false,
+        "value": 0.45689655172413796
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 63,
+        "suppressed": false,
+        "value": 0.20860927152317882
+      },
+      "not_selected_n": 63,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 53,
+        "suppressed": false,
+        "value": 0.1879432624113475
+      },
+      "selected_n": 53
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 584,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "baseline_n": 584,
+      "category": "all",
+      "dimension": "overall",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 282,
+        "suppressed": false,
+        "value": 0.4828767123287671
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 302,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "not_selected_n": 302,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 282,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "selected_n": 282
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 299,
+        "suppressed": false,
+        "value": 0.511986301369863
+      },
+      "baseline_n": 299,
+      "category": "D",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 299,
+        "low_n": false,
+        "numerator": 149,
+        "suppressed": false,
+        "value": 0.4983277591973244
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 150,
+        "suppressed": false,
+        "value": 0.4966887417218543
+      },
+      "not_selected_n": 150,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 149,
+        "suppressed": false,
+        "value": 0.5283687943262412
+      },
+      "selected_n": 149
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 91,
+        "suppressed": false,
+        "value": 0.1558219178082192
+      },
+      "baseline_n": 91,
+      "category": "I",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 91,
+        "low_n": true,
+        "numerator": 43,
+        "suppressed": false,
+        "value": 0.4725274725274725
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 48,
+        "suppressed": false,
+        "value": 0.15894039735099338
+      },
+      "not_selected_n": 48,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 43,
+        "suppressed": false,
+        "value": 0.1524822695035461
+      },
+      "selected_n": 43
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 178,
+        "suppressed": false,
+        "value": 0.3047945205479452
+      },
+      "baseline_n": 178,
+      "category": "R",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 178,
+        "low_n": false,
+        "numerator": 87,
+        "suppressed": false,
+        "value": 0.4887640449438202
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 91,
+        "suppressed": false,
+        "value": 0.30132450331125826
+      },
+      "not_selected_n": 91,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 87,
+        "suppressed": false,
+        "value": 0.30851063829787234
+      },
+      "selected_n": 87
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 16,
+        "suppressed": false,
+        "value": 0.0273972602739726
+      },
+      "baseline_n": 16,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 16,
+        "low_n": false,
+        "numerator": 3,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 13,
+        "suppressed": false,
+        "value": 0.04304635761589404
+      },
+      "not_selected_n": 13,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 3,
+        "suppressed": false,
+        "value": 0.010638297872340425
+      },
+      "selected_n": 3
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 17,
+        "suppressed": false,
+        "value": 0.02910958904109589
+      },
+      "baseline_n": 17,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 17,
+        "low_n": false,
+        "numerator": 8,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 9,
+        "suppressed": false,
+        "value": 0.029801324503311258
+      },
+      "not_selected_n": 9,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 8,
+        "suppressed": false,
+        "value": 0.028368794326241134
+      },
+      "selected_n": 8
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 385,
+        "suppressed": false,
+        "value": 0.6592465753424658
+      },
+      "baseline_n": 385,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 385,
+        "low_n": false,
+        "numerator": 197,
+        "suppressed": false,
+        "value": 0.5116883116883116
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 188,
+        "suppressed": false,
+        "value": 0.6225165562913907
+      },
+      "not_selected_n": 188,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 197,
+        "suppressed": false,
+        "value": 0.6985815602836879
+      },
+      "selected_n": 197
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 180,
+        "suppressed": false,
+        "value": 0.3082191780821918
+      },
+      "baseline_n": 180,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 180,
+        "low_n": false,
+        "numerator": 76,
+        "suppressed": false,
+        "value": 0.4222222222222222
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 104,
+        "suppressed": false,
+        "value": 0.3443708609271523
+      },
+      "not_selected_n": 104,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 76,
+        "suppressed": false,
+        "value": 0.2695035460992908
+      },
+      "selected_n": 76
+    },
+    {
+      "baseline_composition": {
+        "denominator": 584,
+        "low_n": false,
+        "numerator": 2,
+        "suppressed": false,
+        "value": 0.003424657534246575
+      },
+      "baseline_n": 2,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "inclusion": {
+        "denominator": 2,
+        "low_n": false,
+        "numerator": 1,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 302,
+        "low_n": false,
+        "numerator": 1,
+        "suppressed": false,
+        "value": 0.0033112582781456954
+      },
+      "not_selected_n": 1,
+      "selected_composition": {
+        "denominator": 282,
+        "low_n": false,
+        "numerator": 1,
+        "suppressed": false,
+        "value": 0.0035460992907801418
+      },
+      "selected_n": 1
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 244,
+        "suppressed": false,
+        "value": 0.3257676902536716
+      },
+      "baseline_n": 244,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 244,
+        "low_n": false,
+        "numerator": 127,
+        "suppressed": false,
+        "value": 0.5204918032786885
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 117,
+        "suppressed": false,
+        "value": 0.33620689655172414
+      },
+      "not_selected_n": 117,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 127,
+        "suppressed": false,
+        "value": 0.3167082294264339
+      },
+      "selected_n": 127
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 425,
+        "suppressed": false,
+        "value": 0.5674232309746329
+      },
+      "baseline_n": 425,
+      "category": "other",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 425,
+        "low_n": false,
+        "numerator": 230,
+        "suppressed": false,
+        "value": 0.5411764705882353
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 195,
+        "suppressed": false,
+        "value": 0.5603448275862069
+      },
+      "not_selected_n": 195,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 230,
+        "suppressed": false,
+        "value": 0.57356608478803
+      },
+      "selected_n": 230
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 79,
+        "suppressed": false,
+        "value": 0.1054739652870494
+      },
+      "baseline_n": 79,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 79,
+        "low_n": false,
+        "numerator": 44,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 35,
+        "suppressed": false,
+        "value": 0.10057471264367816
+      },
+      "not_selected_n": 35,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 44,
+        "suppressed": false,
+        "value": 0.10972568578553615
+      },
+      "selected_n": 44
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 1,
+        "suppressed": false,
+        "value": 0.0013351134846461949
+      },
+      "baseline_n": 1,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 1,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 1,
+        "suppressed": false,
+        "value": 0.0028735632183908046
+      },
+      "not_selected_n": 1,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 749,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "baseline_n": 749,
+      "category": "all",
+      "dimension": "overall",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 0.5353805073431241
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 348,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "not_selected_n": 348,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "selected_n": 401
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "D",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "I",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 749,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "baseline_n": 749,
+      "category": "R",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 0.5353805073431241
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 348,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "not_selected_n": 348,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "selected_n": 401
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 749,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "baseline_n": 749,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 0.5353805073431241
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 348,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "not_selected_n": 348,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 401,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "selected_n": 401
+    },
+    {
+      "baseline_composition": {
+        "denominator": 749,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "inclusion": {
+        "denominator": 0,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 348,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "not_selected_n": 0,
+      "selected_composition": {
+        "denominator": 401,
+        "low_n": false,
+        "numerator": 0,
+        "suppressed": false,
+        "value": 0.0
+      },
+      "selected_n": 0
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 4128,
+        "suppressed": false,
+        "value": 0.37496593696066854
+      },
+      "baseline_n": 4128,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "all",
+      "inclusion": {
+        "denominator": 4128,
+        "low_n": false,
+        "numerator": 2244,
+        "suppressed": false,
+        "value": 0.5436046511627907
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 1884,
+        "suppressed": false,
+        "value": 0.38973934629706247
+      },
+      "not_selected_n": 1884,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 2244,
+        "suppressed": false,
+        "value": 0.3634008097165992
+      },
+      "selected_n": 2244
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 5841,
+        "suppressed": false,
+        "value": 0.5305659006267599
+      },
+      "baseline_n": 5841,
+      "category": "other",
+      "dimension": "employment",
+      "group": "all",
+      "inclusion": {
+        "denominator": 5841,
+        "low_n": false,
+        "numerator": 3337,
+        "suppressed": false,
+        "value": 0.57130628317069
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 2504,
+        "suppressed": false,
+        "value": 0.5179975175837815
+      },
+      "not_selected_n": 2504,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 3337,
+        "suppressed": false,
+        "value": 0.5404048582995952
+      },
+      "selected_n": 3337
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 1035,
+        "suppressed": false,
+        "value": 0.09401398855481878
+      },
+      "baseline_n": 1035,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "all",
+      "inclusion": {
+        "denominator": 1035,
+        "low_n": false,
+        "numerator": 592,
+        "suppressed": false,
+        "value": 0.5719806763285025
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 443,
+        "suppressed": false,
+        "value": 0.09164253206454283
+      },
+      "not_selected_n": 443,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 592,
+        "suppressed": false,
+        "value": 0.09587044534412956
+      },
+      "selected_n": 592
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 5,
+        "suppressed": false,
+        "value": 0.0004541738577527477
+      },
+      "baseline_n": 5,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "all",
+      "inclusion": {
+        "denominator": 5,
+        "low_n": false,
+        "numerator": 2,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 3,
+        "suppressed": false,
+        "value": 0.0006206040546131568
+      },
+      "not_selected_n": 3,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 2,
+        "suppressed": false,
+        "value": 0.00032388663967611336
+      },
+      "selected_n": 2
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 11009,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "baseline_n": 11009,
+      "category": "all",
+      "dimension": "overall",
+      "group": "all",
+      "inclusion": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 6175,
+        "suppressed": false,
+        "value": 0.5609047143246435
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 4834,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "not_selected_n": 4834,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 6175,
+        "suppressed": false,
+        "value": 1.0
+      },
+      "selected_n": 6175
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 5252,
+        "suppressed": false,
+        "value": 0.47706422018348627
+      },
+      "baseline_n": 5252,
+      "category": "D",
+      "dimension": "pid",
+      "group": "all",
+      "inclusion": {
+        "denominator": 5252,
+        "low_n": false,
+        "numerator": 2912,
+        "suppressed": false,
+        "value": 0.5544554455445545
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 2340,
+        "suppressed": false,
+        "value": 0.48407116259826233
+      },
+      "not_selected_n": 2340,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 2912,
+        "suppressed": false,
+        "value": 0.47157894736842104
+      },
+      "selected_n": 2912
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 1693,
+        "suppressed": false,
+        "value": 0.1537832682350804
+      },
+      "baseline_n": 1693,
+      "category": "I",
+      "dimension": "pid",
+      "group": "all",
+      "inclusion": {
+        "denominator": 1693,
+        "low_n": false,
+        "numerator": 895,
+        "suppressed": false,
+        "value": 0.5286473715298287
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 798,
+        "suppressed": false,
+        "value": 0.1650806785270997
+      },
+      "not_selected_n": 798,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 895,
+        "suppressed": false,
+        "value": 0.14493927125506073
+      },
+      "selected_n": 895
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 3893,
+        "suppressed": false,
+        "value": 0.3536197656462894
+      },
+      "baseline_n": 3893,
+      "category": "R",
+      "dimension": "pid",
+      "group": "all",
+      "inclusion": {
+        "denominator": 3893,
+        "low_n": false,
+        "numerator": 2298,
+        "suppressed": false,
+        "value": 0.5902902645774467
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 1595,
+        "suppressed": false,
+        "value": 0.32995448903599506
+      },
+      "not_selected_n": 1595,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 2298,
+        "suppressed": false,
+        "value": 0.37214574898785424
+      },
+      "selected_n": 2298
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 171,
+        "suppressed": false,
+        "value": 0.015532745935143973
+      },
+      "baseline_n": 171,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "all",
+      "inclusion": {
+        "denominator": 171,
+        "low_n": false,
+        "numerator": 70,
+        "suppressed": false,
+        "value": 0.4093567251461988
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 101,
+        "suppressed": false,
+        "value": 0.020893669838642947
+      },
+      "not_selected_n": 101,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 70,
+        "suppressed": false,
+        "value": 0.011336032388663968
+      },
+      "selected_n": 70
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 433,
+        "suppressed": false,
+        "value": 0.03933145608138795
+      },
+      "baseline_n": 433,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "all",
+      "inclusion": {
+        "denominator": 433,
+        "low_n": false,
+        "numerator": 220,
+        "suppressed": false,
+        "value": 0.5080831408775982
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 213,
+        "suppressed": false,
+        "value": 0.04406288787753413
+      },
+      "not_selected_n": 213,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 220,
+        "suppressed": false,
+        "value": 0.03562753036437247
+      },
+      "selected_n": 220
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 7397,
+        "suppressed": false,
+        "value": 0.671904805159415
+      },
+      "baseline_n": 7397,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "all",
+      "inclusion": {
+        "denominator": 7397,
+        "low_n": false,
+        "numerator": 4350,
+        "suppressed": false,
+        "value": 0.5880762471272137
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 3047,
+        "suppressed": false,
+        "value": 0.6303268514687629
+      },
+      "not_selected_n": 3047,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 4350,
+        "suppressed": false,
+        "value": 0.7044534412955465
+      },
+      "selected_n": 4350
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 3169,
+        "suppressed": false,
+        "value": 0.2878553910436915
+      },
+      "baseline_n": 3169,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "all",
+      "inclusion": {
+        "denominator": 3169,
+        "low_n": false,
+        "numerator": 1600,
+        "suppressed": false,
+        "value": 0.5048911328494793
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 1569,
+        "suppressed": false,
+        "value": 0.32457592056268103
+      },
+      "not_selected_n": 1569,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 1600,
+        "suppressed": false,
+        "value": 0.2591093117408907
+      },
+      "selected_n": 1600
+    },
+    {
+      "baseline_composition": {
+        "denominator": 11009,
+        "low_n": false,
+        "numerator": 10,
+        "suppressed": false,
+        "value": 0.0009083477155054955
+      },
+      "baseline_n": 10,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "all",
+      "inclusion": {
+        "denominator": 10,
+        "low_n": false,
+        "numerator": 5,
+        "suppressed": true,
+        "value": null
+      },
+      "not_selected_composition": {
+        "denominator": 4834,
+        "low_n": false,
+        "numerator": 5,
+        "suppressed": false,
+        "value": 0.001034340091021928
+      },
+      "not_selected_n": 5,
+      "selected_composition": {
+        "denominator": 6175,
+        "low_n": false,
+        "numerator": 5,
+        "suppressed": false,
+        "value": 0.0008097165991902834
+      },
+      "selected_n": 5
+    }
+  ],
+  "schema_version": 1,
+  "target": "出现在2022两波发布文件者进入2024三波发布文件的条件保留比例；未加权，不是完整邀请框响应率",
+  "totals": {
+    "baseline_field_mismatches": 0,
+    "baseline_n": 11009,
+    "matched_selected_n": 6175,
+    "not_selected_n": 4834,
+    "selected_n": 6175,
+    "unmatched_selected_n": 0
+  },
+  "two_wave_retention_status": "computed"
+}

@@ -1,0 +1,29 @@
+{
+  "registered_at": "2026-09-08T14:49:48.162147+00:00",
+  "dataset": "2020 - 2022 Cooperative Election Study Panel Survey",
+  "doi": "10.7910/DVN/XV7ABM",
+  "version": "1.0",
+  "license": "CC0 1.0",
+  "file_id": 10231930,
+  "filename": "merged_recontact.csv",
+  "bytes": 61227263,
+  "md5": "40b0d031dad46676cef9c7e0a31ab700",
+  "official_original_md5": "40b0d031dad46676cef9c7e0a31ab700",
+  "sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+  "official_file_page": "https://dataverse.harvard.edu/file.xhtml?fileId=10231930&version=1.0",
+  "acquisition": "用户补充本地文件，官方完整MD5一致；先前API403不再阻止本地接入",
+  "csv": {
+    "rows": 11009,
+    "columns": 1332,
+    "id_column": "caseid",
+    "missing_ids": 0,
+    "duplicate_ids": 0
+  },
+  "selected_source": {
+    "filename": "merged_recontact_2024_vv.csv",
+    "doi": "10.7910/DVN/CETPVT",
+    "version": "2.0",
+    "sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac"
+  },
+  "guide_discrepancy": "指南11015人与实际两波11009人相差6人，差异原因未知；不假定文件是完整邀请框"
+}

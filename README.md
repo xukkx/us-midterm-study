@@ -2,6 +2,9 @@
 
 ## 当前阅读入口
 
+- [最新增补：两波到三波的样本保留](research/ces-panel-retention-2026-09-08/two-wave/report.md)
+- [下载两波留存复现包](downloads/ces-panel-two-wave-retention.zip?raw=true)
+
 - [最新增补：哪些人进入了三波面板](research/ces-panel-retention-2026-09-08/report.md)
 - [下载入选构成复现包](downloads/ces-panel-retention-2026-09-08.zip?raw=true)
 

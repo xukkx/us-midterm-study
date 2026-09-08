@@ -1,0 +1,331 @@
+{
+  "rows": [
+    {
+      "baseline_n": 11009,
+      "category": "all",
+      "dimension": "overall",
+      "group": "all",
+      "not_selected_n": 4834,
+      "selected_n": 6175
+    },
+    {
+      "baseline_n": 5252,
+      "category": "D",
+      "dimension": "pid",
+      "group": "all",
+      "not_selected_n": 2340,
+      "selected_n": 2912
+    },
+    {
+      "baseline_n": 1693,
+      "category": "I",
+      "dimension": "pid",
+      "group": "all",
+      "not_selected_n": 798,
+      "selected_n": 895
+    },
+    {
+      "baseline_n": 3893,
+      "category": "R",
+      "dimension": "pid",
+      "group": "all",
+      "not_selected_n": 1595,
+      "selected_n": 2298
+    },
+    {
+      "baseline_n": 171,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "all",
+      "not_selected_n": 101,
+      "selected_n": 70
+    },
+    {
+      "baseline_n": 4128,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "all",
+      "not_selected_n": 1884,
+      "selected_n": 2244
+    },
+    {
+      "baseline_n": 1035,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "all",
+      "not_selected_n": 443,
+      "selected_n": 592
+    },
+    {
+      "baseline_n": 5841,
+      "category": "other",
+      "dimension": "employment",
+      "group": "all",
+      "not_selected_n": 2504,
+      "selected_n": 3337
+    },
+    {
+      "baseline_n": 5,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "all",
+      "not_selected_n": 3,
+      "selected_n": 2
+    },
+    {
+      "baseline_n": 3169,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "all",
+      "not_selected_n": 1569,
+      "selected_n": 1600
+    },
+    {
+      "baseline_n": 7397,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "all",
+      "not_selected_n": 3047,
+      "selected_n": 4350
+    },
+    {
+      "baseline_n": 433,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "all",
+      "not_selected_n": 213,
+      "selected_n": 220
+    },
+    {
+      "baseline_n": 10,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "all",
+      "not_selected_n": 5,
+      "selected_n": 5
+    },
+    {
+      "baseline_n": 584,
+      "category": "all",
+      "dimension": "overall",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 302,
+      "selected_n": 282
+    },
+    {
+      "baseline_n": 299,
+      "category": "D",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 150,
+      "selected_n": 149
+    },
+    {
+      "baseline_n": 91,
+      "category": "I",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 48,
+      "selected_n": 43
+    },
+    {
+      "baseline_n": 178,
+      "category": "R",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 91,
+      "selected_n": 87
+    },
+    {
+      "baseline_n": 16,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 13,
+      "selected_n": 3
+    },
+    {
+      "baseline_n": 468,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 239,
+      "selected_n": 229
+    },
+    {
+      "baseline_n": 116,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 63,
+      "selected_n": 53
+    },
+    {
+      "baseline_n": 0,
+      "category": "other",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 180,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 104,
+      "selected_n": 76
+    },
+    {
+      "baseline_n": 385,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 188,
+      "selected_n": 197
+    },
+    {
+      "baseline_n": 17,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 9,
+      "selected_n": 8
+    },
+    {
+      "baseline_n": 2,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "Latino_employed_2020",
+      "not_selected_n": 1,
+      "selected_n": 1
+    },
+    {
+      "baseline_n": 749,
+      "category": "all",
+      "dimension": "overall",
+      "group": "R_renter_2020",
+      "not_selected_n": 348,
+      "selected_n": 401
+    },
+    {
+      "baseline_n": 0,
+      "category": "D",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 0,
+      "category": "I",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 749,
+      "category": "R",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "not_selected_n": 348,
+      "selected_n": 401
+    },
+    {
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "pid",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 244,
+      "category": "full_time",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "not_selected_n": 117,
+      "selected_n": 127
+    },
+    {
+      "baseline_n": 79,
+      "category": "part_time",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "not_selected_n": 35,
+      "selected_n": 44
+    },
+    {
+      "baseline_n": 425,
+      "category": "other",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "not_selected_n": 195,
+      "selected_n": 230
+    },
+    {
+      "baseline_n": 1,
+      "category": "unknown",
+      "dimension": "employment",
+      "group": "R_renter_2020",
+      "not_selected_n": 1,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 749,
+      "category": "rent",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "not_selected_n": 348,
+      "selected_n": 401
+    },
+    {
+      "baseline_n": 0,
+      "category": "own",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 0,
+      "category": "other",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    },
+    {
+      "baseline_n": 0,
+      "category": "unknown",
+      "dimension": "tenure",
+      "group": "R_renter_2020",
+      "not_selected_n": 0,
+      "selected_n": 0
+    }
+  ],
+  "schema_version": 1,
+  "source_label": "published_2022_to_2024_retained",
+  "sources": {
+    "baseline_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "selected_sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac",
+    "target": "2022两波发布文件到2024三波发布文件的条件保留"
+  },
+  "totals": {
+    "baseline_field_mismatches": 0,
+    "baseline_n": 11009,
+    "matched_selected_n": 6175,
+    "not_selected_n": 4834,
+    "selected_n": 6175,
+    "unmatched_selected_n": 0
+  }
+}
