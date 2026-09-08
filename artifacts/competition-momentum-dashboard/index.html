@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026 年美国竞争性众院与参院席位动量证据仪表盘。">
+  <title>2026 竞争席位动量仪表盘</title>
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">LONGHORIZON · 选前描述性监测</p>
+      <h1>2026 竞争席位动量</h1>
+      <p class="subtitle">参院逐场民调、结构底色与评级分层展示；众院用冻结直通系数估计。测量与模型不混写。</p>
+    </div>
+    <div class="asof"><span>冻结底层数据</span><strong id="asOf">—</strong><span>当日证据复核</span><strong id="crossCheckAsOf">—</strong><span>模型审计</span><strong id="modelReviewAsOf">—</strong></div>
+  </header>
+
+  <main>
+    <section class="status-grid" aria-label="全国状态摘要">
+      <article class="status-card primary">
+        <span>近期逐份民调均值（动量）</span>
+        <strong id="genericBallot">—</strong>
+        <small id="genericMomentum">—</small>
+      </article>
+      <article class="status-card">
+        <span>六聚合器全国水平 E（结构映射）</span>
+        <strong id="environmentE">—</strong>
+        <small id="environmentDelta">—</small>
+        <small id="environmentSources" class="status-detail">—</small>
+      </article>
+      <article class="status-card">
+        <span>竞争性众院</span>
+        <strong id="houseCount">—</strong>
+          <small>PVI 带内且模型位置非 Solid</small>
+      </article>
+      <article class="status-card">
+        <span>竞争性参院</span>
+        <strong id="senateCount">—</strong>
+        <small>评级或 PVI 入围</small>
+      </article>
+    </section>
+
+    <section class="house-outlook" aria-label="众院全国展望">
+      <div class="outlook-copy">
+        <p class="outlook-kicker">HOUSE NATIONAL OUTLOOK · 全国层级，不是四周动量</p>
+        <div class="outlook-title-row">
+          <h2>民主党小幅领先</h2>
+          <span class="outlook-badge">描述性中央图</span>
+        </div>
+        <p class="outlook-seatline">约 <strong>D 222–223</strong> · <strong>R/其他 212–213</strong></p>
+        <p class="outlook-explain">累计环境决定当前全国位置；四周变化只回答最近是否继续移动。当前点位跨过民主党取得多数所需的约 +6 席，但领先很窄。</p>
+      </div>
+      <div class="outlook-metrics">
+        <div><span>累计环境 E</span><strong id="houseLevelE">—</strong></div>
+        <div><span>映射至逐区边际</span><strong id="houseLevelAdjustment">—</strong></div>
+        <div><span>已知现任席翻转</span><strong id="houseFlipBalance">—</strong></div>
+        <div><span>净变化中央值</span><strong id="houseNetSeats">—</strong></div>
+      </div>
+      <p class="outlook-caveat">这不是胜率或校准席位分布；候选人效应、改划选区、空缺席与接近五五开的席位仍可能改变控制权。</p>
+    </section>
+
+    <section class="signal-strip" aria-label="当前高信号观察">
+      <div class="signal-label">高信号</div>
+      <div><b class="dot f"></b>众院全国直通估计 <strong id="houseTransfer">—</strong></div>
+      <div><b class="dot d"></b>MI：初选后确认向 D，当前多机构中位约 <strong>D+3.5</strong>。</div>
+      <div><b class="dot d"></b>TX：相对 6 月确认向 D，近期<strong>没有继续加速</strong>。</div>
+      <div><b class="dot f"></b>NC：D 领先稳定，温和增强<strong>尚未稳过 3pp</strong>。</div>
+      <div><b class="dot n"></b>NH、OH：机构序列冲突，<strong>不作动量判断</strong>。</div>
+    </section>
+
+    <section id="latestEvidence" class="latest-evidence" aria-label="9 月 3 日最新民调核验更新"></section>
+
+    <section id="modelReview" class="model-review" aria-label="结构模型审计"></section>
+
+    <section class="workspace">
+      <aside class="filters" aria-label="筛选器">
+        <div class="filter-heading">
+          <h2>筛选</h2>
+          <button id="resetFilters" class="text-button" type="button">重置</button>
+        </div>
+
+        <label class="search-label" for="searchInput">搜索州、选区或候选人</label>
+        <input id="searchInput" type="search" placeholder="例如 TX、North Carolina、Peltola">
+
+        <fieldset>
+          <legend>院别</legend>
+          <label><input type="radio" name="chamber" value="all" checked> 全部</label>
+          <label><input type="radio" name="chamber" value="house"> 众院</label>
+          <label><input type="radio" name="chamber" value="senate"> 参院</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>动量方向</legend>
+          <label><input type="checkbox" name="momentum" value="toward_D" checked> 向 D</label>
+          <label><input type="checkbox" name="momentum" value="toward_R" checked> 向 R</label>
+          <label><input type="checkbox" name="momentum" value="flat" checked> 持平/未达阈值</label>
+          <label><input type="checkbox" name="momentum" value="insufficient" checked> 证据不足</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>证据</legend>
+          <label><input type="radio" name="evidence" value="all" checked> 全部</label>
+          <label><input type="radio" name="evidence" value="measured"> 有可判读民调</label>
+          <label><input type="radio" name="evidence" value="estimated"> 全国传导估计</label>
+          <label><input type="radio" name="evidence" value="missing"> 样本不足/缺失</label>
+        </fieldset>
+
+        <div class="method-note">
+          <h3>口径</h3>
+          <p>众院：2026 PVI 带内，且当前环境映射位置非 Solid（|D−R|&lt;12pp）。参院：至少一家评级为 Tossup、Tilt、Lean，或 PVI 绝对值不超过 10。</p>
+          <p>参院折线以已封印正式对阵民调为底层；金色圆点是 9 月 1 日从公开报告核验的增量点。跨机构复核优先：至少两家独立机构方向一致、可比选民口径下的机构均衡位移达到 3pp，才标为确认动量。</p>
+          <p><b>D+4.8 与 D+6.2 不是同一口径：</b>D+4.8 是近期逐份民调均值，只用于判断短期动量；D+6.2 是 DDHQ、FiftyPlusOne、Race to the WH、RCP、Silver Bulletin 与 VoteHub 六个聚合器的等权均值，用于众院结构水平映射。</p>
+          <p>参院 PVI 只是结构语境，不是当前民调或预测；评级是描述性共识，不是概率。众院暂无统一逐区纵向民调。完整的模型谱系、影子挑战器和候选人层边界在上方“结构模型审计”集中说明。</p>
+        </div>
+      </aside>
+
+      <section class="results" aria-live="polite">
+        <div class="results-head">
+          <div><span id="resultCount">0</span> 个席位</div>
+          <label for="sortSelect">排序
+            <select id="sortSelect">
+              <option value="signal">信号优先</option>
+              <option value="competitive">最接近五五开</option>
+              <option value="state">州/选区</option>
+              <option value="delta">动量幅度</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="legend" aria-label="图例">
+          <span><b class="dot d"></b>向 D</span><span><b class="dot r"></b>向 R</span>
+          <span><b class="dot f"></b>持平</span><span><b class="dot n"></b>证据不足</span>
+          <span>卡片边框：<b class="dot d"></b>当前 D 席 / <b class="dot r"></b>当前 R 席</span>
+        </div>
+        <div id="senateGuide" class="senate-reading-guide">
+          <b>How to read Senate cards</b>
+          <p>折线是原始民调 D−R；卡片中的跨机构复核优先回答“多家机构是否同向”。纵轴采用各州序列绝对值的 90% 稳健范围，向上取整至 5pp（最少 ±5、最多 ±20）；超出范围的合法极值只在图形上压到边缘，原值会逐项列出。PVI 是长期底色，评级不是概率，众院直通模型不用于参院。</p>
+        </div>
+        <div id="raceGrid" class="race-grid"></div>
+        <div id="emptyState" class="empty" hidden>没有符合当前条件的席位。请放宽筛选。</div>
+      </section>
+    </section>
+
+    <section class="boundary">
+      <strong>解释边界</strong>
+      <p id="disclaimer">—</p>
+      <p>本页不输出胜率、校准席位分布或因果判断。顶部众院席位数是 provisional 点位图的描述性换算，不是概率预测；LH-178 至 LH-183 的后续审计没有授权替换公开模型。参院折线是原始民调，不等于评级；跨机构复核只判方向一致性；PVI 是结构底色，不等于当前支持率；评级不转换为概率。</p>
+      <p>House transfer model is not applied to Senate races.</p>
+    </section>
+  </main>
+
+  <footer>来源：项目冻结账本、公开民调机构发布页、Wikipedia CC BY-SA、VoteHub Polling API CC BY 4.0。9 月 1 日增量层保留逐项来源链接；页面本身不联网。</footer>
+  <script src="data.js?v=8"></script>
+  <script src="updates.js?v=8"></script>
+  <script src="model-review.js?v=8"></script>
+  <script src="latest-polls.js?v=8"></script>
+  <script src="app.js?v=8"></script>
+</body>
+</html>
