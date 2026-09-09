@@ -1,0 +1,31 @@
+{
+  "checks": 253,
+  "diagnostics": {
+    "hmm3": {
+      "all_start_likelihood_monotone": true,
+      "boundary_parameter_count_1e_8": 0,
+      "min_middle_mass": 0.15450244198783844,
+      "min_pi": 0.14733862710796825,
+      "minimum_parameter": 0.000980010023378447,
+      "view_ranks": [
+        3,
+        3,
+        3
+      ]
+    },
+    "hmm4": {
+      "all_start_likelihood_monotone": true,
+      "boundary_parameter_count_1e_8": 4,
+      "min_middle_mass": 0.009715185422097839,
+      "min_pi": 0.010247523478838652,
+      "minimum_parameter": 9.999999999995878e-13,
+      "view_ranks": [
+        4,
+        4,
+        4
+      ]
+    }
+  },
+  "note": "独立枚举概率、潜质量、整人折、CSV与输入封印；数值秩是诊断，不是实证假设证明。",
+  "passed": true
+}

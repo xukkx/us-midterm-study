@@ -2,6 +2,12 @@
 
 ## 当前阅读入口
 
+- [最新LH265：三波潜在动态与测量稳定性](research/ces-three-wave-dynamics-2026-09-09/report.md)
+- [LH265识别基础与跨模型等价](research/ces-three-wave-dynamics-2026-09-09/foundations.md)
+- [下载LH265匿名复现包](research/ces-three-wave-dynamics-2026-09-09/downloads/ces-three-wave-dynamics.zip?raw=true)
+
+LH265已完成6,175人三波实际拟合、50组精确恢复、96次有限样本恢复和整人五折比较。共同测量HMM给出条件潜变化，但静态时变测量可精确复制其观察分布；心理机制尚不能跨模型确定。
+
 - [最新LH264：四状态与潜在机制识别](research/ces-four-state-mechanisms-2026-09-08/report.md)
 - [下载LH264匿名复现包](research/ces-four-state-mechanisms-2026-09-08/downloads/ces-four-state-mechanisms.zip?raw=true)
 - [LH263.1安全接口维修](research/ces-identification-calibration-2026-09-08/MAINTENANCE.md)

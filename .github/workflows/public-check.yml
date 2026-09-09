@@ -47,3 +47,10 @@ jobs:
           python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/structure.py --check
           python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/report.py --check
           python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/dr_simulation.py --check
+      - name: 三波动态识别、模拟、模型重训与独立核验
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-three-wave-dynamics-2026-09-09 -p test_dynamics.py
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/experiments.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/analyze.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/report.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/verify.py --check
