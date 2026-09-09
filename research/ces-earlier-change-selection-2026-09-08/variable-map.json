@@ -1,0 +1,219 @@
+{
+  "origin": "LH260已核验官方面板指南及年度数值编码，本轮仅摘取两个时期与两个结局",
+  "origin_sha256": "6870427ccf672aaec8f99cf029e5bca6dd5845be06046a3ae20a1156e5cb8d9e",
+  "official_doi": "10.7910/DVN/CETPVT",
+  "waves": {
+    "2020": {
+      "pid7": {
+        "column": "pid7_20",
+        "codes": {
+          "1": "强民主党",
+          "2": "弱民主党",
+          "3": "倾向民主党",
+          "4": "独立",
+          "5": "倾向共和党",
+          "6": "弱共和党",
+          "7": "强共和党",
+          "8": "不确定"
+        },
+        "missing_codes": [],
+        "guide_page": "22-23",
+        "note": "展示顺序非编码顺序"
+      },
+      "house_vote": {
+        "column": "CC20_412",
+        "codes": {
+          "1": "cand1",
+          "2": "cand2",
+          "3": "cand3",
+          "4": "cand4",
+          "5": "cand5",
+          "6": "cand6",
+          "7": "cand7",
+          "8": "cand8",
+          "9": "cand9",
+          "10": "other",
+          "11": "not_race",
+          "12": "not_vote",
+          "13": "unknown"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "130-131",
+        "note": "候选序号逐行映射党派；10—13的编码用2020/2024年度CSV频数与官方代码本逐一对齐核定。2024未观测到12，不据此改码。",
+        "candidate_party_fields": [
+          "HouseCand1Party_20",
+          "HouseCand2Party_20",
+          "HouseCand3Party_20",
+          "HouseCand4Party_20",
+          "HouseCand5Party_20",
+          "HouseCand6Party_20",
+          "HouseCand7Party_20",
+          "HouseCand8Party_20",
+          "HouseCand9Party"
+        ],
+        "number_mapping": "1—8为HouseCandNParty_20，9为无后缀的HouseCand9Party",
+        "irreproducible_part": "Other/未投票/不确定及空字符串无候选槽位无法还原党派；HouseCand9Party无后缀仅2020有，2022/24无对应；同序号跨选区年份党派不同，必须逐行解析，不做全局序号党派映射"
+      },
+      "race": {
+        "column": "race_20",
+        "codes": {
+          "1": "White",
+          "2": "Black",
+          "3": "Hispanic",
+          "4": "Asian",
+          "5": "Native_American",
+          "6": "Two_or_more",
+          "7": "Other",
+          "8": "Middle_Eastern"
+        },
+        "missing_codes": [],
+        "guide_page": "20",
+        "note": "数值编码由2020年度CSV频数对照官方代码本29页核定；展示顺序非编码顺序，三波采用同一CES编码。主分组仅使用race=3。"
+      },
+      "hispanic": {
+        "column": "hispanic_20",
+        "codes": {
+          "1": "Yes",
+          "2": "No"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "20",
+        "note": "race=3即纳入族裔定义，不要求另一题非缺失；其他缺失保留缺失，不推断为No。"
+      },
+      "employment": {
+        "column": "employ_20",
+        "codes": {
+          "1": "Full_time",
+          "2": "Part_time",
+          "3": "Temporarily_laid_off",
+          "4": "Unemployed",
+          "5": "Retired",
+          "6": "Permanently_disabled",
+          "7": "Homemaker",
+          "8": "Student",
+          "9": "Other"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "72",
+        "note": "在业=1/2，仅实际就业状态"
+      }
+    },
+    "2022": {
+      "pid7": {
+        "column": "pid7_22",
+        "codes": {
+          "1": "强民主党",
+          "2": "弱民主党",
+          "3": "倾向民主党",
+          "4": "独立",
+          "5": "倾向共和党",
+          "6": "弱共和党",
+          "7": "强共和党",
+          "8": "不确定"
+        },
+        "missing_codes": [],
+        "guide_page": "22-23",
+        "note": ""
+      },
+      "house_vote": {
+        "column": "CC22_412",
+        "codes": {
+          "1": "cand1",
+          "2": "cand2",
+          "3": "cand3",
+          "4": "cand4",
+          "5": "cand5",
+          "6": "cand6",
+          "7": "cand7",
+          "8": "cand8",
+          "10": "other",
+          "11": "not_race",
+          "12": "not_vote",
+          "13": "unknown"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "130-131",
+        "note": "候选序号逐行映射党派；10—13的编码用2020/2024年度CSV频数与官方代码本逐一对齐核定。2024未观测到12，不据此改码。",
+        "candidate_party_fields": [
+          "HouseCand1Party_22",
+          "HouseCand2Party_22",
+          "HouseCand3Party_22",
+          "HouseCand4Party_22",
+          "HouseCand5Party_22",
+          "HouseCand6Party_22",
+          "HouseCand7Party_22",
+          "HouseCand8Party_22"
+        ],
+        "number_mapping": "1-8对应HouseCand1-8Party_22，无9号",
+        "irreproducible_part": "Other/未投票/不确定无法还原；第三党槽位波动大，同序号跨行党派不同"
+      },
+      "race": {
+        "column": "race_22",
+        "codes": {
+          "1": "White",
+          "2": "Black",
+          "3": "Hispanic",
+          "4": "Asian",
+          "5": "Native_American",
+          "6": "Two_or_more",
+          "7": "Other",
+          "8": "Middle_Eastern"
+        },
+        "missing_codes": [],
+        "guide_page": "20",
+        "note": "数值编码由2020年度CSV频数对照官方代码本29页核定；展示顺序非编码顺序，三波采用同一CES编码。主分组仅使用race=3。"
+      },
+      "hispanic": {
+        "column": "hispanic_22",
+        "codes": {
+          "1": "Yes",
+          "2": "No"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "20",
+        "note": ""
+      },
+      "employment": {
+        "column": "employ_22",
+        "codes": {
+          "1": "Full_time",
+          "2": "Part_time",
+          "3": "Temporarily_laid_off",
+          "4": "Unemployed",
+          "5": "Retired",
+          "6": "Permanently_disabled",
+          "7": "Homemaker",
+          "8": "Student",
+          "9": "Other"
+        },
+        "missing_codes": [
+          "NA"
+        ],
+        "guide_page": "72",
+        "note": ""
+      }
+    }
+  },
+  "post_questionnaire": {
+    "columns": [
+      "tookpost_20",
+      "tookpost_22",
+      "tookpost_24"
+    ],
+    "codes": {
+      "1": "未参加选后问卷",
+      "2": "参加选后问卷"
+    },
+    "note": "未参加问卷与题目缺失、明确不投票分别保留。"
+  }
+}

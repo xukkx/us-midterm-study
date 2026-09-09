@@ -1,0 +1,59 @@
+{
+  "specified_at": "2026-09-08T18:18:57.535535+00:00",
+  "already_inspected_2024_results": true,
+  "registration_status": "已看过2024结果之后、首次计算本轮早期留存诊断之前指定；不是结果盲态预注册。",
+  "target": "发布两波文件的11009名受访者；S仅为是否出现在三波发布文件。",
+  "groups": {
+    "all": "完整两波队列",
+    "Latino_employed_2020": "(race_20=3或hispanic_20=1)且employ_20属于1/2",
+    "R_renter_2020": "pid7_20属于5/6/7且ownhome_20=2"
+  },
+  "outcomes": {
+    "house": {
+      "fields": [
+        "tookpost_20",
+        "tookpost_22",
+        "CC20_412",
+        "CC22_412",
+        "HouseCand*Party_20",
+        "HouseCand*Party_22"
+      ],
+      "eligible_states": [
+        "D",
+        "R"
+      ],
+      "delta": "配对众院D/R票中2022共和党票份额减2020份额；排除其他票、明确未投票，未知单列。",
+      "weight": "commonpostweight_22"
+    },
+    "pid": {
+      "fields": [
+        "pid7_20",
+        "pid7_22"
+      ],
+      "mapping": {
+        "1,2,3": "D",
+        "4": "I",
+        "5,6,7": "R",
+        "8/缺失": "unknown"
+      },
+      "eligible_states": [
+        "D",
+        "I",
+        "R"
+      ],
+      "delta": "两年认同都可用者的2022共和党倾向份额减2020份额；保留独立者；另列D↔R及所有方向计数。",
+      "weight": "commonweight_22"
+    }
+  },
+  "populations": [
+    "full",
+    "retained",
+    "omitted"
+  ],
+  "weights": "先未加权经验队列；另用两波文件2022权重，同一结局三个群体使用相同权重列和正权重规则。不能把加权幸存者当作恢复全体；不重加权、不裁剪。",
+  "B": "Delta_retained - Delta_full，同一结局和权重口径，单位百分点。",
+  "interpretation_threshold_pp": 2.0,
+  "threshold_status": "本轮新指定的描述性参照（绝对差2个百分点），不是显著性门槛或通用科学标准；报告精确差值及相对原有净变化的影响。",
+  "uncertainty": "本次描述发布队列，不给经验方差正态区间、不作显著性检验；列真实转换人数，不以n阈值承诺精度。",
+  "exclusions": "不计算总统变化、政策项、2024政治效应、因果留存效应、留存校正或选举预测。"
+}

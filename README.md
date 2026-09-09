@@ -2,6 +2,14 @@
 
 ## 当前阅读入口
 
+- [最新：PID识别界限与遮蔽结局校准（LH263）](research/ces-identification-calibration-2026-09-08/report.md)
+- [下载LH263代码、报告与匿名结果](research/ces-identification-calibration-2026-09-08/downloads/ces-identification-calibration.zip?raw=true)
+- [早期政治变化是否受后续留存影响（LH262）](research/ces-earlier-change-selection-2026-09-08/report.md)
+- [LH263离线复现说明](research/ces-identification-calibration-2026-09-08/README.md)
+
+LH263区分不确定回答与真正空缺、完成分类与字面响应目标。三种固定方法的遮蔽校准保留了子组恢复失败；它是已看旧结果后的回溯诊断，不能证明2024可迁移性。真实模型重新训练需要本地官方原件。研究目录中的历史回执和完整运行记录引用指向原本地工作区；本公开仓库不包含这些内部文件。
+
+
 - [最新增补：两波到三波的样本保留](research/ces-panel-retention-2026-09-08/two-wave/report.md)
 - [下载两波留存复现包](downloads/ces-panel-two-wave-retention.zip?raw=true)
 
