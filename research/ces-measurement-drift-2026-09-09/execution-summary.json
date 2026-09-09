@@ -1,0 +1,14 @@
+{
+  "model": "opencode-go/muse-spark-1.3-contributor",
+  "output_tokens": 304,
+  "input_tokens": 1661,
+  "reasoning_tokens": 1534,
+  "reported_cost": 0.0005337,
+  "tool_events": [],
+  "accepted": true,
+  "complete_message": true,
+  "finish_reasons": [
+    "stop"
+  ],
+  "code_sha256": "9e2dc14f6af849825960aa4b7f534159c98dbcb24f69d79f432959d49b795f49"
+}

@@ -2,6 +2,12 @@
 
 ## 当前阅读入口
 
+- [最新LH266：消除潜变化需要多大测量漂移？](research/ces-measurement-drift-2026-09-09/report.md)
+- [LH266识别集合、标签与可观察限制](research/ces-measurement-drift-2026-09-09/foundations.md)
+- [下载LH266匿名复现包](research/ces-measurement-drift-2026-09-09/downloads/ces-measurement-drift.zip?raw=true)
+
+LH266保留LH265，完成K3/K4的有界漂移搜索、三项政策轨迹与同人历史预测基准。K3在最大行TV上限0.10、相对固定参考的对数似然损失容差2时，已找到两段潜变化均为零的模型；这是可行见证，未认证最小漂移。
+
 - [最新LH265：三波潜在动态与测量稳定性](research/ces-three-wave-dynamics-2026-09-09/report.md)
 - [LH265识别基础与跨模型等价](research/ces-three-wave-dynamics-2026-09-09/foundations.md)
 - [下载LH265匿名复现包](research/ces-three-wave-dynamics-2026-09-09/downloads/ces-three-wave-dynamics.zip?raw=true)

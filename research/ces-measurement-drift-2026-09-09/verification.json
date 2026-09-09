@@ -1,0 +1,9 @@
+{
+  "certified_global_optimum": false,
+  "checks": 10475,
+  "independent_of_optimizer": true,
+  "maximum_equivalence_probability_error": 3.3306690738754696e-16,
+  "model_witnesses_checked": 327,
+  "passed": true,
+  "scope": "穷举隐态重算概率、似然、漂移和转换；约束/嵌套、政策分母方向、折外评分和计划封印；原件重投影另有私人回执。"
+}

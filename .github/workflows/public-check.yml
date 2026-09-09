@@ -54,3 +54,12 @@ jobs:
           python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/analyze.py --check
           python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/report.py --check
           python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/verify.py --check
+      - name: 有界测量漂移、政策轨迹与历史基准实际复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-measurement-drift-2026-09-09 -p "test_*.py"
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/equivalence.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/profile.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/policy.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/history.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/report.py --check

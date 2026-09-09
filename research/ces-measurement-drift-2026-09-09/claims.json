@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "零动态可达到",
+    "not_claimed": "最小所需漂移、真误分率、人口零变化",
+    "scope": "三波留存6175人、K3、δ=.10、τ=2",
+    "status": "attained_feasible_witness"
+  },
+  {
+    "claim": "精确等价路径",
+    "not_claimed": "HMM4内部合法或整段连续认证",
+    "scope": "LH265拟合观察分布；HMM3的101网格点、HMM4两个端点",
+    "status": "verified_grid_witnesses"
+  },
+  {
+    "claim": "有界目标跨度",
+    "not_claimed": "锐界、全区间可行、95%置信区间",
+    "scope": "每个K、δ、固定参考τ下192个达到端点",
+    "status": "local_search_without_global_certificate"
+  },
+  {
+    "claim": "政策返回不统一",
+    "not_claimed": "一般测量噪声反证、因果效应或通用意识形态因子",
+    "scope": "三项分别定义的完整响应群体；两项窄描述限制",
+    "status": "descriptive_observed_restrictions"
+  },
+  {
+    "claim": "历史信息改善预测",
+    "not_claimed": "潜心理机制识别或人口显著性",
+    "scope": "固定整人五折、同一PID4目标与6175人",
+    "status": "out_of_fold_descriptive_comparison"
+  },
+  {
+    "claim": "时点范围有限核定",
+    "not_claimed": "同年题目先后、同时性、滞后因果解释",
+    "scope": "官方指南与未参加选后者回答计数",
+    "status": "exact_item_timing_unresolved"
+  }
+]

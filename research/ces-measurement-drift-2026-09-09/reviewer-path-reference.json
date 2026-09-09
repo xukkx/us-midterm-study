@@ -1,0 +1,2038 @@
+{
+  "hmm3": {
+    "feasible_grid_points": 101,
+    "grid": [
+      {
+        "feasible": true,
+        "gross01_pct": 5.070638815161798,
+        "gross12_pct": 2.3135663797273165,
+        "lambda": 0.0,
+        "max_state_emission_drift_TV": 0.0,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.734723475976807e-18
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 5.026559214083459,
+        "gross12_pct": 2.292575971359212,
+        "lambda": 0.01,
+        "max_state_emission_drift_TV": 0.001522122806048241,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0004862077479800015,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.9823675369257465,
+        "gross12_pct": 2.271547007518815,
+        "lambda": 0.02,
+        "max_state_emission_drift_TV": 0.0030442456120965446,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.000972415495960039,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.938063231480139,
+        "gross12_pct": 2.2504793581235027,
+        "lambda": 0.03,
+        "max_state_emission_drift_TV": 0.004566368418144845,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.00145862324394009,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.893645741616648,
+        "gross12_pct": 2.2293728924916434,
+        "lambda": 0.04,
+        "max_state_emission_drift_TV": 0.006088491224193146,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0019448309919201537,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.849114507248187,
+        "gross12_pct": 2.2082274793390533,
+        "lambda": 0.05,
+        "max_state_emission_drift_TV": 0.007610614030241389,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.002431038739900155,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.804468964294816,
+        "gross12_pct": 2.187042986775567,
+        "lambda": 0.06,
+        "max_state_emission_drift_TV": 0.009132736836289687,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0029172464878801656,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.759708544647312,
+        "gross12_pct": 2.1658192823015843,
+        "lambda": 0.07,
+        "max_state_emission_drift_TV": 0.010654859642337991,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0034034542358602235,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.714832676130564,
+        "gross12_pct": 2.144556232804362,
+        "lambda": 0.08,
+        "max_state_emission_drift_TV": 0.012176982448386177,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0038896619838401443,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.669840782466439,
+        "gross12_pct": 2.1232537045546285,
+        "lambda": 0.09,
+        "max_state_emission_drift_TV": 0.013699105254434473,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.004375869731820207,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.62473228323621,
+        "gross12_pct": 2.101911563202974,
+        "lambda": 0.1,
+        "max_state_emission_drift_TV": 0.015221228060482775,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.004862077479800238,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.579506593842753,
+        "gross12_pct": 2.080529673776166,
+        "lambda": 0.11,
+        "max_state_emission_drift_TV": 0.016743350866531018,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.005348285227780266,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.534163125472079,
+        "gross12_pct": 2.0591079006735513,
+        "lambda": 0.12,
+        "max_state_emission_drift_TV": 0.01826547367257932,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0058344929757602965,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.488701285054686,
+        "gross12_pct": 2.037646107663449,
+        "lambda": 0.13,
+        "max_state_emission_drift_TV": 0.019787596478627566,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.006320700723740327,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.443120475226204,
+        "gross12_pct": 2.016144157879418,
+        "lambda": 0.14,
+        "max_state_emission_drift_TV": 0.02130971928467586,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.006806908471720309,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.397420094287929,
+        "gross12_pct": 1.9946019138165294,
+        "lambda": 0.15,
+        "max_state_emission_drift_TV": 0.022831842090724162,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.007293116219700366,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.351599536166639,
+        "gross12_pct": 1.9730192373277,
+        "lambda": 0.16,
+        "max_state_emission_drift_TV": 0.024353964896772464,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.007779323967680376,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.305658190374095,
+        "gross12_pct": 1.9513959896198751,
+        "lambda": 0.17,
+        "max_state_emission_drift_TV": 0.02587608770282076,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.008265531715660461,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.2595954419660575,
+        "gross12_pct": 1.929732031250242,
+        "lambda": 0.18,
+        "max_state_emission_drift_TV": 0.027398210508868946,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.008751739463640407,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.213410671500883,
+        "gross12_pct": 1.908027222122477,
+        "lambda": 0.19,
+        "max_state_emission_drift_TV": 0.0289203333149172,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.009237947211620436,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.167103254997551,
+        "gross12_pct": 1.8862814214827939,
+        "lambda": 0.2,
+        "max_state_emission_drift_TV": 0.030442456120965446,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.00972415495960044,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.120672563893423,
+        "gross12_pct": 1.8644944879161796,
+        "lambda": 0.21,
+        "max_state_emission_drift_TV": 0.031964578927013855,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.010210362707580507,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.074117965001223,
+        "gross12_pct": 1.842666279342442,
+        "lambda": 0.22,
+        "max_state_emission_drift_TV": 0.03348670173306209,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.010696570455560507,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 4.027438820465845,
+        "gross12_pct": 1.8207966530123354,
+        "lambda": 0.23,
+        "max_state_emission_drift_TV": 0.035008824539110334,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.011182778203540562,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 4.440892098500626e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.980634487720458,
+        "gross12_pct": 1.7988854655035191,
+        "lambda": 0.24,
+        "max_state_emission_drift_TV": 0.036530947345158646,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.011668985951520574,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.9337043194422106,
+        "gross12_pct": 1.7769325727167162,
+        "lambda": 0.25,
+        "max_state_emission_drift_TV": 0.03805307015120694,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01215519369950061,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.8866476635074143,
+        "gross12_pct": 1.754937829871539,
+        "lambda": 0.26,
+        "max_state_emission_drift_TV": 0.03957519295725519,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.012641401447480606,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.8394638629461686,
+        "gross12_pct": 1.7329010915025922,
+        "lambda": 0.27,
+        "max_state_emission_drift_TV": 0.04109731576330349,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.013127609195460618,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.7921522558965415,
+        "gross12_pct": 1.710822211455354,
+        "lambda": 0.28,
+        "max_state_emission_drift_TV": 0.04261943856935173,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.013613816943440646,
+        "min_probability": 0.0009800100233785343,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.7447121755582624,
+        "gross12_pct": 1.6887010428820681,
+        "lambda": 0.29,
+        "max_state_emission_drift_TV": 0.04414156137540008,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.014100024691420712,
+        "min_probability": 0.0009699195633147711,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.697142950145671,
+        "gross12_pct": 1.6665374382376141,
+        "lambda": 0.3,
+        "max_state_emission_drift_TV": 0.045663684181448325,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.014586232439400739,
+        "min_probability": 0.0009572654902101023,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.649443902840377,
+        "gross12_pct": 1.6443312492754658,
+        "lambda": 0.31,
+        "max_state_emission_drift_TV": 0.04718580698749657,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01507244018738078,
+        "min_probability": 0.0009445849878839525,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.601614351743354,
+        "gross12_pct": 1.6220823270433282,
+        "lambda": 0.32,
+        "max_state_emission_drift_TV": 0.04870792979354493,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0155586479353608,
+        "min_probability": 0.0009318779630175216,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.5536536098261684,
+        "gross12_pct": 1.5997905218790298,
+        "lambda": 0.33,
+        "max_state_emission_drift_TV": 0.05023005259959317,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01604485568334083,
+        "min_probability": 0.0009191443218468662,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.5055609848821723,
+        "gross12_pct": 1.5774556834063258,
+        "lambda": 0.34,
+        "max_state_emission_drift_TV": 0.051752175405641476,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.016531063431320842,
+        "min_probability": 0.0009063839701602397,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.4573357794765336,
+        "gross12_pct": 1.555077660530546,
+        "lambda": 0.35000000000000003,
+        "max_state_emission_drift_TV": 0.05327429821168972,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.017017271179300887,
+        "min_probability": 0.0008935968132954124,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.4089772908962646,
+        "gross12_pct": 1.5326563014342653,
+        "lambda": 0.36,
+        "max_state_emission_drift_TV": 0.05479642101773802,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01750347892728088,
+        "min_probability": 0.0008807827561369733,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.3604848110992847,
+        "gross12_pct": 1.510191453573062,
+        "lambda": 0.37,
+        "max_state_emission_drift_TV": 0.056318543823786205,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.017989686675260918,
+        "min_probability": 0.0008679417031136114,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.311857626662973,
+        "gross12_pct": 1.4876829636711109,
+        "lambda": 0.38,
+        "max_state_emission_drift_TV": 0.0578406666298345,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.018475894423240904,
+        "min_probability": 0.0008550735581953785,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.2630950187322094,
+        "gross12_pct": 1.465130677716775,
+        "lambda": 0.39,
+        "max_state_emission_drift_TV": 0.0593627894358828,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01896210217122094,
+        "min_probability": 0.0008421782248909307,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.2141962629668064,
+        "gross12_pct": 1.4425344409581764,
+        "lambda": 0.4,
+        "max_state_emission_drift_TV": 0.06088491224193111,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.019448309919200973,
+        "min_probability": 0.0008292556062447519,
+        "projection_max_error": 5.551115123125783e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.165160629488195,
+        "gross12_pct": 1.419894097898744,
+        "lambda": 0.41000000000000003,
+        "max_state_emission_drift_TV": 0.062407035047979356,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.019934517667180972,
+        "min_probability": 0.000816305604834356,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.1159873828256024,
+        "gross12_pct": 1.397209492292728,
+        "lambda": 0.42,
+        "max_state_emission_drift_TV": 0.06392915785402759,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.020420725415160972,
+        "min_probability": 0.0008033281227674684,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.0666757818615498,
+        "gross12_pct": 1.3744804671406818,
+        "lambda": 0.43,
+        "max_state_emission_drift_TV": 0.06545128066007583,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.020906933163141028,
+        "min_probability": 0.0007903230616791894,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 3.0172250797768085,
+        "gross12_pct": 1.351706864684854,
+        "lambda": 0.44,
+        "max_state_emission_drift_TV": 0.06697340346612414,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.021393140911121062,
+        "min_probability": 0.0007772903227291337,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.967634523994489,
+        "gross12_pct": 1.3288885264046368,
+        "lambda": 0.45,
+        "max_state_emission_drift_TV": 0.0684955262721725,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.021879348659101083,
+        "min_probability": 0.0007642298065985515,
+        "projection_max_error": 4.440892098500626e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.917903356123719,
+        "gross12_pct": 1.3060252930119698,
+        "lambda": 0.46,
+        "max_state_emission_drift_TV": 0.07001764907822067,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.022365556407081072,
+        "min_probability": 0.0007511414134874275,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.868030811902522,
+        "gross12_pct": 1.2831170044465767,
+        "lambda": 0.47000000000000003,
+        "max_state_emission_drift_TV": 0.07153977188426897,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.022851764155061082,
+        "min_probability": 0.0007380250431115604,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.818016121139988,
+        "gross12_pct": 1.2601634998714029,
+        "lambda": 0.48,
+        "max_state_emission_drift_TV": 0.07306189469031728,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02333797190304112,
+        "min_probability": 0.0007248805946996184,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.7678585076578943,
+        "gross12_pct": 1.2371646176678075,
+        "lambda": 0.49,
+        "max_state_emission_drift_TV": 0.07458401749636552,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.023824179651021193,
+        "min_probability": 0.0007117079669901761,
+        "projection_max_error": 5.551115123125783e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.7175571892314565,
+        "gross12_pct": 1.2141201954308234,
+        "lambda": 0.5,
+        "max_state_emission_drift_TV": 0.07610614030241383,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02431038739900118,
+        "min_probability": 0.000698507058228726,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.667111377529563,
+        "gross12_pct": 1.1910300699643162,
+        "lambda": 0.51,
+        "max_state_emission_drift_TV": 0.07762826310846212,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02479659514698122,
+        "min_probability": 0.0006852777661646735,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.616520278054102,
+        "gross12_pct": 1.167894077276288,
+        "lambda": 0.52,
+        "max_state_emission_drift_TV": 0.07915038591451043,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.025282802894961248,
+        "min_probability": 0.0006720199880483047,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.5657830900787992,
+        "gross12_pct": 1.1447120525738042,
+        "lambda": 0.53,
+        "max_state_emission_drift_TV": 0.08067250872055866,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.025769010642941275,
+        "min_probability": 0.000658733620627735,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.514899006586946,
+        "gross12_pct": 1.121483830258263,
+        "lambda": 0.54,
+        "max_state_emission_drift_TV": 0.08219463152660691,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.026255218390921275,
+        "min_probability": 0.0006454185601458334,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.4638672142088702,
+        "gross12_pct": 1.0982092439203894,
+        "lambda": 0.55,
+        "max_state_emission_drift_TV": 0.08371675433265527,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.026741426138901313,
+        "min_probability": 0.0006320747023371264,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.412686893158278,
+        "gross12_pct": 1.0748881263352716,
+        "lambda": 0.56,
+        "max_state_emission_drift_TV": 0.08523887713870346,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02722763388688134,
+        "min_probability": 0.0006187019424246767,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.3613572171679253,
+        "gross12_pct": 1.05152030945731,
+        "lambda": 0.5700000000000001,
+        "max_state_emission_drift_TV": 0.08676099994475175,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.027713841634861347,
+        "min_probability": 0.0006053001751169408,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.309877353424583,
+        "gross12_pct": 1.0281056244152542,
+        "lambda": 0.58,
+        "max_state_emission_drift_TV": 0.08828312275079998,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.028200049382841395,
+        "min_probability": 0.0005918692946046016,
+        "projection_max_error": 4.440892098500626e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.2582464625031995,
+        "gross12_pct": 1.0046439015070296,
+        "lambda": 0.59,
+        "max_state_emission_drift_TV": 0.08980524555684835,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.028686257130821416,
+        "min_probability": 0.000578409194557379,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.2064636983001207,
+        "gross12_pct": 0.9811349701945971,
+        "lambda": 0.6,
+        "max_state_emission_drift_TV": 0.0913273683628966,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02917246487880142,
+        "min_probability": 0.0005649197681208176,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.1545282079657335,
+        "gross12_pct": 0.9575786590989566,
+        "lambda": 0.61,
+        "max_state_emission_drift_TV": 0.09284949116894484,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.029658672626781447,
+        "min_probability": 0.0005514009079130481,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.1024391318361313,
+        "gross12_pct": 0.9339747959947409,
+        "lambda": 0.62,
+        "max_state_emission_drift_TV": 0.09437161397499308,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03014488037476147,
+        "min_probability": 0.000537852506021525,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.0501956033639024,
+        "gross12_pct": 0.910323207805086,
+        "lambda": 0.63,
+        "max_state_emission_drift_TV": 0.09589373678104143,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.030631088122741533,
+        "min_probability": 0.0005242744539997443,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.9977967490482418,
+        "gross12_pct": 0.8866237205963579,
+        "lambda": 0.64,
+        "max_state_emission_drift_TV": 0.09741585958708973,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.031117295870721515,
+        "min_probability": 0.0005106666428639304,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.9452416883640522,
+        "gross12_pct": 0.8628761595727563,
+        "lambda": 0.65,
+        "max_state_emission_drift_TV": 0.09893798239313797,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03160350361870157,
+        "min_probability": 0.0004970289630897033,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.8925295336903236,
+        "gross12_pct": 0.8390803490710641,
+        "lambda": 0.66,
+        "max_state_emission_drift_TV": 0.10046010519918629,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03208971136668156,
+        "min_probability": 0.00048336130460871837,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.8396593902374136,
+        "gross12_pct": 0.8152361125551844,
+        "lambda": 0.67,
+        "max_state_emission_drift_TV": 0.10198222800523453,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03257591911466159,
+        "min_probability": 0.0004696635568052815,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.7866303559736396,
+        "gross12_pct": 0.7913432726107117,
+        "lambda": 0.68,
+        "max_state_emission_drift_TV": 0.10350435081128279,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03306212686264161,
+        "min_probability": 0.00045593560851294026,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.7334415215508825,
+        "gross12_pct": 0.7674016509394477,
+        "lambda": 0.6900000000000001,
+        "max_state_emission_drift_TV": 0.10502647361733107,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03354833461062164,
+        "min_probability": 0.00044217734801104753,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.680091970229225,
+        "gross12_pct": 0.7434110683539163,
+        "lambda": 0.7000000000000001,
+        "max_state_emission_drift_TV": 0.10654859642337944,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03403454235860167,
+        "min_probability": 0.00042838866302130103,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.6265807778007901,
+        "gross12_pct": 0.7193713447717576,
+        "lambda": 0.71,
+        "max_state_emission_drift_TV": 0.10807071922942767,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03452075010658169,
+        "min_probability": 0.0004145694407042556,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.5729070125124478,
+        "gross12_pct": 0.6952822992101426,
+        "lambda": 0.72,
+        "max_state_emission_drift_TV": 0.10959284203547592,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03500695785456171,
+        "min_probability": 0.0004007195676558098,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.5190697349876658,
+        "gross12_pct": 0.671143749780212,
+        "lambda": 0.73,
+        "max_state_emission_drift_TV": 0.11111496484152417,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03549316560254174,
+        "min_probability": 0.0003868389299036677,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.465067998147429,
+        "gross12_pct": 0.6469555136811578,
+        "lambda": 0.74,
+        "max_state_emission_drift_TV": 0.11263708764757245,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03597937335052177,
+        "min_probability": 0.0003729274129037693,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.4109008471301032,
+        "gross12_pct": 0.622717407194795,
+        "lambda": 0.75,
+        "max_state_emission_drift_TV": 0.11415921045362076,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03646558109850181,
+        "min_probability": 0.00035898490153670094,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.3565673192101668,
+        "gross12_pct": 0.5984292456795548,
+        "lambda": 0.76,
+        "max_state_emission_drift_TV": 0.11568133325966902,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03695178884648179,
+        "min_probability": 0.0003450112801040721,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.302066443716221,
+        "gross12_pct": 0.5740908435647896,
+        "lambda": 0.77,
+        "max_state_emission_drift_TV": 0.1172034560657173,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03743799659446187,
+        "min_probability": 0.000331006432324869,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.2473972419477897,
+        "gross12_pct": 0.549702014344855,
+        "lambda": 0.78,
+        "max_state_emission_drift_TV": 0.11872557887176562,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.037924204342441856,
+        "min_probability": 0.000316970241331778,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.1925587270909865,
+        "gross12_pct": 0.5252625705732372,
+        "lambda": 0.79,
+        "max_state_emission_drift_TV": 0.12024770167781387,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03841041209042188,
+        "min_probability": 0.0003029025896674834,
+        "projection_max_error": 5.551115123125783e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.137549904133217,
+        "gross12_pct": 0.5007723238565909,
+        "lambda": 0.8,
+        "max_state_emission_drift_TV": 0.12176982448386209,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03889661983840191,
+        "min_probability": 0.00028880335928093586,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.082369769776903,
+        "gross12_pct": 0.476231084848755,
+        "lambda": 0.81,
+        "max_state_emission_drift_TV": 0.12329194728991047,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.039382827586381924,
+        "min_probability": 0.00027467243152359155,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 1.0270173123519521,
+        "gross12_pct": 0.45163866324461344,
+        "lambda": 0.8200000000000001,
+        "max_state_emission_drift_TV": 0.1248140700959587,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03986903533436198,
+        "min_probability": 0.00026050968714562504,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.9714915117269851,
+        "gross12_pct": 0.4269948677742552,
+        "lambda": 0.8300000000000001,
+        "max_state_emission_drift_TV": 0.126336192902007,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.040355243082341986,
+        "min_probability": 0.0002463150062921117,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.9157913392199624,
+        "gross12_pct": 0.4022995061965351,
+        "lambda": 0.84,
+        "max_state_emission_drift_TV": 0.12785831570805523,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.040841450830322035,
+        "min_probability": 0.0002320882684991804,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.8599157575070127,
+        "gross12_pct": 0.37755238529313395,
+        "lambda": 0.85,
+        "max_state_emission_drift_TV": 0.12938043851410352,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.041327658578302014,
+        "min_probability": 0.00021782935269013947,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.8038637205305288,
+        "gross12_pct": 0.3527533108621528,
+        "lambda": 0.86,
+        "max_state_emission_drift_TV": 0.13090256132015177,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04181386632628209,
+        "min_probability": 0.00020353813717156985,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.7476341734058534,
+        "gross12_pct": 0.32790208771198426,
+        "lambda": 0.87,
+        "max_state_emission_drift_TV": 0.1324246841262001,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04230007407426209,
+        "min_probability": 0.00018921449962938986,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.6912260523270319,
+        "gross12_pct": 0.30299851965490676,
+        "lambda": 0.88,
+        "max_state_emission_drift_TV": 0.13394680693224834,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04278628182224211,
+        "min_probability": 0.0001748583171248915,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.6346382844709675,
+        "gross12_pct": 0.2780424095007339,
+        "lambda": 0.89,
+        "max_state_emission_drift_TV": 0.1354689297382966,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04327248957022212,
+        "min_probability": 0.00016046946609074206,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.5778697879007311,
+        "gross12_pct": 0.25303355905036407,
+        "lambda": 0.9,
+        "max_state_emission_drift_TV": 0.13699105254434493,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04375869731820216,
+        "min_probability": 0.00014604782232695914,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.5209194714672849,
+        "gross12_pct": 0.22797176908940786,
+        "lambda": 0.91,
+        "max_state_emission_drift_TV": 0.13851317535039318,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.044244905066182186,
+        "min_probability": 0.0001315932609968525,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.4637862347102395,
+        "gross12_pct": 0.20285683938150445,
+        "lambda": 0.92,
+        "max_state_emission_drift_TV": 0.1400352981564414,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04473111281416218,
+        "min_probability": 0.00011710565662293467,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.4064689677569788,
+        "gross12_pct": 0.17768856866190452,
+        "lambda": 0.93,
+        "max_state_emission_drift_TV": 0.14155742096248977,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.045217320562142234,
+        "min_probability": 0.00010258488308280232,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.34896655122081954,
+        "gross12_pct": 0.15246675463079784,
+        "lambda": 0.9400000000000001,
+        "max_state_emission_drift_TV": 0.143079543768538,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04570352831012222,
+        "min_probability": 8.80308136049807e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.291277856097627,
+        "gross12_pct": 0.12719119394656309,
+        "lambda": 0.9500000000000001,
+        "max_state_emission_drift_TV": 0.14460166657458626,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04618973605810227,
+        "min_probability": 7.34433207647431e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.2334017436610325,
+        "gross12_pct": 0.10186168221919534,
+        "lambda": 0.96,
+        "max_state_emission_drift_TV": 0.14612378938063456,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04667594380608233,
+        "min_probability": 5.882227647989142e-05,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.17533706535652893,
+        "gross12_pct": 0.07647801400336718,
+        "lambda": 0.97,
+        "max_state_emission_drift_TV": 0.14764591218668285,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04716215155406232,
+        "min_probability": 4.4167552006506354e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.11708266269386813,
+        "gross12_pct": 0.05103998279176736,
+        "lambda": 0.98,
+        "max_state_emission_drift_TV": 0.1491680349927311,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.047648359302042344,
+        "min_probability": 2.9479017934667444e-05,
+        "projection_max_error": 4.996003610813204e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 0.05863736713822565,
+        "gross12_pct": 0.025547381008050873,
+        "lambda": 0.99,
+        "max_state_emission_drift_TV": 0.1506901577987794,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04813456705002236,
+        "min_probability": 1.4756544184134775e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": 2.220446049250313e-14,
+        "gross12_pct": 2.220446049250313e-14,
+        "lambda": 1.0,
+        "max_state_emission_drift_TV": 0.1522122806048277,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04862077479800242,
+        "min_probability": -9.001540887085793e-20,
+        "projection_max_error": 2.7755575615628914e-16
+      }
+    ],
+    "maximum_projection_error": 5.551115123125783e-16,
+    "scope": "Exact equivalence for the published fitted HMM distribution, not exact fit to raw data; Only feasible=true grid points are accepted as probability models. Infeasible points retain diagnostic minima/errors, not latent-change estimates. No proof of entire-interval feasibility or global optimality.",
+    "tested_grid_points": 101
+  },
+  "hmm4": {
+    "feasible_grid_points": 2,
+    "grid": [
+      {
+        "feasible": true,
+        "gross01_pct": 5.860587812150175,
+        "gross12_pct": 2.8933109429023274,
+        "lambda": 0.0,
+        "max_state_emission_drift_TV": 0.0,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0,
+        "min_probability": 9.320382591039544e-13,
+        "projection_max_error": 3.469446951953614e-18
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.01,
+        "max_state_emission_drift_TV": 0.00558439594248061,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0005658161208731223,
+        "min_probability": -4.860706417510473e-06,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.02,
+        "max_state_emission_drift_TV": 0.01116879188496122,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0011316322417461923,
+        "min_probability": -9.692314493394437e-06,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.03,
+        "max_state_emission_drift_TV": 0.016753187827441833,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0016974483626193068,
+        "min_probability": -1.4493945378852587e-05,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.04,
+        "max_state_emission_drift_TV": 0.02233758376992244,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.002263264483492456,
+        "min_probability": -1.926469852985291e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.05,
+        "max_state_emission_drift_TV": 0.027921979712403053,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0028290806043655445,
+        "min_probability": -2.4003650034842567e-05,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.06,
+        "max_state_emission_drift_TV": 0.033506375654883666,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.003394896725238641,
+        "min_probability": -2.870985191909102e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.07,
+        "max_state_emission_drift_TV": 0.03909077159736428,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.003960712846111731,
+        "min_probability": -3.338233142470501e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.08,
+        "max_state_emission_drift_TV": 0.04467516753984481,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.00452652896698481,
+        "min_probability": -3.802009026532568e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.09,
+        "max_state_emission_drift_TV": 0.05025956348232542,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.005092345087857893,
+        "min_probability": -4.262210385447198e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.1,
+        "max_state_emission_drift_TV": 0.055843959424806036,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.005658161208731024,
+        "min_probability": -4.7187320506445786e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.11,
+        "max_state_emission_drift_TV": 0.061428355367286636,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.006223977329604138,
+        "min_probability": -5.1714660608663184e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.12,
+        "max_state_emission_drift_TV": 0.06701275130976725,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.006789793450477202,
+        "min_probability": -5.6203015764222485e-05,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.13,
+        "max_state_emission_drift_TV": 0.07259714725224786,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.007355609571350337,
+        "min_probability": -6.065124790346229e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.14,
+        "max_state_emission_drift_TV": 0.07818154319472848,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.00792142569222346,
+        "min_probability": -6.505818836320391e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.15,
+        "max_state_emission_drift_TV": 0.08376593913720909,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.008487241813096515,
+        "min_probability": -6.942263693230848e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.16,
+        "max_state_emission_drift_TV": 0.08935033507968969,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.009053057933969643,
+        "min_probability": -7.37433608621133e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.17,
+        "max_state_emission_drift_TV": 0.09493473102217026,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.009618874054842757,
+        "min_probability": -7.801909384024097e-05,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.18,
+        "max_state_emission_drift_TV": 0.10051912696465087,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.010184690175715806,
+        "min_probability": -8.224853492620152e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.19,
+        "max_state_emission_drift_TV": 0.10610352290713147,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.010750506296588904,
+        "min_probability": -8.643034744712935e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.2,
+        "max_state_emission_drift_TV": 0.11168791884961207,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.011316322417462036,
+        "min_probability": -9.056315785191331e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.21,
+        "max_state_emission_drift_TV": 0.11727231479209267,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.011882138538335134,
+        "min_probability": -9.464555452189279e-05,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.22,
+        "max_state_emission_drift_TV": 0.12285671073457329,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.012447954659208222,
+        "min_probability": -9.867608653619863e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.23,
+        "max_state_emission_drift_TV": 0.1284411066770539,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.013013770780081362,
+        "min_probability": -0.00010265326238972177,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.24,
+        "max_state_emission_drift_TV": 0.13402550261953453,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01357958690095448,
+        "min_probability": -0.00010657554866158765,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.25,
+        "max_state_emission_drift_TV": 0.13960989856201514,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01414540302182756,
+        "min_probability": -0.00011044136863190814,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.26,
+        "max_state_emission_drift_TV": 0.14519429450449572,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.014711219142700656,
+        "min_probability": -0.00011424910084446426,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.27,
+        "max_state_emission_drift_TV": 0.15077869044697634,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.015277035263573763,
+        "min_probability": -0.00011799707761285323,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.28,
+        "max_state_emission_drift_TV": 0.15636308638945695,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.015842851384446844,
+        "min_probability": -0.00012168358346750347,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.29,
+        "max_state_emission_drift_TV": 0.16194748233193756,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01640866750532,
+        "min_probability": -0.0001253068535408229,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.3,
+        "max_state_emission_drift_TV": 0.16753187827441818,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.016974483626193106,
+        "min_probability": -0.0001288650718876033,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.31,
+        "max_state_emission_drift_TV": 0.17311627421689874,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.017540299747066196,
+        "min_probability": -0.00013235636973764743,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.32,
+        "max_state_emission_drift_TV": 0.17870067015937932,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.01810611586793932,
+        "min_probability": -0.00013577882367742303,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.33,
+        "max_state_emission_drift_TV": 0.18428506610186,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.018671931988812368,
+        "min_probability": -0.00013913045375737567,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.34,
+        "max_state_emission_drift_TV": 0.18986946204434063,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.019237748109685524,
+        "min_probability": -0.00014240922152134757,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.35000000000000003,
+        "max_state_emission_drift_TV": 0.19545385798682122,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.019803564230558603,
+        "min_probability": -0.00014561302795435425,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.36,
+        "max_state_emission_drift_TV": 0.20103825392930175,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.020369380351431675,
+        "min_probability": -0.00014873971134476594,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.37,
+        "max_state_emission_drift_TV": 0.20662264987178236,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02093519647230479,
+        "min_probability": -0.00015178704505671684,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.38,
+        "max_state_emission_drift_TV": 0.21220704581426292,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02150101259317792,
+        "min_probability": -0.00015475273520833502,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.39,
+        "max_state_emission_drift_TV": 0.21779144175674353,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.022066828714050944,
+        "min_probability": -0.00015763441825113403,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.4,
+        "max_state_emission_drift_TV": 0.22337583769922423,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.022632644834924127,
+        "min_probability": -0.00016042965844564433,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.41000000000000003,
+        "max_state_emission_drift_TV": 0.22896023364170484,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.023198460955797192,
+        "min_probability": -0.00016313594522807958,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.42,
+        "max_state_emission_drift_TV": 0.23454462958418537,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02376427707667031,
+        "min_probability": -0.00016575069046253406,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.43,
+        "max_state_emission_drift_TV": 0.24012902552666598,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.024330093197543347,
+        "min_probability": -0.00016827122557288524,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.44,
+        "max_state_emission_drift_TV": 0.24571342146914657,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.024895909318416506,
+        "min_probability": -0.00017069479854823862,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.45,
+        "max_state_emission_drift_TV": 0.25129781741162716,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02546172543928956,
+        "min_probability": -0.00017301857081538394,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.46,
+        "max_state_emission_drift_TV": 0.25688221335410777,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.026027541560162685,
+        "min_probability": -0.00017523961397134931,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.47000000000000003,
+        "max_state_emission_drift_TV": 0.26246660929658844,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.026593357681035785,
+        "min_probability": -0.00017735490636872097,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.48,
+        "max_state_emission_drift_TV": 0.26805100523906905,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02715917380190888,
+        "min_probability": -0.00017936132954595864,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.49,
+        "max_state_emission_drift_TV": 0.2736354011815496,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.02772498992278202,
+        "min_probability": -0.00018125566449446231,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.5,
+        "max_state_emission_drift_TV": 0.2792197971240302,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.028290806043655133,
+        "min_probability": -0.000183034587753643,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.51,
+        "max_state_emission_drift_TV": 0.28480419306651084,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.028856622164528216,
+        "min_probability": -0.00018469466732470952,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.52,
+        "max_state_emission_drift_TV": 0.29038858900899145,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.029422438285401316,
+        "min_probability": -0.0001862323583933079,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.53,
+        "max_state_emission_drift_TV": 0.29597298495147206,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.029988254406274433,
+        "min_probability": -0.00018764399885052983,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.54,
+        "max_state_emission_drift_TV": 0.3015573808939527,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03055407052714753,
+        "min_probability": -0.00018892580460114856,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.55,
+        "max_state_emission_drift_TV": 0.3071417768364333,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.031119886648020654,
+        "min_probability": -0.00019007386464722726,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.56,
+        "max_state_emission_drift_TV": 0.3127261727789139,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03168570276889375,
+        "min_probability": -0.00019108413593448893,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.5700000000000001,
+        "max_state_emission_drift_TV": 0.3183105687213945,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03225151888976681,
+        "min_probability": -0.00019195243794801903,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.58,
+        "max_state_emission_drift_TV": 0.3238949646638751,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03281733501063991,
+        "min_probability": -0.00019267444704299864,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.59,
+        "max_state_emission_drift_TV": 0.32947936060635563,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03338315113151304,
+        "min_probability": -0.00019324569049522354,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.6,
+        "max_state_emission_drift_TV": 0.3350637565488363,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03394896725238615,
+        "min_probability": -0.00019366154025515908,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.61,
+        "max_state_emission_drift_TV": 0.3406481524913169,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03451478337325923,
+        "min_probability": -0.00019391720638819014,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.62,
+        "max_state_emission_drift_TV": 0.3462325484337975,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03508059949413237,
+        "min_probability": -0.00019400773018256188,
+        "projection_max_error": 3.3306690738754696e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.63,
+        "max_state_emission_drift_TV": 0.35181694437627814,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03564641561500544,
+        "min_probability": -0.00019392797690524728,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.64,
+        "max_state_emission_drift_TV": 0.35740134031875864,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03621223173587855,
+        "min_probability": -0.00019367262818462372,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.65,
+        "max_state_emission_drift_TV": 0.3629857362612393,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.036778047856751706,
+        "min_probability": -0.0001932361739973822,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.66,
+        "max_state_emission_drift_TV": 0.3685701322037199,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03734386397762477,
+        "min_probability": -0.00019261290423552044,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.67,
+        "max_state_emission_drift_TV": 0.37415452814620054,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03790968009849788,
+        "min_probability": -0.00019179689982756748,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.68,
+        "max_state_emission_drift_TV": 0.37973892408868115,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.038475496219370964,
+        "min_probability": -0.0001907820233863626,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.6900000000000001,
+        "max_state_emission_drift_TV": 0.38532332003116176,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03904131234024407,
+        "min_probability": -0.00018956190935372097,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.7000000000000001,
+        "max_state_emission_drift_TV": 0.3909077159736424,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.03960712846111715,
+        "min_probability": -0.0001881299536101823,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.71,
+        "max_state_emission_drift_TV": 0.3964921119161229,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04017294458199027,
+        "min_probability": -0.00018647930251571756,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.72,
+        "max_state_emission_drift_TV": 0.40207650785860355,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04073876070286339,
+        "min_probability": -0.00018460284134476178,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.73,
+        "max_state_emission_drift_TV": 0.4076609038010841,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.041304576823736484,
+        "min_probability": -0.00018249318207621922,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.74,
+        "max_state_emission_drift_TV": 0.4132452997435647,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04187039294460958,
+        "min_probability": -0.0001801426504961396,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.75,
+        "max_state_emission_drift_TV": 0.4188296956860454,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04243620906548269,
+        "min_probability": -0.0001775432725675671,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.76,
+        "max_state_emission_drift_TV": 0.42441409162852595,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04300202518635581,
+        "min_probability": -0.00017468676001858438,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.77,
+        "max_state_emission_drift_TV": 0.4299984875710066,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.0435678413072289,
+        "min_probability": -0.00017156449509580563,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.78,
+        "max_state_emission_drift_TV": 0.4355828835134872,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04413365742810201,
+        "min_probability": -0.00016816751442646065,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.79,
+        "max_state_emission_drift_TV": 0.4411672794559678,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.044699473548975105,
+        "min_probability": -0.000164486491927747,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.8,
+        "max_state_emission_drift_TV": 0.44675167539844846,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04526528966984814,
+        "min_probability": -0.0001605117206972569,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.81,
+        "max_state_emission_drift_TV": 0.45233607134092907,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04583110579072129,
+        "min_probability": -0.00015623309381297985,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.8200000000000001,
+        "max_state_emission_drift_TV": 0.4579204672834096,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04639692191159441,
+        "min_probability": -0.00015164008396559235,
+        "projection_max_error": 2.7755575615628914e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.8300000000000001,
+        "max_state_emission_drift_TV": 0.46350486322589024,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.046962738032467484,
+        "min_probability": -0.00014672172183941896,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.84,
+        "max_state_emission_drift_TV": 0.4690892591683708,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.047528554153340605,
+        "min_probability": -0.000141466573151542,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.85,
+        "max_state_emission_drift_TV": 0.4746736551108514,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04809437027421372,
+        "min_probability": -0.0001358627142509735,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.86,
+        "max_state_emission_drift_TV": 0.48025805105333197,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04866018639508681,
+        "min_probability": -0.0001298977061715251,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.87,
+        "max_state_emission_drift_TV": 0.4858424469958126,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.04922600251595992,
+        "min_probability": -0.00012355856702293933,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.88,
+        "max_state_emission_drift_TV": 0.4914268429382932,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.049791818636833005,
+        "min_probability": -0.00011683174259488926,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.89,
+        "max_state_emission_drift_TV": 0.4970112388807738,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05035763475770616,
+        "min_probability": -0.00010970307503752866,
+        "projection_max_error": 2.220446049250313e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.9,
+        "max_state_emission_drift_TV": 0.5025956348232544,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.050923450878579204,
+        "min_probability": -0.00010215776947026061,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.91,
+        "max_state_emission_drift_TV": 0.508180030765735,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.051489266999452346,
+        "min_probability": -9.418035835717272e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.92,
+        "max_state_emission_drift_TV": 0.5137644267082156,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05205508312032545,
+        "min_probability": -8.575466347303639e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.93,
+        "max_state_emission_drift_TV": 0.5193488226506963,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.052620899241198484,
+        "min_probability": -7.686375526771289e-05,
+        "projection_max_error": 1.1102230246251565e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.9400000000000001,
+        "max_state_emission_drift_TV": 0.5249332185931769,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05318671536207159,
+        "min_probability": -6.748990941910125e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.9500000000000001,
+        "max_state_emission_drift_TV": 0.5305176145356575,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.053752531482944746,
+        "min_probability": -5.761456034518761e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.96,
+        "max_state_emission_drift_TV": 0.5361020104781381,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05431834760381787,
+        "min_probability": -4.721825142411086e-05,
+        "projection_max_error": 3.885780586188048e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.97,
+        "max_state_emission_drift_TV": 0.5416864064206186,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05488416372469094,
+        "min_probability": -3.628058164717862e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.98,
+        "max_state_emission_drift_TV": 0.5472708023630992,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.055449979845564046,
+        "min_probability": -2.478014840319783e-05,
+        "projection_max_error": 5.551115123125783e-17
+      },
+      {
+        "feasible": false,
+        "gross01_pct": null,
+        "gross12_pct": null,
+        "lambda": 0.99,
+        "max_state_emission_drift_TV": 0.5528551983055799,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05601579596643712,
+        "min_probability": -1.2694486062967879e-05,
+        "projection_max_error": 1.6653345369377348e-16
+      },
+      {
+        "feasible": true,
+        "gross01_pct": -6.661338147750939e-14,
+        "gross12_pct": -6.661338147750939e-14,
+        "lambda": 1.0,
+        "max_state_emission_drift_TV": 0.5584395942480606,
+        "middle_weighted_average_of_statewise_max_drift_TV": 0.05658161208731022,
+        "min_probability": -5.669946975822465e-17,
+        "projection_max_error": 1.1102230246251565e-16
+      }
+    ],
+    "maximum_projection_error": 3.885780586188048e-16,
+    "scope": "Exact equivalence for the published fitted HMM distribution, not exact fit to raw data; Only feasible=true grid points are accepted as probability models. Infeasible points retain diagnostic minima/errors, not latent-change estimates. No proof of entire-interval feasibility or global optimality.",
+    "tested_grid_points": 101
+  }
+}

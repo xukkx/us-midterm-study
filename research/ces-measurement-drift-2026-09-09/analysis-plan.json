@@ -1,0 +1,90 @@
+{
+  "K": [
+    3,
+    4
+  ],
+  "cv": "复用LH265|caseid20哈希整人5折；3个新预测器同一6175人、相同PID4目标",
+  "delta_grid": [
+    0,
+    0.01,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "drift": "max_{t<u,k} TV(E_t[k],E_u[k])；共同跨时标签，另报逐态最大和middle-mass加权平均；不是错误概率",
+  "fit_tolerances": [
+    2.0,
+    10.0
+  ],
+  "history": {
+    "first_order_prior_mass": 1.0,
+    "four_category_prior": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "frozen_HMM": "只作同折旧分数背景，不把不同正则化模型强行同一排行榜",
+    "history_shrinkage_mass": 20.0,
+    "methods": [
+      "first_order_PID4",
+      "history_PID4_shrink20",
+      "first_order_raw8_predict_PID4"
+    ],
+    "raw8_prior": "PID4均匀先验在每个原码类内平均拆分，聚合仍四类各.25"
+  },
+  "internal_contract": "LH-277",
+  "path_grid": "lambda=0,.01,...,1；101点逐点检查，非整个连续区间证明",
+  "policy_changes": "每题全三波完整者为主要轨迹与方向分母，另报各段两端已知分母，缺失保留为第三观察值；不把按完成PID路径分组当因果处理",
+  "policy_groups": [
+    "stable:a=b=c",
+    "return:a=c!=b",
+    "nonreturn_change:a!=c"
+  ],
+  "policy_prediction": "本轮只作逐题观察反证，政策不参与任何潜得分；预测试点为PID观察历史基准，不添加政策潜因子",
+  "reference": "每个K的LH265已冻结log L，所有delta共用同一ref；ell>=ref-tau，两轴单独；不是置信区间",
+  "registration": "已看LH265、2024和新评审计算的回溯研究，非盲态预注册",
+  "research_label": "LH266",
+  "solver": {
+    "em_iterations": 160,
+    "extreme_starts": 2,
+    "extremes": [
+      "g01_min",
+      "g01_max",
+      "g12_min",
+      "g12_max",
+      "sum_min",
+      "sum_max"
+    ],
+    "fit_tolerance_numerical": 1e-07,
+    "global_certificate": false,
+    "initializations": [
+      "frozen",
+      "diffuse_1",
+      "diffuse_2",
+      "asymmetric_1",
+      "asymmetric_2",
+      "near_boundary_1",
+      "near_boundary_2"
+    ],
+    "likelihood_starts_per_delta": "frozen、前一delta最佳、六个固定多样起点；静态zero另两起点及前次最佳",
+    "method": "可行EM提议，逐态径向压缩发射差以满足TV，再对联合Q01/U/E回溯；仅接受似然不减，不声称精确约束M步或KKT",
+    "nested": "候选库继承较小delta及较小tau已经达到的合规模型；检查似然和范围嵌套，失败出warning",
+    "pattern_proposals_per_sweep": 24,
+    "pattern_steps": [
+      0.01,
+      0.003,
+      0.001
+    ],
+    "pattern_sweeps": 2,
+    "probability_tolerance": 1e-10,
+    "seed": 2660909,
+    "tol_per_person": 1e-08
+  },
+  "specified_at": "2026-09-09T17:52:32.890582+00:00",
+  "stop": "完成路径、有限约束搜索、政策轨迹、时点审查与观察历史基准即停；限制如实报告，不继续调参追求机制故事。",
+  "target": "三波发布且PID完整6175人；固定2020组只描述，政策按各自响应分母；不外推11009或美国人口"
+}
