@@ -1,0 +1,32 @@
+[
+  {
+    "clipped_n": 0,
+    "group": "all",
+    "ipw_ess": 6009.366618965932,
+    "largest_weight_share": 0.000501756430076575,
+    "max_raw_e": 0.6917697525006399,
+    "min_raw_e": 0.13024068506803432,
+    "n": 11009,
+    "observed_n": 6175
+  },
+  {
+    "clipped_n": 0,
+    "group": "Latino_employed_2020",
+    "ipw_ess": 270.2338844916033,
+    "largest_weight_share": 0.009406133021024981,
+    "max_raw_e": 0.6475978585917203,
+    "min_raw_e": 0.13024068506803432,
+    "n": 584,
+    "observed_n": 282
+  },
+  {
+    "clipped_n": 0,
+    "group": "R_renter_2020",
+    "ipw_ess": 392.8201876170841,
+    "largest_weight_share": 0.0037461090038683046,
+    "max_raw_e": 0.6491679515224098,
+    "min_raw_e": 0.29796908078140716,
+    "n": 749,
+    "observed_n": 401
+  }
+]

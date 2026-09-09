@@ -1,0 +1,733 @@
+{
+  "atoms": [
+    {
+      "after": "D",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 2061,
+      "r_renter": 0,
+      "s": 0,
+      "w": 1906.7474,
+      "w2": 8031.487876900001
+    },
+    {
+      "after": "I",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 83,
+      "r_renter": 0,
+      "s": 0,
+      "w": 74.35,
+      "w2": 268.31628392
+    },
+    {
+      "after": "R",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 35,
+      "r_renter": 0,
+      "s": 0,
+      "w": 45.9747,
+      "w2": 201.66844601000003
+    },
+    {
+      "after": "not_sure",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 11,
+      "r_renter": 0,
+      "s": 0,
+      "w": 32.0,
+      "w2": 200.94855254
+    },
+    {
+      "after": "D",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 106,
+      "r_renter": 0,
+      "s": 0,
+      "w": 123.8156,
+      "w2": 571.13355332
+    },
+    {
+      "after": "I",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 557,
+      "r_renter": 0,
+      "s": 0,
+      "w": 720.8071,
+      "w2": 3465.2732963900003
+    },
+    {
+      "after": "R",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 63,
+      "r_renter": 0,
+      "s": 0,
+      "w": 69.3054,
+      "w2": 233.48067142
+    },
+    {
+      "after": "not_sure",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 24,
+      "r_renter": 0,
+      "s": 0,
+      "w": 52.3647,
+      "w2": 297.22323997
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 23,
+      "r_renter": 0,
+      "s": 0,
+      "w": 39.0651,
+      "w2": 223.24481055
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 71,
+      "r_renter": 0,
+      "s": 0,
+      "w": 89.2035,
+      "w2": 441.56006833000004
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 1082,
+      "r_renter": 0,
+      "s": 0,
+      "w": 1100.6833,
+      "w2": 3341.6768412300003
+    },
+    {
+      "after": "not_sure",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 4,
+      "r_renter": 0,
+      "s": 0,
+      "w": 0.5361,
+      "w2": 0.11454863
+    },
+    {
+      "after": "D",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 12,
+      "r_renter": 0,
+      "s": 0,
+      "w": 25.2269,
+      "w2": 157.17348349000002
+    },
+    {
+      "after": "I",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 29,
+      "r_renter": 0,
+      "s": 0,
+      "w": 58.3729,
+      "w2": 410.16307383000003
+    },
+    {
+      "after": "R",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 12,
+      "r_renter": 0,
+      "s": 0,
+      "w": 9.6804,
+      "w2": 17.56075202
+    },
+    {
+      "after": "not_sure",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 35,
+      "r_renter": 0,
+      "s": 0,
+      "w": 75.4494,
+      "w2": 461.86376340000004
+    },
+    {
+      "after": "D",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 2634,
+      "r_renter": 0,
+      "s": 1,
+      "w": 2079.7074,
+      "w2": 6139.69727342
+    },
+    {
+      "after": "I",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 94,
+      "r_renter": 0,
+      "s": 1,
+      "w": 85.1883,
+      "w2": 318.39608101
+    },
+    {
+      "after": "R",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 26,
+      "r_renter": 0,
+      "s": 1,
+      "w": 42.3075,
+      "w2": 243.31605879
+    },
+    {
+      "after": "not_sure",
+      "before": "D",
+      "latino_employed": 0,
+      "n": 9,
+      "r_renter": 0,
+      "s": 1,
+      "w": 7.8453,
+      "w2": 11.40796821
+    },
+    {
+      "after": "D",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 98,
+      "r_renter": 0,
+      "s": 1,
+      "w": 107.9603,
+      "w2": 423.35086471
+    },
+    {
+      "after": "I",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 647,
+      "r_renter": 0,
+      "s": 1,
+      "w": 760.7907,
+      "w2": 3183.57024407
+    },
+    {
+      "after": "R",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 82,
+      "r_renter": 0,
+      "s": 1,
+      "w": 119.8669,
+      "w2": 630.1658760700001
+    },
+    {
+      "after": "not_sure",
+      "before": "I",
+      "latino_employed": 0,
+      "n": 25,
+      "r_renter": 0,
+      "s": 1,
+      "w": 37.9926,
+      "w2": 194.47725208
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 31,
+      "r_renter": 0,
+      "s": 1,
+      "w": 24.166,
+      "w2": 47.68079537999999
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 96,
+      "r_renter": 0,
+      "s": 1,
+      "w": 70.0596,
+      "w2": 97.10150404000001
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 1684,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1685.6546,
+      "w2": 3734.2070337200003
+    },
+    {
+      "after": "not_sure",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 10,
+      "r_renter": 0,
+      "s": 1,
+      "w": 23.941,
+      "w2": 236.25866802000002
+    },
+    {
+      "after": "D",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 17,
+      "r_renter": 0,
+      "s": 1,
+      "w": 11.9713,
+      "w2": 31.659266429999995
+    },
+    {
+      "after": "I",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 23,
+      "r_renter": 0,
+      "s": 1,
+      "w": 27.7371,
+      "w2": 54.08901471
+    },
+    {
+      "after": "R",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 7,
+      "r_renter": 0,
+      "s": 1,
+      "w": 3.8724,
+      "w2": 4.05623334
+    },
+    {
+      "after": "not_sure",
+      "before": "not_sure",
+      "latino_employed": 0,
+      "n": 20,
+      "r_renter": 0,
+      "s": 1,
+      "w": 63.2229,
+      "w2": 466.00344589
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 10,
+      "r_renter": 1,
+      "s": 0,
+      "w": 16.9143,
+      "w2": 54.10917721
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 28,
+      "r_renter": 1,
+      "s": 0,
+      "w": 44.958,
+      "w2": 252.77319248
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 284,
+      "r_renter": 1,
+      "s": 0,
+      "w": 427.0169,
+      "w2": 2323.3584050500003
+    },
+    {
+      "after": "not_sure",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 2,
+      "r_renter": 1,
+      "s": 0,
+      "w": 12.5114,
+      "w2": 120.40743706
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 7,
+      "r_renter": 1,
+      "s": 1,
+      "w": 3.5611,
+      "w2": 3.16116535
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 31,
+      "r_renter": 1,
+      "s": 1,
+      "w": 34.220600000000005,
+      "w2": 131.98637502000003
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 348,
+      "r_renter": 1,
+      "s": 1,
+      "w": 401.8895,
+      "w2": 1271.63082575
+    },
+    {
+      "after": "not_sure",
+      "before": "R",
+      "latino_employed": 0,
+      "n": 4,
+      "r_renter": 1,
+      "s": 1,
+      "w": 5.2507,
+      "w2": 17.94756017
+    },
+    {
+      "after": "D",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 136,
+      "r_renter": 0,
+      "s": 0,
+      "w": 91.02289999999999,
+      "w2": 268.98947737000003
+    },
+    {
+      "after": "I",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 6,
+      "r_renter": 0,
+      "s": 0,
+      "w": 2.4472,
+      "w2": 2.12409914
+    },
+    {
+      "after": "R",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 6,
+      "r_renter": 0,
+      "s": 0,
+      "w": 4.5373,
+      "w2": 7.903275109999999
+    },
+    {
+      "after": "not_sure",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 2,
+      "r_renter": 0,
+      "s": 0,
+      "w": 0.0568,
+      "w2": 0.0018916
+    },
+    {
+      "after": "D",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 7,
+      "r_renter": 0,
+      "s": 0,
+      "w": 6.4502,
+      "w2": 23.05235278
+    },
+    {
+      "after": "I",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 29,
+      "r_renter": 0,
+      "s": 0,
+      "w": 23.1011,
+      "w2": 94.72648065
+    },
+    {
+      "after": "R",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 9,
+      "r_renter": 0,
+      "s": 0,
+      "w": 8.3901,
+      "w2": 12.360301490000001
+    },
+    {
+      "after": "not_sure",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 3,
+      "r_renter": 0,
+      "s": 0,
+      "w": 5.0386,
+      "w2": 24.694411340000002
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 3,
+      "r_renter": 0,
+      "s": 0,
+      "w": 0.8147,
+      "w2": 0.23819757
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 5,
+      "r_renter": 0,
+      "s": 0,
+      "w": 0.9254,
+      "w2": 0.23727122
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 59,
+      "r_renter": 0,
+      "s": 0,
+      "w": 39.1071,
+      "w2": 98.93366679
+    },
+    {
+      "after": "D",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 0,
+      "s": 0,
+      "w": 0.056,
+      "w2": 0.0031360000000000003
+    },
+    {
+      "after": "I",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 7,
+      "r_renter": 0,
+      "s": 0,
+      "w": 17.9072,
+      "w2": 72.46910548
+    },
+    {
+      "after": "R",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 0,
+      "s": 0,
+      "w": 6.4044,
+      "w2": 41.016339359999996
+    },
+    {
+      "after": "not_sure",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 4,
+      "r_renter": 0,
+      "s": 0,
+      "w": 8.4305,
+      "w2": 53.119776869999995
+    },
+    {
+      "after": "D",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 140,
+      "r_renter": 0,
+      "s": 1,
+      "w": 92.6843,
+      "w2": 346.59314175000003
+    },
+    {
+      "after": "I",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 5,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1.3675,
+      "w2": 0.8399589099999999
+    },
+    {
+      "after": "R",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 3,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1.1657,
+      "w2": 0.7291237700000001
+    },
+    {
+      "after": "not_sure",
+      "before": "D",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 0,
+      "s": 1,
+      "w": 0.6905,
+      "w2": 0.47679025
+    },
+    {
+      "after": "D",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 5,
+      "r_renter": 0,
+      "s": 1,
+      "w": 11.1478,
+      "w2": 100.30645188
+    },
+    {
+      "after": "I",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 34,
+      "r_renter": 0,
+      "s": 1,
+      "w": 47.1802,
+      "w2": 318.37756812000003
+    },
+    {
+      "after": "R",
+      "before": "I",
+      "latino_employed": 1,
+      "n": 4,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1.6302999999999999,
+      "w2": 1.11437193
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 2,
+      "r_renter": 0,
+      "s": 1,
+      "w": 0.21530000000000002,
+      "w2": 0.030827890000000004
+    },
+    {
+      "after": "I",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 5,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1.4395,
+      "w2": 0.66271435
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 69,
+      "r_renter": 0,
+      "s": 1,
+      "w": 46.2641,
+      "w2": 108.96312839000001
+    },
+    {
+      "after": "D",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 2,
+      "r_renter": 0,
+      "s": 1,
+      "w": 1.7618,
+      "w2": 2.7809680400000003
+    },
+    {
+      "after": "I",
+      "before": "not_sure",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 0,
+      "s": 1,
+      "w": 7.7032,
+      "w2": 59.33929024
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 1,
+      "s": 0,
+      "w": 2.2138,
+      "w2": 4.90091044
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 22,
+      "r_renter": 1,
+      "s": 0,
+      "w": 37.2256,
+      "w2": 278.61005024
+    },
+    {
+      "after": "not_sure",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 1,
+      "r_renter": 1,
+      "s": 0,
+      "w": 0.104,
+      "w2": 0.010816
+    },
+    {
+      "after": "D",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 2,
+      "r_renter": 1,
+      "s": 1,
+      "w": 0.15789999999999998,
+      "w2": 0.01561045
+    },
+    {
+      "after": "R",
+      "before": "R",
+      "latino_employed": 1,
+      "n": 9,
+      "r_renter": 1,
+      "s": 1,
+      "w": 19.9277,
+      "w2": 151.42397159
+    }
+  ],
+  "source_hashes": {
+    "baseline_doi": "10.7910/DVN/XV7ABM",
+    "baseline_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "selected_doi": "10.7910/DVN/CETPVT",
+    "selected_sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac",
+    "source_basis": "沿用LH262已核验官方原件；本轮重新计算SHA与唯一性连接",
+    "weight": "两波文件commonweight_22固定描述性目标；不代表美国选民总体"
+  },
+  "target": "未复制个人记录的互斥基线成员×S×原始PID类型充分格表"
+}

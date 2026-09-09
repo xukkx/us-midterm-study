@@ -74,12 +74,28 @@ def scalar_contributions(rows,method):
     if method=='unadjusted':return [int(r['y']==2)-int(r['y0']==2) for r in rows if r['s']]
     return [(r['std_phi'][2] if method=='baseline_standardization' else r['phi'][2])-int(r['y0']==2) for r in rows]
 
-def uncertainty(rows,method):
+def uncertainty(rows,method,*,fitting_population=None):
+    if method not in ('unadjusted','baseline_standardization','crossfit_aipw'):
+        raise ValueError('未知估计方法')
+    if method=='baseline_standardization':
+        # LH263.1：完整拟合人群的残差在格内抵消；任意子组一般不成立。
+        # 子组方差还需要来自组外训练者的贡献，本接口暂不提供，不能只重定中心。
+        if fitting_population is None:
+            return {'valid':False,'state':'fitting_population_required','ci95_pp':None,'se_pp':None}
+        keys=[r['key'] for r in rows];full_keys=[r['key'] for r in fitting_population]
+        if len(set(keys))!=len(keys) or len(set(full_keys))!=len(full_keys):
+            raise ValueError('区间人群包含重复受访者')
+        if not keys or set(keys)!=set(full_keys):
+            return {'valid':False,'state':'unsupported_standardization_subgroup','ci95_pp':None,'se_pp':None}
     values=scalar_contributions(rows,method);n=len(values)
     changes=[int(r['y']==2)-int(r['y0']==2) for r in rows if r['s']]
     legal=([-1] if all(r['y0']==2 for r in rows) else [1] if all(r['y0']!=2 for r in rows) else [-1,1])
     sparse=any(changes.count(d)<5 for d in legal)
     mean=math.fsum(values)/n if n else None
+    if method=='baseline_standardization' and n:
+        point=math.fsum(r['std'][2]-int(r['y0']==2) for r in rows)/n
+        if not math.isclose(mean,point,rel_tol=0,abs_tol=1e-12):
+            raise ValueError('完整拟合人群的标准化残差未抵消，拒绝错位区间')
     var=math.fsum((v-mean)**2 for v in values)/(n-1) if n>1 else 0
     if sparse or var<=1e-20:return {'valid':False,'state':'sparse_transitions' if sparse else 'degenerate_variance','ci95_pp':None,'se_pp':None}
     se=math.sqrt(var/n)*100

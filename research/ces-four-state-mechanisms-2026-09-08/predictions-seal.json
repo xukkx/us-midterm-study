@@ -1,0 +1,8 @@
+{
+  "S0_hidden": true,
+  "input_sha256": "bbee804bff08359a9caf691d45266f16498f30b83d901337940bda56aa480dba",
+  "model_sha256": "91b21096259518e659e9d89176271710edbfa0785e8b183873b6ccefcaebe0a0",
+  "n": 11009,
+  "predictions_sha256": "b83664e51df4ddea65edb652a463111574c12b23567ad70bfa23702cfcd534e1",
+  "sealed_at": "2026-09-09T01:53:18.858278+00:00"
+}

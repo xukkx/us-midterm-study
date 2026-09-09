@@ -1,0 +1,8 @@
+{
+  "baseline_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+  "selected_sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac",
+  "baseline_doi": "10.7910/DVN/XV7ABM",
+  "selected_doi": "10.7910/DVN/CETPVT",
+  "weight": "两波文件commonweight_22固定描述性目标；不代表美国选民总体",
+  "source_basis": "沿用LH262已核验官方原件；本轮重新计算SHA与唯一性连接"
+}

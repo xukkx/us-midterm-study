@@ -2,6 +2,13 @@
 
 ## 当前阅读入口
 
+- [最新LH264：四状态与潜在机制识别](research/ces-four-state-mechanisms-2026-09-08/report.md)
+- [下载LH264匿名复现包](research/ces-four-state-mechanisms-2026-09-08/downloads/ces-four-state-mechanisms.zip?raw=true)
+- [LH263.1安全接口维修](research/ces-identification-calibration-2026-09-08/MAINTENANCE.md)
+
+LH264以全部11,009人的字面四状态为主要描述目标，并用实际观测等价见证区分已识别回答转换与未识别的潜在测量机制。维修保持原实证结果；新增错设模拟分别检查点偏差与区间覆盖，不把模型拟合视为心理或因果机制已被证明。
+
+
 - [最新：PID识别界限与遮蔽结局校准（LH263）](research/ces-identification-calibration-2026-09-08/report.md)
 - [下载LH263代码、报告与匿名结果](research/ces-identification-calibration-2026-09-08/downloads/ces-identification-calibration.zip?raw=true)
 - [早期政治变化是否受后续留存影响（LH262）](research/ces-earlier-change-selection-2026-09-08/report.md)

@@ -45,7 +45,7 @@ def run(reps=150,seed=26320260908):
                 failures.append({'scenario':scenario,'replication':rep,'error':str(ex)})
                 continue
             for method in METHODS:
-                est=metrics(preds,method)['R_change_pp'];ci=uncertainty(preds,method)
+                est=metrics(preds,method)['R_change_pp'];ci=uncertainty(preds,method,fitting_population=preds)
                 covered=bool(ci['valid'] and ci['ci95_pp'][0]<=true<=ci['ci95_pp'][1])
                 row={'scenario':scenario,'replication':rep,'method':method,'estimate_pp':est,'population_truth_pp':true,'empirical_full_pp':empirical,
                      'valid_interval':ci['valid'],'interval_state':ci['state'],'covered':covered,'se_pp':ci['se_pp'],'ci95_pp':ci['ci95_pp']}

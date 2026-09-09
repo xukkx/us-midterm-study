@@ -35,8 +35,15 @@ jobs:
           python -X utf8 -B research/ces-earlier-change-selection-2026-09-08/write_report.py --check
       - name: PID识别与遮蔽校准测试及匿名复算
         run: |
-          python -X utf8 -B -m unittest discover -s research/ces-identification-calibration-2026-09-08 -p test_methods.py
+          python -X utf8 -B -m unittest discover -s research/ces-identification-calibration-2026-09-08 -p 'test_*.py'
           python -X utf8 -B research/ces-identification-calibration-2026-09-08/identify.py --check
           python -X utf8 -B research/ces-identification-calibration-2026-09-08/anonymous_benchmark.py
           python -X utf8 -B research/ces-identification-calibration-2026-09-08/report.py --check
           python -X utf8 -B research/ces-identification-calibration-2026-09-08/simulate.py --check
+      - name: 四状态与结构机制独立测试及匿名复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-four-state-mechanisms-2026-09-08 -p test_four_state.py
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/analyze.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/structure.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/report.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/dr_simulation.py --check
