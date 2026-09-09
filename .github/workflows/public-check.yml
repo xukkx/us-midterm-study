@@ -63,3 +63,11 @@ jobs:
           python -X utf8 -B research/ces-measurement-drift-2026-09-09/history.py --check
           python -X utf8 -B research/ces-measurement-drift-2026-09-09/verify.py --check
           python -X utf8 -B research/ces-measurement-drift-2026-09-09/report.py --check
+      - name: 可观察政策条件校准、嵌套历史与独立复核
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-policy-calibration-2026-09-09 -p "test_*.py"
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/simulate.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/policy_calibration.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/history_nested.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/report.py --check

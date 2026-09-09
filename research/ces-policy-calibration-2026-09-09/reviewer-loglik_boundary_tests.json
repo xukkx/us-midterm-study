@@ -1,0 +1,11 @@
+{
+  "positive_count_at_zero_probability": {
+    "expected": "Negative infinity for the stated likelihood, or explicit rejection.",
+    "published_return": -690.7755278982137
+  },
+  "scope": "No evidence that upstream valid 64-cell empirical probabilities triggered these cases; not a finding that published witnesses are invalid.",
+  "short_probability_vector": {
+    "expected": "Reject dimension mismatch; 63 counts otherwise ignored.",
+    "published_return": 0.0
+  }
+}

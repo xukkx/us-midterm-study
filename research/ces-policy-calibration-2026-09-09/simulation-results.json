@@ -1,0 +1,72 @@
+{
+  "R1_distinct_tables": 88,
+  "R1_enumerated_labeled_assignments": 2520,
+  "exact_null_sizes_at_05": {
+    "R1_MI": 0,
+    "R2_absolute_difference": 0.014538971195317885
+  },
+  "scenarios": [
+    {
+      "MC_Wilson95": [
+        0.0004414477868016362,
+        0.01402328507582339
+      ],
+      "draws_per_test": 199,
+      "rejection_rate": 0.0025,
+      "rejections": 1,
+      "replications": 400,
+      "scenario": "exact_fixed_margin_null",
+      "test": "R1_MI"
+    },
+    {
+      "MC_Wilson95": [
+        0.003895483794990993,
+        0.025426564652619582
+      ],
+      "draws_per_test": 199,
+      "rejection_rate": 0.01,
+      "rejections": 4,
+      "replications": 400,
+      "scenario": "fixed_diagonal_tilt_log4",
+      "test": "R1_MI"
+    },
+    {
+      "MC_Wilson95": [
+        0.0025538891952499396,
+        0.021815720724032123
+      ],
+      "draws_per_test": 199,
+      "rejection_rate": 0.0075,
+      "rejections": 3,
+      "replications": 400,
+      "scenario": "equal_probability_null",
+      "test": "R2_absolute_difference"
+    },
+    {
+      "MC_Wilson95": [
+        0.2833400429179013,
+        0.37494169862743104
+      ],
+      "draws_per_test": 199,
+      "rejection_rate": 0.3275,
+      "rejections": 131,
+      "replications": 400,
+      "scenario": "fixed_conditional_odds_4.0",
+      "test": "R2_absolute_difference"
+    },
+    {
+      "MC_Wilson95": [
+        8.673617379884035e-19,
+        0.009512294334296508
+      ],
+      "draws_per_test": 199,
+      "rejection_rate": 0.0,
+      "rejections": 0,
+      "replications": 400,
+      "scenario": "fixed_conditional_odds_0.25",
+      "test": "R2_absolute_difference"
+    }
+  ],
+  "scope": "小表固定边际校准与固定备择功效示例，不代表6175人经验数据的实际功效；保留离散保守性，不据结果调参。",
+  "seed": 267101
+}

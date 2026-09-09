@@ -36,8 +36,9 @@ def probabilities(m):
  return result
 def loglik(counts,p):
  if len(counts)!=64 or any(type(n)!=int or n<0 for n in counts) or sum(counts)==0:raise ValueError('似然仅接受64格非负整数人数，拒绝权重及有符号矩阵')
- if any(not math.isfinite(v) or v<0 for v in p) or abs(sum(p)-1)>1e-8:raise ValueError('不是有效观察概率')
- return sum(n*math.log(max(v,1e-300)) for n,v in zip(counts,p) if n)
+ if len(p)!=64 or any(type(v) not in (int,float) or not math.isfinite(v) or v<0 for v in p) or abs(sum(p)-1)>1e-8:raise ValueError('须为64格有效观察概率')
+ if any(n>0 and v==0 for n,v in zip(counts,p)):raise ValueError('正频数格的模型概率为零，拒绝不可能候选')
+ return sum(n*math.log(v) for n,v in zip(counts,p) if n)
 def view_diagnostics(m):
  k=len(m['Q']);pi=[sum(row) for row in m['Q']];w=middle(m);t=[[x/pi[i] for x in row] if pi[i] else eye(k)[i] for i,row in enumerate(m['Q'])]
  return {'ranks':{'E0':rank(m['E'][0]),'E1':rank(m['E'][1]),'E2':rank(m['E'][2]),'T01':rank(t),'T12':rank(m['U'])},'pi':pi,'middle_mass':w,'minimum_probability':min(values(m)),'near_boundary_count_1e8':sum(v<1e-8 for v in values(m))}

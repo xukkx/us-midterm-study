@@ -2,6 +2,12 @@
 
 ## 当前阅读入口
 
+- [最新LH267：可观察政策限制校准与强度控制历史](research/ces-policy-calibration-2026-09-09/report.md)
+- [LH267条件参考与主张层级](research/ces-policy-calibration-2026-09-09/foundations.md)
+- [下载LH267匿名复现包](research/ces-policy-calibration-2026-09-09/downloads/ces-policy-calibration.zip?raw=true)
+
+LH267保留结构拟合，校准已有政策限制并增加唯一一个强度控制历史预测器。有条件合法化偏离特定条件独立参考；早期历史改善平均预测，但对未返回变化路径有负贡献。不据此识别心理机制。
+
 - [最新LH266：消除潜变化需要多大测量漂移？](research/ces-measurement-drift-2026-09-09/report.md)
 - [LH266识别集合、标签与可观察限制](research/ces-measurement-drift-2026-09-09/foundations.md)
 - [下载LH266匿名复现包](research/ces-measurement-drift-2026-09-09/downloads/ces-measurement-drift.zip?raw=true)

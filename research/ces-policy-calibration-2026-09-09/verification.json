@@ -1,0 +1,38 @@
+{
+  "checks": 1887,
+  "exact_null_mean_diagnostics": {
+    "conditional_legalization": {
+      "MI": {
+        "MC_mean_z": -0.16736514976571631,
+        "exact_null_mean": 0.0036418507773557074
+      },
+      "TV": {
+        "MC_mean_z": -0.30551042642023307,
+        "exact_null_mean": 0.012306078866509735
+      }
+    },
+    "drug_price_negotiation": {
+      "MI": {
+        "MC_mean_z": -0.24501089745392113,
+        "exact_null_mean": 0.0033664463323460495
+      },
+      "TV": {
+        "MC_mean_z": 0.03563015055361041,
+        "exact_null_mean": 0.00910058467601487
+      }
+    },
+    "medicare_single_payer": {
+      "MI": {
+        "MC_mean_z": 0.4627446449528119,
+        "exact_null_mean": 0.0034830382743533295
+      },
+      "TV": {
+        "MC_mean_z": -0.07883748705782456,
+        "exact_null_mean": 0.010429590132595203
+      }
+    }
+  },
+  "full_algorithm_confidence_interval": false,
+  "passed": true,
+  "scope": "匿名源分层计数、两统计量、精确超几何零分布均值/方差、评审差值与MC一致性、Holm、全部折外预测/校准/路径；独立于生产参考及预测函数。"
+}

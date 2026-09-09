@@ -1,0 +1,1353 @@
+{
+  "interpretation": "条件可交换或另述Bernoulli参考，有限保留人群；并非随机处理或全国调查设计推断。",
+  "items": {
+    "conditional_legalization": {
+      "R1": {
+        "complete_n": 6168,
+        "materiality_TV_scale": 0.0325875486381323,
+        "statistics": {
+          "MI": {
+            "B": 99999,
+            "Holm_MC_endpoint_sensitivity": [
+              6.121716344181418e-05,
+              0.0005292535878165881
+            ],
+            "Holm_primary_six": 0.00024000000000000003,
+            "Holm_three_diagnostic": 0.00012000000000000002,
+            "MC_Wilson95": [
+              1.0202860573635697e-05,
+              8.820893130276469e-05
+            ],
+            "MC_se": 1.7320421467735587e-05,
+            "hits": 3,
+            "null": {
+              "mean": 0.0036414647444442593,
+              "quantiles": {
+                "0": 0.0011449433457331147,
+                "0.025": 0.0023458397667306843,
+                "0.25": 0.0031281199168192706,
+                "0.5": 0.0035951830051690037,
+                "0.75": 0.004103525634420977,
+                "0.95": 0.004917430790262798,
+                "0.975": 0.005199696126438105,
+                "0.99": 0.005540300440900257,
+                "1.0": 0.008345831891053765
+              },
+              "sd": 0.0007293855082371585
+            },
+            "observed": 0.007796739729260842,
+            "p_plus_one": 4e-05,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          },
+          "TV": {
+            "B": 99999,
+            "MC_Wilson95": [
+              0.0,
+              3.841349670325084e-05
+            ],
+            "MC_se": 0.0,
+            "hits": 0,
+            "null": {
+              "mean": 0.012304325545291877,
+              "quantiles": {
+                "0": 0.005820284513527538,
+                "0.025": 0.009008467630989118,
+                "0.25": 0.011033945994839804,
+                "0.5": 0.012212880019885988,
+                "0.75": 0.013472815032988673,
+                "0.95": 0.015446822243928116,
+                "0.975": 0.01608864801523018,
+                "0.99": 0.016904316995331663,
+                "1.0": 0.022988541355466695
+              },
+              "sd": 0.0018148188462129037
+            },
+            "observed": 0.026349138810749136,
+            "p_plus_one": 1e-05,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          }
+        },
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "table": [
+              [
+                89,
+                32,
+                53,
+                67
+              ],
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                29,
+                8,
+                3,
+                6
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "table": [
+              [
+                56,
+                65,
+                173,
+                2178
+              ],
+              [
+                3,
+                0,
+                6,
+                35
+              ],
+              [
+                7,
+                5,
+                15,
+                76
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "table": [
+              [
+                156,
+                10,
+                29,
+                27
+              ],
+              [
+                11,
+                1,
+                1,
+                0
+              ],
+              [
+                56,
+                6,
+                19,
+                8
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "table": [
+              [
+                35,
+                18,
+                42,
+                257
+              ],
+              [
+                1,
+                1,
+                4,
+                18
+              ],
+              [
+                15,
+                7,
+                26,
+                145
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "table": [
+              [
+                1072,
+                54,
+                113,
+                72
+              ],
+              [
+                21,
+                2,
+                5,
+                1
+              ],
+              [
+                70,
+                3,
+                9,
+                14
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "table": [
+              [
+                183,
+                59,
+                182,
+                312
+              ],
+              [
+                2,
+                1,
+                7,
+                13
+              ],
+              [
+                11,
+                7,
+                14,
+                68
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "table": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                11,
+                1,
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "table": [
+              [
+                0,
+                0,
+                1,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                3,
+                7,
+                29
+              ]
+            ]
+          }
+        ]
+      },
+      "R2": {
+        "B": 299999,
+        "Holm_MC_endpoint_sensitivity": [
+          0.8979966528727711,
+          0.9001524541011615
+        ],
+        "Holm_primary_six": 0.89908,
+        "Holm_three_diagnostic": 0.89908,
+        "MC_Wilson95": [
+          0.8979966528727711,
+          0.9001524541011615
+        ],
+        "MC_se": 0.0005499567393720497,
+        "all_supported_strata_nonnegative_lower_bound": false,
+        "any_supported_stratum_negative_upper_bound": false,
+        "complete_return_n": 137,
+        "hits": 269723,
+        "hypothesis_version": "R2_eq_average_statistic_v1",
+        "materiality_epsilon": 0.03396155297741899,
+        "null": "每层等概率；不是只要求标准化平均为零",
+        "null_distribution": {
+          "mean": -2.3863595589861255e-05,
+          "quantiles": {
+            "0": -0.07000478829464778,
+            "0.025": -0.039802919178355795,
+            "0.25": -0.016872794836712914,
+            "0.5": -0.0018583642404689786,
+            "0.75": 0.013264048245393383,
+            "0.95": 0.03603087677816905,
+            "0.975": 0.04360937563399703,
+            "0.99": 0.05157212269327012,
+            "1.0": 0.11934917900978802
+          },
+          "sd": 0.0215144978724373
+        },
+        "observed_average_difference": -0.002229675297903676,
+        "p_plus_one": 0.89908,
+        "reference_stable_return_rate": 0.06792310595483798,
+        "simultaneous_average_interval": [
+          -0.09794615112339562,
+          0.3036779324768241
+        ],
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "difference": 0.030082987551867224,
+            "return_events": 1,
+            "return_n": 4,
+            "return_probability_interval": [
+              0.00017365634066142388,
+              0.9434014655491736
+            ],
+            "simultaneous_difference_interval": [
+              -0.3147449953320645,
+              0.8015711724587553
+            ],
+            "stable_events": 53,
+            "stable_n": 241,
+            "stable_probability_interval": [
+              0.14183029309041828,
+              0.3149186516727259
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "difference": -0.026294498381877023,
+            "return_events": 0,
+            "return_n": 44,
+            "return_probability_interval": [
+              0.0,
+              0.15234518313987028
+            ],
+            "simultaneous_difference_interval": [
+              -0.038225996767668954,
+              0.13517547359072996
+            ],
+            "stable_events": 65,
+            "stable_n": 2472,
+            "stable_probability_interval": [
+              0.017169709549140308,
+              0.038225996767668954
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "difference": -0.0537075537075537,
+            "return_events": 1,
+            "return_n": 13,
+            "return_probability_interval": [
+              5.34359324557282e-05,
+              0.5386206335889765
+            ],
+            "simultaneous_difference_interval": [
+              -0.2168696222029322,
+              0.4699180670374072
+            ],
+            "stable_events": 29,
+            "stable_n": 222,
+            "stable_probability_interval": [
+              0.06870256655156932,
+              0.21692305813538793
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "difference": -0.009469696969696975,
+            "return_events": 1,
+            "return_n": 24,
+            "return_probability_interval": [
+              2.8944817868956085e-05,
+              0.3366574273599676
+            ],
+            "simultaneous_difference_interval": [
+              -0.09978046363481216,
+              0.31530265772053
+            ],
+            "stable_events": 18,
+            "stable_n": 352,
+            "stable_probability_interval": [
+              0.021354769639437624,
+              0.09980940845268112
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "difference": 0.08622004787080145,
+            "return_events": 5,
+            "return_n": 29,
+            "return_probability_interval": [
+              0.02493771531702467,
+              0.47512264962971973
+            ],
+            "simultaneous_difference_interval": [
+              -0.0887151733008367,
+              0.4117937063050399
+            ],
+            "stable_events": 113,
+            "stable_n": 1311,
+            "stable_probability_interval": [
+              0.06332894332467982,
+              0.11365288861786137
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "difference": -0.03668478260869565,
+            "return_events": 1,
+            "return_n": 23,
+            "return_probability_interval": [
+              3.0203269205927863e-05,
+              0.34867312967488195
+            ],
+            "simultaneous_difference_interval": [
+              -0.11699663579137543,
+              0.2970284818205476
+            ],
+            "stable_events": 59,
+            "stable_n": 736,
+            "stable_probability_interval": [
+              0.05164464785433438,
+              0.11702683906058135
+            ]
+          }
+        ],
+        "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间",
+        "unsupported_strata": [
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "return_n": 0,
+            "stable_n": 1
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "return_n": 0,
+            "stable_n": 7
+          }
+        ]
+      }
+    },
+    "drug_price_negotiation": {
+      "R1": {
+        "complete_n": 6161,
+        "materiality_TV_scale": 0.030271059892874534,
+        "statistics": {
+          "MI": {
+            "B": 99999,
+            "Holm_MC_endpoint_sensitivity": [
+              0.06947324525354005,
+              0.07691466813521722
+            ],
+            "Holm_primary_six": 0.07315,
+            "Holm_three_diagnostic": 0.02926,
+            "MC_Wilson95": [
+              0.019806609518721294,
+              0.021570629352281986
+            ],
+            "MC_se": 0.0004499239012152803,
+            "hits": 2067,
+            "null": {
+              "mean": 0.0033659214931368495,
+              "quantiles": {
+                "0": 0.0012442232317475203,
+                "0.025": 0.002182046438604149,
+                "0.25": 0.00288646790270109,
+                "0.5": 0.003316367206276348,
+                "0.75": 0.0037924358945341445,
+                "0.95": 0.0045565684615418095,
+                "0.975": 0.004825504385306136,
+                "0.99": 0.005167944027890104,
+                "1.0": 0.007696533677989561
+              },
+              "sd": 0.0006773898733579255
+            },
+            "observed": 0.0048937776885876385,
+            "p_plus_one": 0.02068,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          },
+          "TV": {
+            "B": 99999,
+            "MC_Wilson95": [
+              0.002143385809635938,
+              0.002754889596092425
+            ],
+            "MC_se": 0.00015569661279483466,
+            "hits": 243,
+            "null": {
+              "mean": 0.00910075107082435,
+              "quantiles": {
+                "0": 0.004360022944089139,
+                "0.025": 0.006478238307319753,
+                "0.25": 0.008062270724803769,
+                "0.5": 0.009007639264081034,
+                "0.75": 0.010038323972173795,
+                "0.95": 0.011683062311511,
+                "0.975": 0.012241398640957503,
+                "0.99": 0.012942263073034425,
+                "1.0": 0.0175746814380751
+              },
+              "sd": 0.0014767940906103918
+            },
+            "observed": 0.013920199260112969,
+            "p_plus_one": 0.00244,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          }
+        },
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "table": [
+              [
+                6,
+                8,
+                5,
+                112
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                2,
+                3,
+                0,
+                5
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "table": [
+              [
+                6,
+                43,
+                29,
+                2499
+              ],
+              [
+                0,
+                0,
+                2,
+                43
+              ],
+              [
+                0,
+                5,
+                3,
+                131
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "table": [
+              [
+                25,
+                6,
+                5,
+                20
+              ],
+              [
+                2,
+                0,
+                0,
+                4
+              ],
+              [
+                9,
+                2,
+                1,
+                15
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "table": [
+              [
+                22,
+                32,
+                16,
+                446
+              ],
+              [
+                4,
+                0,
+                1,
+                26
+              ],
+              [
+                8,
+                12,
+                7,
+                229
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "table": [
+              [
+                95,
+                39,
+                23,
+                80
+              ],
+              [
+                3,
+                0,
+                0,
+                1
+              ],
+              [
+                6,
+                7,
+                4,
+                9
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "table": [
+              [
+                166,
+                223,
+                121,
+                1300
+              ],
+              [
+                8,
+                4,
+                5,
+                31
+              ],
+              [
+                9,
+                12,
+                9,
+                140
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "table": [
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                6
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "table": [
+              [
+                0,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                1,
+                50
+              ]
+            ]
+          }
+        ]
+      },
+      "R2": {
+        "B": 299999,
+        "Holm_MC_endpoint_sensitivity": [
+          0.2281788165644701,
+          0.23274909413540934
+        ],
+        "Holm_primary_six": 0.23046,
+        "Holm_three_diagnostic": 0.23046,
+        "MC_Wilson95": [
+          0.11408940828223504,
+          0.11637454706770467
+        ],
+        "MC_se": 0.0005829525920245487,
+        "all_supported_strata_nonnegative_lower_bound": false,
+        "any_supported_stratum_negative_upper_bound": false,
+        "complete_return_n": 136,
+        "hits": 34568,
+        "hypothesis_version": "R2_eq_average_statistic_v1",
+        "materiality_epsilon": 0.035247800370227636,
+        "null": "每层等概率；不是只要求标准化平均为零",
+        "null_distribution": {
+          "mean": -7.623804892890874e-06,
+          "quantiles": {
+            "0": -0.07138783988485833,
+            "0.025": -0.04094934333758209,
+            "0.25": -0.017565280410085517,
+            "0.5": -0.0025360046576952764,
+            "0.75": 0.012725782115400073,
+            "0.95": 0.03568312961400751,
+            "0.975": 0.04341103000358272,
+            "0.99": 0.057145596518234386,
+            "1.0": 0.11993854131846846
+          },
+          "sd": 0.021743064359427862
+        },
+        "observed_average_difference": -0.03373089485810233,
+        "p_plus_one": 0.11523,
+        "reference_stable_return_rate": 0.07049560074045527,
+        "simultaneous_average_interval": [
+          -0.10106420188477606,
+          0.21925073306062476
+        ],
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "difference": 0.4618320610687023,
+            "return_events": 1,
+            "return_n": 2,
+            "return_probability_interval": [
+              0.0003472825247981953,
+              0.9996527174752017
+            ],
+            "simultaneous_difference_interval": [
+              -0.12333265398191515,
+              0.9943886491452162
+            ],
+            "stable_events": 5,
+            "stable_n": 131,
+            "stable_probability_interval": [
+              0.005264068329985508,
+              0.12367993650671334
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "difference": -0.016686069072564997,
+            "return_events": 0,
+            "return_n": 45,
+            "return_probability_interval": [
+              0.0,
+              0.14922608301153067
+            ],
+            "simultaneous_difference_interval": [
+              -0.026378531091270266,
+              0.13947154887224789
+            ],
+            "stable_events": 43,
+            "stable_n": 2577,
+            "stable_probability_interval": [
+              0.009754534139282775,
+              0.026378531091270266
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "difference": -0.08928571428571429,
+            "return_events": 0,
+            "return_n": 6,
+            "return_probability_interval": [
+              0.0,
+              0.7024182788455957
+            ],
+            "simultaneous_difference_interval": [
+              -0.27207872399568767,
+              0.6898850187928645
+            ],
+            "stable_events": 5,
+            "stable_n": 56,
+            "stable_probability_interval": [
+              0.012533260052731213,
+              0.27207872399568767
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "difference": -0.06201550387596899,
+            "return_events": 0,
+            "return_n": 31,
+            "return_probability_interval": [
+              0.0,
+              0.20910771525336264
+            ],
+            "simultaneous_difference_interval": [
+              -0.10327235796965119,
+              0.17585328535344386
+            ],
+            "stable_events": 32,
+            "stable_n": 516,
+            "stable_probability_interval": [
+              0.033254429899918794,
+              0.10327235796965119
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "difference": -0.0970464135021097,
+            "return_events": 0,
+            "return_n": 4,
+            "return_probability_interval": [
+              0.0,
+              0.8376660422624504
+            ],
+            "simultaneous_difference_interval": [
+              -0.1729911820155799,
+              0.7915669979298228
+            ],
+            "stable_events": 23,
+            "stable_n": 237,
+            "stable_probability_interval": [
+              0.04609904433262772,
+              0.1729911820155799
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "difference": -0.03987108655616943,
+            "return_events": 4,
+            "return_n": 48,
+            "return_probability_interval": [
+              0.008314197803930709,
+              0.2830048888906437
+            ],
+            "simultaneous_difference_interval": [
+              -0.14135733500339415,
+              0.18325151558896124
+            ],
+            "stable_events": 223,
+            "stable_n": 1810,
+            "stable_probability_interval": [
+              0.09975337330168245,
+              0.14967153280732487
+            ]
+          }
+        ],
+        "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间",
+        "unsupported_strata": [
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "return_n": 0,
+            "stable_n": 2
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "return_n": 0,
+            "stable_n": 6
+          }
+        ]
+      }
+    },
+    "medicare_single_payer": {
+      "R1": {
+        "complete_n": 6163,
+        "materiality_TV_scale": 0.023689761479798798,
+        "statistics": {
+          "MI": {
+            "B": 99999,
+            "Holm_MC_endpoint_sensitivity": [
+              0.06947324525354005,
+              0.07691466813521722
+            ],
+            "Holm_primary_six": 0.07315,
+            "Holm_three_diagnostic": 0.02926,
+            "MC_Wilson95": [
+              0.013894649050708011,
+              0.015382933627043445
+            ],
+            "MC_se": 0.00037955950247524844,
+            "hits": 1462,
+            "null": {
+              "mean": 0.0034840560037275245,
+              "quantiles": {
+                "0": 0.001293913198757792,
+                "0.025": 0.0022596891936808076,
+                "0.25": 0.0029932339448084976,
+                "0.5": 0.0034372038219229136,
+                "0.75": 0.003921257414251806,
+                "0.95": 0.0047012794231749136,
+                "0.975": 0.004982415220134877,
+                "0.99": 0.005309005612289328,
+                "1.0": 0.007538035324435518
+              },
+              "sd": 0.000695486551267962
+            },
+            "observed": 0.00517809624919175,
+            "p_plus_one": 0.01463,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          },
+          "TV": {
+            "B": 99999,
+            "MC_Wilson95": [
+              0.0004662108985568369,
+              0.0007721685016094046
+            ],
+            "MC_se": 7.743719967688567e-05,
+            "hits": 60,
+            "null": {
+              "mean": 0.010429203287339792,
+              "quantiles": {
+                "0": 0.005236769837035128,
+                "0.025": 0.007624515158119897,
+                "0.25": 0.009346183294511538,
+                "0.5": 0.010347182286209409,
+                "0.75": 0.011429776438073537,
+                "0.95": 0.013092490175952163,
+                "0.975": 0.01367847807529289,
+                "0.99": 0.014408429774504489,
+                "1.0": 0.01854215505866589
+              },
+              "sd": 0.0015516806004406978
+            },
+            "observed": 0.01628848984855411,
+            "p_plus_one": 0.00061,
+            "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间"
+          }
+        },
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "table": [
+              [
+                133,
+                33,
+                53,
+                113
+              ],
+              [
+                2,
+                2,
+                2,
+                1
+              ],
+              [
+                21,
+                2,
+                7,
+                8
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "table": [
+              [
+                41,
+                45,
+                104,
+                2187
+              ],
+              [
+                0,
+                2,
+                3,
+                35
+              ],
+              [
+                6,
+                4,
+                8,
+                92
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "table": [
+              [
+                185,
+                17,
+                25,
+                32
+              ],
+              [
+                13,
+                0,
+                1,
+                5
+              ],
+              [
+                83,
+                10,
+                10,
+                14
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "table": [
+              [
+                19,
+                7,
+                17,
+                270
+              ],
+              [
+                1,
+                0,
+                1,
+                16
+              ],
+              [
+                7,
+                10,
+                8,
+                141
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "table": [
+              [
+                1542,
+                82,
+                84,
+                60
+              ],
+              [
+                35,
+                2,
+                7,
+                2
+              ],
+              [
+                105,
+                8,
+                8,
+                10
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "table": [
+              [
+                48,
+                20,
+                41,
+                172
+              ],
+              [
+                0,
+                1,
+                1,
+                4
+              ],
+              [
+                8,
+                3,
+                2,
+                52
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "table": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                9,
+                1,
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "table": [
+              [
+                0,
+                0,
+                0,
+                7
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                3,
+                42
+              ]
+            ]
+          }
+        ]
+      },
+      "R2": {
+        "B": 299999,
+        "Holm_MC_endpoint_sensitivity": [
+          0.06947324525354005,
+          0.07691466813521722
+        ],
+        "Holm_primary_six": 0.07315,
+        "Holm_three_diagnostic": 0.05,
+        "MC_Wilson95": [
+          0.016211480490894468,
+          0.017127675265713845
+        ],
+        "MC_se": 0.0002337076162524063,
+        "all_supported_strata_nonnegative_lower_bound": false,
+        "any_supported_stratum_negative_upper_bound": false,
+        "complete_return_n": 136,
+        "hits": 4999,
+        "hypothesis_version": "R2_eq_average_statistic_v1",
+        "materiality_epsilon": 0.02471994961791067,
+        "null": "每层等概率；不是只要求标准化平均为零",
+        "null_distribution": {
+          "mean": -1.6860969227128654e-05,
+          "quantiles": {
+            "0": -0.05203300678582,
+            "0.025": -0.03659640992621277,
+            "0.25": -0.013799689182543543,
+            "0.5": 0.0009847136632348376,
+            "0.75": 0.009609528245443009,
+            "0.95": 0.03208945067416208,
+            "0.975": 0.039599394153333106,
+            "0.99": 0.04732777173320511,
+            "1.0": 0.10749019213769383
+          },
+          "sd": 0.0188287828250042
+        },
+        "observed_average_difference": 0.046148336058296324,
+        "p_plus_one": 0.016666666666666666,
+        "reference_stable_return_rate": 0.04943989923582134,
+        "simultaneous_average_interval": [
+          -0.06908562995551497,
+          0.35815772452972594
+        ],
+        "strata": [
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 1,
+            "difference": 0.12607573149741824,
+            "return_events": 2,
+            "return_n": 7,
+            "return_probability_interval": [
+              0.005806521798888228,
+              0.8668709764390137
+            ],
+            "simultaneous_difference_interval": [
+              -0.22673583232959,
+              0.7651771382641032
+            ],
+            "stable_events": 53,
+            "stable_n": 332,
+            "stable_probability_interval": [
+              0.10169383817491047,
+              0.23254235412847823
+            ]
+          },
+          {
+            "baseline_PID": 0,
+            "baseline_policy": 2,
+            "difference": 0.031068573832562056,
+            "return_events": 2,
+            "return_n": 40,
+            "return_probability_interval": [
+              0.0009550345306623548,
+              0.2586653432761522
+            ],
+            "simultaneous_difference_interval": [
+              -0.028664193300111357,
+              0.24744440409733787
+            ],
+            "stable_events": 45,
+            "stable_n": 2377,
+            "stable_probability_interval": [
+              0.011220939178814324,
+              0.02961922783077371
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 1,
+            "difference": -0.04389351757772811,
+            "return_events": 1,
+            "return_n": 19,
+            "return_probability_interval": [
+              3.656173595494028e-05,
+              0.40649200530565777
+            ],
+            "simultaneous_difference_interval": [
+              -0.16841789398346446,
+              0.35899846293779136
+            ],
+            "stable_events": 25,
+            "stable_n": 259,
+            "stable_probability_interval": [
+              0.04749354236786639,
+              0.16845445571941942
+            ]
+          },
+          {
+            "baseline_PID": 1,
+            "baseline_policy": 2,
+            "difference": -0.022364217252396165,
+            "return_events": 0,
+            "return_n": 18,
+            "return_probability_interval": [
+              0.0,
+              0.3323706554818413
+            ],
+            "simultaneous_difference_interval": [
+              -0.06309627665088414,
+              0.3277786416096058
+            ],
+            "stable_events": 7,
+            "stable_n": 313,
+            "stable_probability_interval": [
+              0.004592013872235498,
+              0.06309627665088414
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 1,
+            "difference": 0.1046626008262837,
+            "return_events": 7,
+            "return_n": 46,
+            "return_probability_interval": [
+              0.03267722518815917,
+              0.3792544822979502
+            ],
+            "simultaneous_difference_interval": [
+              -0.03318896943742056,
+              0.34636103583394384
+            ],
+            "stable_events": 84,
+            "stable_n": 1768,
+            "stable_probability_interval": [
+              0.032893446464006396,
+              0.06586619462557973
+            ]
+          },
+          {
+            "baseline_PID": 2,
+            "baseline_policy": 2,
+            "difference": 0.09549228944246736,
+            "return_events": 1,
+            "return_n": 6,
+            "return_probability_interval": [
+              0.00011577424475787967,
+              0.8318046421442444
+            ],
+            "simultaneous_difference_interval": [
+              -0.13326025935256103,
+              0.8003067351913549
+            ],
+            "stable_events": 20,
+            "stable_n": 281,
+            "stable_probability_interval": [
+              0.03149790695288958,
+              0.13337603359731892
+            ]
+          }
+        ],
+        "uncertainty_scope": "只量化独立Monte Carlo尾计数误差，不是科学效应区间",
+        "unsupported_strata": [
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 1,
+            "return_n": 0,
+            "stable_n": 1
+          },
+          {
+            "baseline_PID": 3,
+            "baseline_policy": 2,
+            "return_n": 0,
+            "stable_n": 7
+          }
+        ]
+      }
+    }
+  },
+  "plan_sha256": "3359c0c7227b66ee697cf8a42921b5855d5475d5e85ea624ed128c9048dbc4dc",
+  "simultaneous_error_budget": 0.05,
+  "simultaneous_probability_family": 36,
+  "source_sha256": "bed76898bf510759060461db2040c0875068d1e2242ac83482f52a24f57e0116"
+}

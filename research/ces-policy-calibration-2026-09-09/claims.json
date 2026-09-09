@@ -1,0 +1,32 @@
+[
+  {
+    "claim": "三项原平均差及完整分母重现",
+    "level": "exact_cohort_description",
+    "limits": "保留人群和逐题完整响应目标"
+  },
+  {
+    "claim": "δ星的三个上界及两种拟合损失",
+    "level": "feasibility",
+    "limits": "旧见证、无新拟合、非真实误分率"
+  },
+  {
+    "claim": "有条件合法化R1在固定层边际参考下不相容证据较强",
+    "level": "conditional_statistical",
+    "limits": "可交换假设、六项家族、回溯指定、非所有静态解释"
+  },
+  {
+    "claim": "R2同时区间不足以证实逐层非负或实质等价",
+    "level": "conditional_statistical",
+    "limits": "稀疏、保守Bernoulli参考、空组不推断"
+  },
+  {
+    "claim": "控制当前强度后早期PID仍改善平均log分数",
+    "level": "predictive_description",
+    "limits": "改善不普遍，无算法CI或心理识别"
+  },
+  {
+    "claim": "未识别",
+    "level": "mechanistic_or_causal",
+    "limits": "缺乏独立测量锚、精确题目时点和干预设计"
+  }
+]

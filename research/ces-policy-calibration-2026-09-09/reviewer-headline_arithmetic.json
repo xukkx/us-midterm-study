@@ -1,0 +1,39 @@
+{
+  "historical_unconditional_returns": {
+    "expected_fitted_first_order": 42.322987,
+    "observed": 137,
+    "ratio": 3.237011603174417
+  },
+  "history": {
+    "first_order_PID4": {
+      "difference_vs_first_order_nats": 0.0,
+      "geometric_mean_assigned_probability_ratio": 1.0,
+      "reported_mean_logscore": -0.25947604,
+      "total_logscore_gain": 0.0
+    },
+    "first_order_raw8_predict_PID4": {
+      "difference_vs_first_order_nats": 0.010409610000000014,
+      "geometric_mean_assigned_probability_ratio": 1.010463978477964,
+      "reported_mean_logscore": -0.24906643,
+      "total_logscore_gain": 64.27934175000009
+    },
+    "history_PID4_shrink20": {
+      "difference_vs_first_order_nats": 0.013671460000000024,
+      "geometric_mean_assigned_probability_ratio": 1.0137653417549488,
+      "reported_mean_logscore": -0.24580458,
+      "total_logscore_gain": 84.42126550000015
+    }
+  },
+  "likelihood_reference": {
+    "K": 3,
+    "best_attained_loglik_same_delta": -10295.103979,
+    "calculated_loss_vs_best_attained_same_delta": 8.657607000001008,
+    "delta_cap": 0.1,
+    "note": "Neither loss is a confidence level. Frozen-reference criterion is unchanged.",
+    "reported_loss_vs_frozen_LH265_reference": 0.708682,
+    "zero_dynamics_loglik": -10303.761586
+  },
+  "python": "3.13.5",
+  "scope": "Arithmetic on rounded published report entries; not an independent model refit.",
+  "source_commit": "325ee0ace0a4135336e6049fbd441ef0b89edf7f"
+}
