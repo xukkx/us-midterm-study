@@ -1,0 +1,48 @@
+{
+  "flow_cells_checked": 36,
+  "input_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "method": "直接读取原件，用独立决策表、逐人签名和枚举端点核验；未导入生产build或accounting_kernel。",
+  "modes": {
+    "adult": {
+      "bounds": [
+        -4734.051,
+        5331.0492
+      ],
+      "covered_n": 11009,
+      "known_delta": 270.0234,
+      "known_pair_n": 8808,
+      "unknown_pair_n": 2201
+    },
+    "post": {
+      "bounds": [
+        -3458.9492999999998,
+        3740.1425
+      ],
+      "covered_n": 9746,
+      "known_delta": 205.2391,
+      "known_pair_n": 8808,
+      "unknown_pair_n": 938
+    },
+    "unweighted": {
+      "bounds": [
+        -2426.0,
+        3182.0
+      ],
+      "covered_n": 11009,
+      "known_delta": 237.0,
+      "known_pair_n": 8808,
+      "unknown_pair_n": 2201
+    }
+  },
+  "n": 11009,
+  "participation_evidence_cells_checked": 150,
+  "passed": true
+}

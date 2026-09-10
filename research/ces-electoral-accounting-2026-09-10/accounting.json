@@ -1,0 +1,1446 @@
+{
+  "limitations": [
+    "非盲态、回顾性描述；不拟合预测器，不做全国或因果归因",
+    "枚举允许状态完成的界限，非抽样置信区间；分项边际界限不能任意相加",
+    "已知贡献仅包含两端均已解析者，不能代表整个队列点估计。",
+    "A与N分开：A到D/R/O仅说明众院票项进入，不一定是从未参加选举变为参加。"
+  ],
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "modes": {
+    "adult": {
+      "after_bounds": [
+        -2387.5013,
+        2530.8857
+      ],
+      "before_bounds": [
+        -2800.1634999999997,
+        2346.5497000000005
+      ],
+      "cohort_n": 11009,
+      "components": {
+        "contest_entry": {
+          "bounds": [
+            -2252.7102,
+            2248.5798
+          ],
+          "known_delta": 16.947399999999995,
+          "known_n": 117
+        },
+        "contest_exit": {
+          "bounds": [
+            -2064.169,
+            2138.5877
+          ],
+          "known_delta": 3.9589,
+          "known_n": 141
+        },
+        "election_entry": {
+          "bounds": [
+            -2417.6034,
+            2533.6594
+          ],
+          "known_delta": 77.04060000000001,
+          "known_n": 126
+        },
+        "election_exit": {
+          "bounds": [
+            -2113.8233,
+            2241.1034
+          ],
+          "known_delta": 30.3896,
+          "known_n": 579
+        },
+        "other_zero": {
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "known_n": 292
+        },
+        "repeat_vote_choice": {
+          "bounds": [
+            -4520.5357,
+            4860.8609
+          ],
+          "known_delta": 141.68689999999995,
+          "known_n": 7553
+        }
+      },
+      "covered_n": 11009,
+      "delta_bounds": [
+        -4734.051,
+        5331.0492
+      ],
+      "grid": [
+        {
+          "after": "D",
+          "before": "D",
+          "covered_n": 3875,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 3325.4102
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "covered_n": 168,
+          "delta_bounds": [
+            393.3402,
+            393.3402
+          ],
+          "known_delta": 393.3402,
+          "weight": 196.6701
+        },
+        {
+          "after": "O",
+          "before": "D",
+          "covered_n": 131,
+          "delta_bounds": [
+            65.5694,
+            65.5694
+          ],
+          "known_delta": 65.5694,
+          "weight": 65.5694
+        },
+        {
+          "after": "A",
+          "before": "D",
+          "covered_n": 106,
+          "delta_bounds": [
+            11.3119,
+            11.3119
+          ],
+          "known_delta": 11.3119,
+          "weight": 11.3119
+        },
+        {
+          "after": "N",
+          "before": "D",
+          "covered_n": 336,
+          "delta_bounds": [
+            65.3734,
+            65.3734
+          ],
+          "known_delta": 65.3734,
+          "weight": 65.3734
+        },
+        {
+          "after": "U",
+          "before": "D",
+          "covered_n": 641,
+          "delta_bounds": [
+            0.0,
+            269.4168
+          ],
+          "known_delta": null,
+          "weight": 134.7084
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "covered_n": 161,
+          "delta_bounds": [
+            -288.1308,
+            -288.1308
+          ],
+          "known_delta": -288.1308,
+          "weight": 144.0654
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "covered_n": 3017,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 3283.5878
+        },
+        {
+          "after": "O",
+          "before": "R",
+          "covered_n": 71,
+          "delta_bounds": [
+            -34.039,
+            -34.039
+          ],
+          "known_delta": -34.039,
+          "weight": 34.039
+        },
+        {
+          "after": "A",
+          "before": "R",
+          "covered_n": 28,
+          "delta_bounds": [
+            -7.353,
+            -7.353
+          ],
+          "known_delta": -7.353,
+          "weight": 7.353
+        },
+        {
+          "after": "N",
+          "before": "R",
+          "covered_n": 236,
+          "delta_bounds": [
+            -34.9838,
+            -34.9838
+          ],
+          "known_delta": -34.9838,
+          "weight": 34.9838
+        },
+        {
+          "after": "U",
+          "before": "R",
+          "covered_n": 451,
+          "delta_bounds": [
+            -136.415,
+            0.0
+          ],
+          "known_delta": null,
+          "weight": 68.2075
+        },
+        {
+          "after": "D",
+          "before": "O",
+          "covered_n": 53,
+          "delta_bounds": [
+            -35.2515,
+            -35.2515
+          ],
+          "known_delta": -35.2515,
+          "weight": 35.2515
+        },
+        {
+          "after": "R",
+          "before": "O",
+          "covered_n": 48,
+          "delta_bounds": [
+            40.1986,
+            40.1986
+          ],
+          "known_delta": 40.1986,
+          "weight": 40.1986
+        },
+        {
+          "after": "O",
+          "before": "O",
+          "covered_n": 29,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 8.7499
+        },
+        {
+          "after": "A",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.6809999999999999
+        },
+        {
+          "after": "N",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 2.1473
+        },
+        {
+          "after": "U",
+          "before": "O",
+          "covered_n": 21,
+          "delta_bounds": [
+            -11.6837,
+            11.6837
+          ],
+          "known_delta": null,
+          "weight": 11.6837
+        },
+        {
+          "after": "D",
+          "before": "A",
+          "covered_n": 58,
+          "delta_bounds": [
+            -35.0403,
+            -35.0403
+          ],
+          "known_delta": -35.0403,
+          "weight": 35.0403
+        },
+        {
+          "after": "R",
+          "before": "A",
+          "covered_n": 52,
+          "delta_bounds": [
+            51.9877,
+            51.9877
+          ],
+          "known_delta": 51.9877,
+          "weight": 51.9877
+        },
+        {
+          "after": "O",
+          "before": "A",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 1.3041
+        },
+        {
+          "after": "A",
+          "before": "A",
+          "covered_n": 14,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 1.2502
+        },
+        {
+          "after": "N",
+          "before": "A",
+          "covered_n": 27,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 7.5977
+        },
+        {
+          "after": "U",
+          "before": "A",
+          "covered_n": 29,
+          "delta_bounds": [
+            -13.3591,
+            13.3591
+          ],
+          "known_delta": null,
+          "weight": 13.3591
+        },
+        {
+          "after": "D",
+          "before": "N",
+          "covered_n": 60,
+          "delta_bounds": [
+            -139.8755,
+            -139.8755
+          ],
+          "known_delta": -139.8755,
+          "weight": 139.8755
+        },
+        {
+          "after": "R",
+          "before": "N",
+          "covered_n": 56,
+          "delta_bounds": [
+            216.9161,
+            216.9161
+          ],
+          "known_delta": 216.9161,
+          "weight": 216.9161
+        },
+        {
+          "after": "O",
+          "before": "N",
+          "covered_n": 10,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 18.8111
+        },
+        {
+          "after": "A",
+          "before": "N",
+          "covered_n": 3,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 1.7497999999999998
+        },
+        {
+          "after": "N",
+          "before": "N",
+          "covered_n": 248,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 240.172
+        },
+        {
+          "after": "U",
+          "before": "N",
+          "covered_n": 104,
+          "delta_bounds": [
+            -238.34550000000002,
+            238.34550000000002
+          ],
+          "known_delta": null,
+          "weight": 238.34550000000002
+        },
+        {
+          "after": "D",
+          "before": "U",
+          "covered_n": 143,
+          "delta_bounds": [
+            -526.8184,
+            0.0
+          ],
+          "known_delta": null,
+          "weight": 263.4092
+        },
+        {
+          "after": "R",
+          "before": "U",
+          "covered_n": 94,
+          "delta_bounds": [
+            0.0,
+            450.76800000000003
+          ],
+          "known_delta": null,
+          "weight": 225.38400000000001
+        },
+        {
+          "after": "O",
+          "before": "U",
+          "covered_n": 4,
+          "delta_bounds": [
+            -1.5269,
+            1.5269
+          ],
+          "known_delta": null,
+          "weight": 1.5269
+        },
+        {
+          "after": "A",
+          "before": "U",
+          "covered_n": 12,
+          "delta_bounds": [
+            -7.0311,
+            7.0311
+          ],
+          "known_delta": null,
+          "weight": 7.0311
+        },
+        {
+          "after": "N",
+          "before": "U",
+          "covered_n": 99,
+          "delta_bounds": [
+            -83.1161,
+            83.1161
+          ],
+          "known_delta": null,
+          "weight": 83.1161
+        },
+        {
+          "after": "U",
+          "before": "U",
+          "covered_n": 603,
+          "delta_bounds": [
+            -3985.7786,
+            3985.7786
+          ],
+          "known_delta": null,
+          "weight": 1992.8893
+        }
+      ],
+      "known_delta": 270.0233999999999,
+      "known_delta_per100": 2.4525826072683015,
+      "known_pair_n": 8808,
+      "known_pair_weight": 7970.096799999998,
+      "missing_weight_n": 0,
+      "per100_bounds": [
+        -42.998685093666374,
+        48.42113145161344
+      ],
+      "unknown_pair_n": 2201,
+      "unknown_pair_weight": 3039.6608,
+      "weight_sum": 11009.757599999999
+    },
+    "post": {
+      "after_bounds": [
+        -1687.7961999999998,
+        1408.8709999999996
+      ],
+      "before_bounds": [
+        -2331.2714999999994,
+        1771.153100000001
+      ],
+      "cohort_n": 11009,
+      "components": {
+        "contest_entry": {
+          "bounds": [
+            -1742.2002,
+            1684.6252
+          ],
+          "known_delta": 8.4653,
+          "known_n": 117
+        },
+        "contest_exit": {
+          "bounds": [
+            -1432.1669,
+            1443.5574
+          ],
+          "known_delta": 0.7637,
+          "known_n": 141
+        },
+        "election_entry": {
+          "bounds": [
+            -1763.7273,
+            1836.6505
+          ],
+          "known_delta": 73.71439999999998,
+          "known_n": 126
+        },
+        "election_exit": {
+          "bounds": [
+            -1480.2237,
+            1500.9686
+          ],
+          "known_delta": 5.4409,
+          "known_n": 579
+        },
+        "other_zero": {
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "known_n": 292
+        },
+        "repeat_vote_choice": {
+          "bounds": [
+            -3389.8914,
+            3494.316
+          ],
+          "known_delta": 116.85480000000001,
+          "known_n": 7553
+        }
+      },
+      "covered_n": 9746,
+      "delta_bounds": [
+        -3458.9492999999998,
+        3740.1425
+      ],
+      "grid": [
+        {
+          "after": "D",
+          "before": "D",
+          "covered_n": 3875,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 3281.4247
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "covered_n": 168,
+          "delta_bounds": [
+            363.329,
+            363.329
+          ],
+          "known_delta": 363.329,
+          "weight": 181.6645
+        },
+        {
+          "after": "O",
+          "before": "D",
+          "covered_n": 131,
+          "delta_bounds": [
+            49.1684,
+            49.1684
+          ],
+          "known_delta": 49.1684,
+          "weight": 49.1684
+        },
+        {
+          "after": "A",
+          "before": "D",
+          "covered_n": 106,
+          "delta_bounds": [
+            1.8637,
+            1.8637
+          ],
+          "known_delta": 1.8637,
+          "weight": 1.8637
+        },
+        {
+          "after": "N",
+          "before": "D",
+          "covered_n": 336,
+          "delta_bounds": [
+            13.0633,
+            13.0633
+          ],
+          "known_delta": 13.0633,
+          "weight": 13.0633
+        },
+        {
+          "after": "U",
+          "before": "D",
+          "covered_n": 69,
+          "delta_bounds": [
+            0.0,
+            35.251599999999996
+          ],
+          "known_delta": null,
+          "weight": 17.625799999999998
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "covered_n": 161,
+          "delta_bounds": [
+            -279.9834,
+            -279.9834
+          ],
+          "known_delta": -279.9834,
+          "weight": 139.9917
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "covered_n": 3017,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 3089.0466
+        },
+        {
+          "after": "O",
+          "before": "R",
+          "covered_n": 71,
+          "delta_bounds": [
+            -19.2278,
+            -19.2278
+          ],
+          "known_delta": -19.2278,
+          "weight": 19.2278
+        },
+        {
+          "after": "A",
+          "before": "R",
+          "covered_n": 28,
+          "delta_bounds": [
+            -1.0999999999999999,
+            -1.0999999999999999
+          ],
+          "known_delta": -1.0999999999999999,
+          "weight": 1.0999999999999999
+        },
+        {
+          "after": "N",
+          "before": "R",
+          "covered_n": 236,
+          "delta_bounds": [
+            -7.6224,
+            -7.6224
+          ],
+          "known_delta": -7.6224,
+          "weight": 7.6224
+        },
+        {
+          "after": "U",
+          "before": "R",
+          "covered_n": 42,
+          "delta_bounds": [
+            -15.5254,
+            0.0
+          ],
+          "known_delta": null,
+          "weight": 7.7627
+        },
+        {
+          "after": "D",
+          "before": "O",
+          "covered_n": 53,
+          "delta_bounds": [
+            -34.1359,
+            -34.1359
+          ],
+          "known_delta": -34.1359,
+          "weight": 34.1359
+        },
+        {
+          "after": "R",
+          "before": "O",
+          "covered_n": 48,
+          "delta_bounds": [
+            37.7045,
+            37.7045
+          ],
+          "known_delta": 37.7045,
+          "weight": 37.7045
+        },
+        {
+          "after": "O",
+          "before": "O",
+          "covered_n": 29,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 5.7084
+        },
+        {
+          "after": "A",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.09480000000000001
+        },
+        {
+          "after": "N",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.8994000000000001
+        },
+        {
+          "after": "U",
+          "before": "O",
+          "covered_n": 3,
+          "delta_bounds": [
+            -0.3707,
+            0.3707
+          ],
+          "known_delta": null,
+          "weight": 0.3707
+        },
+        {
+          "after": "D",
+          "before": "A",
+          "covered_n": 58,
+          "delta_bounds": [
+            -33.3572,
+            -33.3572
+          ],
+          "known_delta": -33.3572,
+          "weight": 33.3572
+        },
+        {
+          "after": "R",
+          "before": "A",
+          "covered_n": 52,
+          "delta_bounds": [
+            41.8225,
+            41.8225
+          ],
+          "known_delta": 41.8225,
+          "weight": 41.8225
+        },
+        {
+          "after": "O",
+          "before": "A",
+          "covered_n": 7,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.8207
+        },
+        {
+          "after": "A",
+          "before": "A",
+          "covered_n": 14,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.1571
+        },
+        {
+          "after": "N",
+          "before": "A",
+          "covered_n": 27,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 2.2922
+        },
+        {
+          "after": "U",
+          "before": "A",
+          "covered_n": 6,
+          "delta_bounds": [
+            -6.5321,
+            6.5321
+          ],
+          "known_delta": null,
+          "weight": 6.5321
+        },
+        {
+          "after": "D",
+          "before": "N",
+          "covered_n": 60,
+          "delta_bounds": [
+            -200.6022,
+            -200.6022
+          ],
+          "known_delta": -200.6022,
+          "weight": 200.6022
+        },
+        {
+          "after": "R",
+          "before": "N",
+          "covered_n": 56,
+          "delta_bounds": [
+            274.3166,
+            274.3166
+          ],
+          "known_delta": 274.3166,
+          "weight": 274.3166
+        },
+        {
+          "after": "O",
+          "before": "N",
+          "covered_n": 10,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 20.2649
+        },
+        {
+          "after": "A",
+          "before": "N",
+          "covered_n": 3,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 0.3168
+        },
+        {
+          "after": "N",
+          "before": "N",
+          "covered_n": 248,
+          "delta_bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0.0,
+          "weight": 132.79749999999999
+        },
+        {
+          "after": "U",
+          "before": "N",
+          "covered_n": 32,
+          "delta_bounds": [
+            -93.3083,
+            93.3083
+          ],
+          "known_delta": null,
+          "weight": 93.3083
+        },
+        {
+          "after": "D",
+          "before": "U",
+          "covered_n": 143,
+          "delta_bounds": [
+            -642.7988,
+            0.0
+          ],
+          "known_delta": null,
+          "weight": 321.3994
+        },
+        {
+          "after": "R",
+          "before": "U",
+          "covered_n": 94,
+          "delta_bounds": [
+            0.0,
+            493.7876
+          ],
+          "known_delta": null,
+          "weight": 246.8938
+        },
+        {
+          "after": "O",
+          "before": "U",
+          "covered_n": 4,
+          "delta_bounds": [
+            -2.5833,
+            2.5833
+          ],
+          "known_delta": null,
+          "weight": 2.5833
+        },
+        {
+          "after": "A",
+          "before": "U",
+          "covered_n": 12,
+          "delta_bounds": [
+            -2.4339,
+            2.4339
+          ],
+          "known_delta": null,
+          "weight": 2.4339
+        },
+        {
+          "after": "N",
+          "before": "U",
+          "covered_n": 99,
+          "delta_bounds": [
+            -55.1679,
+            55.1679
+          ],
+          "known_delta": null,
+          "weight": 55.1679
+        },
+        {
+          "after": "U",
+          "before": "U",
+          "covered_n": 434,
+          "delta_bounds": [
+            -2845.468,
+            2845.468
+          ],
+          "known_delta": null,
+          "weight": 1422.734
+        }
+      ],
+      "known_delta": 205.2391,
+      "known_delta_per100": 2.1058207906020954,
+      "known_pair_n": 8808,
+      "known_pair_weight": 7569.463800000001,
+      "missing_weight_n": 1263,
+      "per100_bounds": [
+        -35.48995951345803,
+        38.37509439631385
+      ],
+      "unknown_pair_n": 938,
+      "unknown_pair_weight": 2176.8119,
+      "weight_sum": 9746.275700000004
+    },
+    "unweighted": {
+      "after_bounds": [
+        -2764.0,
+        934.0
+      ],
+      "before_bounds": [
+        -2248.0,
+        -338.0
+      ],
+      "cohort_n": 11009,
+      "components": {
+        "contest_entry": {
+          "bounds": [
+            -781.0,
+            720.0
+          ],
+          "known_delta": -6,
+          "known_n": 117
+        },
+        "contest_exit": {
+          "bounds": [
+            -988.0,
+            1334.0
+          ],
+          "known_delta": 78,
+          "known_n": 141
+        },
+        "election_entry": {
+          "bounds": [
+            -854.0,
+            797.0
+          ],
+          "known_delta": -4,
+          "known_n": 126
+        },
+        "election_exit": {
+          "bounds": [
+            -1053.0,
+            1443.0
+          ],
+          "known_delta": 100,
+          "known_n": 579
+        },
+        "other_zero": {
+          "bounds": [
+            0.0,
+            0.0
+          ],
+          "known_delta": 0,
+          "known_n": 292
+        },
+        "repeat_vote_choice": {
+          "bounds": [
+            -2350.0,
+            2770.0
+          ],
+          "known_delta": 69,
+          "known_n": 7553
+        }
+      },
+      "covered_n": 11009,
+      "delta_bounds": [
+        -2426.0,
+        3182.0
+      ],
+      "grid": [
+        {
+          "after": "D",
+          "before": "D",
+          "covered_n": 3875,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 3875
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "covered_n": 168,
+          "delta_bounds": [
+            336,
+            336
+          ],
+          "known_delta": 336,
+          "weight": 168
+        },
+        {
+          "after": "O",
+          "before": "D",
+          "covered_n": 131,
+          "delta_bounds": [
+            131,
+            131
+          ],
+          "known_delta": 131,
+          "weight": 131
+        },
+        {
+          "after": "A",
+          "before": "D",
+          "covered_n": 106,
+          "delta_bounds": [
+            106,
+            106
+          ],
+          "known_delta": 106,
+          "weight": 106
+        },
+        {
+          "after": "N",
+          "before": "D",
+          "covered_n": 336,
+          "delta_bounds": [
+            336,
+            336
+          ],
+          "known_delta": 336,
+          "weight": 336
+        },
+        {
+          "after": "U",
+          "before": "D",
+          "covered_n": 641,
+          "delta_bounds": [
+            0,
+            1282
+          ],
+          "known_delta": null,
+          "weight": 641
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "covered_n": 161,
+          "delta_bounds": [
+            -322,
+            -322
+          ],
+          "known_delta": -322,
+          "weight": 161
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "covered_n": 3017,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 3017
+        },
+        {
+          "after": "O",
+          "before": "R",
+          "covered_n": 71,
+          "delta_bounds": [
+            -71,
+            -71
+          ],
+          "known_delta": -71,
+          "weight": 71
+        },
+        {
+          "after": "A",
+          "before": "R",
+          "covered_n": 28,
+          "delta_bounds": [
+            -28,
+            -28
+          ],
+          "known_delta": -28,
+          "weight": 28
+        },
+        {
+          "after": "N",
+          "before": "R",
+          "covered_n": 236,
+          "delta_bounds": [
+            -236,
+            -236
+          ],
+          "known_delta": -236,
+          "weight": 236
+        },
+        {
+          "after": "U",
+          "before": "R",
+          "covered_n": 451,
+          "delta_bounds": [
+            -902,
+            0
+          ],
+          "known_delta": null,
+          "weight": 451
+        },
+        {
+          "after": "D",
+          "before": "O",
+          "covered_n": 53,
+          "delta_bounds": [
+            -53,
+            -53
+          ],
+          "known_delta": -53,
+          "weight": 53
+        },
+        {
+          "after": "R",
+          "before": "O",
+          "covered_n": 48,
+          "delta_bounds": [
+            48,
+            48
+          ],
+          "known_delta": 48,
+          "weight": 48
+        },
+        {
+          "after": "O",
+          "before": "O",
+          "covered_n": 29,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 29
+        },
+        {
+          "after": "A",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 7
+        },
+        {
+          "after": "N",
+          "before": "O",
+          "covered_n": 7,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 7
+        },
+        {
+          "after": "U",
+          "before": "O",
+          "covered_n": 21,
+          "delta_bounds": [
+            -21,
+            21
+          ],
+          "known_delta": null,
+          "weight": 21
+        },
+        {
+          "after": "D",
+          "before": "A",
+          "covered_n": 58,
+          "delta_bounds": [
+            -58,
+            -58
+          ],
+          "known_delta": -58,
+          "weight": 58
+        },
+        {
+          "after": "R",
+          "before": "A",
+          "covered_n": 52,
+          "delta_bounds": [
+            52,
+            52
+          ],
+          "known_delta": 52,
+          "weight": 52
+        },
+        {
+          "after": "O",
+          "before": "A",
+          "covered_n": 7,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 7
+        },
+        {
+          "after": "A",
+          "before": "A",
+          "covered_n": 14,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 14
+        },
+        {
+          "after": "N",
+          "before": "A",
+          "covered_n": 27,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 27
+        },
+        {
+          "after": "U",
+          "before": "A",
+          "covered_n": 29,
+          "delta_bounds": [
+            -29,
+            29
+          ],
+          "known_delta": null,
+          "weight": 29
+        },
+        {
+          "after": "D",
+          "before": "N",
+          "covered_n": 60,
+          "delta_bounds": [
+            -60,
+            -60
+          ],
+          "known_delta": -60,
+          "weight": 60
+        },
+        {
+          "after": "R",
+          "before": "N",
+          "covered_n": 56,
+          "delta_bounds": [
+            56,
+            56
+          ],
+          "known_delta": 56,
+          "weight": 56
+        },
+        {
+          "after": "O",
+          "before": "N",
+          "covered_n": 10,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 10
+        },
+        {
+          "after": "A",
+          "before": "N",
+          "covered_n": 3,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 3
+        },
+        {
+          "after": "N",
+          "before": "N",
+          "covered_n": 248,
+          "delta_bounds": [
+            0,
+            0
+          ],
+          "known_delta": 0,
+          "weight": 248
+        },
+        {
+          "after": "U",
+          "before": "N",
+          "covered_n": 104,
+          "delta_bounds": [
+            -104,
+            104
+          ],
+          "known_delta": null,
+          "weight": 104
+        },
+        {
+          "after": "D",
+          "before": "U",
+          "covered_n": 143,
+          "delta_bounds": [
+            -286,
+            0
+          ],
+          "known_delta": null,
+          "weight": 143
+        },
+        {
+          "after": "R",
+          "before": "U",
+          "covered_n": 94,
+          "delta_bounds": [
+            0,
+            188
+          ],
+          "known_delta": null,
+          "weight": 94
+        },
+        {
+          "after": "O",
+          "before": "U",
+          "covered_n": 4,
+          "delta_bounds": [
+            -4,
+            4
+          ],
+          "known_delta": null,
+          "weight": 4
+        },
+        {
+          "after": "A",
+          "before": "U",
+          "covered_n": 12,
+          "delta_bounds": [
+            -12,
+            12
+          ],
+          "known_delta": null,
+          "weight": 12
+        },
+        {
+          "after": "N",
+          "before": "U",
+          "covered_n": 99,
+          "delta_bounds": [
+            -99,
+            99
+          ],
+          "known_delta": null,
+          "weight": 99
+        },
+        {
+          "after": "U",
+          "before": "U",
+          "covered_n": 603,
+          "delta_bounds": [
+            -1206,
+            1206
+          ],
+          "known_delta": null,
+          "weight": 603
+        }
+      ],
+      "known_delta": 237,
+      "known_delta_per100": 2.1527840857480243,
+      "known_pair_n": 8808,
+      "known_pair_weight": 8808,
+      "missing_weight_n": 0,
+      "per100_bounds": [
+        -22.03651557816332,
+        28.903624307384867
+      ],
+      "unknown_pair_n": 2201,
+      "unknown_pair_weight": 2201,
+      "weight_sum": 11009
+    }
+  }
+}

@@ -69,3 +69,5 @@ python -B research/ces-panel-2020-2024/reproduce.py --check
 - [LH268观测变化分解报告](research/ces-change-decomposition-2026-09-09/report.md)
 
 - [LH269政策记录条件信息与支持审计](research/ces-policy-information-2026-09-10/report.md)
+
+- [LH270众院票与参与核算（待最终科学审核）](research/ces-electoral-accounting-2026-09-10/report.md)

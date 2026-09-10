@@ -1,0 +1,29 @@
+{
+  "files": {
+    "accounting.json": "e9160fcca88f57803745a2f004ebb6008ee16788a746aae2bd0c4fbc30cc5159",
+    "accounting_kernel.py": "616e462bac428da0501a645a9d7783f0978e7188bf803f801c054a8c48e5f3ae",
+    "analysis-spec.json": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570",
+    "build.py": "d361086b40754702ea969546501e4efc0450d1cb9e5d1248ed15c61df42a967a",
+    "execution-provenance.json": "df5af83d61a7a92c2f9a423bc398bd57968ac463e2e5349d5e743e3d55761872",
+    "flow-cells.json": "f2e2402deae870fd40c28d014b9d1b8b450b6194bd62e882e44f356628938cbc",
+    "flow.csv": "5ee6e3d87dac68c1c68edacef1d4ba04030dbecdb07ab59fe4937d0443ff5ebe",
+    "foundations.md": "97ed191c0c81c22927e7451c5b695c5d4edbd04dc95575850ad758f2dc9f0558",
+    "input-audit.json": "d3792edbbcf2cf6fd26504c89431c3f032342e384899d937daae7d7300a0aa8b",
+    "local-design-seal.json": "07b0402314fb82c1490cae06573b50e52bee330eb8002f0b01ed364d1158618a",
+    "participation-evidence.csv": "5d3adb421477274ac70715dc43a572c98a432cecf917d18613ca6f540e01806f",
+    "participation.json": "27e49c1390e1c01d517c2a8541961e28110d045b0204de33517c00b809e311e4",
+    "pew-benchmark.json": "22c95beabf51f477c9a7fe58d47e95e6e1c12e111be71b553a25c779481318f4",
+    "pew-comparison.md": "6aa85a22c744d2832c6fe7accdca9933b3e700304b7fb3730a012ba583610cd9",
+    "public-source-manifest.json": "eabc3107242e480d37d1d4a367cc6bd632e5e1b3583934907503058fa36c58d7",
+    "public_check.py": "f0424009dde2cc02aca3f7a28b7932d1ddeb1ac0f27a0363d1b318b27aae36fe",
+    "publication-provenance.json": "5fbe8cd732042b825e2641021dbdef55691f508caa3c9bfdb20593072b6796f8",
+    "README.md": "656cbd802760ed1584b5194f41cb3d03eabba626c7d8f3e6cf191d6c48908446",
+    "report.md": "2b6cec56c6235d426176f78013b94848808b014db6c909cec63138c01c1b7508",
+    "report.py": "ace1d25602111f28919ad3a2127cf971ac08e61cdbfc6ef61979e810caf143a0",
+    "sources/coding-frequency-check.json": "fb2dc6ca37873db517901b6ba1b7300d37bef52de25b845520a06455b636fa12",
+    "test_accounting.py": "bf24d62f0924a1311fa9fcc7536d2d8d70377adecc2f730b8dfb4bca393f77d3",
+    "variable-map.json": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "verification.json": "dfed912f603497dec7c4b057d128222964797455cb74fa4aad092198587b1667",
+    "verify.py": "e69025420de0cc3be4ae54f1783456f7f64151a97037e0e3b8b2296cf7505858"
+  }
+}

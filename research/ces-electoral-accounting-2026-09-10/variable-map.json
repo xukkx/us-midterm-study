@@ -1,0 +1,173 @@
+{
+  "coding_evidence": "sources/coding-frequency-check.json",
+  "id_columns": [
+    "caseid",
+    "caseid_22"
+  ],
+  "missing_tokens": [
+    "",
+    "NA",
+    "N/A",
+    "NAN",
+    "NULL",
+    "."
+  ],
+  "prohibited_fields": [
+    "*_412_nv",
+    "*_412_nv_t",
+    "2024结局",
+    "PID用于填补票项"
+  ],
+  "rules": [
+    "选后问卷tookpost!=2时主票状态U；不因档案存在或其他字段残留填补问卷。",
+    "自报参与401的1至4为明确不参与，5为明确参与；缺失保持未知。",
+    "先读取412实际票项；1至候选槽位上限逐行解析党派，10其他票，11未投众院，12未参加选举，13不知道。",
+    "自报不参与而有候选或其他票记录，或自报参与而412为未参加选举，主票记U并保存冲突。",
+    "无上述冲突时，自报不参与记N；否则以412已知状态为准，其余U。",
+    "候选槽位选前选后党派均非缺失却不同时记U；选前党派缺失不以选后或偏好题补入。",
+    "档案另存voted/matched_no_record/unmatched；不作为主票状态的覆盖来源。",
+    "所有U在签名核算中允许{-1,0,+1}；这是保守测量不确定性包络，已知答案亦不宣称无测量误差。"
+  ],
+  "schema_version": 1,
+  "states": {
+    "A": "明确未投众院这一项",
+    "D": "民主党众院票",
+    "N": "明确未参加选举",
+    "O": "其他已报众院票",
+    "R": "共和党众院票",
+    "U": "未知或相互矛盾"
+  },
+  "waves": {
+    "20": {
+      "file_codes": {
+        "matched_no_record": "有效CL状态且方法缺失",
+        "recorded_vote": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unmatched": "CL状态和方法均缺失"
+      },
+      "file_status": "CL_voter_status",
+      "file_vote": "CL_2020gvm",
+      "house": "CC20_412",
+      "house_special": {
+        "10": "O",
+        "11": "A",
+        "12": "N",
+        "13": "U"
+      },
+      "numeric_code_verification": "年度完整CSV的401及412各编码频数逐项等于官方代码本频数；2022主表页81/86已查看图像。",
+      "party_fields": {
+        "1": "HouseCand1Party_20",
+        "2": "HouseCand2Party_20",
+        "3": "HouseCand3Party_20",
+        "4": "HouseCand4Party_20",
+        "5": "HouseCand5Party_20",
+        "6": "HouseCand6Party_20",
+        "7": "HouseCand7Party_20",
+        "8": "HouseCand8Party_20",
+        "9": "HouseCand9Party"
+      },
+      "party_post_fields": {
+        "1": "HouseCand1Party_post_20",
+        "2": "HouseCand2Party_post_20",
+        "3": "HouseCand3Party_post_20",
+        "4": "HouseCand4Party_post_20",
+        "5": "HouseCand5Party_post_20",
+        "6": "HouseCand6Party_post_20",
+        "7": "HouseCand7Party_post_20",
+        "8": "HouseCand8Party_post_20",
+        "9": "HouseCand9Party_post"
+      },
+      "post": "tookpost_20",
+      "self_codes": {
+        "1": "no",
+        "2": "no",
+        "3": "no",
+        "4": "no",
+        "5": "yes"
+      },
+      "self_report": "CC20_401",
+      "source_pdf_pages": {
+        "annual_file": 19,
+        "annual_house": 88,
+        "annual_self_report": 83,
+        "panel_house": [
+          130,
+          131
+        ],
+        "panel_self_report": 124
+      }
+    },
+    "22": {
+      "file_codes": {
+        "matched_no_record": "Active且方法7",
+        "recorded_vote": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unmatched": "-1且方法缺失"
+      },
+      "file_status": "TS_voterstatus",
+      "file_vote": "TS_g2022",
+      "house": "CC22_412",
+      "house_special": {
+        "10": "O",
+        "11": "A",
+        "12": "N",
+        "13": "U"
+      },
+      "numeric_code_verification": "年度完整CSV的401及412各编码频数逐项等于官方代码本频数；2022主表页81/86已查看图像。",
+      "party_fields": {
+        "1": "HouseCand1Party_22",
+        "2": "HouseCand2Party_22",
+        "3": "HouseCand3Party_22",
+        "4": "HouseCand4Party_22",
+        "5": "HouseCand5Party_22",
+        "6": "HouseCand6Party_22",
+        "7": "HouseCand7Party_22",
+        "8": "HouseCand8Party_22"
+      },
+      "party_post_fields": {
+        "1": "HouseCand1Party_post_22",
+        "2": "HouseCand2Party_post_22",
+        "3": "HouseCand3Party_post_22",
+        "4": "HouseCand4Party_post_22",
+        "5": "HouseCand5Party_post_22",
+        "6": "HouseCand6Party_post_22",
+        "7": "HouseCand7Party_post_22",
+        "8": "HouseCand8Party_post_22"
+      },
+      "post": "tookpost_22",
+      "self_codes": {
+        "1": "no",
+        "2": "no",
+        "3": "no",
+        "4": "no",
+        "5": "yes"
+      },
+      "self_report": "CC22_401",
+      "source_pdf_pages": {
+        "annual_file": 19,
+        "annual_house": 86,
+        "annual_self_report": 81,
+        "panel_house": [
+          130,
+          131
+        ],
+        "panel_self_report": 124
+      }
+    }
+  },
+  "weight_columns": {
+    "adult": "commonweight_22",
+    "post": "commonpostweight_22"
+  }
+}

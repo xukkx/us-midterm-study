@@ -1,0 +1,53 @@
+{
+  "benchmark": {
+    "denominator_definition": "Pew纵向加权的2020投票参与者；来源未提供该比例对应的确切人数分母",
+    "denominator_n": null,
+    "numerator_definition": "Pew纵向分析中具有2020投票参与记录且在2022再次参与者",
+    "population": "Pew纵向分析中2020具有投票参与记录的合格选民，按其验证/自报及纵向加权规则",
+    "source": "Pew 2023 report",
+    "value_percent": 68
+  },
+  "limitations": [
+    "该基准衡量总体选举参与变化；2020候选选择是总统票，2022候选选择是美国众议院票，跨职位候选选择不可直接比较。",
+    "验证依据是自报投票与商业选民档案匹配；未匹配者通常视为未投票，犹他州因隐私法例外。",
+    "纵向分析使用WEIGHT_W78_W117_VALIDATEDVOTE（longitudinal special weight）；不能把68%解释为ATP全体成年人的原始人数率。",
+    "Pew公开数据删去了部分纵向分析变量以保护隐私，公开复现可能与原发表结果略有不同。",
+    "Pew基准仅用于参与变化背景，不用于CES相减、众院票转换或PID结果。",
+    "Pew加权总体与CES主表总体不同，不能直接合并为同一估计。"
+  ],
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_manifest_sha256": "c302619570343c925836442e591c92b128125859d2d873a8d4803f897a536aaa",
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "sources": [
+    {
+      "accessed_date": "2026-09-10",
+      "location": "L30-L35；L54-L60；L84-L88",
+      "published_date": "2024-10-31",
+      "short_excerpt": "validated voter for a given election",
+      "title": "Validating 2022 voters in Pew Research Center’s survey data",
+      "url": "https://www.pewresearch.org/decoded/2024/10/31/validating-2022-voters-in-pew-research-centers-survey-data/"
+    },
+    {
+      "accessed_date": "2026-09-10",
+      "location": "L117-L121；L142-L146",
+      "published_date": "2023-07-12",
+      "short_excerpt": "Overall, 68% of those who voted",
+      "title": "Republican Gains in 2022 Midterms Driven Mostly by Turnout Advantage",
+      "url": "https://www.pewresearch.org/politics/2023/07/12/republican-gains-in-2022-midterms-driven-mostly-by-turnout-advantage/"
+    },
+    {
+      "accessed_date": "2026-09-10",
+      "location": "L122-L125；L145-L149；L167-L176",
+      "published_date": "2023-07-12",
+      "short_excerpt": "Analysis of individual-level change over time",
+      "title": "Methodology",
+      "url": "https://www.pewresearch.org/politics/2023/07/12/validated-voters-2022-methodology/"
+    }
+  ]
+}

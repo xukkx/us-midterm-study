@@ -1,0 +1,106 @@
+{
+  "deliverables": [
+    {
+      "acceptance": "36格独立预期、三人联合穷举、随机已知样例与非法输入测试通过。",
+      "accepted": true,
+      "agent": "/root/cheap_worker",
+      "artifact_sha256": "616e462bac428da0501a645a9d7783f0978e7188bf803f801c054a8c48e5f3ae",
+      "attempts": 1,
+      "first_pass_accepted": true,
+      "model": "gpt-5.6-luna",
+      "raw_artifact": "accounting_kernel.py",
+      "task": "核算内核"
+    },
+    {
+      "accepted": true,
+      "agent": "/root/cheap_worker",
+      "attempts": 2,
+      "first_pass_accepted": false,
+      "integration_correction": "第二稿source_sha256指向清单；整合者另存清单SHA并统一原件SHA字段和大小写，未改实质结论。",
+      "model": "gpt-5.6-luna",
+      "retry_reason": "首稿缺少第三方法来源、纵向加权和精确分母限制，短引语不符合原文及长度要求。",
+      "task": "Pew资料卡"
+    }
+  ],
+  "first_pass_acceptance": {
+    "accepted_first_pass": 1,
+    "deliverables": 2,
+    "fraction": 0.5
+  },
+  "local_checks": [
+    {
+      "command": "python -X utf8 -B research/ces-electoral-accounting-2026-09-10/build.py --check",
+      "elapsed_seconds": 1.421,
+      "exit_code": 0,
+      "log": "runs/run-321/checks/01.txt",
+      "log_sha256": "16c9a0a07c019b0ec9f30015f9b0b7544ccb42a9a9409bf10cc0dabaf26e1d06"
+    },
+    {
+      "command": "python -X utf8 -B research/ces-electoral-accounting-2026-09-10/verify.py --check",
+      "elapsed_seconds": 1.782,
+      "exit_code": 0,
+      "log": "runs/run-321/checks/02.txt",
+      "log_sha256": "c9ed816c5b482a035446cff3f2836a6c914bef4368f42ad60559c089bc075b2d"
+    },
+    {
+      "command": "python -X utf8 -B research/ces-electoral-accounting-2026-09-10/report.py --check",
+      "elapsed_seconds": 0.157,
+      "exit_code": 0,
+      "log": "runs/run-321/checks/03.txt",
+      "log_sha256": "81ab6f8cfc133ea939aa5fb798cf4d32e4930ddbc9ad1c39f85cf30a4ec60bb6"
+    },
+    {
+      "command": "python -X utf8 -B -m unittest discover -s research/ces-electoral-accounting-2026-09-10 -p test_accounting.py -v",
+      "elapsed_seconds": 1.906,
+      "exit_code": 0,
+      "log": "runs/run-321/checks/04.txt",
+      "log_sha256": "5ec0db2125708c420c63c63b12b7336b146acfc9fc4cb9d80fa7962db62430ca"
+    },
+    {
+      "command": "python -X utf8 -B research/ces-policy-information-2026-09-10/verify.py --check",
+      "elapsed_seconds": 0.204,
+      "exit_code": 0,
+      "log": "runs/run-321/checks/05.txt",
+      "log_sha256": "a61914281fd425651d4c7cf9e6009760bccedfe00332999e37801d1fd7e97a79"
+    }
+  ],
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "new_external_api_calls": 0,
+  "premium_repair_seconds": null,
+  "premium_repair_tokens": null,
+  "qualification": {
+    "agent": "/root/cheap_worker",
+    "attempts": 1,
+    "cost": null,
+    "expected_sha256": "14e0c573f7e3ae05e47d8b90bd7b85c6cb5f6f52ec806aceba2ca008641c7c9c",
+    "input_sha256": "91ee8e4a54d589436c27028fe06317d6c0d04c9dceea1f7440c4bcfcd6993082",
+    "model": "gpt-5.6-luna",
+    "passed": true,
+    "passed_items": 8,
+    "response_sha256": "03e78772e733be007e7ab18f77c178074deb6fe4a26c6a7b1f156bc3b6820f19",
+    "retry_count": 0,
+    "scope": "单次8题小检查，不证明通用统计可靠性；框架未返回token或费用，均标未知。",
+    "usage": null
+  },
+  "root_corrections": [
+    "初次构建补齐未参加选后问卷分支的证据默认键。",
+    "按已封印缺失词表修正NAN负例的预期；未更改分析规格。",
+    "Pew第二稿哈希字段做明确接口转换，保留工人两稿。"
+  ],
+  "root_work": "登记与封印、代码本映射、原件分类/聚合、独立验收、报告生成、接口整合和回执；不是全部工作由低成本模型完成。",
+  "scientific_final_review": "待后续；本次完成实现与验证。",
+  "subscription_quota_used": null,
+  "tests_passed": 24,
+  "usage_note": "框架未提供token、费用或订阅用量，未知不记零；不能据此估计节省百分比。",
+  "worker_cost": null,
+  "worker_input_tokens": null,
+  "worker_output_tokens": null,
+  "worker_retries": 1
+}

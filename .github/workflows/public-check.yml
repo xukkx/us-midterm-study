@@ -91,3 +91,6 @@ jobs:
           python -X utf8 -B research/ces-policy-information-2026-09-10/verify.py --check
           python -X utf8 -B research/ces-policy-information-2026-09-10/report.py --check
           python -X utf8 -B research/ces-policy-information-2026-09-10/matched_test.py --reproduce
+
+      - name: LH270匿名选举核算
+        run: python -X utf8 -B research/ces-electoral-accounting-2026-09-10/public_check.py

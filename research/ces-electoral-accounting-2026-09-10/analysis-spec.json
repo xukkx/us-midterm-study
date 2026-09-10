@@ -1,0 +1,45 @@
+{
+  "cohort_n": 11009,
+  "contract_id": "LH-304",
+  "denominator": "全队列人数；加权模式为各自覆盖的权重总量",
+  "expected_weight_coverage": {
+    "adult": 11009,
+    "post": 9746,
+    "post_missing": 1263
+  },
+  "pew_scope": "公开参与变化和方法差异；不复现微观数据，不比较2020总统到2022众院选择为同职位转党",
+  "primary": "unweighted",
+  "research_label": "LH270",
+  "schema_version": 1,
+  "scientific_status": "非盲态、回顾性描述；不拟合预测器，不做全国或因果归因",
+  "sensitivity": [
+    "adult",
+    "post"
+  ],
+  "sign": {
+    "A": 0,
+    "D": -1,
+    "N": 0,
+    "O": 0,
+    "R": 1
+  },
+  "states": [
+    "D",
+    "R",
+    "O",
+    "A",
+    "N",
+    "U"
+  ],
+  "stop": "完成核算、界限、Pew对照和证据包后停止，最终科学审核待后续。",
+  "target": "完整已发布2020至2022两波队列的众院票与参与描述核算",
+  "uncertainty": "枚举允许状态完成的界限，非抽样置信区间；分项边际界限不能任意相加",
+  "unknown_completions": [
+    "D",
+    "R",
+    "O",
+    "A",
+    "N"
+  ],
+  "weight_policy": "同人两期固定2022权重；成人为同队列描述而非总体恢复；选后缺失另报且不补零。"
+}
