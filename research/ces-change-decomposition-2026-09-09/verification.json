@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": 8738,
+  "challenger_checks": 2720,
+  "n": 6175,
+  "changed": 414,
+  "early_changed": 590,
+  "third": 40,
+  "max_closure_error": 1.7763568394002505e-15,
+  "no_production_import": true
+}

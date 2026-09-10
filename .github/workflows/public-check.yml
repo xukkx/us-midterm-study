@@ -71,3 +71,14 @@ jobs:
           python -X utf8 -B research/ces-policy-calibration-2026-09-09/history_nested.py --check
           python -X utf8 -B research/ces-policy-calibration-2026-09-09/verify.py --check
           python -X utf8 -B research/ces-policy-calibration-2026-09-09/report.py --check
+
+      - name: LH268独立验收
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-change-decomposition-2026-09-09 -p test_*.py
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/project_raw.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/decompose.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/r1_sensitivity.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/challenger.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/comparison.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/report.py --check
