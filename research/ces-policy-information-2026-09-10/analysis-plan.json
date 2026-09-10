@@ -1,0 +1,98 @@
+{
+  "research": "LH269",
+  "contract": "LH-303",
+  "created_at": "2026-09-10T02:43:22.555225+00:00",
+  "status": "已查看LH268及2024结果后的新指定回顾性诊断，不是盲态预注册",
+  "target_n": 6175,
+  "input_sha256": {
+    "joint-counts.json": "0f764576b77be734e55509f6bb33c3cc3e24e457dba26cdc1f135b3ed85c245d",
+    "challenger.json": "5d14eb23fcdd25b1b5fdea9fc18778567b62039791c45169155f5bb4366bdcda",
+    "history-nested.json": "50e59887bdec4ff822b10fc8109804d9b2fc9380bec8ebcd855cca0064a13a2d",
+    "decomposition.json": "30308fca0dad5e0760f1fa6c80f794d5ffb594540f2726016e08ced0953796e0",
+    "comparison.json": "ec239a7edd9c8b1302ca99f8f4da4891f755156a3e5b03a32626ee0f7f3b6e78"
+  },
+  "support": {
+    "bands": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        19
+      ],
+      [
+        20,
+        49
+      ],
+      [
+        50,
+        null
+      ]
+    ],
+    "axes": [
+      "训练单元总人数",
+      "实际目标类别训练人数"
+    ],
+    "weight": "留出人数，不是单元等权",
+    "mass": 20,
+    "read_existing_training_cells": true,
+    "refit": false,
+    "metrics": [
+      "full_log",
+      "event_log",
+      "destination_log",
+      "multiclass_brier",
+      "binary_brier"
+    ],
+    "summaries": [
+      "人数",
+      "变化人数",
+      "目标计数",
+      "n/(n+20)",
+      "留出实际类别预测概率",
+      "总损失及逐人均值"
+    ],
+    "future_paths": "仅作既有解释，不用于路由"
+  },
+  "matched": {
+    "H": [
+      "PID20_4",
+      "PID22_raw8"
+    ],
+    "W": [
+      "policy20",
+      "policy22"
+    ],
+    "Y": "PID24_4",
+    "unknown": "保留0为可用记录类别；不是仅实质政策信息",
+    "primary": "conditional_MI",
+    "auxiliary": "conditional_TV",
+    "family": "仅一个主MI检验；TV辅助",
+    "draws": 99999,
+    "seed": 26920260910,
+    "reference": "各H内对W联合标签固定边际置换，与Y边际均保持不变",
+    "forbidden": [
+      "policy24",
+      "未来路径分层",
+      "丢弃unknown",
+      "规格搜索"
+    ],
+    "p": "(尾部命中数+1)/(B+1)",
+    "mc": "报告二项Wilson区间及MCSE；不是科学效果区间",
+    "analytic_reference": "按边际超几何分布计算MI与TV零参考期望作数值核验"
+  },
+  "future_promotion": {
+    "applicability": "仅未来独立且标签未见的评估，不反套LH268或LH269",
+    "primary": "成对平均full log增益至少0.005 nats/人，且单侧95%区间下界>0",
+    "guardrails": "两个Brier差各自单侧95%上界<=0.001（越低越好）",
+    "resampling": "新评估独立人单元的成对bootstrap，9999次；同一人全部记录共同抽取，折不是独立样本；存在更高层依赖必须事前更改设计",
+    "freeze": "评估结局揭示前冻结候选、基线、输入时间、目标、预测及随机种子；缺乏新评估数据则不晋级",
+    "tolerance_status": "前瞻治理选择，非由当前数据估计的实质阈值"
+  },
+  "stop": "支持审计和一个匹配检验后收口；不增模型、不调收缩、不追p值"
+}

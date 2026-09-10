@@ -1,0 +1,100 @@
+{
+  "research": "LH269",
+  "roles": {
+    "coordination_and_math": "Codex",
+    "implementation_drafts_and_initial_checks": "三个Luna子代理；监督者退回错误权重和不完整验证并修复正式统计/独立验收",
+    "requested_external_models": [
+      "OpenCode Go opencode-go/muse-spark-1.3-contributor",
+      "Ollama Cloud glm-5.3"
+    ]
+  },
+  "accepted_external_model_deliveries": 0,
+  "muse": {
+    "attempts": 3,
+    "requested_model": "opencode-go/muse-spark-1.3-contributor",
+    "accepted": 0,
+    "status": "服务错误或未收到完整终止输出；首次日志发生重叠/NUL，已保留，不能作为完整独立用量证明",
+    "reported_cost": null,
+    "production_code_adopted": false
+  },
+  "glm_attempts": [
+    {
+      "requested_model": "glm-5.3",
+      "provider": "Ollama Cloud",
+      "request_sha256": "b4326e329c311766673040eb02a00e310b4e40f530e8014ba90dcdc24a3e87e9",
+      "data_class": "纯数学规范与合成例",
+      "tool_access": false,
+      "reported_cost": null,
+      "actual_model": "glm-5.3",
+      "done": true,
+      "done_reason": "length",
+      "prompt_eval_count": 289,
+      "eval_count": 6000,
+      "response_sha256": "6541e823ecd96802538d140df84df3c2226ce7e107333cb2b707583269dd6ead",
+      "complete_output": false,
+      "elapsed_seconds": 50.82432818412781,
+      "receipt_sha256": "09f69ecd76ed412c299a82cd53789940cb25ef3d5f1edeaea79bb3e20820fddd"
+    },
+    {
+      "requested_model": "glm-5.3",
+      "provider": "Ollama Cloud",
+      "request_sha256": "aad74cbb7d98cce661f8665cbc45cc4c0de03b57ebf3987d239dfef344999c72",
+      "data_class": "纯数学规范与合成例",
+      "tool_access": false,
+      "reported_cost": null,
+      "error_type": "RemoteDisconnected",
+      "complete_output": false,
+      "elapsed_seconds": 60.37734413146973,
+      "receipt_sha256": "2360526daa04e21b0199baa56bf8ba8dd8dc521d2b285d04d112cb475c0d0b21"
+    },
+    {
+      "requested_model": "glm-5.3",
+      "provider": "Ollama Cloud",
+      "request_sha256": "4c0098de84faed9f1c9ebc9e939bee7b41839b1454d33939b7f9eb95ece161a7",
+      "data_class": "纯数学规范与合成例",
+      "tool_access": false,
+      "reported_cost": null,
+      "actual_model": "glm-5.3",
+      "done": true,
+      "done_reason": "length",
+      "prompt_eval_count": 289,
+      "eval_count": 16000,
+      "response_sha256": "679a70a724985d38396a8811e0384414cf7a0ecd2644a9495663c18cc797ed8d",
+      "complete_output": false,
+      "elapsed_seconds": 125.34703731536865,
+      "receipt_sha256": "fd2c0d2e2ad71214fb7c41e498f13bd7d30c074b122555862a0c433e4e27d40d"
+    },
+    {
+      "provider": "Ollama Cloud",
+      "requested_model": "glm-5.3",
+      "request_sha256": "5e5c7fbbb79ecb2cccfde38968e324ce42f4662b9f950b1b6b5e4fc368de6f93",
+      "reported_cost": null,
+      "complete_output": false,
+      "actual_model": "glm-5.3",
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 259,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 4000,
+        "total_tokens": 4259
+      },
+      "error_type": "JSONDecodeError",
+      "elapsed_seconds": 41.62899875640869,
+      "receipt_sha256": "39223f5f4fe8b0b9f2d1076ae5d0c2cae955364f903bc13aa7eeef913ea1608d"
+    }
+  ],
+  "known_glm_prompt_tokens": 837,
+  "known_glm_eval_tokens": 26000,
+  "cost_scope": "所有费用未知；一次断连未返回用量，已知token不是全部尝试总用量。零完整交付不等于零计费。",
+  "data_scope": "外部调用只发数学规格或合成例；原始CSV和个体标识未外发。",
+  "limitations": [
+    "不以token正数、退出码0或step_start宣称完成。",
+    "草稿重复发布准备已停止；新正式结果单独重建、验证并串行发布。",
+    "草稿未完成统计调试不计入正式随机参考，不依据其结果选择统计量或seed。"
+  ],
+  "plan_sha256": "bf3c5d331c6f77fbecd2c7d7ef3dee0303d21a91e86f4070490e7e4e7975c823",
+  "review_manifest_verified_files": 8,
+  "review_kernels_identical_to_frozen": 2
+}

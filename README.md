@@ -67,3 +67,5 @@ python -B research/ces-panel-2020-2024/reproduce.py --check
 不发布个人微数据、凭据、内部合同、运行日志及原有封存材料。来源与许可按各文件说明保留。
 
 - [LH268观测变化分解报告](research/ces-change-decomposition-2026-09-09/report.md)
+
+- [LH269政策记录条件信息与支持审计](research/ces-policy-information-2026-09-10/report.md)
