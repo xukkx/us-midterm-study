@@ -1,0 +1,9 @@
+{
+  "checkpoint": 1,
+  "reviewer": "Codex主协调者",
+  "decision": "批准固定的事后关联问题与描述核算；任何拟合仍须通过后续支持和设计门",
+  "spec_sha256": "91e4ffc9af06342669830736edda8580eff7f13f8788eab2e652d86f698b2a8f",
+  "evidence": ["代码本PDF第13页权重表已视觉核验；PSU和分层配对由官方HTML与PDF核实", "CSV全部5521条版本20260519、键唯一；尚未打开联合结果", "X固定为11自由度：PID、收入、住房、年龄、样本、选前电话方式"],
+  "restrictions": ["身份为POST；PRE题不能保证在提前投票前", "权重合并使用实际特朗普票比例，不构成独立预测验证", "固定S要求完整C和X组合出现全部四种E/I；覆盖不足如实报告，不扩大S", "同一完整应答域用于三模型；保留全设计框后作域估计"],
+  "metering": {"separate_api_call": false, "tokens": null, "cost": null, "note": "当前协调者会话检查；未提供检查点独立计量"}
+}

@@ -1,0 +1,26 @@
+                     1. Voted
+
+Survey Question(s)
+                     PREVOTE_VCONF, POSTVOTE_RVOTE, PAPI POST
+                     Q14
+
+
+
+V242096x PRE-POST: SUMMARY: 2024 PRESIDENTIAL VOTE
+                     -7. Insuﬃcient partial, interview deleted
+                     -6. No post interview
+                     -2. Missing, no pre/post vote data: DK/RF/INAP
+                     1. Kamala Harris
+Value Labels         2. Donald Trump
+                     3. Robert F. Kennedy, Jr
+                     4. Cornel West
+                     5. Jill Stein
+                     6. Other
+
+Survey Question(s)
+                     PREVOTE_PRESVTWHO, POSTVOTE_PRESVTWHO,
+                     PAPI POST Q15
+
+
+
+                     PRE-POST: SUMMARY: PARTY OF 2024 US HOUSE

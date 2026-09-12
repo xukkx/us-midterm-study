@@ -1,0 +1,32 @@
+  2. Internet (WEB)
+Value Labels
+               3. Paper (PAPI)
+               4. Phone
+
+
+
+
+               MODE OF INTERVIEW: POST-ELECTION
+V240002b INTERVIEW
+
+
+
+
+                                                                                   21
+22                                                                       CODEBOOK: VARIABLES
+
+
+                -7. Insuﬃcient parital, interview deleted
+                -6. No post interview
+                1. Face-to-face (FTF)
+Value Labels    2. Internet (WEB)
+                3. Paper (PAPI)
+                4. Phone
+                5. Video
+                This variable captures the mode in which the respondent completed the majority of
+Variable Note   the post-election survey. Some respondents did use multiple modes to complete
+                the post-election survey.
+
+
+
+

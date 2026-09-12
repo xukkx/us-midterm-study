@@ -1,0 +1,30 @@
+riable Note
+                     (20260519) of the 2024 Time Series data.
+
+
+
+
+                     POST: HOW IMPORTANT IS BEING AMERICAN TO
+V242536              R’S IDENTITY
+566                                                                    CODEBOOK: VARIABLES
+
+
+Question             How important is being American to your identity?
+                     -9. Refused
+                     -7. Insuﬃcient partial, interview deleted
+                     -6. No post interview
+                     -5. Suﬃcient partial, breakoﬀ
+                     -1. Inapplicable
+Value Labels
+                     1. Extremely important
+                     2. Very important
+                     3. Moderately important
+                     4. A little important
+                     5. Not at all important
+Survey Question(s)   IDENT_AMERID
+Response Order       Forward/Reverse order
+
+
+
+
+                     POST: WHITE R: WHAT HAPPENS TO WHITE

@@ -1,0 +1,20 @@
+TUS
+                1. Completed pre-election interview only
+Value Labels
+                2. Completed pre and post-election interviews
+
+
+
+
+V240003         SAMPLE TYPE
+                1. Panel (2016-20-24)
+                2. Fresh sample (WEB)
+Value Labels
+                3. Fresh sample (FTF)
+                4. GSS
+
+
+
+
+WEIGHTING VARIABLES
+                PRE-ELECTION RAKED WEIGHT: FACE-TO-FACE

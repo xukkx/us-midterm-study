@@ -71,3 +71,5 @@ python -B research/ces-panel-2020-2024/reproduce.py --check
 - [LH269政策记录条件信息与支持审计](research/ces-policy-information-2026-09-10/report.md)
 
 - [LH270众院票与参与核算（待最终科学审核）](research/ces-electoral-accounting-2026-09-10/report.md)
+
+- [LH271物质处境、身份与总统票（关联研究待审）](research/anes-class-identity-2026-09-11/report.md)

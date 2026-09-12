@@ -1,0 +1,21 @@
+ate selected (preference; nonvoter)
+
+Survey Question(s)
+                     POSTVOTE_VTGOVWHO,
+                     POSTVOTE_GOVPREFWHO
+
+
+
+V242095x PRE-POST: SUMMARY: VOTER TURNOUT IN 2024
+                     -7. Insuﬃcient partial, interview deleted
+                     -6. No post interview
+Value Labels         -2. Not reported
+                     0. Did not vote
+                     1. Voted
+
+Survey Question(s)
+                     PREVOTE_VCONF, POSTVOTE_RVOTE, PAPI POST
+                     Q14
+
+
+

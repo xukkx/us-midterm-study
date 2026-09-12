@@ -1,0 +1,17 @@
+           80. Eighty years old or older
+Survey Question(s)   PAPI PRE Q33
+
+
+
+                     PRE: SUMMARY: RESPONDENT AGE ON ELECTION
+V241458x DAY
+                     -2. Missing, exact birth date not given
+Value Labels
+                     80. Eighty years old or older
+
+Survey Question(s)
+                     DEM_BIRTHMO, DEM_BIRTHDY, DEM_BIRTHYR,
+                     PAPI PRE Q33
+
+
+

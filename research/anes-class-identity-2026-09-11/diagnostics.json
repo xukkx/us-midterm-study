@@ -1,0 +1,21 @@
+{
+  "n_total": 5521,
+  "n_fresh": 3105,
+  "n_post_design": 2694,
+  "n_domain": 1835,
+  "n_support": 793,
+  "early_ballot_in_fresh": 137,
+  "domain_cells": {
+    "0,0,0": 396,
+    "0,0,1": 83,
+    "0,1,0": 453,
+    "0,1,1": 301,
+    "1,0,0": 95,
+    "1,0,1": 77,
+    "1,1,0": 115,
+    "1,1,1": 315
+  },
+  "source_sha256": "f80a276e64a5653abd6a9d1dcd96b94717367d39b21152630fa9e30c46cf30d7",
+  "spec_version": "LH271-1.0",
+  "common_support_rule": "固定S为共同完整应答域中，每个C×PID×income×owner×age×sample×phone组合均有四种E×I取值的记录；任一所需组合为空时不外推。模型仍用相同完整应答域。S为空则不拟合；报告S覆盖。"
+}

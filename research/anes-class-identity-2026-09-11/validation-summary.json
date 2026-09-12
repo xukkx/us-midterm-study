@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\xukkx\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "runs/run-323/plan",
+        "-p",
+        "test_guardrails.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "validation-1.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\xukkx\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/anes-class-identity-2026-09-11",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "validation-2.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\xukkx\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "research/anes-class-identity-2026-09-11/verify.py",
+        "--write"
+      ],
+      "exit_code": 0,
+      "log": "validation-3.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\xukkx\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "research/anes-class-identity-2026-09-11/report.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "validation-4.txt"
+    }
+  ],
+  "old_seals_unchanged": 55
+}

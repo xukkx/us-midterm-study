@@ -94,3 +94,6 @@ jobs:
 
       - name: LH270匿名选举核算
         run: python -X utf8 -B research/ces-electoral-accounting-2026-09-10/public_check.py
+
+      - name: LH271匿名结果与合成测试
+        run: python -X utf8 -B research/anes-class-identity-2026-09-11/public_check.py
