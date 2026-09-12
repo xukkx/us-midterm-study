@@ -1,0 +1,10 @@
+{
+  "S0_hidden": true,
+  "accepted_code_deliveries": 1,
+  "attempt_count": 4,
+  "forbidden_outcome_invariant": true,
+  "known_reported_cost_usd": 0.0016292,
+  "real_rows_refit_identical": 11009,
+  "tool_events": 0,
+  "unreported_cost_attempts": 1
+}

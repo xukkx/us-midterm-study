@@ -1,0 +1,740 @@
+{
+  "bound_kind": "固定队列可行端点，不是95%区间；群体重叠，边际上下界不是可任意组合的联合盒子。",
+  "complete_case": [
+    {
+      "B_pp": -0.16433537710592652,
+      "covariance_over_r_pp": -0.16433537710592663,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 5.420401195049083,
+          "any_category_change_pp": 9.73111395646607
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 4.7721268163804496,
+          "any_category_change_pp": 8.107661822985468
+        }
+      },
+      "full_delta_pp": -0.8099050456153417,
+      "group": "all",
+      "n": 10742,
+      "omitted_delta_pp": -0.597524541186513,
+      "retained_delta_pp": -0.9742404227212682,
+      "retained_share": 0.5637683857754608,
+      "weighted": false
+    },
+    {
+      "B_pp": 0.8828525597777748,
+      "covariance_over_r_pp": 0.8828525597777744,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 6.611225214159195,
+          "any_category_change_pp": 10.858604542570584
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 5.2990618443796444,
+          "any_category_change_pp": 8.946520816476172
+        }
+      },
+      "full_delta_pp": -0.330398745742372,
+      "group": "all",
+      "n": 10742,
+      "omitted_delta_pp": -1.3515130951683283,
+      "retained_delta_pp": 0.5524538140354027,
+      "retained_share": 0.5363088741143104,
+      "weighted": true
+    },
+    {
+      "B_pp": -1.4324369381500148,
+      "covariance_over_r_pp": -1.4324369381500148,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 8.480565371024735,
+          "any_category_change_pp": 13.074204946996467
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 5.755395683453237,
+          "any_category_change_pp": 9.352517985611511
+        }
+      },
+      "full_delta_pp": 0.7130124777183601,
+      "group": "Latino_employed_2020",
+      "n": 561,
+      "omitted_delta_pp": 2.1201413427561837,
+      "retained_delta_pp": -0.7194244604316548,
+      "retained_share": 0.49554367201426025,
+      "weighted": false
+    },
+    {
+      "B_pp": -1.8253326454026004,
+      "covariance_over_r_pp": -1.8253326454026007,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 7.806908582036058,
+          "any_category_change_pp": 11.921591006837918
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 2.0650120104686662,
+          "any_category_change_pp": 7.672720217689465
+        }
+      },
+      "full_delta_pp": 2.265918127185715,
+      "group": "Latino_employed_2020",
+      "n": 561,
+      "omitted_delta_pp": 4.149875552291623,
+      "retained_delta_pp": 0.4405854817831143,
+      "retained_share": 0.50790242588055,
+      "weighted": true
+    },
+    {
+      "B_pp": 0.5713335189120552,
+      "covariance_over_r_pp": 0.5713335189120566,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 11.304347826086957,
+          "any_category_change_pp": 11.304347826086957
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 10.075566750629722,
+          "any_category_change_pp": 10.075566750629722
+        }
+      },
+      "full_delta_pp": -10.646900269541778,
+      "group": "R_renter_2020",
+      "n": 742,
+      "omitted_delta_pp": -11.304347826086957,
+      "retained_delta_pp": -10.075566750629724,
+      "retained_share": 0.5350404312668463,
+      "weighted": false
+    },
+    {
+      "B_pp": 2.073493357343349,
+      "covariance_over_r_pp": 2.0734933573433505,
+      "flows": {
+        "omitted": {
+          "R_indicator_nonzero_pp": 12.12996987102345,
+          "any_category_change_pp": 12.12996987102345
+        },
+        "retained": {
+          "R_indicator_nonzero_pp": 8.252101980873368,
+          "any_category_change_pp": 8.252101980873368
+        }
+      },
+      "full_delta_pp": -10.325595338216717,
+      "group": "R_renter_2020",
+      "n": 742,
+      "omitted_delta_pp": -12.12996987102345,
+      "retained_delta_pp": -8.252101980873368,
+      "retained_share": 0.46530067137921477,
+      "weighted": true
+    }
+  ],
+  "group_overlap_n": {
+    "Latino_employed_2020": {
+      "Latino_employed_2020": 584,
+      "R_renter_2020": 35,
+      "all": 584
+    },
+    "R_renter_2020": {
+      "Latino_employed_2020": 35,
+      "R_renter_2020": 749,
+      "all": 749
+    },
+    "all": {
+      "Latino_employed_2020": 584,
+      "R_renter_2020": 749,
+      "all": 11009
+    }
+  },
+  "rows": [
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "all",
+      "lower_fraction": "-259/11009",
+      "lower_pp": -2.3526205831592333,
+      "n": 11009,
+      "unknown_endpoints": 326,
+      "unknown_people": 267,
+      "upper_fraction": "67/11009",
+      "upper_pp": 0.608592969388682,
+      "weight_total": 11009.757599999999,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "all",
+      "lower_fraction": "-136/6175",
+      "lower_pp": -2.2024291497975708,
+      "n": 6175,
+      "unknown_endpoints": 139,
+      "unknown_people": 119,
+      "upper_fraction": "3/6175",
+      "upper_pp": 0.048582995951417005,
+      "weight_total": 5830.5416,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "all",
+      "lower_fraction": "-123/4834",
+      "lower_pp": -2.5444766239139427,
+      "n": 4834,
+      "unknown_endpoints": 187,
+      "unknown_people": 148,
+      "upper_fraction": "32/2417",
+      "upper_pp": 1.3239553165080677,
+      "weight_total": 5179.216,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "all",
+      "lower_pp": -3.405336553458725,
+      "n": 11009,
+      "unknown_endpoints": 326,
+      "unknown_people": 267,
+      "upper_pp": 2.437034581033828,
+      "weight_total": 11009.757599999999,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "all",
+      "lower_pp": -1.8941224945552233,
+      "n": 6175,
+      "unknown_endpoints": 139,
+      "unknown_people": 119,
+      "upper_pp": 2.483030049901368,
+      "weight_total": 5830.5416,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "all",
+      "lower_pp": -5.106597214713577,
+      "n": 4834,
+      "unknown_endpoints": 187,
+      "unknown_people": 148,
+      "upper_pp": 2.385254833936256,
+      "weight_total": 5179.216,
+      "weighted": true
+    },
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "-3/146",
+      "lower_pp": -2.054794520547945,
+      "n": 584,
+      "unknown_endpoints": 27,
+      "unknown_people": 23,
+      "upper_fraction": "15/584",
+      "upper_pp": 2.5684931506849313,
+      "weight_total": 487.5687,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "-5/282",
+      "lower_pp": -1.773049645390071,
+      "n": 282,
+      "unknown_endpoints": 4,
+      "unknown_people": 4,
+      "upper_fraction": "-1/282",
+      "upper_pp": -0.3546099290780142,
+      "weight_total": 233.3358,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "-7/302",
+      "lower_pp": -2.3178807947019866,
+      "n": 302,
+      "unknown_endpoints": 23,
+      "unknown_people": 19,
+      "upper_fraction": "8/151",
+      "upper_pp": 5.298013245033113,
+      "weight_total": 254.2329,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_pp": -5.33379193537239,
+      "n": 584,
+      "unknown_endpoints": 27,
+      "unknown_people": 23,
+      "upper_pp": 6.271444413884648,
+      "weight_total": 487.5687,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_pp": -3.6349758588266354,
+      "n": 282,
+      "unknown_endpoints": 4,
+      "unknown_people": 4,
+      "upper_pp": 0.7173352738842473,
+      "weight_total": 233.3358,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_pp": -6.892970972678988,
+      "n": 302,
+      "unknown_endpoints": 23,
+      "unknown_people": 19,
+      "upper_pp": 11.3690242293582,
+      "weight_total": 254.2329,
+      "weighted": true
+    },
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_fraction": "-86/749",
+      "lower_pp": -11.481975967957277,
+      "n": 749,
+      "unknown_endpoints": 7,
+      "unknown_people": 7,
+      "upper_fraction": "-79/749",
+      "upper_pp": -10.54739652870494,
+      "weight_total": 1005.9515,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_fraction": "-44/401",
+      "lower_pp": -10.972568578553615,
+      "n": 401,
+      "unknown_endpoints": 4,
+      "unknown_people": 4,
+      "upper_fraction": "-40/401",
+      "upper_pp": -9.975062344139651,
+      "weight_total": 465.0075,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_fraction": "-7/58",
+      "lower_pp": -12.068965517241379,
+      "n": 348,
+      "unknown_endpoints": 3,
+      "unknown_people": 3,
+      "upper_fraction": "-13/116",
+      "upper_pp": -11.206896551724139,
+      "weight_total": 540.9440000000001,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_pp": -11.918248543791625,
+      "n": 749,
+      "unknown_endpoints": 7,
+      "unknown_people": 7,
+      "upper_pp": -10.142208645247807,
+      "weight_total": 1005.9515,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_pp": -9.28808675128896,
+      "n": 401,
+      "unknown_endpoints": 4,
+      "unknown_people": 4,
+      "upper_pp": -8.158922167922023,
+      "weight_total": 465.0075,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_pp": -14.17919414948682,
+      "n": 348,
+      "unknown_endpoints": 3,
+      "unknown_people": 3,
+      "upper_pp": -11.847085835132656,
+      "weight_total": 540.9440000000001,
+      "weighted": true
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "all",
+      "lower_fraction": "-88/11009",
+      "lower_pp": -0.7993459896448359,
+      "n": 11009,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-88/11009",
+      "upper_pp": -0.7993459896448359,
+      "weight_total": 11009.757599999999,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "all",
+      "lower_fraction": "-66/6175",
+      "lower_pp": -1.068825910931174,
+      "n": 6175,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-66/6175",
+      "upper_pp": -1.068825910931174,
+      "weight_total": 5830.5416,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "all",
+      "lower_fraction": "-11/2417",
+      "lower_pp": -0.4551096400496483,
+      "n": 4834,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-11/2417",
+      "upper_pp": -0.4551096400496483,
+      "weight_total": 5179.216,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "all",
+      "lower_pp": -0.5188388525465812,
+      "n": 11009,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": -0.5188388525465812,
+      "weight_total": 11009.757599999999,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "all",
+      "lower_pp": 0.10000957715489056,
+      "n": 6175,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": 0.10000957715489056,
+      "weight_total": 5830.5416,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "all",
+      "lower_pp": -1.2155121547353884,
+      "n": 4834,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": -1.2155121547353884,
+      "weight_total": 5179.216,
+      "weighted": true
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "1/146",
+      "lower_pp": 0.684931506849315,
+      "n": 584,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "1/146",
+      "upper_pp": 0.684931506849315,
+      "weight_total": 487.5687,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "-1/141",
+      "lower_pp": -0.7092198581560284,
+      "n": 282,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-1/141",
+      "upper_pp": -0.7092198581560284,
+      "weight_total": 233.3358,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_fraction": "3/151",
+      "lower_pp": 1.9867549668874174,
+      "n": 302,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "3/151",
+      "upper_pp": 1.9867549668874174,
+      "weight_total": 254.2329,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_pp": 3.33434037090568,
+      "n": 584,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": 3.33434037090568,
+      "weight_total": 487.5687,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_pp": 0.42140983081035993,
+      "n": 282,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": 0.42140983081035993,
+      "weight_total": 233.3358,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_pp": 6.007837695278621,
+      "n": 302,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": 6.007837695278621,
+      "weight_total": 254.2329,
+      "weighted": true
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_fraction": "-86/749",
+      "lower_pp": -11.481975967957277,
+      "n": 749,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-86/749",
+      "upper_pp": -11.481975967957277,
+      "weight_total": 1005.9515,
+      "weighted": false
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_fraction": "-44/401",
+      "lower_pp": -10.972568578553615,
+      "n": 401,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-44/401",
+      "upper_pp": -10.972568578553615,
+      "weight_total": 465.0075,
+      "weighted": false
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_fraction": "-7/58",
+      "lower_pp": -12.068965517241379,
+      "n": 348,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_fraction": "-7/58",
+      "upper_pp": -12.068965517241379,
+      "weight_total": 540.9440000000001,
+      "weighted": false
+    },
+    {
+      "cohort": "full",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_pp": -11.918248543791625,
+      "n": 749,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": -11.918248543791625,
+      "weight_total": 1005.9515,
+      "weighted": true
+    },
+    {
+      "cohort": "retained",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_pp": -9.28808675128896,
+      "n": 401,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": -9.28808675128896,
+      "weight_total": 465.0075,
+      "weighted": true
+    },
+    {
+      "cohort": "omitted",
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_pp": -14.17919414948682,
+      "n": 348,
+      "unknown_endpoints": 0,
+      "unknown_people": 0,
+      "upper_pp": -14.17919414948682,
+      "weight_total": 540.9440000000001,
+      "weighted": true
+    }
+  ],
+  "selection_contrasts": [
+    {
+      "convention": "resolved",
+      "group": "all",
+      "lower_pp": -1.5484187946336139,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5609047143246435,
+      "strictly_positive": false,
+      "upper_pp": 1.1386002545580116,
+      "weighted": false
+    },
+    {
+      "convention": "resolved",
+      "group": "all",
+      "lower_pp": -2.0131069488541984,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5295794704871614,
+      "strictly_positive": false,
+      "upper_pp": 3.570316476625241,
+      "weighted": true
+    },
+    {
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_pp": -3.6566112892256872,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.4828767123287671,
+      "strictly_positive": false,
+      "upper_pp": 1.0152530846206158,
+      "weighted": false
+    },
+    {
+      "convention": "resolved",
+      "group": "Latino_employed_2020",
+      "lower_pp": -7.823534312230228,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.47857009689096125,
+      "strictly_positive": false,
+      "upper_pp": 3.9682412487755814,
+      "weighted": true
+    },
+    {
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_pp": 0.10887334400980207,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5353805073431241,
+      "strictly_positive": true,
+      "upper_pp": 0.9728682299591476,
+      "weighted": false
+    },
+    {
+      "convention": "resolved",
+      "group": "R_renter_2020",
+      "lower_pp": 1.3760854279860868,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.46225638114760004,
+      "strictly_positive": true,
+      "upper_pp": 3.2373628418423643,
+      "weighted": true
+    },
+    {
+      "convention": "literal",
+      "group": "all",
+      "lower_pp": -0.2694799212863379,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5609047143246435,
+      "strictly_positive": false,
+      "upper_pp": -0.2694799212863379,
+      "weighted": false
+    },
+    {
+      "convention": "literal",
+      "group": "all",
+      "lower_pp": 0.6188484297014718,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5295794704871614,
+      "strictly_positive": true,
+      "upper_pp": 0.6188484297014718,
+      "weighted": true
+    },
+    {
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_pp": -1.3941513650053434,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.4828767123287671,
+      "strictly_positive": false,
+      "upper_pp": -1.3941513650053434,
+      "weighted": false
+    },
+    {
+      "convention": "literal",
+      "group": "Latino_employed_2020",
+      "lower_pp": -2.91293054009532,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.47857009689096125,
+      "strictly_positive": false,
+      "upper_pp": -2.91293054009532,
+      "weighted": true
+    },
+    {
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_pp": 0.5094073894036605,
+      "necessarily_above_2pp": false,
+      "retained_mass_share": 0.5353805073431241,
+      "strictly_positive": true,
+      "upper_pp": 0.5094073894036605,
+      "weighted": false
+    },
+    {
+      "convention": "literal",
+      "group": "R_renter_2020",
+      "lower_pp": 2.6301617925026664,
+      "necessarily_above_2pp": true,
+      "retained_mass_share": 0.46225638114760004,
+      "strictly_positive": true,
+      "upper_pp": 2.6301617925026664,
+      "weighted": true
+    }
+  ]
+}

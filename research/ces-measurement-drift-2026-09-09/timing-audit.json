@@ -1,0 +1,103 @@
+{
+  "known": {
+    "2020_periods": "指南第4页：选前9—10月，选后11—12月",
+    "2024_post_period": [
+      "2024-11-06",
+      "2024-12-10"
+    ],
+    "2024_pre_period": [
+      "2024-10-01",
+      "2024-11-04"
+    ],
+    "PID": "使用profile中的pid7_20/22/24；不是后来另列的CC20/22/24_pid7选后题。年份后缀不能识别题目实际作答时间。",
+    "coding": "政策原码1支持/2反对，空值保留未知；tookpost原码1未参加、2参加。",
+    "excluded": "327d在2020为废除ACA、2022/2024为药品进口，不能按相同尾号当重复题。",
+    "policy_wording": {
+      "conditional_legalization": "三波均为就业、纳税至少三年且无重罪记录者取得合法身份。",
+      "drug_price_negotiation": "三波均为政府协商适用于Medicare与私人保险的药价，上限不超过六国均价120%。",
+      "medicare_single_payer": "三波均为扩展Medicare成为覆盖所有美国人的单一公共计划。"
+    }
+  },
+  "limits": {
+    "allowed_interpretation": "按年份记录的回答轨迹；不给同时测量、滞后作用或因果方向解释。",
+    "exact_item_timestamps_verified": false,
+    "phase_evidence": "每项每年都有未参加选后问卷者的已知回答；这只排除选后独占，不能推出每个人的确切时点或同年题目先后。",
+    "post_exclusive": false,
+    "within_year_PID_policy_order_verified": false
+  },
+  "post_participation_by_known_response": {
+    "PID": {
+      "20": {
+        "1:known": 62,
+        "2:known": 6113
+      },
+      "22": {
+        "1:known": 414,
+        "2:known": 5761
+      },
+      "24": {
+        "1:known": 2160,
+        "2:known": 4015
+      }
+    },
+    "conditional_legalization": {
+      "20": {
+        "1:known": 61,
+        "1:missing": 1,
+        "2:known": 6108,
+        "2:missing": 5
+      },
+      "22": {
+        "1:known": 414,
+        "2:known": 5760,
+        "2:missing": 1
+      },
+      "24": {
+        "1:known": 2160,
+        "2:known": 4015
+      }
+    },
+    "drug_price_negotiation": {
+      "20": {
+        "1:known": 62,
+        "2:known": 6099,
+        "2:missing": 14
+      },
+      "22": {
+        "1:known": 414,
+        "2:known": 5761
+      },
+      "24": {
+        "1:known": 2160,
+        "2:known": 4015
+      }
+    },
+    "medicare_single_payer": {
+      "20": {
+        "1:known": 62,
+        "2:known": 6101,
+        "2:missing": 12
+      },
+      "22": {
+        "1:known": 414,
+        "2:known": 5761
+      },
+      "24": {
+        "1:known": 2160,
+        "2:known": 4015
+      }
+    }
+  },
+  "source": {
+    "PDF_pages_1_based": {
+      "different_post_PID_variable": 141,
+      "field_period": 3,
+      "healthcare": 40,
+      "immigration": 42,
+      "pid7_profile": 22
+    },
+    "sha256": "81f3e73e4dc26b752b18c09ee0b1fc9d7fcf7462f657643193323c17f88941d4",
+    "title": "2020—2024 CES Recontact Survey Guide，2025年5月",
+    "url": "https://doi.org/10.7910/DVN/XV7ABM"
+  }
+}

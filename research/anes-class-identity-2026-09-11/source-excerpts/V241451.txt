@@ -1,0 +1,38 @@
+napplicable
+                     6. Six or more
+Survey Question(s)   DEM_FINFAM
+
+
+
+                     PRE: R HOW MUCH BETTER OR WORSE OFF
+V241451              FINANCIALLY THAN 1 YEAR AGO
+                     We are interested in how people are getting along financially these
+                     days. Would you say that [you /you and your family living here] are
+                     [much better oﬀ financially, somewhat better oﬀ, about the same,
+Question
+                     somewhat worse oﬀ, or much worse oﬀ / much worse oﬀ financially,
+                     somewhat worse oﬀ, about the same, somewhat better oﬀ, or much
+                     better oﬀ] than you were a year ago?
+                     -9. Refused
+                     -8. Don’t know
+                     -1. Inapplicable
+                     1. Much better oﬀ
+Value Labels
+                     2. Somewhat better oﬀ
+                     3. About the same
+                     4. Somewhat worse oﬀ
+                     5. Much worse oﬀ
+PRE‐ ELECTION SURVEY VARIABLES                                                           191
+
+
+Survey Question(s)   DEM_FINRETRO
+                     IF R IS NOT LIVING AT HOME WITH FAMILY MEMBERS /
+Universe
+                     IF R IS LIVING AT HOME WITH 1 OR MORE FAMILY MEMBERS:
+
+Response Order       Forward/Reverse order
+
+
+
+
+                     PRE: R HOW MUCH BETTER OR WORSE OFF

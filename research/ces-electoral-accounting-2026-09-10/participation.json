@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "note": "自报参与和档案记录分别核算，不把无档案记录视为确定未投票。",
+  "transitions": {
+    "file_status": [
+      {
+        "adult_w": 5965.796200000001,
+        "after": "voted",
+        "before": "voted",
+        "n": 7120,
+        "post_n": 6398,
+        "post_w": 5568.1397
+      },
+      {
+        "adult_w": 352.7053,
+        "after": "matched_no_record",
+        "before": "voted",
+        "n": 867,
+        "post_n": 745,
+        "post_w": 278.2286
+      },
+      {
+        "adult_w": 462.95000000000005,
+        "after": "unmatched",
+        "before": "voted",
+        "n": 487,
+        "post_n": 412,
+        "post_w": 403.65680000000003
+      },
+      {
+        "adult_w": 557.292,
+        "after": "voted",
+        "before": "matched_no_record",
+        "n": 428,
+        "post_n": 379,
+        "post_w": 590.6297
+      },
+      {
+        "adult_w": 416.26509999999996,
+        "after": "matched_no_record",
+        "before": "matched_no_record",
+        "n": 393,
+        "post_n": 331,
+        "post_w": 296.2239
+      },
+      {
+        "adult_w": 1380.5624,
+        "after": "unmatched",
+        "before": "matched_no_record",
+        "n": 591,
+        "post_n": 507,
+        "post_w": 1062.0426
+      },
+      {
+        "adult_w": 424.6033,
+        "after": "voted",
+        "before": "unmatched",
+        "n": 459,
+        "post_n": 414,
+        "post_w": 428.7659
+      },
+      {
+        "adult_w": 145.2717,
+        "after": "matched_no_record",
+        "before": "unmatched",
+        "n": 97,
+        "post_n": 81,
+        "post_w": 127.22840000000001
+      },
+      {
+        "adult_w": 1304.3116,
+        "after": "unmatched",
+        "before": "unmatched",
+        "n": 567,
+        "post_n": 479,
+        "post_w": 991.3601
+      }
+    ],
+    "self_report": [
+      {
+        "adult_w": 7433.659600000001,
+        "after": "yes",
+        "before": "yes",
+        "n": 8046,
+        "post_n": 8046,
+        "post_w": 7090.7439
+      },
+      {
+        "adult_w": 125.4576,
+        "after": "no",
+        "before": "yes",
+        "n": 648,
+        "post_n": 648,
+        "post_w": 29.000700000000002
+      },
+      {
+        "adult_w": 228.3982,
+        "after": "unknown",
+        "before": "yes",
+        "n": 1090,
+        "post_n": 38,
+        "post_w": 30.5157
+      },
+      {
+        "adult_w": 379.468,
+        "after": "yes",
+        "before": "no",
+        "n": 133,
+        "post_n": 133,
+        "post_w": 497.7688
+      },
+      {
+        "adult_w": 243.54399999999998,
+        "after": "no",
+        "before": "no",
+        "n": 250,
+        "post_n": 250,
+        "post_w": 137.87019999999998
+      },
+      {
+        "adult_w": 233.65030000000002,
+        "after": "unknown",
+        "before": "no",
+        "n": 100,
+        "post_n": 27,
+        "post_w": 85.9687
+      },
+      {
+        "adult_w": 318.6353,
+        "after": "yes",
+        "before": "unknown",
+        "n": 136,
+        "post_n": 136,
+        "post_w": 402.7034
+      },
+      {
+        "adult_w": 67.74549999999999,
+        "after": "no",
+        "before": "unknown",
+        "n": 56,
+        "post_n": 56,
+        "post_w": 50.0431
+      },
+      {
+        "adult_w": 1979.1991,
+        "after": "unknown",
+        "before": "unknown",
+        "n": 550,
+        "post_n": 412,
+        "post_w": 1421.6612
+      }
+    ]
+  }
+}

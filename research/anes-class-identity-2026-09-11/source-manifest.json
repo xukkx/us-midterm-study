@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "path": "runs\\run-323\\sources\\codebook.pdf",
+      "sha256": "fbad3417cc50b18977563e128f00dfd164ab1d50c5de694134fc57196436a799"
+    },
+    {
+      "path": "runs\\run-323\\sources\\codebook.txt",
+      "sha256": "46a5f78aa01d35a8d7c9dff1b99dfb84c4447be5a2faa733d057978b9d83237b"
+    },
+    {
+      "path": "runs\\run-323\\sources\\data.csv",
+      "sha256": "f80a276e64a5653abd6a9d1dcd96b94717367d39b21152630fa9e30c46cf30d7"
+    },
+    {
+      "path": "runs\\run-323\\sources\\data.zip",
+      "sha256": "31082da127f1ebcfb1d2736ba650d52cd67a4a6ab13fbe639c2db2515779773c"
+    },
+    {
+      "path": "runs\\run-323\\sources\\go.html",
+      "sha256": "a2484cb1e94bf1da1bec3d198acc121c6208d46beaa4cd012ebbd8ba7519779d"
+    }
+  ],
+  "dataset_url": "https://electionstudies.org/anes_timeseries_2024_csv_20260519/",
+  "acquisition": "官网浏览器下载；压缩包内含CSV和代码本PDF",
+  "spec_sha256": "91e4ffc9af06342669830736edda8580eff7f13f8788eab2e652d86f698b2a8f"
+}

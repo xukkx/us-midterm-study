@@ -28,3 +28,72 @@ jobs:
         run: python -B -m unittest discover -s research/ces-panel-retention-2026-09-08/two-wave -p test_two_wave.py
       - name: 两波留存匿名计数复算
         run: python -B research/ces-panel-retention-2026-09-08/two-wave/reproduce.py --check
+      - name: 早期变化选择诊断测试与复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-earlier-change-selection-2026-09-08 -p test_selection.py
+          python -X utf8 -B research/ces-earlier-change-selection-2026-09-08/analyze.py --check
+          python -X utf8 -B research/ces-earlier-change-selection-2026-09-08/write_report.py --check
+      - name: PID识别与遮蔽校准测试及匿名复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-identification-calibration-2026-09-08 -p 'test_*.py'
+          python -X utf8 -B research/ces-identification-calibration-2026-09-08/identify.py --check
+          python -X utf8 -B research/ces-identification-calibration-2026-09-08/anonymous_benchmark.py
+          python -X utf8 -B research/ces-identification-calibration-2026-09-08/report.py --check
+          python -X utf8 -B research/ces-identification-calibration-2026-09-08/simulate.py --check
+      - name: 四状态与结构机制独立测试及匿名复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-four-state-mechanisms-2026-09-08 -p test_four_state.py
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/analyze.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/structure.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/report.py --check
+          python -X utf8 -B research/ces-four-state-mechanisms-2026-09-08/dr_simulation.py --check
+      - name: 三波动态识别、模拟、模型重训与独立核验
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-three-wave-dynamics-2026-09-09 -p test_dynamics.py
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/experiments.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/analyze.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/report.py --check
+          python -X utf8 -B research/ces-three-wave-dynamics-2026-09-09/verify.py --check
+      - name: 有界测量漂移、政策轨迹与历史基准实际复算
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-measurement-drift-2026-09-09 -p "test_*.py"
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/equivalence.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/profile.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/policy.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/history.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-measurement-drift-2026-09-09/report.py --check
+      - name: 可观察政策条件校准、嵌套历史与独立复核
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-policy-calibration-2026-09-09 -p "test_*.py"
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/simulate.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/policy_calibration.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/history_nested.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-policy-calibration-2026-09-09/report.py --check
+
+      - name: LH268独立验收
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-change-decomposition-2026-09-09 -p test_*.py
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/project_raw.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/decompose.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/r1_sensitivity.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/challenger.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/comparison.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/verify.py --check
+          python -X utf8 -B research/ces-change-decomposition-2026-09-09/report.py --check
+
+      - name: LH269政策信息独立核验
+        run: |
+          python -X utf8 -B -m unittest discover -s research/ces-policy-information-2026-09-10 -p "test_*.py"
+          python -X utf8 -B research/ces-policy-information-2026-09-10/support_audit.py --check
+          python -X utf8 -B research/ces-policy-information-2026-09-10/matched_test.py --check
+          python -X utf8 -B research/ces-policy-information-2026-09-10/verify.py --check
+          python -X utf8 -B research/ces-policy-information-2026-09-10/report.py --check
+          python -X utf8 -B research/ces-policy-information-2026-09-10/matched_test.py --reproduce
+
+      - name: LH270匿名选举核算
+        run: python -X utf8 -B research/ces-electoral-accounting-2026-09-10/public_check.py
+
+      - name: LH271匿名结果与合成测试
+        run: python -X utf8 -B research/anes-class-identity-2026-09-11/public_check.py

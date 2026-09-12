@@ -1,0 +1,83 @@
+{
+  "research": "LH268",
+  "contract": "LH-302",
+  "created_at": "2026-09-09T22:54:33.640664+00:00",
+  "status": "已查看2024及LH267结果后新定探索性诊断",
+  "target_n": 6175,
+  "stage_order": [
+    "frozen_score_decomposition",
+    "raw8_R1_and_one_policy_challenger"
+  ],
+  "fold_rule": "int(SHA256(LH265|caseid_20)[:16],16)%5",
+  "pid_map_1_to_8": [
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    2,
+    3
+  ],
+  "policy_codes": {
+    "unknown": 0,
+    "oppose": 1,
+    "support": 2
+  },
+  "policy_fields": [
+    "CC20_331a",
+    "CC22_331a",
+    "CC24_331a"
+  ],
+  "R1": {
+    "strata": [
+      "PID20_raw8",
+      "policy20"
+    ],
+    "complete_n": 6168,
+    "missing_n": 7,
+    "path_groups": [
+      "stable",
+      "return",
+      "nonreturn_change"
+    ],
+    "joint_outcome": [
+      "policy22",
+      "policy24"
+    ],
+    "primary_statistic": "weighted_conditional_MI",
+    "auxiliary_statistic": "weighted_conditional_TV",
+    "draws": 99999,
+    "seed": 26820260909,
+    "family": "本轮单项敏感性MI；TV辅助；旧六项家族冻结",
+    "reference": "固定每层路径边际与联合政策对边际的条件可交换参考"
+  },
+  "challenger": {
+    "baseline": "冻结LH267 child",
+    "features": [
+      "PID20_4",
+      "PID22_raw8",
+      "policy20",
+      "policy22"
+    ],
+    "target": "PID24_4",
+    "shrink_mass": 20,
+    "rule": "(cell_counts+20*training_fold_history_baseline)/(cell_n+20)",
+    "unknown_policy": "独立类别，保留全6175人",
+    "forbidden": [
+      "policy24",
+      "future_path_label",
+      "three_wave_latent_score"
+    ],
+    "tuning": false
+  },
+  "scores": {
+    "multiclass_brier": "sum((q_k-I[y=k])**2), 越低越好",
+    "binary_brier": "(s-C)**2, 越低越好",
+    "log": "nats，越高越好",
+    "denominators": "总分及分解贡献用完整队列；条件目的地均值另报实际变化者分母",
+    "early_changed_threeway": "return_baseline/keep_2022/third；第三类内部条件log必须保留"
+  },
+  "uncertainty": "有限队列OOF描述；五折非独立，不报告全国区间或完整算法区间。",
+  "stop": "三项完成即停止，不追p值、不扩潜状态或轮换政策题。"
+}

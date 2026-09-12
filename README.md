@@ -2,6 +2,39 @@
 
 ## 当前阅读入口
 
+- [最新LH267：可观察政策限制校准与强度控制历史](research/ces-policy-calibration-2026-09-09/report.md)
+- [LH267条件参考与主张层级](research/ces-policy-calibration-2026-09-09/foundations.md)
+- [下载LH267匿名复现包](research/ces-policy-calibration-2026-09-09/downloads/ces-policy-calibration.zip?raw=true)
+
+LH267保留结构拟合，校准已有政策限制并增加唯一一个强度控制历史预测器。有条件合法化偏离特定条件独立参考；早期历史改善平均预测，但对未返回变化路径有负贡献。不据此识别心理机制。
+
+- [最新LH266：消除潜变化需要多大测量漂移？](research/ces-measurement-drift-2026-09-09/report.md)
+- [LH266识别集合、标签与可观察限制](research/ces-measurement-drift-2026-09-09/foundations.md)
+- [下载LH266匿名复现包](research/ces-measurement-drift-2026-09-09/downloads/ces-measurement-drift.zip?raw=true)
+
+LH266保留LH265，完成K3/K4的有界漂移搜索、三项政策轨迹与同人历史预测基准。K3在最大行TV上限0.10、相对固定参考的对数似然损失容差2时，已找到两段潜变化均为零的模型；这是可行见证，未认证最小漂移。
+
+- [最新LH265：三波潜在动态与测量稳定性](research/ces-three-wave-dynamics-2026-09-09/report.md)
+- [LH265识别基础与跨模型等价](research/ces-three-wave-dynamics-2026-09-09/foundations.md)
+- [下载LH265匿名复现包](research/ces-three-wave-dynamics-2026-09-09/downloads/ces-three-wave-dynamics.zip?raw=true)
+
+LH265已完成6,175人三波实际拟合、50组精确恢复、96次有限样本恢复和整人五折比较。共同测量HMM给出条件潜变化，但静态时变测量可精确复制其观察分布；心理机制尚不能跨模型确定。
+
+- [最新LH264：四状态与潜在机制识别](research/ces-four-state-mechanisms-2026-09-08/report.md)
+- [下载LH264匿名复现包](research/ces-four-state-mechanisms-2026-09-08/downloads/ces-four-state-mechanisms.zip?raw=true)
+- [LH263.1安全接口维修](research/ces-identification-calibration-2026-09-08/MAINTENANCE.md)
+
+LH264以全部11,009人的字面四状态为主要描述目标，并用实际观测等价见证区分已识别回答转换与未识别的潜在测量机制。维修保持原实证结果；新增错设模拟分别检查点偏差与区间覆盖，不把模型拟合视为心理或因果机制已被证明。
+
+
+- [最新：PID识别界限与遮蔽结局校准（LH263）](research/ces-identification-calibration-2026-09-08/report.md)
+- [下载LH263代码、报告与匿名结果](research/ces-identification-calibration-2026-09-08/downloads/ces-identification-calibration.zip?raw=true)
+- [早期政治变化是否受后续留存影响（LH262）](research/ces-earlier-change-selection-2026-09-08/report.md)
+- [LH263离线复现说明](research/ces-identification-calibration-2026-09-08/README.md)
+
+LH263区分不确定回答与真正空缺、完成分类与字面响应目标。三种固定方法的遮蔽校准保留了子组恢复失败；它是已看旧结果后的回溯诊断，不能证明2024可迁移性。真实模型重新训练需要本地官方原件。研究目录中的历史回执和完整运行记录引用指向原本地工作区；本公开仓库不包含这些内部文件。
+
+
 - [最新增补：两波到三波的样本保留](research/ces-panel-retention-2026-09-08/two-wave/report.md)
 - [下载两波留存复现包](downloads/ces-panel-two-wave-retention.zip?raw=true)
 
@@ -32,3 +65,11 @@ python -B research/ces-panel-2020-2024/reproduce.py --check
 三波面板已核验并完成同人变化分析，拉美裔在业者总统票有效配对154人、权重有效n约60；前瞻协议尚未完成输入与预测冻结。本仓库不据此宣布2026年国会控制权，也不把程序通过等同于因果识别。
 
 不发布个人微数据、凭据、内部合同、运行日志及原有封存材料。来源与许可按各文件说明保留。
+
+- [LH268观测变化分解报告](research/ces-change-decomposition-2026-09-09/report.md)
+
+- [LH269政策记录条件信息与支持审计](research/ces-policy-information-2026-09-10/report.md)
+
+- [LH270众院票与参与核算（待最终科学审核）](research/ces-electoral-accounting-2026-09-10/report.md)
+
+- [LH271物质处境、身份与总统票（关联研究待审）](research/anes-class-identity-2026-09-11/report.md)

@@ -1,0 +1,68 @@
+[
+  {
+    "allowed_wording": "回答改变，不称潜心理变化或人口效应",
+    "assumptions": "编码与连接正确",
+    "estimation": "整数轨迹频数",
+    "id": "observed_trajectories",
+    "identification": "经验队列点描述",
+    "population": "三波保留且PID完整6175",
+    "source": "trajectories.json",
+    "target": "字面回答改变",
+    "uncertainty": "不含总体抽样推断"
+  },
+  {
+    "allowed_wording": "零潜变化与字面变化解释均兼容",
+    "assumptions": "自由时间/状态测量",
+    "estimation": "精确矩阵构造",
+    "id": "two_wave_zero_change",
+    "identification": "非点识别，至少两个见证",
+    "population": "两波11009",
+    "source": "measurement-results.json",
+    "target": "潜总变化",
+    "uncertainty": "无统计区间"
+  },
+  {
+    "allowed_wording": "给定预算下的外界",
+    "assumptions": "每波错误概率预算",
+    "estimation": "并集上界",
+    "id": "budget_bounds",
+    "identification": "保守外界，未证明锐性",
+    "population": "两波11009",
+    "source": "measurement-results.json",
+    "target": "有共同标签的潜变化与R净变化",
+    "uncertainty": "预算是假设，非估计误差和CI"
+  },
+  {
+    "allowed_wording": "条件于模型的潜变化估计",
+    "assumptions": "共同E、Markov、满秩、正质量、K3/4",
+    "estimation": "多起点EM近似MLE",
+    "id": "hmm_parameters",
+    "identification": "理想法则下标签外唯一；真实拟合不证明假设",
+    "population": "三波保留6175",
+    "source": "results.json、exact-results.json",
+    "target": "模型内潜总变化",
+    "uncertainty": "轮廓是描述，模拟含未收敛；无人群CI"
+  },
+  {
+    "allowed_wording": "拟合不能证明心理状态演化",
+    "assumptions": "允许静态U与时变测量",
+    "estimation": "每个HMM的静态映射",
+    "id": "cross_model_equivalence",
+    "identification": "跨模型不识别",
+    "population": "HMM诱导观察分布",
+    "source": "results.json/static_equivalence_witness",
+    "target": "静态还是演化机制",
+    "uncertainty": "代数等价非抽样误差"
+  },
+  {
+    "allowed_wording": "模型回答预测表现接近，不认定真实机制",
+    "assumptions": "训练/测试按整人分组",
+    "estimation": "joint及末波条件log评分",
+    "id": "retrospective_prediction",
+    "identification": "观察分布表现，不识别潜真值",
+    "population": "同一保留队列整人五折",
+    "source": "results.json/cv",
+    "target": "观察响应概率",
+    "uncertainty": "训练重叠；无独立折显著性检验"
+  }
+]

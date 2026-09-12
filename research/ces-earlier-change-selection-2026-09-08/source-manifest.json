@@ -1,0 +1,21 @@
+{
+  "baseline": {
+    "doi": "10.7910/DVN/XV7ABM",
+    "version": "1.0",
+    "license": "CC0 1.0",
+    "filename": "merged_recontact.csv",
+    "file_id": 10231930,
+    "sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "official_file_page": "https://dataverse.harvard.edu/file.xhtml?fileId=10231930&version=1.0"
+  },
+  "selected": {
+    "filename": "merged_recontact_2024_vv.csv",
+    "doi": "10.7910/DVN/CETPVT",
+    "version": "2.0",
+    "sha256": "e9921d391159cf8fcb68a0b69aa76c94a5bf73436f516606bf3fb310125ba5ac"
+  },
+  "verified_mapping_source": "../ces-panel-2020-2024/variable_map.json",
+  "weight_source": "https://tischcollege.tufts.edu/research-faculty/research-centers/cooperative-election-study/cooperative-election-study-faqs",
+  "weight_interpretation": "commonweight_22和commonpostweight_22取自两波发布文件；成人权重与选后题使用post权重的原则有官方FAQ支持。此处把已发布2022权重固定后限制到S组，只是同一加权基准的选择诊断，不声称恢复总体；未取得专属两波权重拟合细节。",
+  "guide": "官方三波指南含2020/2022字段映射，沿用已核验年度数值编码；展示顺序不是编码顺序。"
+}

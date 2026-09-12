@@ -1,0 +1,179 @@
+g using the “in-person weight” selects the in-person sample,
+not only face-to-face interviews. Sample and mode can be identified (variables
+V240002a, V240002b and V240003), but within sample groups, the mode of
+interview was not randomly assigned, so analysts should be cautious about
+making mode comparisons or attributing diﬀerences among modes of interview to
+the interview mode itself; apparent mode diﬀerences may also be due to selection
+eﬀects.
+
+Reporting weighted sample sizes
+
+When reporting the sample size (n) for an analysis, the actual, unweighted sample
+16                                                                        USER GUIDE
+
+
+sizes should be reported, and analysts should take care not to confuse weighted
+sample sizes with unweighted sample sizes. Some statistical software applications
+make this distinction more readily than others. Generally, software designed for
+design-consistent survey estimation will report actual sample sizes, but software
+using non-survey procedures (such as frequency weights) will not. When
+frequency weights are used, the weighted sample size usually does not reflect the
+actual number of cases used in an analysis procedure (because weights vary,
+most analyses will exclude one or more cases due to selection criteria, listwise
+deletion or both, and the sums of subgroup weights are not constrained to sum to
+the actual sample size). In this case, in addition to running a weighted analysis, it
+is necessary to also run an unweighted analysis (taking care to select the same
+cases) in order to obtain correct sample sizes.
+
+Weighting methods
+
+The weights were computed in multiple steps to account for sample design
+features and to reduce various non-sampling error sources. The in-person and
+web pre-election surveys used a similar approach, as follows. Design weights
+were calculated to account for address sampling probabilities and the within-
+household selection of a single eligible adult. An adjustment was also performed
+to handle addresses whose eligibility was not able to be determined, redistributing
+their design weights to the remaining addresses with a known eligibility from their
+same corresponding stratum. To address both screening and main survey non-
+response, a propensity stratification approach was used for each component. In
+this approach, the probability of each eligible address to complete the survey was
+estimated using a logistic regression model of survey response over a set of
+covariates observed for both respondents and non-respondents. The eligible
+addresses were then divided into deciles of their estimated response propensities
+and the inverse of the average of these propensities for each decile was used as a
+non-response adjustment factor. Finally, a calibration adjustment was applied to
+ensure that the weighted sample distribution matched the population distribution
+with respect to various characteristics.
+
+Upon some modelling of 2024 turnout and vote choice using ANES data, the
+following dimensions were ultimately selected to be used in the calibration:
+
+       Race by sex;
+       Marital status by sex;
+       Educational attainment by age,
+       Educational attainment by region;
+       Income by race/ethnicity;
+       Home tenure;
+       Nation of birth;
+       Population density;
+       Education attainment by metropolitan status.
+
+The following variables (and categories) were used for the calibration:
+                                                                                   17
+
+
+
+       Sex (male, female)
+       Age (18-29, 30-44, 45-59, 60 years or older)
+       Educational attainment (less than high school graduate, high school
+       graduate, some college, college degree, graduate degree)
+       Race/ethnicity (non-Hispanic White, non-Hispanic Black, Hispanic, non-
+       Hispanic other)
+       Home tenure (home owner, other)
+       Nation of birth (U.S. born, foreign born)
+       Marital status (married, widowed, divorced or separated, never married)
+       Household income (less than $40,000, $40,000-$74,999, $75,000-
+       $124,999, $125,000 or more)
+       Population density (less than 471 people/square mile, 471-2,377
+       people/square mile, 2,377-5,505 people/square mile, more than 5,505
+       people/square mile)
+       Metropolitan status (non-metropolitan, metropolitan)
+
+Missing values in calibration variables were imputed for the purposes of weighting.
+Population benchmarks (control totals) were based on the 2023 American
+Community Survey 1-year estimates, except for population density, which was
+from the 2020 census, and metropolitan status, which was from the March
+supplement of the 2024 Current Population Survey.
+
+To reduce weighting variability, the final weights were bounded at 5 times the
+average of their corresponding unbounded calibrated weights.
+
+The panel survey used a similar approach, except that it started with the 2020
+ANES final weights as an input weighting variable and only the main survey non-
+response adjustment and calibration procedure were applied, as the other
+adjustments were already embedded in the input weight.
+
+Weights for various combinations of the samples (such as weights for the entire
+sample, or for the in-person and web combined) received two additional
+adjustments. First, the samples were integrated using a Hartley estimator
+composite factor. In this process, each sample received a composite factor θ (with
+0 < θ < 1) proportional to the mean square error of their corresponding estimate for
+the proportion of Trump voters in the 2024 election. The mean square error was
+estimated using an estimate of bias and sampling variance. The bias was
+estimated as the diﬀerence between the sample estimate of Trump voter
+proportions and the true value according to the election results. The sampling
+variance estimate used respondent data accounting for all the design features,
+including weights, stratification, and clustering. Second, an additional calibration
+adjustment, following the same specifications as the initial calibration, was applied
+over the combined sample.
+18                                                                       USER GUIDE
+
+
+
+
+Orientation to the Data and Documentation
+
+Dataset
+
+The ANES 2024 Time Series Study Full Release is available in multiple file formats:
+SPSS (.sav), Stata (.dta), Comma Separated Values (.csv), and a fixed-width raw
+data file that can be read into SAS, SPSS, and Stata using syntax statements that
+have been provided.
+
+Variables are stored using formats optimized for their data type. Missing data are
+coded as negative numbers, for instance, “-8. Don’t know”.
+
+Along with the dataset, users should also download and make use of the two
+following pieces of documentation:
+
+Questionnaire
+
+The first piece of documentation is the Questionnaire, a document that provides
+information about each of the questions that were asked in the main survey. The
+questions in the Questionnaire are presented in the order they were asked. The
+Questionnaire includes the following information, where applicable, for each
+question: the section in which the question appears, question name, question
+wording, universe (where only a subset of respondents was to receive the
+question, which respondents those should be), and response options.
+
+In addition to the Questionnaire, ANES separately provides the PAPI (paper-and-
+pencil) and SPS (Spouse and Partner Survey) survey questionnaires in PDF format.
+Both documents are available for download from the 2024 Time Series study page
+of the ANES website.
+
+User Guide and Codebook
+
+The second piece of documentation is the User Guide and Codebook. You are
+currently reading the User Guide, which provides a brief overview of the study and
+how to use its data and documentation.
+
+The remainder of this file, after the User Guide, consists of the Codebook.
+Whereas the Questionnaire provides information about the questions asked in the
+survey, the Codebook provides information about the variables that appear in the
+dataset.
+
+Questions and variables do not always have a one-to-one relationship. For
+instance, multiple questions may be combined into a single summary variable. Or
+various variables may be derived from a single question. Furthermore, not all
+                                                                                      19
+
+
+variables have associated questions — for example, administrative variables.
+
+The Codebook includes the following information, where applicable, for each
+variable: the variable name (all variable names start with a “V”, and summary
+variables end with the suﬃx “x”), variable label (with “PRE:” indicating that it is
+from the pre-election study), simplified question wording, response/code values
+and meanings, associated survey question(s), universe (where only a subset of
+respondents appear in a variable, which respondents those should be; note that
+universes are not included for most summary variables), information about
+whether randomization was used, and interviewer instructions.
+CODEBOOK: VARIABLES
+GENERAL NON‐SURVEY VARIABLES
+
+version        VERSION OF ANES 2024 TIME SERIES RELEASE
+Value Labels   ANES2024TimeSeries_20260519
+
+
+
+

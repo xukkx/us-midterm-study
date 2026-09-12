@@ -1,0 +1,112 @@
+"""从已验收匿名结果生成报告和识别/恢复表，不重新调参。"""
+import argparse,csv,io,json,math
+from pathlib import Path
+from common import *
+G={'all':'全体','Latino_employed_2020':'2020拉美裔在业','R_renter_2020':'2020共和党倾向租房'}
+METHOD={'unadjusted':'未调整','baseline_standardization':'基线标准化','crossfit_aipw':'交叉拟合AIPW'}
+def f(x):return '无' if x is None else f'{x:+.3f}'
+def interval(r):return f"[{f(r['lower_pp'])}, {f(r['upper_pp'])}]"
+def csvdata(rows):
+    keys=list(dict.fromkeys(k for r in rows for k in r));s=io.StringIO(newline='');w=csv.DictWriter(s,fieldnames=keys);w.writeheader();w.writerows(rows);return s.getvalue().encode('utf-8-sig')
+
+def render():
+    ident=json.loads((HERE/'identification-results.json').read_bytes());bench=json.loads((HERE/'benchmark-results.json').read_bytes());sim=json.loads((HERE/'simulation-results.json').read_bytes());audit=json.loads((HERE/'projection-audit.json').read_bytes())
+    ir=lambda g,c,w:next(x for x in ident['rows'] if (x['group'],x['convention'],x['weighted'],x['cohort'])==(g,c,w,'full'))
+    br=lambda g,m:next(x for x in bench['rows'] if (x['group'],x['method'])==(g,m))
+    sparse=next(x for x in sim['results'] if x['scenario']=='sparse_MCAR' and x['method']=='crossfit_aipw')
+    lines=['# LH-263：党派认同的识别界限与遮蔽结局校准','',
+    '2026年9月8日 · 固定发布队列 · 已查看LH-262和2024结果后的回溯诊断','',
+    '**本轮完成了两个不同的工作：给出允许所有合法分类补全时仍成立的界限；在早期已知结局上，实际检验三种固定方法的恢复表现。** 二者不能混成一个“校正后的真实值”。', '',
+    '最重要的新发现来自原始编码：LH-262中的unknown全部是PID原码8，即明确回答“不确定”。2020年有171个、2022年有155个这种端点，共涉及267人；两年都没有真正空缺的PID字段。因此，把这些回答进一步解析为D／I／R，是一个需要补充分类约定的目标；保留“不确定”为第四种已观察回答，则是另一个已经完全观测的字面目标。', '',
+    '在原先“所有不确定端点可以解析为R或非R”的约定下，固定2020共和党倾向租房组的全队列R分类变化仍只能落在 **[−11.482, −10.547]个百分点**，其留存减全体差值仍为正。完整队列和拉美裔在业组的同类界限允许两个方向。保留不确定回答的四状态目标给出的字面R份额变化不同，不能把其较窄范围说成原目标获得了新信息。', '',
+    f"遮蔽检验的全体完整案例参考变化为{f(br('all','crossfit_aipw')['reference']['R_change_pp'])}个百分点，AIPW恢复为{f(br('all','crossfit_aipw')['estimate']['R_change_pp'])}，误差{f(br('all','crossfit_aipw')['recovery_error_pp']['R_change_pp'])}；但拉美裔在业组参考为{f(br('Latino_employed_2020','crossfit_aipw')['reference']['R_change_pp'])}，AIPW仍为{f(br('Latino_employed_2020','crossfit_aipw')['estimate']['R_change_pp'])}，没有恢复参考方向。本轮保留了这个失败，没有更换变量或调参追求恢复。", '',
+    '以上来自[识别结果](identification-results.json)、[校准结果](benchmark-results.json)和本地原件独立重算；不是2024政治效应、全国选民推断或住房因果效应。', '',
+    '## 四个口径分别保留','',
+    '| 口径 | 分母与不确定回答 | 所回答的问题 |',
+    '|---|---|---|',
+    '| LH-262完整案例 | 两年D／I／R，原始代码8被排除；全体n=10,742 | 在原有效配对中发生了什么 |',
+    '| 完成分类全队列（resolved） | 全部11,009人；不确定或空缺可解析为R或非R；已知D／I／R保持 | 所有允许的分类补全能产生哪些变化 |',
+    '| 字面四状态（literal） | D／I／R／不确定四类都保留；只有真正空缺才允许补全；此文件真正空缺为0 | 明确报告R这一回答的份额如何变化 |',
+    '| 固定2022权重 | 对上述全队列赋予原两波文件commonweight_22；每个人权重都为正 | 同一固定权重定义的描述性基准如何变化 |', '',
+    '群体沿用2020定义：race=3或hispanic=1且employ=1／2的拉美裔在业者；pid7=5／6／7且ownhome=2的共和党倾向租房者。没有按2022或2024身份筛人。固定权重不是独立人数，没有进入普通多项模型的频数；本轮调整基准只使用未加权目标。', '',
+    '## 识别表：完成分类目标与字面目标','',
+    '以下为完整发布队列，单位均为百分点。前两列是可达的最小／最大值，不是95%置信区间；后两列是没有空缺端点的字面目标的点值。', '',
+    '| 固定2020群体 | 完成分类：未加权界限 | 完成分类：固定2022权重界限 | 字面四状态：未加权 | 字面四状态：固定权重 |',
+    '|---|---:|---:|---:|---:|']
+    for g in GROUPS:lines.append(f"| {G[g]} | {interval(ir(g,'resolved',False))} | {interval(ir(g,'resolved',True))} | {f(ir(g,'literal',False)['lower_pp'])} | {f(ir(g,'literal',True)['lower_pp'])} |")
+    lines += ['', '[36行识别表](identification.csv)同时提供三个群体、完整／留存／未留存、两种分类约定及两种权重口径；[48个端点见证](endpoint-witnesses.json)说明每个极值如何达到。', '',
+    '固定共和党倾向租房组共有749人，2020年全部为R。2022年663人仍报R，20人报D、59人报I、7人报不确定。完成分类目标的最小变化是−86/749，最大是−79/749；字面R回答目标则恰为−86/749。79个已知离开R分类的人并非79个转入民主党的人，其中59人转为独立。', '',
+    '### 为什么这些端点可达','',
+    '令每个端点的合法二值集合为Aᵢ₀、Aᵢ₁，dᵢ=Yᵢ₁−Yᵢ₀。D／I为0，R为1；resolved将不确定及空缺设为{0,1}，literal把不确定固定为已观察的非R。没有跨端点约束时，每个人分别取最小或最大dᵢ，平均后就达到总体界限。固定正权重只改变每个贡献的质量，不改变合法状态。有限队列的实际可行值可以是离散的；报告的是其端点及区间包络。', '',
+    '同一受访者不能在留存均值和全体均值中被补成两个不同结果。令r为当前目标中留存人数份额或留存权重份额，使用两个不相交层：', '',
+    r'$$B_{\min}=(1-r)(L_{S=1}-U_{S=0}),\qquad B_{\max}=(1-r)(U_{S=1}-L_{S=0}).$$','',
+    '| 固定2020群体 | 完成分类B：未加权界限 | 完成分类B：固定权重界限 |','|---|---:|---:|']
+    for g in GROUPS:
+        r=[next(x for x in ident['selection_contrasts'] if (x['group'],x['convention'],x['weighted'])==(g,'resolved',w)) for w in (False,True)]
+        lines.append(f'| {G[g]} | {interval(r[0])} | {interval(r[1])} |')
+    lines += ['', '共和党倾向租房组的B在所有允许补全中均为正，但固定权重下不一定超过LH-262的2个百分点参照。这个结论只在完成分类约定、记录已知标签正确且固定组不变的条件下成立。', '',
+    '群体有重叠，[互斥成员格表](pid-atoms.json)保留该结构。各行边际端点可达，不代表可以任意组合所有群体的上下端点。线性组合必须在同一份互斥格表上计算系数；测试包括“两个群体完全共享一个未知个案，其差值必须为零”的反例。', '',
+    '一般的小型有界问题另用`linear_bounds.py`表示x≥0、Ax=b，并以有理数枚举基可行解。新增已核实约束只会保持或收紧同一目标的范围；不相容约束直接失败。代码也单独处理严格正分母的线性分式目标，并拒绝分母可能为零的条件投票目标。它不是大规模通用求解器，实数LP的可达性不自动等于整数队列可达性。本轮没有取得新兼容边际，因此没有把合成约束套到实际数据上收紧界限。', '',
+    '### 小净差不等于整个转换分布相同','',
+    '对同一有效目标，μ全体=rμ留存+(1−r)μ未留存，所以B=(1−r)(μ留存−μ未留存)=Cov(S,d)/r。这里的协方差是按当前人数或固定权重归一的经验协方差，不采用n−1校正。代码逐项验证了这条恒等式；它是算术关系，不是留存的因果效应。', '',
+    'R指标的非零变化只包括进入或离开R；D↔I也属于类别移动，但对R指标d=0。因此下面同时评估六个方向、任意类别变化、R指标非零变化及净变化。', '',
+    '## 遮蔽校准：只比较三个固定方法','',
+    '参考队列仍为LH-262两年D／I／R的10,742人：6,056名后来留存者和4,686名后来未留存者。S=0的2022结局在训练文件中为null，真值单独保存。训练完成后先封存10,742个预测及模型，再由评分程序读取真值。此限制本身排除了原本回答不确定的人，不能把结果说成对全部11,009人的补值验证。', '',
+    '基线标准化使用2020 PID三类×租房与否六格，从S=1估计2022类别分布，再按完整参考队列的格比例汇总。任何目标格没有观察结果就报失败，不使用真值填格。', '',
+    'AIPW按受访者固定哈希分成5折。每折响应logistic使用其他折全体的S与2020 H；结局softmax只使用其他折S=1的2022结局。H限2020 PID、住房、拉美裔在业、年龄段、教育，以及事先列出的PID×租房、PID×拉美裔在业交互，共15个设计列。全体训练，子组只在汇总时使用。岭惩罚1、截距惩罚0.05，响应概率裁切[0.02,0.98]，都在运行前固定，没有调参。', '',
+    r'$$\phi_{ik}=\widehat m_k(H_i)+\frac{S_i}{\widehat e(H_i)}\{1(Y_{i,2022}=k)-\widehat m_k(H_i)\}.$$','',
+    '将φ与已知2020起点组合后，汇总各方向及均值。baseline R组不可能出现起点D／I的转换，严格结构零保持为0；有限样本AIPW矩阵若超出概率域会明确标记，不静默裁剪来美化结果。本次九个汇总矩阵均在概率域内。', '',
+    '| 固定2020群体 | 方法 | 参考净变化 | 估计净变化 | 恢复误差 | 转移矩阵半L1差 |','|---|---|---:|---:|---:|---:|']
+    comparison=[];directions=[]
+    for r in bench['rows']:
+        e,ref=r['estimate'],r['reference'];err=r['recovery_error_pp']
+        lines.append(f"| {G[r['group']]} | {METHOD[r['method']]} | {f(ref['R_change_pp'])} | {f(e['R_change_pp'])} | {f(err['R_change_pp'])} | {r['transition_total_variation_pp']:.3f} |")
+        comparison.append({'group':r['group'],'method':r['method'],'reference_n':r['reference_n'],'observed_n':r['observed_n'],'reference_change_pp':ref['R_change_pp'],'estimate_change_pp':e['R_change_pp'],'error_pp':err['R_change_pp'],'matrix_half_L1_pp':r['transition_total_variation_pp'],**{k:v for k,v in r['fixed_nuisance_influence'].items() if not isinstance(v,list)}})
+        for k,value in err.items():directions.append({'group':r['group'],'method':r['method'],'outcome':k,'reference_pp':ref[k],'estimate_pp':e[k],'error_pp':value})
+    lines += ['', '所有差值单位为百分点。矩阵半L1差考察整个3×3转换分布，避免相反方向抵消后只看净变化。[90行结局恢复表](transition-recovery.csv)列出参考值、估计值和误差。', '',
+    '全体两种调整都较接近已知参考，但在拉美裔在业组都仍给出与参考不同的净变化方向。该组的基线标准化还扩大了整个转换矩阵的差异，说明净均值改善不能替代分布恢复。共和党倾向租房组在六格标准化中属于同一格，所以该方法在组内与未调整值相同，这是事先选定方法的限制。', '',
+    'AIPW的解释仍需要条件均值交换性、正性、测量口径正确及相应模型正则条件。交叉拟合限制过拟合与数据复用，不能证明MAR，不能排除MNAR，也不能纠正目标人群不同。[交叉拟合方法背景](https://arxiv.org/abs/1608.00060)、[缺失结局双重稳健推断的限制与条件](https://arxiv.org/abs/1704.01538)。', '',
+    '### 重叠与单个记录影响','',
+    '| 固定2020群体 | 响应概率5%／50%／95%分位 | 裁切人数 | 逆响应权重ESS | 最大单人权重份额 | 前1%人数权重份额 |','|---|---|---:|---:|---:|---:|']
+    for o in bench['overlap']:
+        q=o['raw_propensity_quantiles'];lines.append(f"| {G[o['group']]} | {q['0.05']:.3f}／{q['0.5']:.3f}／{q['0.95']:.3f} | {o['propensity_clipped_n']} | {o['ipw_ess']:.1f} | {100*o['max_ipw_share']:.2f}% | {100*o['top_one_percent_ipw_share']:.2f}% |")
+    lines += ['', '这里是额外响应模型的逆概率权重，不是commonweight_22。基准没有乘调查权重。ESS只描述权重集中度，不是无偏证明。', '',
+    '| 固定2020群体 | 方法 | 固定拟合后删除一人的最大均值变化（百分点） |','|---|---|---:|']
+    for r in bench['rows']:lines.append(f"| {G[r['group']]} | {METHOD[r['method']]} | {r['fixed_nuisance_influence']['maximum_absolute_delete_one_shift_pp']:.3f} |")
+    lines += ['', '这些范围使用实际受访者贡献逐个计算，条件于已经拟合的nuisance；它们不是逐人删除后重新拟合所有模型的LOO结果，不能覆盖训练影响的全部传播。没有把聚合权重矩反造为个人权重。', '',
+    '## MNAR场景：参数是新假设','',
+    '对本次被遮蔽的S=0者，设logit qᵢ=logit m̂R(Hᵢ)+δ，固定δ∈{−2,−1,−0.5,0,0.5,1,2}；S=1保留实际回答。其他类别可按原D／I相对概率重新分配。本表只需R概率。δ=0是结局模型的MAR补全场景，不等于AIPW估计器；它们不是同一个结果，也不是新增的第四个拟合候选。', '',
+    '| 固定2020群体 | δ=−2 | δ=0 | δ=+2 | 净变化为零所需δ |','|---|---:|---:|---:|---:|']
+    for s in bench['MNAR_sensitivity']:
+        sc={r['delta']:r for r in s['scenarios']};lines.append(f"| {G[s['group']]} | {f(sc[-2]['completed_change_pp'])} | {f(sc[0]['completed_change_pp'])} | {f(sc[2]['completed_change_pp'])} | {f(s['net_change_zero_delta'])} |")
+    lines += ['', '完整网格及留存减补全差值见[校准结果中的MNAR_sensitivity](benchmark-results.json)。根只在事先限定的[−12,12]内求；“无”表示该范围不能使净变化达到零。共和党倾向租房组已知起点全部为R且观察者中已有非R回答，因此这些概率补全不能制造R份额增加。', '',
+    '这些场景参数没有从被遮蔽者的真值中估计。已知S=0结果仅用于事后评价；没有用它选择δ或校准边际。早期误差更不能直接拷贝为2022—2024校正，后期可用历史、观察机制及时间条件都不同。', '',
+    '## 600次固定模拟：报告未成功的部分','',
+    '每个场景150次、每次600个合成记录，固定seed=26320260908。模拟中2020起点为D或R，概率0.55／0.45；一个二值H各占0.5。普通场景的2022条件分布(D,I,R)分别为：D,H=0时(0.83,0.10,0.07)，D,H=1时(0.62,0.16,0.22)，R,H=0时(0.16,0.12,0.72)，R,H=1时(0.04,0.09,0.87)。总体R变化为−1.25个百分点。', '',
+    'MCAR响应概率0.55；MAR中H=0为0.3、H=1为0.8；MNAR另对未知2022结果为R者增加1.1的响应log-odds。稀疏MCAR中保持原类别概率0.998，另外两个类别各0.001，总体R变化为−0.035个百分点。模拟采用同一数值GLM和交叉拟合AIPW代码，但H简化为基线类别与二值协变量及交互，不宣称覆盖真实15维模型的所有误设。', '',
+    '覆盖对象是这个明示合成DGP的总体均值参数，不是已经知道的经验参考值。名义95%区间使用大样本影响函数近似；每个合法非零方向观察不足5例或经验方差退化时，拒绝输出区间。无效区间或拟合失败计入无条件覆盖率的未覆盖，同时另报有效区间条件覆盖。', '',
+    '| 场景 | 方法 | 偏差（百分点） | 重复间SD | 有效区间数／150 | 无条件覆盖率 |','|---|---|---:|---:|---:|---:|']
+    for s in sim['results']:lines.append(f"| {s['scenario']} | {METHOD[s['method']]} | {f(s['bias_pp'])} | {s['empirical_sd_pp']:.3f} | {s['valid_intervals']} | {100*s['unconditional_coverage']:.1f}% |")
+    lines += ['', '没有数值拟合失败。MCAR中三种方法覆盖均为93.3%；MAR调整后的覆盖为91.3%，MC标准误约2.3个百分点，不能把一次有限模拟的差距当作精确长期覆盖，但也不能把名义95%写成已获保证。MNAR下两种调整仍约有5个百分点偏差、覆盖只有30.7%，显示未观测选择并未被修复。稀疏场景全部停止报告区间，覆盖栏的0%表示没有发出可用区间，不是450个零宽区间。', '',
+    '完整偏差、RMSE、相对已实现完整队列的RMSE、覆盖MC误差和有效区间条件覆盖见[模拟结果](simulation-results.json)，每次运行见[1800行模拟账本](simulation-ledger.json)。这些合成记录只测试估计器，未加入任何经验队列。', '',
+    '## 哪些新证据可能有用','',
+    '本轮实际完成了两个低成本本地核查。第一，确认326个“unknown端点”都是明确不确定回答，真正空缺为0。它澄清了目标，却没有替resolved目标解析任何一个不确定答案；因此其界宽不会凭此收紧。第二，发现1条2020所选众院候选槽位的选前党派缺失，但同一槽位选后党派为Republican；5条2022对应缺失仍没有选后补充。本PID任务没有因此改动LH-262众院分析，后续使用前须按那次目标核验资格与字段时点。', '',
+    '在同一个未加权固定队列完成分类目标中，若真正获得一个原来允许{0,1}端点的确定分类，每个端点最多减少100/N个百分点的界宽；N=584时为0.1712个百分点。固定权重则为100wᵢ/Σw。这里是条件于确实解析成功的宽度变化，不代表不确定回答可以从现有资料恢复。以成本c表示行动，若其解析成功概率π没有证据，预期收益π×100/N/c就不能填成一个客观排序。', '',
+    '重新读取同一代码、LLM猜测、生成模拟选民或重加权同一证据，都不算观察到新端点。兼容的已发表边际需要先验证测量、时期和总体一致性；本轮没有获取这种真实约束。邀请与QC资料只有在约束结局或支持可辩护限制时才会收紧界限。[区分缺失类型与部分识别的背景](https://arxiv.org/abs/1610.01198)。', '',
+    '## 验证范围与交付','',
+    '用户基础ZIP的8个列明哈希及CRC全部吻合，其输入格表与冻结LH-262逐字节相同，附带5项自测通过。新识别、优化与估计代码17项测试覆盖1,250种双记录模式下的完成约定、负系数见证、约束、结构零、数值梯度／Hessian、遮蔽及退化区间。另从原始CSV独立核验36个识别目标和12个嵌套对比，共180个端点／参考检查通过。', '',
+    '实际10,742行遮蔽输入重新拟合得到相同预测；注入无权使用的2022旁字段也未改变m、e或φ。两次OpenCode Go调用均核对实际模型为muse-spark-1.3-contributor、完整stdin消息及0工具事件。Muse生成界限内核和GLM内核，Codex完成口径、数据投影、监督修订、校准、模拟及独立检查。实际统计和微数据没有发送给模型。', '',
+    '匿名交付包包含识别见证、矩阵充分统计、代码、表格与合成模拟，可离线复算识别及恢复表。**真实模型重新训练需要两份官方原件，并在本地产生受控投影；公开式匿名矩阵本身不够。** [README](README.md)区分这两种复现范围。原始ID、哈希连接键、逐人H、遮蔽真值及逐人预测均不在ZIP中。', '',
+    '按计划，本轮在识别层和一个固定调整基准完成后停止。没有修订LH-262、重估2024效应、发起外部CI、Git操作、公开部署或新增招募。下一实质问题仍是参与与选择的共同记账，而不是不断加模型追求单一方向。','']
+    assert not any(r['estimate']['matrix_outside_probability_domain'] for r in bench['rows'])
+    return {'report.md':'\n'.join(lines).encode('utf-8'),'identification.csv':csvdata(ident['rows']),'selection-contrast-bounds.csv':csvdata(ident['selection_contrasts']),
+            'benchmark-comparison.csv':csvdata(comparison),'transition-recovery.csv':csvdata(directions),'simulation-summary.csv':csvdata(sim['results'])}
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');a=p.parse_args()
+    for name,b in render().items():
+        path=HERE/name
+        if a.check:
+            if path.read_bytes()!=b:raise ValueError('报告复算不符：'+name)
+        else:path.write_bytes(b)
+    print(json.dumps({'report':'report.md','identification_rows':36,'benchmark_rows':9,'transition_recovery_rows':90,'check':a.check},ensure_ascii=False))

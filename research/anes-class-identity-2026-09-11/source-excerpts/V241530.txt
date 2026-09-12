@@ -1,0 +1,29 @@
+       In what state, country, or territory did you mainly grow up?
+Value Labels         -3. RESTRICTED
+Survey Question(s)   DEM3_GREWUP
+
+
+
+V241530              PRE: HOME TENURE CPS
+                     Are your living quarters owned or being bought by a household
+Question
+                     member, rented for cash, or occupied without payment of cash rent?
+230                                                                           CODEBOOK: VARIABLES
+
+
+                     -9. Refused
+                     -8. Don’t know
+                     -4. Error
+Value Labels
+                     1. Owned or being bought by a household member
+                     2. Rented for cash
+                     3. Occupied without payment of cash rent
+
+                     DEM3_HOMECPS, PAPI PRE Q40
+Survey Question(s)
+                     Note: The following specifications were implemented exclusively in the
+                     computerized survey instrument and are not applicable to the paper questionnaire.
+
+
+
+

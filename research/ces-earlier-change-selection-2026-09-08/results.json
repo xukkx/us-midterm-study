@@ -1,0 +1,1594 @@
+{
+  "contrasts": [
+    {
+      "group": "all",
+      "measure": "house",
+      "unweighted_B_pp": -0.18640492603846154,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": -0.15597507160255636,
+      "weighted_abs_B_ge_2pp": false
+    },
+    {
+      "group": "all",
+      "measure": "pid",
+      "unweighted_B_pp": -0.1643353771059265,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": 0.8828525597777745,
+      "weighted_abs_B_ge_2pp": false
+    },
+    {
+      "group": "Latino_employed_2020",
+      "measure": "house",
+      "unweighted_B_pp": 0.09691027248888373,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": -1.355040962950875,
+      "weighted_abs_B_ge_2pp": false
+    },
+    {
+      "group": "Latino_employed_2020",
+      "measure": "pid",
+      "unweighted_B_pp": -1.4324369381500148,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": -1.8253326454026007,
+      "weighted_abs_B_ge_2pp": false
+    },
+    {
+      "group": "R_renter_2020",
+      "measure": "house",
+      "unweighted_B_pp": 0.5524961632210889,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": 1.4431920522663835,
+      "weighted_abs_B_ge_2pp": false
+    },
+    {
+      "group": "R_renter_2020",
+      "measure": "pid",
+      "unweighted_B_pp": 0.5713335189120539,
+      "unweighted_abs_B_ge_2pp": false,
+      "weighted_B_pp": 2.0734933573433487,
+      "weighted_abs_B_ge_2pp": true
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 329,
+        "d_to_r_n": 168,
+        "forward_n": 168,
+        "forward_positive_n": 168,
+        "n": 7221,
+        "n_eff": 2306.1331565479954,
+        "positive_n": 7221,
+        "r0_n": 3178,
+        "r1_n": 3185,
+        "r_to_d_n": 161,
+        "reverse_n": 161,
+        "reverse_positive_n": 161,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 0.09693948206619582,
+        "unweighted_positive_weight_delta_pp": 0.09693948206619582,
+        "unweighted_r0_pp": 44.010524858052904,
+        "unweighted_r1_pp": 44.107464340119094,
+        "w": 6692.1275000000005,
+        "w2": 19419.76782611,
+        "weighted_delta_pp": 0.6227137782416726,
+        "weighted_r0_pp": 48.25129676623764,
+        "weighted_r1_pp": 48.87401054447931,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 3149,
+        "both_post_questionnaires_n": 9619,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 7221,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 7860,
+        "known_ineligible_n": 768,
+        "positive_weight_eligible_n": 7221,
+        "positive_weight_item_observed_both_n": 7860,
+        "positive_weight_target_n": 9746,
+        "target_n": 11009,
+        "unresolved_eligibility_n": 3020
+      },
+      "group": "all",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 3875,
+          "positive_n": 3875
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 168,
+          "positive_n": 168
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 161,
+          "positive_n": 161
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 3017,
+          "positive_n": 3017
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 186,
+        "d_to_r_n": 91,
+        "forward_n": 91,
+        "forward_positive_n": 91,
+        "n": 4471,
+        "n_eff": 1616.9951157516723,
+        "positive_n": 4471,
+        "r0_n": 2051,
+        "r1_n": 2047,
+        "r_to_d_n": 95,
+        "reverse_n": 95,
+        "reverse_positive_n": 95,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -0.0894654439722657,
+        "unweighted_positive_weight_delta_pp": -0.0894654439722657,
+        "unweighted_r0_pp": 45.873406396779245,
+        "unweighted_r1_pp": 45.78394095280698,
+        "w": 3834.908,
+        "w2": 9094.968330579999,
+        "weighted_delta_pp": 0.46673870663911626,
+        "weighted_r0_pp": 51.22062641398437,
+        "weighted_r1_pp": 51.68736512062348,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 1319,
+        "both_post_questionnaires_n": 5709,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 4471,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 4856,
+        "known_ineligible_n": 443,
+        "positive_weight_eligible_n": 4471,
+        "positive_weight_item_observed_both_n": 4856,
+        "positive_weight_target_n": 5761,
+        "target_n": 6175,
+        "unresolved_eligibility_n": 1261
+      },
+      "group": "all",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 2329,
+          "positive_n": 2329
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 91,
+          "positive_n": 91
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 95,
+          "positive_n": 95
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 1956,
+          "positive_n": 1956
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 143,
+        "d_to_r_n": 77,
+        "forward_n": 77,
+        "forward_positive_n": 77,
+        "n": 2750,
+        "n_eff": 790.6887949460546,
+        "positive_n": 2750,
+        "r0_n": 1127,
+        "r1_n": 1138,
+        "r_to_d_n": 66,
+        "reverse_n": 66,
+        "reverse_positive_n": 66,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 0.4,
+        "unweighted_positive_weight_delta_pp": 0.4,
+        "unweighted_r0_pp": 40.98181818181818,
+        "unweighted_r1_pp": 41.38181818181818,
+        "w": 2857.2194999999997,
+        "w2": 10324.79949553,
+        "weighted_delta_pp": 0.8320606799722602,
+        "weighted_r0_pp": 44.2659165667881,
+        "weighted_r1_pp": 45.09797724676036,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 1830,
+        "both_post_questionnaires_n": 3910,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 2750,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 3004,
+        "known_ineligible_n": 325,
+        "positive_weight_eligible_n": 2750,
+        "positive_weight_item_observed_both_n": 3004,
+        "positive_weight_target_n": 3985,
+        "target_n": 4834,
+        "unresolved_eligibility_n": 1759
+      },
+      "group": "all",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 1546,
+          "positive_n": 1546
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 77,
+          "positive_n": 77
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 66,
+          "positive_n": 66
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 1061,
+          "positive_n": 1061
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 947,
+        "d_to_r_n": 70,
+        "forward_n": 228,
+        "forward_positive_n": 228,
+        "n": 10742,
+        "n_eff": 2951.2986838975917,
+        "positive_n": 10742,
+        "r0_n": 3872,
+        "r1_n": 3785,
+        "r_to_d_n": 79,
+        "reverse_n": 315,
+        "reverse_positive_n": 315,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -0.8099050456153417,
+        "unweighted_positive_weight_delta_pp": -0.8099050456153417,
+        "unweighted_r0_pp": 36.04542915658164,
+        "unweighted_r1_pp": 35.235524110966296,
+        "w": 10513.629500000001,
+        "w2": 37453.47967197,
+        "weighted_delta_pp": -0.3303987457423717,
+        "weighted_r0_pp": 38.86082917416863,
+        "weighted_r1_pp": 38.53043042842626,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 267,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 10742,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 10742,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 10742,
+        "positive_weight_item_observed_both_n": 10742,
+        "positive_weight_target_n": 11009,
+        "target_n": 11009,
+        "unresolved_eligibility_n": 267
+      },
+      "group": "all",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 4971,
+          "positive_n": 4971
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 188,
+          "positive_n": 188
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 70,
+          "positive_n": 70
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 216,
+          "positive_n": 216
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 1267,
+          "positive_n": 1267
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 158,
+          "positive_n": 158
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 79,
+          "positive_n": 79
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 236,
+          "positive_n": 236
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 3557,
+          "positive_n": 3557
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 491,
+        "d_to_r_n": 29,
+        "forward_n": 115,
+        "forward_positive_n": 115,
+        "n": 6056,
+        "n_eff": 1842.7337983439484,
+        "positive_n": 6056,
+        "r0_n": 2284,
+        "r1_n": 2225,
+        "r_to_d_n": 42,
+        "reverse_n": 174,
+        "reverse_positive_n": 174,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -0.9742404227212682,
+        "unweighted_positive_weight_delta_pp": -0.9742404227212682,
+        "unweighted_r0_pp": 37.714663143989426,
+        "unweighted_r1_pp": 36.74042272126816,
+        "w": 5638.5528,
+        "w2": 17253.32096636,
+        "weighted_delta_pp": 0.5524538140354028,
+        "weighted_r0_pp": 40.56991183978981,
+        "weighted_r1_pp": 41.12236565382521,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 119,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 6056,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 6056,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 6056,
+        "positive_weight_item_observed_both_n": 6056,
+        "positive_weight_target_n": 6175,
+        "target_n": 6175,
+        "unresolved_eligibility_n": 119
+      },
+      "group": "all",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 2774,
+          "positive_n": 2774
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 99,
+          "positive_n": 99
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 29,
+          "positive_n": 29
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 103,
+          "positive_n": 103
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 681,
+          "positive_n": 681
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 86,
+          "positive_n": 86
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 42,
+          "positive_n": 42
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 132,
+          "positive_n": 132
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 2110,
+          "positive_n": 2110
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 456,
+        "d_to_r_n": 41,
+        "forward_n": 113,
+        "forward_positive_n": 113,
+        "n": 4686,
+        "n_eff": 1176.5438666718235,
+        "positive_n": 4686,
+        "r0_n": 1588,
+        "r1_n": 1560,
+        "r_to_d_n": 37,
+        "reverse_n": 141,
+        "reverse_positive_n": 141,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -0.597524541186513,
+        "unweighted_positive_weight_delta_pp": -0.597524541186513,
+        "unweighted_r0_pp": 33.88817755014938,
+        "unweighted_r1_pp": 33.29065300896287,
+        "w": 4875.0767,
+        "w2": 20200.15870561,
+        "weighted_delta_pp": -1.351513095168328,
+        "weighted_r0_pp": 36.88409045954087,
+        "weighted_r1_pp": 35.53257736437255,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 148,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 4686,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 4686,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 4686,
+        "positive_weight_item_observed_both_n": 4686,
+        "positive_weight_target_n": 4834,
+        "target_n": 4834,
+        "unresolved_eligibility_n": 148
+      },
+      "group": "all",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 2197,
+          "positive_n": 2197
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 89,
+          "positive_n": 89
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 41,
+          "positive_n": 41
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 113,
+          "positive_n": 113
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 586,
+          "positive_n": 586
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 72,
+          "positive_n": 72
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 37,
+          "positive_n": 37
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 104,
+          "positive_n": 104
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 1447,
+          "positive_n": 1447
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 10,
+        "d_to_r_n": 3,
+        "forward_n": 3,
+        "forward_positive_n": 3,
+        "n": 358,
+        "n_eff": 70.51733716952123,
+        "positive_n": 358,
+        "r0_n": 145,
+        "r1_n": 141,
+        "r_to_d_n": 7,
+        "reverse_n": 7,
+        "reverse_positive_n": 7,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -1.1173184357541899,
+        "unweighted_positive_weight_delta_pp": -1.1173184357541899,
+        "unweighted_r0_pp": 40.502793296089386,
+        "unweighted_r1_pp": 39.385474860335194,
+        "w": 249.3033,
+        "w2": 881.37382785,
+        "weighted_delta_pp": -0.21716519596812392,
+        "weighted_r0_pp": 45.72586885131484,
+        "weighted_r1_pp": 45.50870365534672,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 191,
+        "both_post_questionnaires_n": 481,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 358,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 393,
+        "known_ineligible_n": 41,
+        "positive_weight_eligible_n": 358,
+        "positive_weight_item_observed_both_n": 393,
+        "positive_weight_target_n": 487,
+        "target_n": 584,
+        "unresolved_eligibility_n": 185
+      },
+      "group": "Latino_employed_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 210,
+          "positive_n": 210
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 3,
+          "positive_n": 3
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 7,
+          "positive_n": 7
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 138,
+          "positive_n": 138
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 4,
+        "d_to_r_n": 1,
+        "forward_n": 1,
+        "forward_positive_n": 1,
+        "n": 196,
+        "n_eff": 41.5970539748897,
+        "positive_n": 196,
+        "r0_n": 79,
+        "r1_n": 77,
+        "r_to_d_n": 3,
+        "reverse_n": 3,
+        "reverse_positive_n": 3,
+        "sparse_transitions": true,
+        "unweighted_delta_pp": -1.0204081632653061,
+        "unweighted_positive_weight_delta_pp": -1.0204081632653061,
+        "unweighted_r0_pp": 40.30612244897959,
+        "unweighted_r1_pp": 39.285714285714285,
+        "w": 120.703,
+        "w2": 350.24629912,
+        "weighted_delta_pp": -1.572206158918999,
+        "weighted_r0_pp": 46.75633579944161,
+        "weighted_r1_pp": 45.184129640522606,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 62,
+        "both_post_questionnaires_n": 253,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 196,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 220,
+        "known_ineligible_n": 27,
+        "positive_weight_eligible_n": 196,
+        "positive_weight_item_observed_both_n": 220,
+        "positive_weight_target_n": 255,
+        "target_n": 282,
+        "unresolved_eligibility_n": 59
+      },
+      "group": "Latino_employed_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 116,
+          "positive_n": 116
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 1,
+          "positive_n": 1
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 3,
+          "positive_n": 3
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 76,
+          "positive_n": 76
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 6,
+        "d_to_r_n": 2,
+        "forward_n": 2,
+        "forward_positive_n": 2,
+        "n": 162,
+        "n_eff": 31.137601170164825,
+        "positive_n": 162,
+        "r0_n": 66,
+        "r1_n": 64,
+        "r_to_d_n": 4,
+        "reverse_n": 4,
+        "reverse_positive_n": 4,
+        "sparse_transitions": true,
+        "unweighted_delta_pp": -1.2345679012345678,
+        "unweighted_positive_weight_delta_pp": -1.2345679012345678,
+        "unweighted_r0_pp": 40.74074074074074,
+        "unweighted_r1_pp": 39.50617283950617,
+        "w": 128.6003,
+        "w2": 531.12752873,
+        "weighted_delta_pp": 1.0546631695260429,
+        "weighted_r0_pp": 44.75868252251355,
+        "weighted_r1_pp": 45.8133456920396,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 129,
+        "both_post_questionnaires_n": 228,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 162,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 173,
+        "known_ineligible_n": 14,
+        "positive_weight_eligible_n": 162,
+        "positive_weight_item_observed_both_n": 173,
+        "positive_weight_target_n": 232,
+        "target_n": 302,
+        "unresolved_eligibility_n": 126
+      },
+      "group": "Latino_employed_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 94,
+          "positive_n": 94
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 2,
+          "positive_n": 2
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 62,
+          "positive_n": 62
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 63,
+        "d_to_r_n": 9,
+        "forward_n": 22,
+        "forward_positive_n": 22,
+        "n": 561,
+        "n_eff": 106.02529442590323,
+        "positive_n": 561,
+        "r0_n": 177,
+        "r1_n": 181,
+        "r_to_d_n": 8,
+        "reverse_n": 18,
+        "reverse_positive_n": 18,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 0.7130124777183601,
+        "unweighted_positive_weight_delta_pp": 0.7130124777183601,
+        "unweighted_r0_pp": 31.550802139037433,
+        "unweighted_r1_pp": 32.263814616755795,
+        "w": 439.4157,
+        "w2": 1821.1329518300001,
+        "weighted_delta_pp": 2.265918127185715,
+        "weighted_r0_pp": 33.74733765771227,
+        "weighted_r1_pp": 36.013255784897986,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 23,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 561,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 561,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 561,
+        "positive_weight_item_observed_both_n": 561,
+        "positive_weight_target_n": 584,
+        "target_n": 584,
+        "unresolved_eligibility_n": 23
+      },
+      "group": "Latino_employed_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 276,
+          "positive_n": 276
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 11,
+          "positive_n": 11
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 12,
+          "positive_n": 12
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 63,
+          "positive_n": 63
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 13,
+          "positive_n": 13
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 8,
+          "positive_n": 8
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 10,
+          "positive_n": 10
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 159,
+          "positive_n": 159
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 26,
+        "d_to_r_n": 3,
+        "forward_n": 7,
+        "forward_positive_n": 7,
+        "n": 278,
+        "n_eff": 48.40300648791248,
+        "positive_n": 278,
+        "r0_n": 87,
+        "r1_n": 85,
+        "r_to_d_n": 4,
+        "reverse_n": 9,
+        "reverse_positive_n": 9,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -0.7194244604316548,
+        "unweighted_positive_weight_delta_pp": -0.7194244604316548,
+        "unweighted_r0_pp": 31.294964028776977,
+        "unweighted_r1_pp": 30.575539568345324,
+        "w": 223.1803,
+        "w2": 1029.0568690300001,
+        "weighted_delta_pp": 0.4405854817831143,
+        "weighted_r0_pp": 30.470655340099466,
+        "weighted_r1_pp": 30.91124082188258,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 4,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 278,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 278,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 278,
+        "positive_weight_item_observed_both_n": 278,
+        "positive_weight_target_n": 282,
+        "target_n": 282,
+        "unresolved_eligibility_n": 4
+      },
+      "group": "Latino_employed_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 140,
+          "positive_n": 140
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 5,
+          "positive_n": 5
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 3,
+          "positive_n": 3
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 5,
+          "positive_n": 5
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 34,
+          "positive_n": 34
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 5,
+          "positive_n": 5
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 78,
+          "positive_n": 78
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 37,
+        "d_to_r_n": 6,
+        "forward_n": 15,
+        "forward_positive_n": 15,
+        "n": 283,
+        "n_eff": 59.03189002737047,
+        "positive_n": 283,
+        "r0_n": 90,
+        "r1_n": 96,
+        "r_to_d_n": 4,
+        "reverse_n": 9,
+        "reverse_positive_n": 9,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 2.1201413427561837,
+        "unweighted_positive_weight_delta_pp": 2.1201413427561837,
+        "unweighted_r0_pp": 31.802120141342755,
+        "unweighted_r1_pp": 33.92226148409894,
+        "w": 216.2354,
+        "w2": 792.0760828000001,
+        "weighted_delta_pp": 4.149875552291623,
+        "weighted_r0_pp": 37.12925820656562,
+        "weighted_r1_pp": 41.27913375885725,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 19,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 283,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 283,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 283,
+        "positive_weight_item_observed_both_n": 283,
+        "positive_weight_target_n": 302,
+        "target_n": 302,
+        "unresolved_eligibility_n": 19
+      },
+      "group": "Latino_employed_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 136,
+          "positive_n": 136
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 6,
+          "positive_n": 6
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 6,
+          "positive_n": 6
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 7,
+          "positive_n": 7
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 29,
+          "positive_n": 29
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 5,
+          "positive_n": 5
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 81,
+          "positive_n": 81
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 22,
+        "d_to_r_n": 13,
+        "forward_n": 13,
+        "forward_positive_n": 13,
+        "n": 418,
+        "n_eff": 153.68156282331992,
+        "positive_n": 418,
+        "r0_n": 387,
+        "r1_n": 391,
+        "r_to_d_n": 9,
+        "reverse_n": 9,
+        "reverse_positive_n": 9,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 0.9569377990430622,
+        "unweighted_positive_weight_delta_pp": 0.9569377990430622,
+        "unweighted_r0_pp": 92.58373205741627,
+        "unweighted_r1_pp": 93.54066985645933,
+        "w": 476.5124,
+        "w2": 1477.4971257599998,
+        "weighted_delta_pp": -0.7020174081513934,
+        "weighted_r0_pp": 95.2997025890617,
+        "weighted_r1_pp": 94.59768518091029,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 296,
+        "both_post_questionnaires_n": 646,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 418,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 453,
+        "known_ineligible_n": 46,
+        "positive_weight_eligible_n": 418,
+        "positive_weight_item_observed_both_n": 453,
+        "positive_weight_target_n": 649,
+        "target_n": 749,
+        "unresolved_eligibility_n": 285
+      },
+      "group": "R_renter_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 18,
+          "positive_n": 18
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 13,
+          "positive_n": 13
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 378,
+          "positive_n": 378
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 14,
+        "d_to_r_n": 9,
+        "forward_n": 9,
+        "forward_positive_n": 9,
+        "n": 265,
+        "n_eff": 124.86790380514584,
+        "positive_n": 265,
+        "r0_n": 247,
+        "r1_n": 251,
+        "r_to_d_n": 5,
+        "reverse_n": 5,
+        "reverse_positive_n": 5,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": 1.509433962264151,
+        "unweighted_positive_weight_delta_pp": 1.509433962264151,
+        "unweighted_r0_pp": 93.20754716981132,
+        "unweighted_r1_pp": 94.71698113207547,
+        "w": 258.2927,
+        "w2": 534.28556771,
+        "weighted_delta_pp": 0.7411746441149902,
+        "weighted_r0_pp": 96.1459615389827,
+        "weighted_r1_pp": 96.8871361830977,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 121,
+        "both_post_questionnaires_n": 366,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 265,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 280,
+        "known_ineligible_n": 20,
+        "positive_weight_eligible_n": 265,
+        "positive_weight_item_observed_both_n": 280,
+        "positive_weight_target_n": 367,
+        "target_n": 401,
+        "unresolved_eligibility_n": 116
+      },
+      "group": "R_renter_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 5,
+          "positive_n": 5
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 242,
+          "positive_n": 242
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 8,
+        "d_to_r_n": 4,
+        "forward_n": 4,
+        "forward_positive_n": 4,
+        "n": 153,
+        "n_eff": 50.48691045149984,
+        "positive_n": 153,
+        "r0_n": 140,
+        "r1_n": 140,
+        "r_to_d_n": 4,
+        "reverse_n": 4,
+        "reverse_positive_n": 4,
+        "sparse_transitions": true,
+        "unweighted_delta_pp": 0.0,
+        "unweighted_positive_weight_delta_pp": 0.0,
+        "unweighted_r0_pp": 91.50326797385621,
+        "unweighted_r1_pp": 91.50326797385621,
+        "w": 218.2197,
+        "w2": 943.21155805,
+        "weighted_delta_pp": -2.410231523551723,
+        "weighted_r0_pp": 94.29804000280451,
+        "weighted_r1_pp": 91.8878084792528,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 175,
+        "both_post_questionnaires_n": 280,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 153,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 173,
+        "known_ineligible_n": 26,
+        "positive_weight_eligible_n": 153,
+        "positive_weight_item_observed_both_n": 173,
+        "positive_weight_target_n": 282,
+        "target_n": 348,
+        "unresolved_eligibility_n": 169
+      },
+      "group": "R_renter_2020",
+      "measure": "house",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 4,
+          "positive_n": 4
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 136,
+          "positive_n": 136
+        }
+      ],
+      "weight_column": "commonpostweight_22"
+    },
+    {
+      "cohort": "full",
+      "estimate": {
+        "changed_n": 79,
+        "d_to_r_n": 0,
+        "forward_n": 0,
+        "forward_positive_n": 0,
+        "n": 742,
+        "n_eff": 218.3182862974108,
+        "positive_n": 742,
+        "r0_n": 742,
+        "r1_n": 663,
+        "r_to_d_n": 20,
+        "reverse_n": 79,
+        "reverse_positive_n": 79,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -10.646900269541778,
+        "unweighted_positive_weight_delta_pp": -10.646900269541778,
+        "unweighted_r0_pp": 100.0,
+        "unweighted_r1_pp": 89.35309973045821,
+        "w": 988.0854,
+        "w2": 4471.9696835800005,
+        "weighted_delta_pp": -10.325595338216717,
+        "weighted_r0_pp": 100.0,
+        "weighted_r1_pp": 89.67440466178329,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 7,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 742,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 742,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 742,
+        "positive_weight_item_observed_both_n": 742,
+        "positive_weight_target_n": 749,
+        "target_n": 749,
+        "unresolved_eligibility_n": 7
+      },
+      "group": "R_renter_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 20,
+          "positive_n": 20
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 59,
+          "positive_n": 59
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 663,
+          "positive_n": 663
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "retained",
+      "estimate": {
+        "changed_n": 40,
+        "d_to_r_n": 0,
+        "forward_n": 0,
+        "forward_positive_n": 0,
+        "n": 397,
+        "n_eff": 135.65259942990696,
+        "positive_n": 397,
+        "r0_n": 397,
+        "r1_n": 357,
+        "r_to_d_n": 9,
+        "reverse_n": 40,
+        "reverse_positive_n": 40,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -10.075566750629724,
+        "unweighted_positive_weight_delta_pp": -10.075566750629724,
+        "unweighted_r0_pp": 100.0,
+        "unweighted_r1_pp": 89.92443324937027,
+        "w": 459.7568,
+        "w2": 1558.21794816,
+        "weighted_delta_pp": -8.252101980873368,
+        "weighted_r0_pp": 100.0,
+        "weighted_r1_pp": 91.74789801912664,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 4,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 397,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 397,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 397,
+        "positive_weight_item_observed_both_n": 397,
+        "positive_weight_target_n": 401,
+        "target_n": 401,
+        "unresolved_eligibility_n": 4
+      },
+      "group": "R_renter_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 9,
+          "positive_n": 9
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 31,
+          "positive_n": 31
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 357,
+          "positive_n": 357
+        }
+      ],
+      "weight_column": "commonweight_22"
+    },
+    {
+      "cohort": "omitted",
+      "estimate": {
+        "changed_n": 39,
+        "d_to_r_n": 0,
+        "forward_n": 0,
+        "forward_positive_n": 0,
+        "n": 345,
+        "n_eff": 95.79783554816997,
+        "positive_n": 345,
+        "r0_n": 345,
+        "r1_n": 306,
+        "r_to_d_n": 11,
+        "reverse_n": 39,
+        "reverse_positive_n": 39,
+        "sparse_transitions": false,
+        "unweighted_delta_pp": -11.304347826086957,
+        "unweighted_positive_weight_delta_pp": -11.304347826086957,
+        "unweighted_r0_pp": 100.0,
+        "unweighted_r1_pp": 88.69565217391305,
+        "w": 528.3286,
+        "w2": 2913.7517354200004,
+        "weighted_delta_pp": -12.12996987102345,
+        "weighted_r0_pp": 100.0,
+        "weighted_r1_pp": 87.87003012897654,
+        "zero_denominator": false
+      },
+      "flow": {
+        "any_unknown_item_n": 3,
+        "eligible_missing_weight_n": 0,
+        "eligible_n": 345,
+        "eligible_zero_weight_n": 0,
+        "item_observed_both_n": 345,
+        "known_ineligible_n": 0,
+        "positive_weight_eligible_n": 345,
+        "positive_weight_item_observed_both_n": 345,
+        "positive_weight_target_n": 348,
+        "target_n": 348,
+        "unresolved_eligibility_n": 3
+      },
+      "group": "R_renter_2020",
+      "measure": "pid",
+      "transitions": [
+        {
+          "after": "D",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "D",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "I",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "R",
+          "before": "I",
+          "n": 0,
+          "positive_n": 0
+        },
+        {
+          "after": "D",
+          "before": "R",
+          "n": 11,
+          "positive_n": 11
+        },
+        {
+          "after": "I",
+          "before": "R",
+          "n": 28,
+          "positive_n": 28
+        },
+        {
+          "after": "R",
+          "before": "R",
+          "n": 306,
+          "positive_n": 306
+        }
+      ],
+      "weight_column": "commonweight_22"
+    }
+  ],
+  "target": "已发布两波队列中的同口径早期转移，不是2024效果或因果效应"
+}

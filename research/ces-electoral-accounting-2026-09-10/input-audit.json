@@ -1,0 +1,190 @@
+{
+  "id_unique_counts": [
+    11009,
+    11009
+  ],
+  "meta": {
+    "contract_id": "LH-304",
+    "mapping_sha256": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422",
+    "research_label": "LH270",
+    "schema_version": 1,
+    "source_sha256": "ee5ff210d535fc8e4443c98f967beee6e9e0da9995e4a502ae682a5bd2d33565",
+    "spec_sha256": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570"
+  },
+  "n": 11009,
+  "no_2024_read": true,
+  "no_preference_items": true,
+  "post_missing_n": 1263,
+  "post_zero_n": 0,
+  "raw_counts": {
+    "CC20_401": {
+      "1": 256,
+      "2": 90,
+      "3": 72,
+      "4": 65,
+      "5": 9784,
+      "NA": 742
+    },
+    "CC20_412": {
+      "1": 5232,
+      "10": 131,
+      "11": 188,
+      "12": 38,
+      "13": 155,
+      "2": 4003,
+      "3": 14,
+      "4": 2,
+      "6": 2,
+      "7": 2,
+      "8": 1,
+      "9": 2,
+      "NA": 1239
+    },
+    "CC22_401": {
+      "1": 473,
+      "2": 157,
+      "3": 232,
+      "4": 92,
+      "5": 8315,
+      "NA": 1740
+    },
+    "CC22_412": {
+      "1": 4386,
+      "10": 122,
+      "11": 171,
+      "12": 15,
+      "13": 80,
+      "2": 3454,
+      "3": 65,
+      "4": 7,
+      "6": 8,
+      "7": 1,
+      "NA": 2700
+    },
+    "CL_2020gvm": {
+      "1": 2466,
+      "2": 1514,
+      "3": 1913,
+      "4": 1272,
+      "5": 1309,
+      "NA": 2535
+    },
+    "CL_voter_status": {
+      "1": 9044,
+      "2": 287,
+      "3": 86,
+      "4": 102,
+      "5": 367,
+      "NA": 1123
+    },
+    "TS_g2022": {
+      "1": 2089,
+      "2": 1332,
+      "3": 731,
+      "4": 1867,
+      "5": 11,
+      "6": 1977,
+      "7": 1357,
+      "NA": 1645
+    },
+    "TS_voterstatus": {
+      "-1": 1645,
+      "Active": 9364
+    },
+    "tookpost_20": {
+      "1": 202,
+      "2": 10807
+    },
+    "tookpost_22": {
+      "1": 1263,
+      "2": 9746
+    }
+  },
+  "reason_counts": {
+    "20": {
+      "missing_house_item": 1037,
+      "missing_self_report": 540,
+      "not_post": 202,
+      "self_report_ballot_conflict": 40,
+      "unknown_party": 1,
+      "unsure_house": 155
+    },
+    "22": {
+      "missing_house_item": 1437,
+      "missing_self_report": 477,
+      "not_post": 1263,
+      "self_report_ballot_conflict": 16,
+      "unknown_party": 5,
+      "unsure_house": 80
+    }
+  },
+  "reason_note": "原因标签可能重叠，不能相加作未知人数。",
+  "required_columns": [
+    "CC20_401",
+    "CC20_412",
+    "CC22_401",
+    "CC22_412",
+    "CL_2020gvm",
+    "CL_voter_status",
+    "HouseCand1Party_20",
+    "HouseCand1Party_22",
+    "HouseCand1Party_post_20",
+    "HouseCand1Party_post_22",
+    "HouseCand2Party_20",
+    "HouseCand2Party_22",
+    "HouseCand2Party_post_20",
+    "HouseCand2Party_post_22",
+    "HouseCand3Party_20",
+    "HouseCand3Party_22",
+    "HouseCand3Party_post_20",
+    "HouseCand3Party_post_22",
+    "HouseCand4Party_20",
+    "HouseCand4Party_22",
+    "HouseCand4Party_post_20",
+    "HouseCand4Party_post_22",
+    "HouseCand5Party_20",
+    "HouseCand5Party_22",
+    "HouseCand5Party_post_20",
+    "HouseCand5Party_post_22",
+    "HouseCand6Party_20",
+    "HouseCand6Party_22",
+    "HouseCand6Party_post_20",
+    "HouseCand6Party_post_22",
+    "HouseCand7Party_20",
+    "HouseCand7Party_22",
+    "HouseCand7Party_post_20",
+    "HouseCand7Party_post_22",
+    "HouseCand8Party_20",
+    "HouseCand8Party_22",
+    "HouseCand8Party_post_20",
+    "HouseCand8Party_post_22",
+    "HouseCand9Party",
+    "HouseCand9Party_post",
+    "TS_g2022",
+    "TS_voterstatus",
+    "caseid",
+    "caseid_22",
+    "commonpostweight_22",
+    "commonweight_22",
+    "tookpost_20",
+    "tookpost_22"
+  ],
+  "unknown_reason_counts": {
+    "20": {
+      "missing_house_item": 557,
+      "missing_self_report": 540,
+      "not_post": 202,
+      "self_report_ballot_conflict": 40,
+      "unknown_party": 1,
+      "unsure_house": 155
+    },
+    "22": {
+      "missing_house_item": 486,
+      "missing_self_report": 477,
+      "not_post": 1263,
+      "self_report_ballot_conflict": 16,
+      "unknown_party": 5,
+      "unsure_house": 79
+    }
+  }
+}

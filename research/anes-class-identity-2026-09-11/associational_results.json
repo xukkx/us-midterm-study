@@ -1,0 +1,90 @@
+{
+  "spec_version": "LH271-1.0",
+  "status": "associational_only",
+  "primary": {
+    "estimand": "fixed_empirical_S_probability_DID",
+    "estimate": -2.7303769653597154e-05,
+    "se": 0.017319577139049407,
+    "interval_95": [
+      -0.03400832451048279,
+      0.03395371697117559
+    ],
+    "interval_method": "survey_delta_t_conditional_on_empirical_S",
+    "residual_df": 1166,
+    "n_support": 793,
+    "weight_support": 588.8922180497752,
+    "n_domain": 1835,
+    "support_fraction": 0.4321525885558583,
+    "gradient_check_max_error": 6.037655618518212e-12
+  },
+  "diagnostics": {
+    "R": "R version 4.4.1 (2024-06-14 ucrt)",
+    "survey": "4.5",
+    "frame_n": 2694,
+    "domain_n": 1835,
+    "frame_df": 1752,
+    "domain_df": 1182,
+    "cells": [
+      396,
+      95,
+      453,
+      115,
+      83,
+      77,
+      301,
+      315
+    ],
+    "frame_psus": 1833,
+    "frame_strata": 81,
+    "fits_attempted": 3,
+    "models": {
+      "M0": {
+        "n": 1835,
+        "rank": 13,
+        "columns": 13,
+        "converged": true,
+        "iterations": 6,
+        "max_abs_coef": 6.100406994460307,
+        "fitted_range": [
+          0.006107935854512731,
+          0.9937902209748279
+        ],
+        "warnings": [],
+        "condition": 8.057226538363143,
+        "residual_df": 1170
+      },
+      "M1": {
+        "n": 1835,
+        "rank": 16,
+        "columns": 16,
+        "converged": true,
+        "iterations": 7,
+        "max_abs_coef": 5.793792117521524,
+        "fitted_range": [
+          0.0015887922903829233,
+          0.9989420341765137
+        ],
+        "warnings": [],
+        "condition": 10.209759797254824,
+        "residual_df": 1167
+      },
+      "M2": {
+        "n": 1835,
+        "rank": 17,
+        "columns": 17,
+        "converged": true,
+        "iterations": 7,
+        "max_abs_coef": 5.828756836421471,
+        "fitted_range": [
+          0.001550176929251567,
+          0.9989090087794703
+        ],
+        "warnings": [],
+        "condition": 10.271053096050048,
+        "residual_df": 1166
+      }
+    }
+  },
+  "causal_effect": false,
+  "prospective_validation": false
+}

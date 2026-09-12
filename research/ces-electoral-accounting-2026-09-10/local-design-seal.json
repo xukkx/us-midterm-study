@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-09-10T20:40:24.755275+00:00",
+  "files": {
+    "analysis-spec.json": "24ac016f6e3325f93747c4633b0134e8e6134707996d4fc6a30af2bd7180d570",
+    "source-manifest.json": "c302619570343c925836442e591c92b128125859d2d873a8d4803f897a536aaa",
+    "sources/coding-frequency-check.json": "fb2dc6ca37873db517901b6ba1b7300d37bef52de25b845520a06455b636fa12",
+    "variable-map.json": "06ee3f1606d8a49949c5425e3cdbfffd146c6e84167d703501e6ed5fb024a422"
+  },
+  "status": "正式新票流计算前封印；资格检查使用合成数据。"
+}

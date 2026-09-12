@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "proposed_run": "LH271",
+  "title": "Material position, identity and candidate choice: a measured bridge",
+  "status": "FROZEN_BEFORE_JOINT_RESULTS",
+  "created_on": "2026-09-11",
+  "base_commit": "d24e0384f0be17edff8eb1ccac440e20b927404c",
+  "reservation": "Check local run registry before reserving LH271. Never overwrite a numbered run.",
+  "research_question": "How do reported financial deterioration, directly reported identity importance and perceived candidate responsiveness relate to reported candidate choice? Which causal mechanism distinctions remain unidentified?",
+  "primary_data": {
+    "source": "ANES 2024 Time Series, May 19 2026 release",
+    "sample": "combined fresh in-person and fresh web samples, excluding panel and PAPI; verify with the official sample variables and weights",
+    "weight_candidate": "V240103b",
+    "psu_candidate": "V240103c",
+    "stratum_candidate": "V240103d",
+    "target": "Explicit observed-response domain within the selected fresh sample, not automatically all voters or all citizens",
+    "outcome": "reported 2024 presidential vote, D/R domain; other votes, nonparticipation and unknown retained in separate denominator accounting",
+    "no_person_level_join_with_CES": true
+  },
+  "inherited_artifacts": {
+    "LH262": "selection and denominator accounting, fixed vs current groups",
+    "LH263_LH266": "identification sets, measurement assumptions, observational equivalence",
+    "LH267_LH269": "proper scoring, guarded claims, independent tests, frozen baseline and erratum",
+    "LH270": "vote/nonparticipation/unknown distinctions; provisional report only, not a validated empirical control"
+  },
+  "mode": "retrospective_association_not_forecasting",
+  "known_timing_limit": "Key ANES national/racial identity importance and subjective class items are POST election; they are barred from pre-election prediction and causal exposure claims.",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "label": "identity trade-off",
+      "status": "theoretical candidate",
+      "needs": "independent measurements of perceived material advantage, delivery credibility, identity affinity, and choice"
+    },
+    {
+      "id": "H2",
+      "label": "identity-conditioned beliefs or credibility",
+      "status": "theoretical candidate",
+      "needs": "separate belief and credibility measures or a suitable experimental design"
+    },
+    {
+      "id": "H3",
+      "label": "material-identity complementarity",
+      "status": "primary associational probe only",
+      "needs": "direct identity-importance item, reported economic condition and actual reported vote; observed interaction is not causal complementarity"
+    },
+    {
+      "id": "H4",
+      "label": "participation/composition",
+      "status": "separate accounting alternative",
+      "needs": "nonvoters and unknown turnout preserved; not a residual explanation for conditional vote choice"
+    }
+  ],
+  "primary_variables": {
+    "Y": "V242096x, code 2=R and 1=D after independent mapping checks; never use nonvoter preferences as votes",
+    "E": "V241451, codes 4/5=reported worsening, 1/2/3=not worsening; negative codes remain unknown",
+    "I": "V242536, codes 1/2=high reported national-identity importance, 3/4/5=lower; POST associational use only",
+    "C": "relative ordering of V241201 vs V241206 candidate responsiveness ratings; R higher / tie / D higher; no equal-interval subtraction",
+    "X": "pre-election PID, household-income category, home tenure, age and sample/mode indicators if verified; maximum 12 nuisance degrees of freedom fixed before joint outcomes are opened"
+  },
+  "models": [
+    {
+      "id": "M0",
+      "formula": "Y ~ E + X",
+      "purpose": "baseline conditional description"
+    },
+    {
+      "id": "M1",
+      "formula": "Y ~ E + X + I + C",
+      "purpose": "add separately measured identity importance and perceived responsiveness"
+    },
+    {
+      "id": "M2",
+      "formula": "Y ~ E + X + I + C + E:I",
+      "purpose": "one prespecified interaction; same response domain as M0/M1"
+    }
+  ],
+  "max_fitted_specifications": 3,
+  "max_interactions": 1,
+  "primary_estimand": "common-support standardized difference in the E-versus-Y association between high and lower I; descriptive probability-scale contrast, not a treatment effect",
+  "secondary_analyses": "raw and correctly weighted domain counts; limited White/Black response summaries only where question universes are compatible; no subgroup model search",
+  "subgroup_rules": [
+    "Race membership is not identity importance. Employment, education, income and self-ascribed class are distinct constructs.",
+    "Do not create mutually exclusive categories from multiple race selections without a documented rule.",
+    "Race-specific identity responses need not have cross-group measurement equivalence.",
+    "Do not estimate separate subgroup interactions in this run."
+  ],
+  "fit_gates": [
+    "Source version, actual column presence, response order, negative missing codes, universes and temporal role verified.",
+    "PRE label alone does not prove interview preceded an early ballot; preserve actual timing limitations.",
+    "Same observed-response domain for M0/M1/M2, with full frame and exclusion reasons retained.",
+    "Use documented weight/PSU/strata and survey-domain variance procedures; do not drop the entire design frame before subpopulation estimation.",
+    "Each primary E x I cell has at least 10 observed D and 10 observed R votes: a safety screen, not a precision theorem.",
+    "No separation, no unsupported extrapolation across E/I/covariate support, design rank and degrees of freedom checked.",
+    "A trusted survey-statistics library is available and its installed version recorded; do not handwrite survey variance to force completion."
+  ],
+  "gate_failure_output": "deliver verified measurement manifest, denominator tables and identification limits; no substitute proxy, no extra state, no unreported revised sample",
+  "missing_data": "negative/unknown values remain distinct; tables include nonresponse. Complete-response association does not recover unobserved respondents. No automatic MAR claim or inverse-response correction.",
+  "comparison_policy": "No LH269 prediction promotion, no p-value ranking of mechanisms, no coefficient-size ratio called culture versus class importance.",
+  "data_acquisition": {
+    "max_new_survey_sources": 1,
+    "new_recruitment": false,
+    "paid_data_purchase": false,
+    "restricted_data_application": false
+  },
+  "political_scope": "observational academic research, no campaign targeting or tailored persuasion",
+  "Mamdani": "motivation/context card only; no inference about his electorate from national ANES coefficients and no new NYC fieldwork in this run",
+  "publication": {
+    "git_write_authorized_by_this_package": false,
+    "merge": false,
+    "automatic_publish": false
+  },
+  "stop": "One measurement audit, one fixed set of tables, at most three gated associative fits, one independently checked report. No iterative significance hunting or replacement prediction algorithm.",
+  "contract": "LH-306",
+  "run": 323,
+  "spec_version": "LH271-1.0",
+  "frozen_at": "2026-09-11T23:50:56.862948+00:00",
+  "X_frozen": {
+    "PID": {
+      "field": "V241227x",
+      "groups": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "df": 2
+    },
+    "income": {
+      "field": "V241566x",
+      "groups": [
+        "1..12 (<40000)",
+        "13..19 (40000..74999)",
+        "20..24 (75000..124999)",
+        "25..28 (125000+)"
+      ],
+      "df": 3
+    },
+    "owner": {
+      "field": "V241530",
+      "groups": [
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "df": 1
+    },
+    "age": {
+      "field": "V241458x",
+      "groups": [
+        "18..29",
+        "30..44",
+        "45..59",
+        "60..80"
+      ],
+      "df": 3
+    },
+    "sample": {
+      "field": "V240003",
+      "groups": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "df": 1
+    },
+    "phone": {
+      "field": "V240002a",
+      "groups": [
+        [
+          1,
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "df": 1
+    }
+  },
+  "nuisance_df": 11,
+  "common_support_rule": "固定S为共同完整应答域中，每个C×PID×income×owner×age×sample×phone组合均有四种E×I取值的记录；任一所需组合为空时不外推。模型仍用相同完整应答域。S为空则不拟合；报告S覆盖。",
+  "variance_scope": "survey包域估计；如支持拟合，概率差的区间条件于固定经验标准化S分布，不宣称含目标分布估计不确定性。"
+}

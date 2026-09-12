@@ -1,0 +1,702 @@
+{
+  "schema": "LH268-r1-sensitivity-v1",
+  "H": "(PID20raw,policy20)",
+  "W": "(policy22,policy24)",
+  "groups": [
+    "stable",
+    "return",
+    "nonreturn_change"
+  ],
+  "complete_n": 6168,
+  "layer_n": 16,
+  "layers": [
+    {
+      "PID20raw": 1,
+      "policy20": 1,
+      "table": [
+        [
+          46,
+          15,
+          26,
+          34
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          1,
+          2,
+          1
+        ]
+      ],
+      "n": 132,
+      "row_margins": [
+        121,
+        1,
+        10
+      ],
+      "W_margins": [
+        53,
+        16,
+        28,
+        35
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 1,
+      "policy20": 2,
+      "table": [
+        [
+          25,
+          39,
+          108,
+          1364
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          2,
+          0,
+          5,
+          13
+        ]
+      ],
+      "n": 1562,
+      "row_margins": [
+        1536,
+        6,
+        20
+      ],
+      "W_margins": [
+        27,
+        39,
+        115,
+        1381
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 2,
+      "policy20": 1,
+      "table": [
+        [
+          31,
+          6,
+          13,
+          13
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          3,
+          1,
+          3
+        ]
+      ],
+      "n": 85,
+      "row_margins": [
+        63,
+        0,
+        22
+      ],
+      "W_margins": [
+        46,
+        9,
+        14,
+        16
+      ],
+      "zero_rows": 1,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 2,
+      "policy20": 2,
+      "table": [
+        [
+          25,
+          20,
+          36,
+          395
+        ],
+        [
+          0,
+          0,
+          2,
+          7
+        ],
+        [
+          4,
+          3,
+          4,
+          15
+        ]
+      ],
+      "n": 511,
+      "row_margins": [
+        476,
+        9,
+        26
+      ],
+      "W_margins": [
+        29,
+        23,
+        42,
+        417
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 3,
+      "policy20": 1,
+      "table": [
+        [
+          12,
+          11,
+          14,
+          20
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          8,
+          4,
+          0,
+          2
+        ]
+      ],
+      "n": 74,
+      "row_margins": [
+        57,
+        3,
+        14
+      ],
+      "W_margins": [
+        20,
+        16,
+        15,
+        23
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 3,
+      "policy20": 2,
+      "table": [
+        [
+          6,
+          6,
+          29,
+          419
+        ],
+        [
+          3,
+          0,
+          2,
+          24
+        ],
+        [
+          1,
+          2,
+          6,
+          48
+        ]
+      ],
+      "n": 546,
+      "row_margins": [
+        460,
+        29,
+        57
+      ],
+      "W_margins": [
+        10,
+        8,
+        37,
+        491
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 4,
+      "policy20": 1,
+      "table": [
+        [
+          156,
+          10,
+          29,
+          27
+        ],
+        [
+          11,
+          1,
+          1,
+          0
+        ],
+        [
+          56,
+          6,
+          19,
+          8
+        ]
+      ],
+      "n": 324,
+      "row_margins": [
+        222,
+        13,
+        89
+      ],
+      "W_margins": [
+        223,
+        17,
+        49,
+        35
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 4,
+      "policy20": 2,
+      "table": [
+        [
+          35,
+          18,
+          42,
+          257
+        ],
+        [
+          1,
+          1,
+          4,
+          18
+        ],
+        [
+          15,
+          7,
+          26,
+          145
+        ]
+      ],
+      "n": 569,
+      "row_margins": [
+        352,
+        24,
+        193
+      ],
+      "W_margins": [
+        51,
+        26,
+        72,
+        420
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 5,
+      "policy20": 1,
+      "table": [
+        [
+          288,
+          12,
+          23,
+          13
+        ],
+        [
+          16,
+          2,
+          2,
+          1
+        ],
+        [
+          46,
+          2,
+          6,
+          8
+        ]
+      ],
+      "n": 419,
+      "row_margins": [
+        336,
+        21,
+        62
+      ],
+      "W_margins": [
+        350,
+        16,
+        31,
+        22
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 5,
+      "policy20": 2,
+      "table": [
+        [
+          53,
+          13,
+          38,
+          66
+        ],
+        [
+          2,
+          0,
+          1,
+          8
+        ],
+        [
+          6,
+          1,
+          8,
+          23
+        ]
+      ],
+      "n": 219,
+      "row_margins": [
+        170,
+        11,
+        38
+      ],
+      "W_margins": [
+        61,
+        14,
+        47,
+        97
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 6,
+      "policy20": 1,
+      "table": [
+        [
+          182,
+          16,
+          29,
+          25
+        ],
+        [
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          1,
+          4
+        ]
+      ],
+      "n": 275,
+      "row_margins": [
+        252,
+        4,
+        19
+      ],
+      "W_margins": [
+        198,
+        17,
+        31,
+        29
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 6,
+      "policy20": 2,
+      "table": [
+        [
+          26,
+          15,
+          38,
+          88
+        ],
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          3,
+          6,
+          4,
+          36
+        ]
+      ],
+      "n": 224,
+      "row_margins": [
+        167,
+        8,
+        49
+      ],
+      "W_margins": [
+        29,
+        22,
+        45,
+        128
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 7,
+      "policy20": 1,
+      "table": [
+        [
+          602,
+          26,
+          61,
+          34
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          11,
+          0,
+          2,
+          2
+        ]
+      ],
+      "n": 742,
+      "row_margins": [
+        723,
+        4,
+        15
+      ],
+      "W_margins": [
+        615,
+        26,
+        65,
+        36
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 7,
+      "policy20": 2,
+      "table": [
+        [
+          104,
+          31,
+          106,
+          158
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          9
+        ]
+      ],
+      "n": 416,
+      "row_margins": [
+        399,
+        4,
+        13
+      ],
+      "W_margins": [
+        106,
+        31,
+        111,
+        168
+      ],
+      "zero_rows": 0,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 8,
+      "policy20": 1,
+      "table": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          1,
+          3,
+          4
+        ]
+      ],
+      "n": 20,
+      "row_margins": [
+        1,
+        0,
+        19
+      ],
+      "W_margins": [
+        12,
+        1,
+        3,
+        4
+      ],
+      "zero_rows": 1,
+      "zero_W_cells": 0
+    },
+    {
+      "PID20raw": 8,
+      "policy20": 2,
+      "table": [
+        [
+          0,
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          7,
+          29
+        ]
+      ],
+      "n": 50,
+      "row_margins": [
+        7,
+        0,
+        43
+      ],
+      "W_margins": [
+        4,
+        3,
+        8,
+        35
+      ],
+      "zero_rows": 1,
+      "zero_W_cells": 0
+    }
+  ],
+  "draws": 99999,
+  "seed": 26820260909,
+  "statistics": {
+    "MI": {
+      "observed": 0.01098106149670274,
+      "null": {
+        "mean": 0.007469040066567878,
+        "sd": 0.0009698557951684361,
+        "quantiles": {
+          "0": 0.004173544017049628,
+          "0.025": 0.005707068451954211,
+          "0.25": 0.006792143585940021,
+          "0.5": 0.007423851736342606,
+          "0.75": 0.008095382223697621,
+          "0.95": 0.009141774803751848,
+          "0.975": 0.009510243438547268,
+          "0.99": 0.009925628185075456,
+          "1.0": 0.013173559464796125
+        }
+      },
+      "hits": 70,
+      "B": 99999,
+      "p_plus_one": 0.00071,
+      "MC_se": 8.363755050871043e-05,
+      "MC_Wilson95": [
+        0.0005541451652549908,
+        0.0008842285521550828
+      ]
+    },
+    "TV": {
+      "observed": 0.026762870797066976,
+      "null": {
+        "mean": 0.017133205243354058,
+        "sd": 0.0017470063751199977,
+        "quantiles": {
+          "0": 0.010973988904999597,
+          "0.025": 0.013913296461508415,
+          "0.25": 0.015917016275071947,
+          "0.5": 0.017066401418845963,
+          "0.75": 0.018270285733000984,
+          "0.95": 0.02012397310260067,
+          "0.975": 0.02073981391070642,
+          "0.99": 0.021492413773277198,
+          "1.0": 0.025684239897892956
+        }
+      },
+      "hits": 0,
+      "B": 99999,
+      "p_plus_one": 1e-05,
+      "MC_se": 0.0,
+      "MC_Wilson95": [
+        0.0,
+        3.841349670325084e-05
+      ]
+    }
+  },
+  "diagnostics": {
+    "sparse_layers": 3,
+    "zero_group_layers": 3,
+    "zero_W_margin_layers": 0
+  },
+  "uncertainty_scope": "仅置换 Monte Carlo 尾计数误差，不是科学效应区间；五折不是独立全国区间。",
+  "gate": {
+    "status": "passed",
+    "artifacts": {
+      "known-history.csv": "288cbb23b08b58b7713e11d34309571f7385ba00250ea181db374e388d3ab4ac",
+      "score-components.csv": "6e2e9d87c39f9049b7c1d33d1c8ce0d4f79b5f251e1ea1035bb773e1b2c6f773",
+      "future-paths.csv": "3c3db87aa7f48cd8f120a82d716d42696d9ddf927cb93f7f04a40ae3b2b013c1",
+      "decomposition.json": "30308fca0dad5e0760f1fa6c80f794d5ffb594540f2726016e08ced0953796e0",
+      "implementation_sha256:score_kernel.py": "8582b7044b7203c2a1bb03a78c799a059e742ee104f354dfaf40a2c116578af1",
+      "implementation_sha256:scoring.py": "a5fff67cfc74e370d85dac693639b3473bca9fed3cfde08e26d9ba4a9568c3b1",
+      "implementation_sha256:decompose.py": "3f327193c63cdfbfcbcba3faff078eb7de11bbd26972e00157e4f6da3246205f",
+      "implementation_sha256:test_scoring.py": "dfce6deba861630cf5de4249b887fc25ec0e931eb3bb170ae03b7ca9e2e5158c",
+      "probability_input_sha256:history_nested.json": "50e59887bdec4ff822b10fc8109804d9b2fc9380bec8ebcd855cca0064a13a2d",
+      "probability_input_sha256:lh266-joint-trajectories.json": "bed76898bf510759060461db2040c0875068d1e2242ac83482f52a24f57e0116"
+    },
+    "gate_sha256": "3ec225d89ff9c646cb64aca1831019eb4720f4284cdfb19dd2a8ba4863170851"
+  },
+  "plan_sha256": "b83563b701683c06e296e7fdca27d16790edd13edce0f1f98e7235de80d1d15c",
+  "grid_sha256": "0f764576b77be734e55509f6bb33c3cc3e24e457dba26cdc1f135b3ed85c245d"
+}

@@ -1,0 +1,58 @@
+{
+  "R1": {
+    "B": 99999,
+    "primary": "MI；TV为辅助统计，给原始参考p但不据此多开显著性结论",
+    "reference": "给定基线PID4×政策20，固定三种完成PID路径行边际及政策22/24联合对列边际，记录可交换；不独立打乱两年",
+    "statistics": [
+      "conditional_MI",
+      "weighted_TV"
+    ]
+  },
+  "R2": {
+    "B": 299999,
+    "interval_assumption": "层×路径组内独立同分布Bernoulli参考；不是全国设计置信区间；与条件置换参考分开",
+    "null": "每层PID返回组与PID稳定组政策返回概率相同；统计为绝对标准化平均差，不是只要求平均为0的弱零假设",
+    "original": "每个相关基线层D_h>=0；不由正平均认证",
+    "reference": "各层两组人数及总事件数固定的超几何参考；条件可交换，不是随机处理",
+    "simultaneous": "每题6个有两组层，共18差/36二项概率；Clopper-Pearson区间以Bonferroni分配总alpha=.05，差区间取Lr-Us与Ur-Ls；同一家庭给三题加权差保守区间；未知层不推断",
+    "version": "R2_eq_average_statistic_v1"
+  },
+  "contract": "LH-301",
+  "history": {
+    "calibration": "折外多类别Brier、四类各10个固定等宽概率箱的观测率/均预测率/ECE，描述性",
+    "challenger": "P(PID24_4|PID22_8,PID20_4)，向母模型固定收缩20",
+    "contribution": "全64条PID4轨迹及稳定/返回/未返回三组的成对log差；保留负贡献",
+    "folds": "原LH265整人5折及原6175人，不重分、不调参数网格",
+    "parent": "冻结P(PID24_4|PID22_8)先验总质量1且聚合四类均匀",
+    "uncertainty": "不提供完整算法CI；没有逐人重采样并重拟合，五折不是独立科学重复"
+  },
+  "items": [
+    "conditional_legalization",
+    "drug_price_negotiation",
+    "medicare_single_payer"
+  ],
+  "materiality": {
+    "R1": "TV比较尺度=.5*该题三波完整总体政策返回率",
+    "R2": "epsilon_j=.5*按PID返回组基线构成标准化的PID稳定组政策返回率",
+    "limitation": "研究操作尺度，非外部验证的科学最小效应；MI只作检测统计，不另编可解释阈值；宽区间不证明等价",
+    "rationale": "要改变基准返回模式的一个主要部分，采用一半相对尺度；逐题单位为概率质量而非统一百分点；参考来自已冻结LH266，不据新p调阈值"
+  },
+  "multiplicity": {
+    "MC": "plus-one尾概率；Wilson95%区间仅量化MC误差；对各MC区间端点同样Holm变换为敏感性范围，非联合置信集合",
+    "primary_family": "三题R1-MI和三题R2-eq平均统计共6检验，Holm控制；另给各三题家族作透明诊断，不以更小者裁决",
+    "scope": "仅本轮六项，不覆盖历史探索；不做阈值二元发现叙述"
+  },
+  "research": "LH267",
+  "retrospective": "已看全部LH266、2024、评审300000次探索置换结果；非盲态注册",
+  "seed": 26720260909,
+  "simulation": {
+    "null_and_fixed_alternatives": "预设小表精确条件分布；R1独立与theta=log4固定指数倾斜，R2等概率与odds4/0.25固定非中心超几何；另检验零/稀疏格；Monte Carlo误差公开，不以模拟结果调参",
+    "permutation_draws_per_replication": 199,
+    "replications": 400,
+    "seed": 267101
+  },
+  "source_commit": "325ee0ace0a4135336e6049fbd441ef0b89edf7f",
+  "specified_at": "2026-09-09T19:25:45.299053+00:00",
+  "stop": "维护校验、条件校准、一个嵌套预测器和短主张扩展后停止，不重开潜态搜索。",
+  "target": "同一6175人三波保留队列，各政策三波完整分母不变；无权重、无全国或未保留者推断"
+}

@@ -1,0 +1,514 @@
+{
+  "items": {
+    "conditional_legalization": {
+      "path_rows": [
+        {
+          "PID_path_group": "stable",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 361,
+              "pair_known_denominator": 5342,
+              "pair_oppose_to_support_n": 361,
+              "pair_support_to_oppose_n": 416,
+              "support_to_oppose_n": 416,
+              "triple_complete_denominator": 5342
+            },
+            "1": {
+              "oppose_to_support_n": 238,
+              "pair_known_denominator": 5347,
+              "pair_oppose_to_support_n": 239,
+              "pair_support_to_oppose_n": 593,
+              "support_to_oppose_n": 593,
+              "triple_complete_denominator": 5342
+            }
+          },
+          "missing_any_n": 6,
+          "policy_complete_n": 5342,
+          "policy_return_n": 337,
+          "policy_stable_n": 4071,
+          "retained_n": 5348
+        },
+        {
+          "PID_path_group": "return",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 9,
+              "pair_known_denominator": 137,
+              "pair_oppose_to_support_n": 9,
+              "pair_support_to_oppose_n": 8,
+              "support_to_oppose_n": 8,
+              "triple_complete_denominator": 137
+            },
+            "1": {
+              "oppose_to_support_n": 6,
+              "pair_known_denominator": 137,
+              "pair_oppose_to_support_n": 6,
+              "pair_support_to_oppose_n": 24,
+              "support_to_oppose_n": 24,
+              "triple_complete_denominator": 137
+            }
+          },
+          "missing_any_n": 0,
+          "policy_complete_n": 137,
+          "policy_return_n": 9,
+          "policy_stable_n": 99,
+          "retained_n": 137
+        },
+        {
+          "PID_path_group": "nonreturn_change",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 66,
+              "pair_known_denominator": 689,
+              "pair_oppose_to_support_n": 66,
+              "pair_support_to_oppose_n": 59,
+              "support_to_oppose_n": 59,
+              "triple_complete_denominator": 689
+            },
+            "1": {
+              "oppose_to_support_n": 40,
+              "pair_known_denominator": 690,
+              "pair_oppose_to_support_n": 40,
+              "pair_support_to_oppose_n": 96,
+              "support_to_oppose_n": 96,
+              "triple_complete_denominator": 689
+            }
+          },
+          "missing_any_n": 1,
+          "policy_complete_n": 689,
+          "policy_return_n": 56,
+          "policy_stable_n": 484,
+          "retained_n": 690
+        }
+      ],
+      "restriction_1": {
+        "empirical_conditional_mutual_information_nats": 0.007796739729261749,
+        "interpretation": "有限样本经验差异，插件MI有向上偏差，不是p值或一般标签噪声模型的否定",
+        "name": "给定PID20和政策20后，政策22/24联合分布与完成PID路径组条件独立",
+        "weighted_empirical_TV_departure": 0.02634913881074915
+      },
+      "restriction_2": {
+        "name": "给定基线后，PID返回者在该政策上也返回的比例不低于PID稳定者",
+        "return_population_complete_n": 137,
+        "return_population_with_stable_comparator_n": 137,
+        "standardized_difference": -0.0022296752979036765,
+        "strata": [
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 1,
+            "difference": 0.030082987551867224,
+            "return_group_n": 4,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 241,
+            "stable_group_policy_returns": 53
+          },
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 2,
+            "difference": -0.026294498381877023,
+            "return_group_n": 44,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 2472,
+            "stable_group_policy_returns": 65
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 1,
+            "difference": -0.0537075537075537,
+            "return_group_n": 13,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 222,
+            "stable_group_policy_returns": 29
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 2,
+            "difference": -0.009469696969696975,
+            "return_group_n": 24,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 352,
+            "stable_group_policy_returns": 18
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 1,
+            "difference": 0.08622004787080145,
+            "return_group_n": 29,
+            "return_group_policy_returns": 5,
+            "stable_group_n": 1311,
+            "stable_group_policy_returns": 113
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 2,
+            "difference": -0.03668478260869565,
+            "return_group_n": 23,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 736,
+            "stable_group_policy_returns": 59
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 1,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 1,
+            "stable_group_policy_returns": 0
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 2,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 7,
+            "stable_group_policy_returns": 0
+          }
+        ],
+        "weights": "PID返回组的基线PID×基线政策构成；只对有稳定组对照的层；非因果标准化"
+      }
+    },
+    "drug_price_negotiation": {
+      "path_rows": [
+        {
+          "PID_path_group": "stable",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 247,
+              "pair_known_denominator": 5335,
+              "pair_oppose_to_support_n": 247,
+              "pair_support_to_oppose_n": 493,
+              "support_to_oppose_n": 493,
+              "triple_complete_denominator": 5335
+            },
+            "1": {
+              "oppose_to_support_n": 352,
+              "pair_known_denominator": 5348,
+              "pair_oppose_to_support_n": 352,
+              "pair_support_to_oppose_n": 199,
+              "support_to_oppose_n": 199,
+              "triple_complete_denominator": 5335
+            }
+          },
+          "missing_any_n": 13,
+          "policy_complete_n": 5335,
+          "policy_return_n": 332,
+          "policy_stable_n": 4376,
+          "retained_n": 5348
+        },
+        {
+          "PID_path_group": "return",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 7,
+              "pair_known_denominator": 136,
+              "pair_oppose_to_support_n": 7,
+              "pair_support_to_oppose_n": 16,
+              "support_to_oppose_n": 16,
+              "triple_complete_denominator": 136
+            },
+            "1": {
+              "oppose_to_support_n": 4,
+              "pair_known_denominator": 137,
+              "pair_oppose_to_support_n": 4,
+              "pair_support_to_oppose_n": 9,
+              "support_to_oppose_n": 9,
+              "triple_complete_denominator": 136
+            }
+          },
+          "missing_any_n": 1,
+          "policy_complete_n": 136,
+          "policy_return_n": 5,
+          "policy_stable_n": 105,
+          "retained_n": 137
+        },
+        {
+          "PID_path_group": "nonreturn_change",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 40,
+              "pair_known_denominator": 690,
+              "pair_oppose_to_support_n": 40,
+              "pair_support_to_oppose_n": 49,
+              "support_to_oppose_n": 49,
+              "triple_complete_denominator": 690
+            },
+            "1": {
+              "oppose_to_support_n": 44,
+              "pair_known_denominator": 690,
+              "pair_oppose_to_support_n": 44,
+              "pair_support_to_oppose_n": 25,
+              "support_to_oppose_n": 25,
+              "triple_complete_denominator": 690
+            }
+          },
+          "missing_any_n": 0,
+          "policy_complete_n": 690,
+          "policy_return_n": 36,
+          "policy_stable_n": 568,
+          "retained_n": 690
+        }
+      ],
+      "restriction_1": {
+        "empirical_conditional_mutual_information_nats": 0.004893777688587393,
+        "interpretation": "有限样本经验差异，插件MI有向上偏差，不是p值或一般标签噪声模型的否定",
+        "name": "给定PID20和政策20后，政策22/24联合分布与完成PID路径组条件独立",
+        "weighted_empirical_TV_departure": 0.013920199260112944
+      },
+      "restriction_2": {
+        "name": "给定基线后，PID返回者在该政策上也返回的比例不低于PID稳定者",
+        "return_population_complete_n": 136,
+        "return_population_with_stable_comparator_n": 136,
+        "standardized_difference": -0.03373089485810232,
+        "strata": [
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 1,
+            "difference": 0.4618320610687023,
+            "return_group_n": 2,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 131,
+            "stable_group_policy_returns": 5
+          },
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 2,
+            "difference": -0.016686069072564997,
+            "return_group_n": 45,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 2577,
+            "stable_group_policy_returns": 43
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 1,
+            "difference": -0.08928571428571429,
+            "return_group_n": 6,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 56,
+            "stable_group_policy_returns": 5
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 2,
+            "difference": -0.06201550387596899,
+            "return_group_n": 31,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 516,
+            "stable_group_policy_returns": 32
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 1,
+            "difference": -0.0970464135021097,
+            "return_group_n": 4,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 237,
+            "stable_group_policy_returns": 23
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 2,
+            "difference": -0.03987108655616943,
+            "return_group_n": 48,
+            "return_group_policy_returns": 4,
+            "stable_group_n": 1810,
+            "stable_group_policy_returns": 223
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 1,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 2,
+            "stable_group_policy_returns": 0
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 2,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 6,
+            "stable_group_policy_returns": 1
+          }
+        ],
+        "weights": "PID返回组的基线PID×基线政策构成；只对有稳定组对照的层；非因果标准化"
+      }
+    },
+    "medicare_single_payer": {
+      "path_rows": [
+        {
+          "PID_path_group": "stable",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 368,
+              "pair_known_denominator": 5338,
+              "pair_oppose_to_support_n": 368,
+              "pair_support_to_oppose_n": 180,
+              "support_to_oppose_n": 180,
+              "triple_complete_denominator": 5338
+            },
+            "1": {
+              "oppose_to_support_n": 204,
+              "pair_known_denominator": 5348,
+              "pair_oppose_to_support_n": 206,
+              "pair_support_to_oppose_n": 326,
+              "support_to_oppose_n": 324,
+              "triple_complete_denominator": 5338
+            }
+          },
+          "missing_any_n": 10,
+          "policy_complete_n": 5338,
+          "policy_return_n": 234,
+          "policy_stable_n": 4496,
+          "retained_n": 5348
+        },
+        {
+          "PID_path_group": "return",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 18,
+              "pair_known_denominator": 136,
+              "pair_oppose_to_support_n": 18,
+              "pair_support_to_oppose_n": 4,
+              "support_to_oppose_n": 4,
+              "triple_complete_denominator": 136
+            },
+            "1": {
+              "oppose_to_support_n": 7,
+              "pair_known_denominator": 137,
+              "pair_oppose_to_support_n": 7,
+              "pair_support_to_oppose_n": 16,
+              "support_to_oppose_n": 15,
+              "triple_complete_denominator": 136
+            }
+          },
+          "missing_any_n": 1,
+          "policy_complete_n": 136,
+          "policy_return_n": 13,
+          "policy_stable_n": 105,
+          "retained_n": 137
+        },
+        {
+          "PID_path_group": "nonreturn_change",
+          "intervals": {
+            "0": {
+              "oppose_to_support_n": 64,
+              "pair_known_denominator": 689,
+              "pair_oppose_to_support_n": 64,
+              "pair_support_to_oppose_n": 38,
+              "support_to_oppose_n": 38,
+              "triple_complete_denominator": 689
+            },
+            "1": {
+              "oppose_to_support_n": 38,
+              "pair_known_denominator": 690,
+              "pair_oppose_to_support_n": 38,
+              "pair_support_to_oppose_n": 49,
+              "support_to_oppose_n": 49,
+              "triple_complete_denominator": 689
+            }
+          },
+          "missing_any_n": 1,
+          "policy_complete_n": 689,
+          "policy_return_n": 45,
+          "policy_stable_n": 545,
+          "retained_n": 690
+        }
+      ],
+      "restriction_1": {
+        "empirical_conditional_mutual_information_nats": 0.005178096249192019,
+        "interpretation": "有限样本经验差异，插件MI有向上偏差，不是p值或一般标签噪声模型的否定",
+        "name": "给定PID20和政策20后，政策22/24联合分布与完成PID路径组条件独立",
+        "weighted_empirical_TV_departure": 0.016288489848554112
+      },
+      "restriction_2": {
+        "name": "给定基线后，PID返回者在该政策上也返回的比例不低于PID稳定者",
+        "return_population_complete_n": 136,
+        "return_population_with_stable_comparator_n": 136,
+        "standardized_difference": 0.046148336058296324,
+        "strata": [
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 1,
+            "difference": 0.12607573149741824,
+            "return_group_n": 7,
+            "return_group_policy_returns": 2,
+            "stable_group_n": 332,
+            "stable_group_policy_returns": 53
+          },
+          {
+            "baseline_pid": 0,
+            "baseline_policy": 2,
+            "difference": 0.031068573832562056,
+            "return_group_n": 40,
+            "return_group_policy_returns": 2,
+            "stable_group_n": 2377,
+            "stable_group_policy_returns": 45
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 1,
+            "difference": -0.04389351757772811,
+            "return_group_n": 19,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 259,
+            "stable_group_policy_returns": 25
+          },
+          {
+            "baseline_pid": 1,
+            "baseline_policy": 2,
+            "difference": -0.022364217252396165,
+            "return_group_n": 18,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 313,
+            "stable_group_policy_returns": 7
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 1,
+            "difference": 0.1046626008262837,
+            "return_group_n": 46,
+            "return_group_policy_returns": 7,
+            "stable_group_n": 1768,
+            "stable_group_policy_returns": 84
+          },
+          {
+            "baseline_pid": 2,
+            "baseline_policy": 2,
+            "difference": 0.09549228944246736,
+            "return_group_n": 6,
+            "return_group_policy_returns": 1,
+            "stable_group_n": 281,
+            "stable_group_policy_returns": 20
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 1,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 1,
+            "stable_group_policy_returns": 0
+          },
+          {
+            "baseline_pid": 3,
+            "baseline_policy": 2,
+            "difference": null,
+            "return_group_n": 0,
+            "return_group_policy_returns": 0,
+            "stable_group_n": 7,
+            "stable_group_policy_returns": 0
+          }
+        ],
+        "weights": "PID返回组的基线PID×基线政策构成；只对有稳定组对照的层；非因果标准化"
+      }
+    }
+  },
+  "n": 6175,
+  "scope": "政策分开作观察结果；保留缺失，不拼成意识形态量表，不用政策验证自身构造的潜得分。",
+  "source_sha256": "bed76898bf510759060461db2040c0875068d1e2242ac83482f52a24f57e0116"
+}

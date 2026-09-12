@@ -1,0 +1,32 @@
+         4. Donald Trump
+                     5. Nikki Haley
+                     6. Another Republican
+Survey Question(s)   PAPI PRE Q6
+
+
+
+V241035              PRE: ALREADY VOTED IN GENERAL ELECTION
+                     This next question is not about the primary elections and caucuses
+                     that were held a few months ago.
+
+                     Instead, we’d like to ask you about the election for President to be
+Question
+                     held on November 5, in which [Donald Trump is running against
+                     Kamala Harris / Kamala Harris is running against Donald Trump].
+
+                     Have you already voted in that election, or have you not voted?
+PRE‐ ELECTION SURVEY VARIABLES                                                                37
+
+
+                     -9. Refused
+                     -8. Don’t know
+Value Labels         -1. Inapplicable
+                     1. Have voted
+                     2. Have not voted
+Survey Question(s)   PREVOTE_VOTED
+Randomization        Order of names in question text
+
+
+
+
+                     PRE: CONFIRMATION VOTED (EARLY) IN

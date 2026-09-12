@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "independent_raw_records": 5521,
+  "table_rows_verified": 578,
+  "standardization_rows": 793,
+  "delta_independent": -2.730376965363857e-05,
+  "method": "不导入生产recode/build，从原件独立编码与格表核对；R点值由独立概率内核复算"
+}

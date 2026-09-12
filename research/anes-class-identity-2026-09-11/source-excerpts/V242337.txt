@@ -1,0 +1,33 @@
+le to the paper questionnaire.
+
+Response Order       Forward/Reverse order
+
+
+
+
+                     POST: HOW WOULD R DESCRIBE SOCIAL CLASS
+V242337              [EGSS]
+                     How would you describe your social class? Are you in the lower
+Question
+                     class, the working class, the middle class, or the upper class?
+                     -9. Refused
+                     -8. Don’t know
+                     -7. Insuﬃcient partial, interview deleted
+                     -6. No post interview
+                     -5. Suﬃcient partial, breakoﬀ
+Value Labels         -4. Error
+                     -1. Inapplicable
+                     1. Lower class
+                     2. Working class
+                     3. Middle class
+                     4. Upper class
+
+                     DEMPO_CLASSREV, PAPI POST Q102
+Survey Question(s)
+                     Note: The following specifications were implemented exclusively in the
+                     computerized survey instrument and are not applicable to the paper questionnaire.
+
+
+
+
+                     POST: IS R LOWER MIDDLE CLASS, MIDDLE

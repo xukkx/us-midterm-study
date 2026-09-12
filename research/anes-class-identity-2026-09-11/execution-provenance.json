@@ -1,0 +1,56 @@
+{
+  "spec_version": "LH271-1.0",
+  "contract": "LH-306",
+  "run": 323,
+  "models": {
+    "deepseek": {
+      "qualification": false,
+      "attempts": 2,
+      "reason": "HTTP403客户端拒绝；随后MissingSessionID请求头错误，按停机规则不继续provider调试"
+    },
+    "muse": {
+      "qualification": false,
+      "attempts": 2,
+      "reason": "HTTP403客户端拒绝；随后HTTP500"
+    },
+    "glm": {
+      "qualification": false,
+      "attempts": 2,
+      "reason": "两次finish_reason=length，各4000生成token"
+    },
+    "glmflash": {
+      "qualification": true,
+      "attempts": 6,
+      "qualification_envelope": "去完整JSON围栏后实质答案通过",
+      "production": {
+        "T1": "PARTIAL：术语可参考；关于权重校正表现的声明无本轮证据，未采用",
+        "T2": "DONE_WITH_REWORK：计算通过；修正外向性/内向性误称及情感评分误称",
+        "T3": "DONE_WITH_REWORK：去代码围栏，修正S不是调查层的说明，数值复算通过",
+        "T4": "FAILED：length截断；由主协调者独立构造反例",
+        "T5": "FAILED：完整但错误混同人数/权重/Kish，误称C为结局，模板拒收"
+      }
+    }
+  },
+  "usage": {
+    "known_input_tokens": 1491,
+    "known_generated_tokens": 14619,
+    "actual_incremental_API_USD": null,
+    "subscription_usage_USD": null,
+    "account_charges_verified": false,
+    "reserved_unknown_USD": 1.2000000000000002,
+    "reservation_note": "每请求0.10美元为保守行政预留，不是提供商报价或已结算最大费用；未知不作零。无购买、充值或新增账户。",
+    "qualification_first_pass": "1/4 实质答案通过；严格无围栏格式0/4",
+    "retry_total": 3,
+    "lowcost_call_total": 12,
+    "premium_checkpoints": 2,
+    "premium_usage_tokens": null
+  },
+  "supervisor_rework": [
+    "资格预期文件在请求发出后、查看正文前落盘，保留协议偏差",
+    "根协调者编写独立验收与报告，未采用错误报告模板",
+    "R中文字符串序列化损坏，修复说明字段；数字不变；机器R输出标签改为ASCII枚举",
+    "根协调者CSV空格缺失解析修复；从公开汇总表中删除逐值键、权重、PSU和层的原码频数，仅本地保留原件",
+    "次要种族身份完整universe不可恢复，限有效答题者条件描述"
+  ],
+  "scope": "一份ANES来源，三套固定模型；无Git、无发布、无常驻、无递归代理"
+}

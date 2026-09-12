@@ -1,0 +1,22 @@
+uestion(s)   PREVOTE_VOTED
+Randomization        Order of names in question text
+
+
+
+
+                     PRE: CONFIRMATION VOTED (EARLY) IN
+V241036              NOVEMBER 5 ELECTION
+                     Just to be clear, I’m recording that you already voted in the election
+Question
+                     that is scheduled to take place on November 5. Is that right?
+                     -9. Refused
+                     -1. Inapplicable
+Value Labels
+                     1. Yes, voted
+                     2. No, have not voted
+Survey Question(s)   PREVOTE_VCONF
+Universe             IF R INDICATED VOTED EARLY IN THE 2024 GENERAL ELECTION:
+
+
+
+

@@ -1,0 +1,51 @@
+{
+  "DR_simulation": {
+    "covariates": "独立Bernoulli(.5) x,z及baseline_R~Bernoulli(.45)；z=1为跨标准化格子组；全体拟合。",
+    "interval": "AIPW/未调整使用大样本贡献方差，标准化只完整拟合样本允许；单一正确模型下不承诺覆盖；子组std标unsupported，稀疏方向<5或退化标invalid。",
+    "models": "正确项使用完整8格饱和H，错误模型只截距+x+R20；标准化格为R20×x。五折GLM，两种错设不调整DGP；真实概率解析8格求目标。",
+    "n": [
+      600,
+      2400
+    ],
+    "outcome": "logit P(R22)= -1+1.2*R20+.6*x+1.0*z+1.0*x*z",
+    "replications": 120,
+    "report": "偏差、RMSE、SD、bias MCSE、95覆盖、coverage MCSE及区间可用性，720个数据复制/4320个方法群体行；模拟不是真实选民。",
+    "response": "logit e=-.4+.6*x-.9*z+.8*x*z；MNAR另加1.2*R22。",
+    "scenarios": [
+      "response_correct_outcome_wrong",
+      "outcome_correct_response_wrong",
+      "MNAR_negative_control"
+    ],
+    "seed": 26420260909
+  },
+  "already_seen_LH262_LH263_2024": true,
+  "four_state_fit": "保持LH263 H主效应和PID×租房、PID×Latino在业交互，将PID主效应扩成I/R/NS三项，共18列；全体5折哈希固定，ridge1/intercept.05、clip[.02,.98]不调参。标准化为PID4×租房二值8格。",
+  "groups": [
+    "all",
+    "Latino_employed_2020",
+    "R_renter_2020"
+  ],
+  "latent_model": {
+    "epsilon_grid": "0,.005,...,.20；另求从0开始可行区间边界的端点见证，不全局宣称锐界。epsilon为均匀重抽概率，实际错报率3epsilon/4。",
+    "equation": "P_obs=E0^T Q E1；Q=diag(pi)T；4态每波单一PID测量。",
+    "families": [
+      "E0=I,E1=(1-eps)I+eps*J/4",
+      "E0=E1=(1-eps)I+eps*J/4"
+    ],
+    "identification": "用不同Q/E同一P的代数见证说明非点识别；报告潜在R变化和任意类别改变；四潜态是数学标签，不声称不确定是某一种心理机制。",
+    "main_population": "全体两波队列，固定2022权重另作描述性敏感性；不把S或子组当独立验证代理。",
+    "measurement_information": "外部已验证误分矩阵、同一时点条件独立指标/锚及其秩条件才可能区分；普通第三波不是自动足够，不把PID3和PID7当独立代理。"
+  },
+  "literal_target": "D/I/R/not_sure四个字面回答，全两波11009人；R=1只指明确报R，不推论潜在心理属性。",
+  "maintenance": "标准化区间要求显式完整拟合人群；任何子集暂不支持，返回invalid及明确原因。保持旧点结果及完整样本模拟字节。匿名核验要求准确9唯一组合和36检查。",
+  "masking": "S0的2022 y=null，真值单存，预测模型封印后解封；2024仅成员及7基线核验。",
+  "methods": [
+    "unadjusted",
+    "baseline_standardization",
+    "crossfit_aipw"
+  ],
+  "registration": "新增回溯诊断，非盲态预注册",
+  "specified_at": "2026-09-09T01:47:06.195125+00:00",
+  "stop": "两个维修、一个四态基准、有限DR检验、一个结构测量识别练习完成即停；不扩展因果住房/情绪机制。",
+  "weights": "描述同时未加权与固定commonweight_22；四态校准仅未加权。"
+}

@@ -1,0 +1,230 @@
+{
+  "caveats": [
+    "Reviewer exploratory calculation, not LH266 preregistered analysis.",
+    "Conditional null: equal return-event probability across PID-return/stable groups in every baseline stratum.",
+    "Within-stratum exchangeability/independent-record reference; no random assignment, causal interpretation, or national survey design inference.",
+    "Two-sided average test is not proof of every-stratum nonnegativity.",
+    "Holm correction covers these three specified exploratory tests only, not all past analyses."
+  ],
+  "repetitions": 300000,
+  "results": [
+    {
+      "holm_adjusted_p_three_items": 0.8991636694544352,
+      "item": "conditional_legalization",
+      "monte_carlo_se_approx": 0.0005497525655167375,
+      "negative_observed_strata": 4,
+      "negative_tail_p": 0.44997516674944416,
+      "null_statistic_sd_pp": 2.1541836864058137,
+      "permutation_two_sided_abs_p": 0.8991636694544352,
+      "positive_tail_p": 0.5503581654727817,
+      "return_events": 9,
+      "return_n": 137,
+      "standardized_difference_pp": -0.2229675297903676,
+      "stratum_differences_pp": [
+        3.0082987551867224,
+        -2.629449838187702,
+        -5.37075537075537,
+        -0.9469696969696975,
+        8.622004787080146,
+        -3.668478260869565
+      ]
+    },
+    {
+      "holm_adjusted_p_three_items": 0.23237255875813748,
+      "item": "drug_price_negotiation",
+      "monte_carlo_se_approx": 0.0005850556322923992,
+      "negative_observed_strata": 5,
+      "negative_tail_p": 0.03685321048929837,
+      "null_statistic_sd_pp": 2.178717018083404,
+      "permutation_two_sided_abs_p": 0.11618627937906874,
+      "positive_tail_p": 0.9635667881107063,
+      "return_events": 5,
+      "return_n": 136,
+      "standardized_difference_pp": -3.373089485810233,
+      "stratum_differences_pp": [
+        46.18320610687023,
+        -1.6686069072564997,
+        -8.928571428571429,
+        -6.2015503875969,
+        -9.70464135021097,
+        -3.987108655616943
+      ]
+    },
+    {
+      "holm_adjusted_p_three_items": 0.05057983140056199,
+      "item": "medicare_single_payer",
+      "monte_carlo_se_approx": 0.00023505805024321018,
+      "negative_observed_strata": 2,
+      "negative_tail_p": 0.9839433868553772,
+      "null_statistic_sd_pp": 1.8814945693344272,
+      "permutation_two_sided_abs_p": 0.016859943800187332,
+      "positive_tail_p": 0.016069946433511888,
+      "return_events": 13,
+      "return_n": 136,
+      "standardized_difference_pp": 4.614833605829633,
+      "stratum_differences_pp": [
+        12.607573149741825,
+        3.1068573832562056,
+        -4.389351757772811,
+        -2.2364217252396164,
+        10.46626008262837,
+        9.549228944246737
+      ]
+    }
+  ],
+  "seed": 26620260909,
+  "source_commit": "325ee0ace0a4135336e6049fbd441ef0b89edf7f",
+  "source_file": "research/ces-measurement-drift-2026-09-09/policy-results.json",
+  "strata": {
+    "conditional_legalization": [
+      [
+        0,
+        1,
+        4,
+        1,
+        241,
+        53
+      ],
+      [
+        0,
+        2,
+        44,
+        0,
+        2472,
+        65
+      ],
+      [
+        1,
+        1,
+        13,
+        1,
+        222,
+        29
+      ],
+      [
+        1,
+        2,
+        24,
+        1,
+        352,
+        18
+      ],
+      [
+        2,
+        1,
+        29,
+        5,
+        1311,
+        113
+      ],
+      [
+        2,
+        2,
+        23,
+        1,
+        736,
+        59
+      ]
+    ],
+    "drug_price_negotiation": [
+      [
+        0,
+        1,
+        2,
+        1,
+        131,
+        5
+      ],
+      [
+        0,
+        2,
+        45,
+        0,
+        2577,
+        43
+      ],
+      [
+        1,
+        1,
+        6,
+        0,
+        56,
+        5
+      ],
+      [
+        1,
+        2,
+        31,
+        0,
+        516,
+        32
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        237,
+        23
+      ],
+      [
+        2,
+        2,
+        48,
+        4,
+        1810,
+        223
+      ]
+    ],
+    "medicare_single_payer": [
+      [
+        0,
+        1,
+        7,
+        2,
+        332,
+        53
+      ],
+      [
+        0,
+        2,
+        40,
+        2,
+        2377,
+        45
+      ],
+      [
+        1,
+        1,
+        19,
+        1,
+        259,
+        25
+      ],
+      [
+        1,
+        2,
+        18,
+        0,
+        313,
+        7
+      ],
+      [
+        2,
+        1,
+        46,
+        7,
+        1768,
+        84
+      ],
+      [
+        2,
+        2,
+        6,
+        1,
+        281,
+        20
+      ]
+    ]
+  }
+}

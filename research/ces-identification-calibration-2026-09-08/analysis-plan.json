@@ -1,0 +1,85 @@
+{
+  "specified_at": "2026-09-08T20:21:13.091136+00:00",
+  "lh262_and_2024_results_already_seen": true,
+  "registration": "非盲态的回溯新诊断；不是确认性预注册",
+  "targets": [
+    "LH262原早期完整案例变化",
+    "已发布全队列完成D/I/R分类：not_sure及missing端点都允许R或非R",
+    "字面四状态报告：not_sure为已观测非R，只有missing允许R或非R",
+    "固定commonweight_22定义的描述性全队列目标；不称美国选民总体"
+  ],
+  "groups": {
+    "all": "全体",
+    "Latino_employed_2020": "(race20=3或hispanic20=1)且employ20在1/2",
+    "R_renter_2020": "pid7_20在5/6/7且ownhome20=2"
+  },
+  "bounds": "PID，仅固定分母；无跨未知端点约束时逐端点极值，含见证；B用不相交S层。有限队列端点sharp但可行值可能离散。加新约束的单调性仅限同一目标。一般有界小型等式LP枚举基可行解；不用于未取得的真实外部边际。",
+  "calibration_target": "LH262两端D/I/R的10742人，未加权；固定2022权重只在识别层使用。本基准不处理原本未知的2022项目。",
+  "masking": "y22在S=0训练投影中为null；评分真值单存。预测文件及模型先封印再解封真值。",
+  "methods": [
+    "unadjusted",
+    "baseline_standardization",
+    "crossfit_aipw"
+  ],
+  "H": "2020 PID三类、住房(自有/租/其他或缺失)、拉美裔在业标记、年龄(<40/40—64/65+或缺失)、教育(本科以上/其他或缺失)。不使用2022变量、早期变化或任何结果边际。",
+  "standardization": "全样本S1的baseline PID×租房二值六格经验2022分布，按完整目标的格比例标准化；若目标格无观察则失败，不按参考真值补齐。",
+  "crossfit": "5折，sha256(固定盐+2020ID)分配，受访者固定；全体训练。响应二元logistic，结局三类softmax；特征主效应及PID×租房、PID×拉美裔在业四项交互。",
+  "fitting": {
+    "ridge": 1.0,
+    "intercept_ridge": 0.05,
+    "max_iter": 80,
+    "tolerance": 1e-08,
+    "propensity_clip": [
+      0.02,
+      0.98
+    ],
+    "hyperparameter_tuning": "不调参，参数本轮计算前固定"
+  },
+  "estimands_benchmark": [
+    "2022 R份额",
+    "R指标变化",
+    "D→R",
+    "R→D",
+    "I→R",
+    "R→I",
+    "D→I",
+    "I→D",
+    "任意类别改变",
+    "R指标非零变化"
+  ],
+  "aipw": "phi_ik=m_ik+S_i/e_i*(1(y22=k)-m_ik)，按完整目标2020起点计算方向概率和变化。允许未截断估计超出概率单纯形时明确标失败；结构不可能转换按已知起点严格为0，不添加伪频数。",
+  "influence": "固定已拟合nuisance条件下逐人删除的均值影响范围，注明不是重拟合LOO；观察样本逆响应权重最大份额、前1%份额及ESS；不输出ID。",
+  "sensitivity": {
+    "delta_grid": [
+      -2,
+      -1,
+      -0.5,
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "definition": "S0的R概率在crossfit m_R上加logit delta；D/I按原相对比重新分配。S1保留已知观测。仅本早期遮蔽队列的假设场景，不是第四个拟合候选或2024校正。",
+    "root_interval": [
+      -12,
+      12
+    ]
+  },
+  "simulation": {
+    "seed": 26320260908,
+    "replications": 150,
+    "n": 600,
+    "scenarios": [
+      "MCAR",
+      "MAR_covariate",
+      "MNAR_outcome",
+      "sparse_MCAR"
+    ],
+    "target": "明示合成DGP总体的R变化；另外核对完整案例极限。",
+    "methods": "与三候选相同原则的基线格模型与交叉拟合AIPW，固定低维合成H；同时分别记录与完整经验队列的误差。",
+    "interval": "名义95%大样本影响函数区间；退化或每一合法非零方向观测不足5时标invalid，不给零宽区间。无效区间计入无条件覆盖率的未覆盖，并另报有效区间条件覆盖。",
+    "mcar_mar_truth": "具名独立/条件交换性场景",
+    "mnar_truth": "响应另依赖未知结局，MAR方法不保证恢复"
+  },
+  "stop": "识别表与一个遮蔽基准（含固定模拟和敏感性）完成即结束；Bayesian旧示范保持参考，不新安装NumPy或叠加模型。"
+}

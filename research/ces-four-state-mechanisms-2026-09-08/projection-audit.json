@@ -1,0 +1,48 @@
+{
+  "H_missing": {
+    "age_missing": 0,
+    "educ_missing": 0,
+    "housing_missing": 10
+  },
+  "S0_outcome_hidden": true,
+  "baseline7_and_wave22_disagreement_n": 0,
+  "calibration_S1_n": 6175,
+  "calibration_n": 11009,
+  "candidate_information_audit": {
+    "20": {
+      "resolved_by_existing_post_n": 1,
+      "selected_pre_missing_n": 1
+    },
+    "22": {
+      "resolved_by_existing_post_n": 0,
+      "selected_pre_missing_n": 5
+    }
+  },
+  "fold_counts": {
+    "0": 2170,
+    "1": 2182,
+    "2": 2159,
+    "3": 2224,
+    "4": 2274
+  },
+  "key_unique_nonmissing": true,
+  "masked_input_sha256": "bbee804bff08359a9caf691d45266f16498f30b83d901337940bda56aa480dba",
+  "omitted_n": 4834,
+  "pid_raw_types": {
+    "20": {
+      "D": 5252,
+      "I": 1693,
+      "R": 3893,
+      "not_sure": 171
+    },
+    "22": {
+      "D": 5298,
+      "I": 1751,
+      "R": 3805,
+      "not_sure": 155
+    }
+  },
+  "raw_n": 11009,
+  "selected_n": 6175,
+  "truth_file_sha256": "23813529228b27793fd1f45afcfaa1ece4644d27d0b118da76f3756bcdcc484c"
+}

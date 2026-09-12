@@ -1,0 +1,63 @@
+{
+  "research": "LH268",
+  "contract": "LH-302",
+  "run": 319,
+  "stage": "frozen_score_decomposition",
+  "scoring_gate_passed": true,
+  "n": 6175,
+  "known_history_counts": {
+    "early_same": 5585,
+    "early_diff": 590
+  },
+  "changed_count": 414,
+  "third_count": 40,
+  "future_path_counts": {
+    "early_same_stable": 5348,
+    "early_same_changed": 237,
+    "early_diff_return": 137,
+    "early_diff_keep": 413,
+    "early_diff_third": 40
+  },
+  "headline_checks": {
+    "old_full_mean": -0.2490664327151942,
+    "full_log_delta_mean_new_minus_old": 0.008199913491846535,
+    "early_same_full_log_delta_mean": -0.000782071637585466,
+    "early_diff_full_log_delta_mean": 0.09322429814926651,
+    "log_direction": "越高越好",
+    "brier_direction": "越低越好",
+    "delta_direction": "新减旧；Brier负值表示新模型较低"
+  },
+  "plan_sha256": "B83563B701683C06E296E7FDCA27D16790EDD13EDCE0F1F98E7235DE80D1D15C",
+  "probability_input_sha256": {
+    "history_nested.json": "50E59887BDEC4FF822B10FC8109804D9B2FC9380BEC8EBCD855CCA0064A13A2D",
+    "lh266-joint-trajectories.json": "BED76898BF510759060461DB2040C0875068D1E2242AC83482F52A24F57E0116"
+  },
+  "artifact_sha256": {
+    "known-history.csv": "288CBB23B08B58B7713E11D34309571F7385BA00250EA181DB374E388D3AB4AC",
+    "score-components.csv": "6E2E9D87C39F9049B7C1D33D1C8CE0D4F79B5F251E1EA1035BB773E1B2C6F773",
+    "future-paths.csv": "3C3DB87AA7F48CD8F120A82D716D42696D9DDF927CB93F7F04A40AE3B2B013C1",
+    "decomposition.json": "30308FCA0DAD5E0760F1FA6C80F794D5FFB594540F2726016E08CED0953796E0"
+  },
+  "implementation_sha256": {
+    "score_kernel.py": "8582b7044b7203c2a1bb03a78c799a059e742ee104f354dfaf40a2c116578af1",
+    "scoring.py": "a5fff67cfc74e370d85dac693639b3473bca9fed3cfde08e26d9ba4a9568c3b1",
+    "decompose.py": "3f327193c63cdfbfcbcba3faff078eb7de11bbd26972e00157e4f6da3246205f",
+    "test_scoring.py": "dfce6deba861630cf5de4249b887fc25ec0e931eb3bb170ae03b7ca9e2e5158c"
+  },
+  "verification": [
+    "python -m unittest test_scoring.py：6项通过",
+    "python -m py_compile score_kernel.py scoring.py decompose.py test_scoring.py：通过",
+    "python decompose.py --write：6175人及五组人数验收通过",
+    "python decompose.py --check：四个输出逐字节复算通过"
+  ],
+  "muse_status": "两次合成规范短内核调用均已验收；首次自动审查拒绝独立记为no_egress、未启动、无费用",
+  "muse_execution_verification": {
+    "path": "runs/run-319/execution-verification.json",
+    "sha256": "7C1BBC5B192C84C01768BD0830087842113F3E5E4284F349A2698AA79DABEF8B",
+    "total_reported_cost_usd": 0.0016951,
+    "accepted_stages": [
+      "score-kernel",
+      "shrink-kernel"
+    ]
+  }
+}

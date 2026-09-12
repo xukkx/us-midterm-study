@@ -1,0 +1,42 @@
+ same order for each candidate.
+
+Response Order       Forward/Reverse order
+
+
+
+
+                     PRE: DEMOCRATIC PRESIDENTIAL CANDIDATE
+V241201              TRAIT: REALLY CARES
+                     [Think about Kamala Harris. In your opinion, does the phrase ‘she
+                     really cares about people like you’ describe Kamala Harris [extremely
+                     well, very well, moderately well, slightly well, or not well at all/ not
+                     well at all, slightly well, moderately well, very well, or extremely well]?
+Question
+                     / (What about) ‘really cares about people like you’? Does this phrase
+                     describe Kamala Harris [extremely well, very well, moderately well,
+                     slightly well, or not well at all/ not well at all, slightly well, moderately
+                     well, very well, or extremely well]?]
+                     -9. Refused
+                     -8. Don’t know
+                     -1. Inapplicable
+                     1. Extremely well
+Value Labels
+                     2. Very well
+                     3. Moderately well
+                     4. Slightly well
+                     5. Not well at all
+Survey Question(s)   CTRAIT_DPCCARE
+                     IF TRAIT IS 1ST TRAIT FOR DEMOCRATIC PRESIDENTIAL CANDIDATE /
+Universe
+                     IF TRAIT IS NOT 1ST TRAIT FOR DEMOCRATIC PRESIDENTIAL CANDIDATE:
+
+                     Order of Presidential cands for sets of traits;
+Randomization        order of traits administered for each candidate. Traits should be randomized in the
+                     same order for each candidate.
+
+Response Order       Forward/Reverse order
+92                                                                              CODEBOOK: VARIABLES
+
+
+
+                     PRE: DEMOCRATIC PRESIDENTIAL CANDIDATE

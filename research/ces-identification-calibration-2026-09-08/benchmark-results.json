@@ -1,0 +1,1023 @@
+{
+  "MNAR_sensitivity": [
+    {
+      "group": "all",
+      "missingness_parameter_learned_from_missing_outcomes": false,
+      "net_change_zero_delta": 0.3940268727052525,
+      "reference_complete_case_change_pp": -0.8099050456153389,
+      "scenarios": [
+        {
+          "completed_change_pp": -6.388077679299133,
+          "delta": -2,
+          "retained_minus_completed_pp": 5.413837256577866
+        },
+        {
+          "completed_change_pp": -3.1509133883008285,
+          "delta": -1,
+          "retained_minus_completed_pp": 2.176672965579561
+        },
+        {
+          "completed_change_pp": -1.902058111677561,
+          "delta": -0.5,
+          "retained_minus_completed_pp": 0.9278176889562935
+        },
+        {
+          "completed_change_pp": -0.8205534090481205,
+          "delta": 0,
+          "retained_minus_completed_pp": -0.15368701367314708
+        },
+        {
+          "completed_change_pp": 0.22638987696959093,
+          "delta": 0.5,
+          "retained_minus_completed_pp": -1.2006302996908584
+        },
+        {
+          "completed_change_pp": 1.3869030587758002,
+          "delta": 1,
+          "retained_minus_completed_pp": -2.3611434814970678
+        },
+        {
+          "completed_change_pp": 4.565094942899428,
+          "delta": 2,
+          "retained_minus_completed_pp": -5.539335365620696
+        }
+      ],
+      "scope": "只为本早期完整案例参考队列的遮蔽S0赋假设概率；不是对原本不确定回答补值或校正2024。",
+      "selection_B_zero_delta": -0.07367596920202435,
+      "target_n": 10742
+    },
+    {
+      "group": "Latino_employed_2020",
+      "missingness_parameter_learned_from_missing_outcomes": false,
+      "net_change_zero_delta": 0.3322238320580537,
+      "reference_complete_case_change_pp": 0.7130124777183666,
+      "scenarios": [
+        {
+          "completed_change_pp": -7.332962820595286,
+          "delta": -2,
+          "retained_minus_completed_pp": 6.613538360163631
+        },
+        {
+          "completed_change_pp": -3.5967835395883183,
+          "delta": -1,
+          "retained_minus_completed_pp": 2.877359079156663
+        },
+        {
+          "completed_change_pp": -2.10917610814062,
+          "delta": -0.5,
+          "retained_minus_completed_pp": 1.3897516477089644
+        },
+        {
+          "completed_change_pp": -0.8181264794966299,
+          "delta": 0,
+          "retained_minus_completed_pp": 0.09870201906497411
+        },
+        {
+          "completed_change_pp": 0.41997735682380866,
+          "delta": 0.5,
+          "retained_minus_completed_pp": -1.1394018172554645
+        },
+        {
+          "completed_change_pp": 1.7763710902320107,
+          "delta": 1,
+          "retained_minus_completed_pp": -2.4957955506636664
+        },
+        {
+          "completed_change_pp": 5.471093306262617,
+          "delta": 2,
+          "retained_minus_completed_pp": -6.190517766694272
+        }
+      ],
+      "scope": "只为本早期完整案例参考队列的遮蔽S0赋假设概率；不是对原本不确定回答补值或校正2024。",
+      "selection_B_zero_delta": 0.03995947506390096,
+      "target_n": 561
+    },
+    {
+      "group": "R_renter_2020",
+      "missingness_parameter_learned_from_missing_outcomes": false,
+      "net_change_zero_delta": null,
+      "reference_complete_case_change_pp": -10.646900269541781,
+      "scenarios": [
+        {
+          "completed_change_pp": -26.903218658377792,
+          "delta": -2,
+          "retained_minus_completed_pp": 16.827651907748063
+        },
+        {
+          "completed_change_pp": -16.666417688777454,
+          "delta": -1,
+          "retained_minus_completed_pp": 6.590850938147726
+        },
+        {
+          "completed_change_pp": -12.975280853642275,
+          "delta": -0.5,
+          "retained_minus_completed_pp": 2.8997141030125473
+        },
+        {
+          "completed_change_pp": -10.318531153773199,
+          "delta": 0,
+          "retained_minus_completed_pp": 0.24296440314347123
+        },
+        {
+          "completed_change_pp": -8.515072496103796,
+          "delta": 0.5,
+          "retained_minus_completed_pp": -1.5604942545259313
+        },
+        {
+          "completed_change_pp": -7.339488028041236,
+          "delta": 1,
+          "retained_minus_completed_pp": -2.7360787225884913
+        },
+        {
+          "completed_change_pp": -6.128112486465861,
+          "delta": 2,
+          "retained_minus_completed_pp": -3.9474542641638664
+        }
+      ],
+      "scope": "只为本早期完整案例参考队列的遮蔽S0赋假设概率；不是对原本不确定回答补值或校正2024。",
+      "selection_B_zero_delta": 0.05663988451853563,
+      "target_n": 742
+    }
+  ],
+  "overlap": [
+    {
+      "S1_n": 6056,
+      "group": "all",
+      "ipw_ess": 5916.132866838837,
+      "max_ipw_share": 0.0002744080048859027,
+      "outcome_nuisance_scope": "全体S1训练；不在子组内另拟合",
+      "propensity_clipped_n": 0,
+      "raw_propensity_quantiles": {
+        "0": 0.30588010699524576,
+        "0.01": 0.37446727334960417,
+        "0.05": 0.3978877685078736,
+        "0.5": 0.5838080803635889,
+        "0.95": 0.6632285961670549,
+        "0.99": 0.6821741971701851,
+        "1": 0.695677170327612
+      },
+      "target_n": 10742,
+      "top_one_percent_ipw_share": 0.015620180901593228
+    },
+    {
+      "S1_n": 278,
+      "group": "Latino_employed_2020",
+      "ipw_ess": 269.5173016012985,
+      "max_ipw_share": 0.005198799390805246,
+      "outcome_nuisance_scope": "全体S1训练；不在子组内另拟合",
+      "propensity_clipped_n": 0,
+      "raw_propensity_quantiles": {
+        "0": 0.30588010699524576,
+        "0.01": 0.33485845766958905,
+        "0.05": 0.3448367270036978,
+        "0.5": 0.5285439223093064,
+        "0.95": 0.5944221773903152,
+        "0.99": 0.6338656418672887,
+        "1": 0.6498601330056415
+      },
+      "target_n": 561,
+      "top_one_percent_ipw_share": 0.015536821584472595
+    },
+    {
+      "S1_n": 397,
+      "group": "R_renter_2020",
+      "ipw_ess": 389.3627378108575,
+      "max_ipw_share": 0.00399416023436752,
+      "outcome_nuisance_scope": "全体S1训练；不在子组内另拟合",
+      "propensity_clipped_n": 0,
+      "raw_propensity_quantiles": {
+        "0": 0.30588010699524576,
+        "0.01": 0.3453569956400115,
+        "0.05": 0.39716885207324415,
+        "0.5": 0.5478048298799748,
+        "0.95": 0.6068545456972759,
+        "0.99": 0.6550792018652982,
+        "1": 0.6550792018652982
+      },
+      "target_n": 742,
+      "top_one_percent_ipw_share": 0.014649366171436747
+    }
+  ],
+  "real_data_sampling_intervals": "不为已知经验参考值给95%区间；模型区间程序只在明示合成DGP中验覆盖。",
+  "rows": [
+    {
+      "estimate": {
+        "D_to_I_pp": 1.6347424042272125,
+        "D_to_R_pp": 0.47886393659180976,
+        "I_to_D_pp": 1.7007926023778073,
+        "I_to_R_pp": 1.4200792602377807,
+        "R22_pp": 36.74042272126816,
+        "R_change_pp": -0.9742404227212675,
+        "R_nonzero_change_pp": 4.7721268163804496,
+        "R_to_D_pp": 0.6935270805812417,
+        "R_to_I_pp": 2.179656538969617,
+        "gross_category_change_pp": 8.10766182298547,
+        "matrix": [
+          [
+            0.4580581241743725,
+            0.016347424042272126,
+            0.004788639365918098
+          ],
+          [
+            0.017007926023778073,
+            0.11245046235138706,
+            0.014200792602377808
+          ],
+          [
+            0.006935270805812417,
+            0.021796565389696168,
+            0.34841479524438573
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 6056
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -0.9909165978530141,
+          -0.9578860445912469
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.016676175131745873,
+        "n": 6056,
+        "not_refitted_LOO": true
+      },
+      "group": "all",
+      "method": "unadjusted",
+      "observed_n": 6056,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.11539723457375572,
+        "D_to_R_pp": -0.1727838012596145,
+        "I_to_D_pp": -0.3100061315637308,
+        "I_to_R_pp": -0.0507827766268627,
+        "R22_pp": 1.5048986103018578,
+        "R_change_pp": -0.1643353771059286,
+        "R_nonzero_change_pp": -0.28279777866702815,
+        "R_to_D_pp": -0.04190393785108004,
+        "R_to_I_pp": -0.01732726292947051,
+        "gross_category_change_pp": -0.708201144804514
+      },
+      "reference": {
+        "D_to_I_pp": 1.7501396388009682,
+        "D_to_R_pp": 0.6516477378514243,
+        "I_to_D_pp": 2.010798733941538,
+        "I_to_R_pp": 1.4708620368646435,
+        "R22_pp": 35.2355241109663,
+        "R_change_pp": -0.8099050456153389,
+        "R_nonzero_change_pp": 5.054924595047478,
+        "R_to_D_pp": 0.7354310184323217,
+        "R_to_I_pp": 2.1969838018990875,
+        "gross_category_change_pp": 8.815862967789984,
+        "matrix": [
+          [
+            0.46276298640849006,
+            0.017501396388009682,
+            0.006516477378514243
+          ],
+          [
+            0.02010798733941538,
+            0.11794824055110781,
+            0.014708620368646435
+          ],
+          [
+            0.0073543101843232175,
+            0.021969838018990877,
+            0.33113014336250235
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 10742
+      },
+      "reference_n": 10742,
+      "transition_total_variation_pp": 1.7284651881883404
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 1.6837870601549307,
+        "D_to_R_pp": 0.4882049517190253,
+        "I_to_D_pp": 1.8222800762993787,
+        "I_to_R_pp": 1.5064128888810013,
+        "R22_pp": 35.274930112121936,
+        "R_change_pp": -0.7704990444597104,
+        "R_nonzero_change_pp": 4.759734725659766,
+        "R_to_D_pp": 0.6661593515686299,
+        "R_to_I_pp": 2.098957533491109,
+        "gross_category_change_pp": 8.265801862114074,
+        "matrix": [
+          [
+            0.4650609400562744,
+            0.016837870601549308,
+            0.004882049517190253
+          ],
+          [
+            0.018222800762993787,
+            0.11947791860736581,
+            0.015064128888810013
+          ],
+          [
+            0.0066615935156863,
+            0.020989575334911092,
+            0.33280312271521906
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 10742
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -0.7715137652871792,
+          -0.7696327314808321
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.001014720827465205,
+        "n": 10742,
+        "not_refitted_LOO": true
+      },
+      "group": "all",
+      "method": "baseline_standardization",
+      "observed_n": 6056,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.0663525786460375,
+        "D_to_R_pp": -0.163442786132399,
+        "I_to_D_pp": -0.18851865764215936,
+        "I_to_R_pp": 0.03555085201635788,
+        "R22_pp": 0.03940600115563342,
+        "R_change_pp": 0.039406001155628534,
+        "R_nonzero_change_pp": -0.29518986938771175,
+        "R_to_D_pp": -0.0692716668636918,
+        "R_to_I_pp": -0.09802626840797846,
+        "gross_category_change_pp": -0.5500611056759102
+      },
+      "reference": {
+        "D_to_I_pp": 1.7501396388009682,
+        "D_to_R_pp": 0.6516477378514243,
+        "I_to_D_pp": 2.010798733941538,
+        "I_to_R_pp": 1.4708620368646435,
+        "R22_pp": 35.2355241109663,
+        "R_change_pp": -0.8099050456153389,
+        "R_nonzero_change_pp": 5.054924595047478,
+        "R_to_D_pp": 0.7354310184323217,
+        "R_to_I_pp": 2.1969838018990875,
+        "gross_category_change_pp": 8.815862967789984,
+        "matrix": [
+          [
+            0.46276298640849006,
+            0.017501396388009682,
+            0.006516477378514243
+          ],
+          [
+            0.02010798733941538,
+            0.11794824055110781,
+            0.014708620368646435
+          ],
+          [
+            0.0073543101843232175,
+            0.021969838018990877,
+            0.33113014336250235
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 10742
+      },
+      "reference_n": 10742,
+      "transition_total_variation_pp": 0.5856119576922647
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 1.7468419760406535,
+        "D_to_R_pp": 0.5099199431237232,
+        "I_to_D_pp": 1.7928540926960321,
+        "I_to_R_pp": 1.4684362186849211,
+        "R22_pp": 35.20722724981816,
+        "R_change_pp": -0.838201906763486,
+        "R_nonzero_change_pp": 4.794914230380768,
+        "R_to_D_pp": 0.6698778852272234,
+        "R_to_I_pp": 2.1466801833449005,
+        "gross_category_change_pp": 8.334610299117454,
+        "matrix": [
+          [
+            0.4642132409833702,
+            0.017468419760406535,
+            0.005099199431237232
+          ],
+          [
+            0.01792854092696032,
+            0.12015194514536008,
+            0.01468436218684921
+          ],
+          [
+            0.0066987788522722335,
+            0.021466801833449005,
+            0.33228871088009515
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 10742
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -0.864503438180642,
+          -0.8153483512851006
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.02630153141716257,
+        "n": 10742,
+        "not_refitted_LOO": true
+      },
+      "group": "all",
+      "method": "crossfit_aipw",
+      "observed_n": 6056,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.0032976627603147346,
+        "D_to_R_pp": -0.14172779472770103,
+        "I_to_D_pp": -0.21794464124550594,
+        "I_to_R_pp": -0.0024258181797223166,
+        "R22_pp": -0.028296861148142227,
+        "R_change_pp": -0.028296861148147112,
+        "R_nonzero_change_pp": -0.26001036466670957,
+        "R_to_D_pp": -0.06555313320509837,
+        "R_to_I_pp": -0.05030361855418697,
+        "gross_category_change_pp": -0.48125266867253025
+      },
+      "reference": {
+        "D_to_I_pp": 1.7501396388009682,
+        "D_to_R_pp": 0.6516477378514243,
+        "I_to_D_pp": 2.010798733941538,
+        "I_to_R_pp": 1.4708620368646435,
+        "R22_pp": 35.2355241109663,
+        "R_change_pp": -0.8099050456153389,
+        "R_nonzero_change_pp": 5.054924595047478,
+        "R_to_D_pp": 0.7354310184323217,
+        "R_to_I_pp": 2.1969838018990875,
+        "gross_category_change_pp": 8.815862967789984,
+        "matrix": [
+          [
+            0.46276298640849006,
+            0.017501396388009682,
+            0.006516477378514243
+          ],
+          [
+            0.02010798733941538,
+            0.11794824055110781,
+            0.014708620368646435
+          ],
+          [
+            0.0073543101843232175,
+            0.021969838018990877,
+            0.33113014336250235
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 10742
+      },
+      "reference_n": 10742,
+      "transition_total_variation_pp": 0.48125266867252486
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 1.7985611510791366,
+        "D_to_R_pp": 1.079136690647482,
+        "I_to_D_pp": 1.7985611510791366,
+        "I_to_R_pp": 1.4388489208633095,
+        "R22_pp": 30.575539568345324,
+        "R_change_pp": -0.7194244604316558,
+        "R_nonzero_change_pp": 5.755395683453238,
+        "R_to_D_pp": 1.4388489208633095,
+        "R_to_I_pp": 1.7985611510791366,
+        "gross_category_change_pp": 9.352517985611511,
+        "matrix": [
+          [
+            0.5035971223021583,
+            0.017985611510791366,
+            0.01079136690647482
+          ],
+          [
+            0.017985611510791366,
+            0.1223021582733813,
+            0.014388489208633094
+          ],
+          [
+            0.014388489208633094,
+            0.017985611510791366,
+            0.2805755395683453
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 278
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -1.0830324909747293,
+          -0.3610108303249098
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.36360803054307456,
+        "n": 278,
+        "not_refitted_LOO": true
+      },
+      "group": "Latino_employed_2020",
+      "method": "unadjusted",
+      "observed_n": 278,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.1622231626463535,
+        "D_to_R_pp": -0.5251413842188284,
+        "I_to_D_pp": -0.34047628207594327,
+        "I_to_R_pp": -0.8784416317213608,
+        "R22_pp": -1.6882750484104712,
+        "R_change_pp": -1.4324369381500224,
+        "R_nonzero_change_pp": -1.3747290937303633,
+        "R_to_D_pp": 0.012823965426589368,
+        "R_to_I_pp": 0.016029956783236265,
+        "gross_category_change_pp": -1.8774285384526603
+      },
+      "reference": {
+        "D_to_I_pp": 1.9607843137254901,
+        "D_to_R_pp": 1.6042780748663104,
+        "I_to_D_pp": 2.13903743315508,
+        "I_to_R_pp": 2.3172905525846703,
+        "R22_pp": 32.263814616755795,
+        "R_change_pp": 0.7130124777183666,
+        "R_nonzero_change_pp": 7.130124777183601,
+        "R_to_D_pp": 1.4260249554367201,
+        "R_to_I_pp": 1.7825311942959003,
+        "gross_category_change_pp": 11.229946524064172,
+        "matrix": [
+          [
+            0.4919786096256685,
+            0.0196078431372549,
+            0.016042780748663103
+          ],
+          [
+            0.0213903743315508,
+            0.11229946524064172,
+            0.023172905525846704
+          ],
+          [
+            0.0142602495543672,
+            0.017825311942959002,
+            0.28342245989304815
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 561
+      },
+      "reference_n": 561,
+      "transition_total_variation_pp": 2.190974493132767
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 1.8396080887015924,
+        "D_to_R_pp": 0.5302762450209679,
+        "I_to_D_pp": 1.8963129282415176,
+        "I_to_R_pp": 1.5400655363558895,
+        "R22_pp": 31.20038889840243,
+        "R_change_pp": -0.35041324063500023,
+        "R_nonzero_change_pp": 4.491096803388711,
+        "R_to_D_pp": 0.5831685862714424,
+        "R_to_I_pp": 1.8375864357404108,
+        "gross_category_change_pp": 8.22701782033182,
+        "matrix": [
+          [
+            0.5039303901743608,
+            0.018396080887015925,
+            0.005302762450209679
+          ],
+          [
+            0.018963129282415177,
+            0.12249896045206514,
+            0.015400655363558894
+          ],
+          [
+            0.005831685862714424,
+            0.01837586435740411,
+            0.29130047117025576
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 561
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -0.36912579528495953,
+          -0.3330468950814349
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.01871255464996259,
+        "n": 561,
+        "not_refitted_LOO": true
+      },
+      "group": "Latino_employed_2020",
+      "method": "baseline_standardization",
+      "observed_n": 278,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.12117622502389769,
+        "D_to_R_pp": -1.0740018298453424,
+        "I_to_D_pp": -0.24272450491356223,
+        "I_to_R_pp": -0.7772250162287808,
+        "R22_pp": -1.0634257183533649,
+        "R_change_pp": -1.0634257183533669,
+        "R_nonzero_change_pp": -2.6390279737948905,
+        "R_to_D_pp": -0.8428563691652777,
+        "R_to_I_pp": 0.05505524144451046,
+        "gross_category_change_pp": -3.0029287037323513
+      },
+      "reference": {
+        "D_to_I_pp": 1.9607843137254901,
+        "D_to_R_pp": 1.6042780748663104,
+        "I_to_D_pp": 2.13903743315508,
+        "I_to_R_pp": 2.3172905525846703,
+        "R22_pp": 32.263814616755795,
+        "R_change_pp": 0.7130124777183666,
+        "R_nonzero_change_pp": 7.130124777183601,
+        "R_to_D_pp": 1.4260249554367201,
+        "R_to_I_pp": 1.7825311942959003,
+        "gross_category_change_pp": 11.229946524064172,
+        "matrix": [
+          [
+            0.4919786096256685,
+            0.0196078431372549,
+            0.016042780748663103
+          ],
+          [
+            0.0213903743315508,
+            0.11229946524064172,
+            0.023172905525846704
+          ],
+          [
+            0.0142602495543672,
+            0.017825311942959002,
+            0.28342245989304815
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 561
+      },
+      "reference_n": 561,
+      "transition_total_variation_pp": 3.0579839451768542
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 1.7981570116342223,
+        "D_to_R_pp": 1.1171420908502918,
+        "I_to_D_pp": 1.6874110849552457,
+        "I_to_R_pp": 1.6466756774686115,
+        "R22_pp": 31.123164556143955,
+        "R_change_pp": -0.4276375828934753,
+        "R_nonzero_change_pp": 5.955273119531284,
+        "R_to_D_pp": 1.404463895085925,
+        "R_to_I_pp": 1.7869914561264548,
+        "gross_category_change_pp": 9.440841216120752,
+        "matrix": [
+          [
+            0.4984762424867413,
+            0.017981570116342223,
+            0.011171420908502918
+          ],
+          [
+            0.016874110849552457,
+            0.12352187747380064,
+            0.016466756774686116
+          ],
+          [
+            0.014044638950859249,
+            0.01786991456126455,
+            0.2835934678782505
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 561
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -0.9313771983003927,
+          0.011434923744269132
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.5037396154069164,
+        "n": 561,
+        "not_refitted_LOO": true
+      },
+      "group": "Latino_employed_2020",
+      "method": "crossfit_aipw",
+      "observed_n": 278,
+      "recovery_error_pp": {
+        "D_to_I_pp": -0.16262730209126786,
+        "D_to_R_pp": -0.48713598401601854,
+        "I_to_D_pp": -0.45162634819983416,
+        "I_to_R_pp": -0.6706148751160588,
+        "R22_pp": -1.14065006061184,
+        "R_change_pp": -1.140650060611842,
+        "R_nonzero_change_pp": -1.1748516576523178,
+        "R_to_D_pp": -0.02156106035079519,
+        "R_to_I_pp": 0.0044602618305544794,
+        "gross_category_change_pp": -1.7891053079434194
+      },
+      "reference": {
+        "D_to_I_pp": 1.9607843137254901,
+        "D_to_R_pp": 1.6042780748663104,
+        "I_to_D_pp": 2.13903743315508,
+        "I_to_R_pp": 2.3172905525846703,
+        "R22_pp": 32.263814616755795,
+        "R_change_pp": 0.7130124777183666,
+        "R_nonzero_change_pp": 7.130124777183601,
+        "R_to_D_pp": 1.4260249554367201,
+        "R_to_I_pp": 1.7825311942959003,
+        "gross_category_change_pp": 11.229946524064172,
+        "matrix": [
+          [
+            0.4919786096256685,
+            0.0196078431372549,
+            0.016042780748663103
+          ],
+          [
+            0.0213903743315508,
+            0.11229946524064172,
+            0.023172905525846704
+          ],
+          [
+            0.0142602495543672,
+            0.017825311942959002,
+            0.28342245989304815
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 561
+      },
+      "reference_n": 561,
+      "transition_total_variation_pp": 1.7935655697739719
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.92443324937027,
+        "R_change_pp": -10.075566750629728,
+        "R_nonzero_change_pp": 10.075566750629724,
+        "R_to_D_pp": 2.2670025188916876,
+        "R_to_I_pp": 7.8085642317380355,
+        "gross_category_change_pp": 10.075566750629724,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.022670025188916875,
+            0.07808564231738035,
+            0.8992443324937027
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 397
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -10.101010101010102,
+          -9.84848484848485
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.22708190214487442,
+        "n": 397,
+        "not_refitted_LOO": true
+      },
+      "group": "R_renter_2020",
+      "method": "unadjusted",
+      "observed_n": 397,
+      "recovery_error_pp": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 0.5713335189120556,
+        "R_change_pp": 0.5713335189120539,
+        "R_nonzero_change_pp": -0.5713335189120539,
+        "R_to_D_pp": -0.4284152708657252,
+        "R_to_I_pp": -0.1429182480463309,
+        "gross_category_change_pp": -0.5713335189120539
+      },
+      "reference": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.35309973045821,
+        "R_change_pp": -10.646900269541781,
+        "R_nonzero_change_pp": 10.646900269541778,
+        "R_to_D_pp": 2.6954177897574128,
+        "R_to_I_pp": 7.951482479784366,
+        "gross_category_change_pp": 10.646900269541778,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.026954177897574125,
+            0.07951482479784366,
+            0.8935309973045822
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 742
+      },
+      "reference_n": 742,
+      "transition_total_variation_pp": 0.5713335189120549
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.92443324937027,
+        "R_change_pp": -10.075566750629728,
+        "R_nonzero_change_pp": 10.075566750629724,
+        "R_to_D_pp": 2.2670025188916876,
+        "R_to_I_pp": 7.8085642317380355,
+        "gross_category_change_pp": 10.075566750629724,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.022670025188916875,
+            0.07808564231738035,
+            0.8992443324937027
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 742
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -10.075566750629726,
+          -10.075566750629726
+        ],
+        "maximum_absolute_delete_one_shift_pp": 1.87284585800465e-18,
+        "n": 742,
+        "not_refitted_LOO": true
+      },
+      "group": "R_renter_2020",
+      "method": "baseline_standardization",
+      "observed_n": 397,
+      "recovery_error_pp": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 0.5713335189120556,
+        "R_change_pp": 0.5713335189120539,
+        "R_nonzero_change_pp": -0.5713335189120539,
+        "R_to_D_pp": -0.4284152708657252,
+        "R_to_I_pp": -0.1429182480463309,
+        "gross_category_change_pp": -0.5713335189120539
+      },
+      "reference": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.35309973045821,
+        "R_change_pp": -10.646900269541781,
+        "R_nonzero_change_pp": 10.646900269541778,
+        "R_to_D_pp": 2.6954177897574128,
+        "R_to_I_pp": 7.951482479784366,
+        "gross_category_change_pp": 10.646900269541778,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.026954177897574125,
+            0.07951482479784366,
+            0.8935309973045822
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 742
+      },
+      "reference_n": 742,
+      "transition_total_variation_pp": 0.5713335189120549
+    },
+    {
+      "estimate": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.90374802896777,
+        "R_change_pp": -10.096251971032233,
+        "R_nonzero_change_pp": 10.096251971032231,
+        "R_to_D_pp": 2.204242427558455,
+        "R_to_I_pp": 7.892009543473777,
+        "gross_category_change_pp": 10.096251971032231,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.02204242427558455,
+            0.07892009543473777,
+            0.8990374802896777
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 742
+      },
+      "fixed_nuisance_influence": {
+        "conditional_on_fixed_nuisance": true,
+        "delete_one_estimate_range_pp": [
+          -10.148367363062652,
+          -9.791069370354816
+        ],
+        "maximum_absolute_delete_one_shift_pp": 0.3051826006774178,
+        "n": 742,
+        "not_refitted_LOO": true
+      },
+      "group": "R_renter_2020",
+      "method": "crossfit_aipw",
+      "observed_n": 397,
+      "recovery_error_pp": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 0.5506482985095573,
+        "R_change_pp": 0.5506482985095484,
+        "R_nonzero_change_pp": -0.5506482985095467,
+        "R_to_D_pp": -0.49117536219895763,
+        "R_to_I_pp": -0.059472936310589475,
+        "gross_category_change_pp": -0.5506482985095467
+      },
+      "reference": {
+        "D_to_I_pp": 0.0,
+        "D_to_R_pp": 0.0,
+        "I_to_D_pp": 0.0,
+        "I_to_R_pp": 0.0,
+        "R22_pp": 89.35309973045821,
+        "R_change_pp": -10.646900269541781,
+        "R_nonzero_change_pp": 10.646900269541778,
+        "R_to_D_pp": 2.6954177897574128,
+        "R_to_I_pp": 7.951482479784366,
+        "gross_category_change_pp": 10.646900269541778,
+        "matrix": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.026954177897574125,
+            0.07951482479784366,
+            0.8935309973045822
+          ]
+        ],
+        "matrix_outside_probability_domain": false,
+        "n": 742
+      },
+      "reference_n": 742,
+      "transition_total_variation_pp": 0.5506482985095478
+    }
+  ]
+}
